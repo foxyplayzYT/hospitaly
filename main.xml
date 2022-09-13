@@ -1,12 +1,25 @@
-<scene version="1.1.0" shadowVolume="200 50 200">
+<scene version="1.1.0" shadowVolume="300 50 300">
 	<environment template="sunset"/>
 	<script file="main.lua"/>
 	<script file="sandbox.lua"/>
 	<voxbox pos="-25 0 -25" size="500 1 500"/>
 	<spawnpoint pos="0 1 0" rot="0 180 0"/>
-	<group name="building">
-		<body dynamic="true">
-			<vox pos="0.0 0.0 11.2" file="MOD/main/building/part1.vox"/>
+	<group name="building" pos="0.0 0.1 1.0">
+		<body pos="4.7 0.0 -2.9" dynamic="true">
+			<vox pos="-6.9 0.0 20.7" rot="0.0 0.0 0.0" file="MOD/main/building/building.vox" object="part1"/>
+			<vox pos="-0.4 0.0 33.60001" rot="0.0 0.0 0.0" file="MOD/main/building/building.vox" object="utilitything"/>
+			<voxbox pos="12.7 0.0 -29.1" rot="0.0 0.0 0.0" size="86 2 395" brush="MOD/main/building/building.vox" object="part1.5"/>
+			<voxbox pos="-42.7 0.0 -64.1" rot="0.0 180.0 0.0" size="120 2 240" brush="MOD/main/building/building.vox" object="part1.5"/>
+			<voxbox pos="4.9 0.0 10.4" rot="0.0 0.0 0.0" size="164 2 205" brush="MOD/main/building/building.vox" object="part1.5"/>
+			<voxbox pos="-19.7 0.0 14.1" rot="0.0 0.0 0.0" size="10 2 20" brush="MOD/main/building/building.vox" object="c"/>
+			<voxbox pos="-22.1 0.0 -20.9" rot="0.0 0.0 0.0" size="34 2 78" brush="MOD/main/building/building.vox" object="half"/>
+			<voxbox pos="-61.3 0.0 -51.1" rot="0.0 0.0 0.0" size="66 2 120" brush="MOD/main/building/building.vox" object="entrance"/>
+			<voxbox pos="-18.7 0.0 -29.1" rot="0.0 0.0 0.0" size="314 2 395" brush="MOD/main/building/building.vox" object="part2"/>
+			<voxbox pos="21.2 0.0 -64.1" rot="0.0 180.0 0.0" size="399 2 240" brush="MOD/main/building/building.vox" object="part2"/>
+			<voxbox pos="21.3 0.0 -29.1" rot="0.0 -180.0 0.0" size="760 2 350" brush="MOD/main/building/building.vox" object="part2"/>
+			<voxbox pos="13.2 0.0 -88.1" rot="0.0 -180.0 0.0" size="760 2 350" brush="MOD/main/building/building.vox" object="part2"/>
+			<voxbox pos="21.3 0.0 12.9" rot="0.0 0.0 0.0" size="50 2 180" brush="MOD/main/building/building.vox" object="part1.5"/>
+			<voxbox pos="-33.7 0.0 -88.1" rot="0.0 0.0 0.0" size="60 2 20" brush="MOD/main/building/building.vox" object="part1.5"/>
 		</body>
 	</group>
 </scene>

@@ -1,10 +1,9 @@
-<scene version="1.1.0" shadowVolume="300 50 300">
+<scene version="1.1.0" shadowVolume="200 50 200">
 	<environment template="sunset"/>
 	<script file="main.lua"/>
 	<script file="sandbox.lua"/>
-	<voxbox pos="-25 0 -25" size="500 1 500"/>
 	<spawnpoint pos="0 1 0" rot="0 180 0"/>
-	<group name="building" pos="0.0 0.1 1.0">
+	<group name="building" pos="2.2 0.1 46.7">
 		<body pos="4.7 0.0 -2.9" dynamic="true">
 			<vox pos="-6.9 0.0 20.7" rot="0.0 0.0 0.0" file="MOD/main/building/building.vox" object="part1"/>
 			<vox pos="-0.4 0.0 33.60001" rot="0.0 0.0 0.0" file="MOD/main/building/building.vox" object="utilitything"/>
@@ -22,5 +21,14 @@
 			<voxbox pos="-33.7 0.0 -88.1" rot="0.0 0.0 0.0" size="60 2 20" brush="MOD/main/building/building.vox" object="part1.5"/>
 		</body>
 	</group>
+	<voxscript pos="-73.3 -1.9 -91.8" rot="0.0 0.0 0.0" file="MOD/scripts/heightmap.lua">
+		<parameters file="MOD/heightmap/hospital1.png"/>
+	</voxscript>
+	<instance pos="-80.9 0.1 -17.5" rot="0.0 -180.0 0.0" file="MOD/main/vehicles/ambulance-eu.xml"/>
+	<voxbox pos="-84.49999 -0.8 146.60001" rot="0.0 90.0 0.0" size="1652 9 112" brush="MOD/main/props/road/roadsegments.vox" object="112"/>
+	<voxbox pos="-84.49999 -0.8 -18.59999" rot="0.0 90.0 0.0" size="1652 9 112" brush="MOD/main/props/road/roadsegments.vox" object="112"/>
+	<voxscript pos="-73.3 -1.9 91.2" rot="0.0 0.0 0.0" file="MOD/scripts/heightmap.lua">
+		<parameters file="MOD/heightmap/hospital2.png"/>
+	</voxscript>
 </scene>
 

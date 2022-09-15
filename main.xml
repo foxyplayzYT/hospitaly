@@ -1,25 +1,23 @@
-<scene version="1.1.0" shadowVolume="200 50 200">
+<scene version="1.1.0" shadowVolume="300 100 350">
 	<environment template="sunset"/>
 	<script file="main.lua"/>
 	<script file="sandbox.lua"/>
 	<spawnpoint pos="-86.0 0.1 14.9" rot="0.0 -180.0 0.0"/>
 	<group name="building" pos="2.2 0.1 46.7">
-		<body pos="4.7 0.0 -2.9" dynamic="true">
-			<vox pos="-6.9 0.0 20.7" rot="0.0 0.0 0.0" file="MOD/main/building/building.vox" object="part1"/>
-			<vox pos="-0.4 0.0 33.60001" rot="0.0 0.0 0.0" file="MOD/main/building/building.vox" object="utilitything"/>
-			<voxbox pos="12.7 0.0 -29.1" rot="0.0 0.0 0.0" size="86 2 395" brush="MOD/main/building/building.vox" object="part1.5"/>
-			<voxbox pos="-42.7 0.0 -64.1" rot="0.0 180.0 0.0" size="120 2 240" brush="MOD/main/building/building.vox" object="part1.5"/>
-			<voxbox pos="4.9 0.0 10.4" rot="0.0 0.0 0.0" size="164 2 205" brush="MOD/main/building/building.vox" object="part1.5"/>
-			<voxbox pos="-19.7 0.0 14.1" rot="0.0 0.0 0.0" size="10 2 20" brush="MOD/main/building/building.vox" object="c"/>
-			<voxbox pos="-22.1 0.0 -20.9" rot="0.0 0.0 0.0" size="34 2 78" brush="MOD/main/building/building.vox" object="half"/>
-			<voxbox pos="-61.3 0.0 -51.1" rot="0.0 0.0 0.0" size="66 2 120" brush="MOD/main/building/building.vox" object="entrance"/>
-			<voxbox pos="-18.7 0.0 -29.1" rot="0.0 0.0 0.0" size="314 2 395" brush="MOD/main/building/building.vox" object="part2"/>
-			<voxbox pos="21.2 0.0 -64.1" rot="0.0 180.0 0.0" size="399 2 240" brush="MOD/main/building/building.vox" object="part2"/>
-			<voxbox pos="21.3 0.0 -29.1" rot="0.0 -180.0 0.0" size="760 2 350" brush="MOD/main/building/building.vox" object="part2"/>
-			<voxbox pos="13.2 0.0 -88.1" rot="0.0 -180.0 0.0" size="760 2 350" brush="MOD/main/building/building.vox" object="part2"/>
-			<voxbox pos="21.3 0.0 12.9" rot="0.0 0.0 0.0" size="50 2 180" brush="MOD/main/building/building.vox" object="part1.5"/>
-			<voxbox pos="-33.7 0.0 -88.1" rot="0.0 0.0 0.0" size="60 2 20" brush="MOD/main/building/building.vox" object="part1.5"/>
-		</body>
+		<vox pos="-2.2 0.0 17.8" rot="0.0 0.0 0.0" file="MOD/main/building/building.vox" object="part1"/>
+		<vox pos="4.3 0.0 30.70001" rot="0.0 0.0 0.0" file="MOD/main/building/building.vox" object="utilitything"/>
+		<voxbox pos="17.4 0.0 -32.0" rot="0.0 0.0 0.0" size="86 2 395" brush="MOD/main/building/building.vox" object="part1.5"/>
+		<voxbox pos="-38.0 0.0 -67.0" rot="0.0 -180.0 0.0" size="120 2 240" brush="MOD/main/building/building.vox" object="part1.5"/>
+		<voxbox pos="9.6 0.0 7.5" rot="0.0 0.0 0.0" size="164 2 205" brush="MOD/main/building/building.vox" object="part1.5"/>
+		<voxbox pos="-15.0 0.0 11.2" rot="0.0 0.0 0.0" size="10 2 20" brush="MOD/main/building/building.vox" object="c"/>
+		<voxbox pos="-17.4 0.0 -23.8" rot="0.0 0.0 0.0" size="34 2 78" brush="MOD/main/building/building.vox" object="half"/>
+		<voxbox pos="-56.6 0.0 -54.0" rot="0.0 0.0 0.0" size="66 2 120" brush="MOD/main/building/building.vox" object="entrance"/>
+		<voxbox pos="-14.0 0.0 -32.0" rot="0.0 0.0 0.0" size="314 2 395" brush="MOD/main/building/building.vox" object="part2"/>
+		<voxbox pos="25.9 0.0 -67.0" rot="0.0 -180.0 0.0" size="399 2 240" brush="MOD/main/building/building.vox" object="part2"/>
+		<voxbox pos="26.0 0.0 -32.0" rot="0.0 180.0 0.0" size="760 2 350" brush="MOD/main/building/building.vox" object="part2"/>
+		<voxbox pos="17.9 0.0 -91.0" rot="0.0 180.0 0.0" size="760 2 350" brush="MOD/main/building/building.vox" object="part2"/>
+		<voxbox pos="26.0 0.0 10.0" rot="0.0 0.0 0.0" size="50 2 180" brush="MOD/main/building/building.vox" object="part1.5"/>
+		<voxbox pos="-29.0 0.0 -91.0" rot="0.0 0.0 0.0" size="60 2 20" brush="MOD/main/building/building.vox" object="part1.5"/>
 	</group>
 	<group name="heightmap" pos="-18.4 -0.8 -18.6" prop0="texture=1 0.45">
 		<voxscript pos="-54.9 -1.1 -73.2" rot="0.0 0.0 0.0" file="MOD/scripts/heightmap.lua">

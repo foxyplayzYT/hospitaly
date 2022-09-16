@@ -1,4 +1,4 @@
-<scene version="1.1.0" shadowVolume="200 50 200">
+<scene version="1.1.0" shadowVolume="250 50 300">
 	<environment template="sunset"/>
 	<script file="main.lua"/>
 	<script file="sandbox.lua"/>
@@ -316,5 +316,15 @@
 		<vox pos="-224.0 -0.8 -189.90009" rot="0.0 90.0 0.0" file="MOD/main/props/nature/border-clusters-redcoated.vox" object="cluster2"/>
 		<vox pos="-223.99995 -0.8 -210.2001" rot="0.0 80.0 0.0" file="MOD/main/props/nature/border-clusters-redcoated.vox" object="cluster3"/>
 	</group>
+	<boundary>
+		<vertex pos="-101.8 -110.6"/>
+		<vertex pos="-72.3 -115.1"/>
+		<vertex pos="-48.8 -105.9"/>
+		<vertex pos="94.7 -100.0"/>
+		<vertex pos="97.7 119.3"/>
+		<vertex pos="95.0 131.10001"/>
+		<vertex pos="55.6 147.90001"/>
+		<vertex pos="-104.9 144.2"/>
+	</boundary>
 </scene>
 

@@ -1,0 +1,484 @@
+<prefab version="1.1.0">
+	<group name="instance=MOD/vehicles/Fire_Department/Fire_Truck_Ladder.xml" pos="0.0 0.0 22.1" rot="0.0 90.0 0.0">
+		<group name="vehicle" pos="0.0 -0.1 -1.0" rot="0.0 0.0 0.0" prop0="strength=2" prop1="texture=6 0.4">
+			<script pos="0.0 0.1 0.9" file="MOD/scripts/EmergencyLights.lua">
+				<script pos="0.0 0.0 -0.0" file="MOD/scripts/VehicleLights.lua">
+					<vehicle name="firetruck" tags="ALS reversebeep forklift emergency" pos="-0.4 2.9 -5.6" rot="0.0 0.0 0.0" sound="semitruck2" spring="0.4" damping="0.25" topspeed="60" acceleration="0.5" strength="5" antispin="0.2" antiroll="0.45" difflock="0.6" steerassist="0.6" friction="1.5">
+						<body name="vehicle body" pos="0.7 -1.15 5.6" rot="0.0 0.0 0.0" dynamic="true">
+							<vox pos="0.1 -1.25 0.05" rot="0.0 180.0 0.0" density="2" strength="5" file="MOD/vehicles/Fire_Department/Fire Truck Ladder.vox" object="body">
+								<light pos="-1.05 0.7 -8.1" rot="0.0 180.0 0.0" type="area" size="0.3 0.2" unshadowed="0.3"/>
+								<light pos="1.15 0.7 -8.1" rot="0.0 180.0 0.0" type="area" size="0.3 0.2" unshadowed="0.3"/>
+								<location name="exhaust" tags="exhaust" pos="0.8 0.0 -6.7" rot="0.0 180.0 0.0"/>
+								<location name="exhaust" tags="exhaust" pos="0.8 0.0 -6.8" rot="0.0 180.0 0.0"/>
+								<location name="player" tags="player" pos="0.8 2.6 5.6" rot="0.0 0.0 0.0"/>
+								<location name="exit" tags="exit" pos="2.7 0.9 5.5" rot="0.0 0.0 0.0"/>
+								<location name="vital" tags="vital" pos="0.05 0.95 6.05" rot="180.0 0.0 180.0"/>
+							</vox>
+							<wheel name="bl" pos="-1.35 -1.0 2.2" drive="1" travel="-0.2 0.2">
+								<vox pos="0.05 -0.75 -0.05" rot="0.0 180.0 0.0" file="MOD/vehicles/Fire_Department/Fire Truck Ladder.vox" object="wheel_bl"/>
+							</wheel>
+							<wheel name="br" pos="1.3 -1.0 2.2" drive="1" travel="-0.2 0.2">
+								<vox pos="0.05 -0.75 -0.05" rot="0.0 180.0 0.0" file="MOD/vehicles/Fire_Department/Fire Truck Ladder.vox" object="wheel_br"/>
+							</wheel>
+							<wheel name="fl" pos="-1.35 -1.0 -4.5" drive="0" steer="1" travel="-0.2 0.2">
+								<vox pos="0.0 -0.75 -0.05" rot="0.0 180.0 0.0" file="MOD/vehicles/Fire_Department/Fire Truck Ladder.vox" object="wheel_fl"/>
+							</wheel>
+							<wheel name="fr" pos="1.45 -1.0 -4.5" drive="0" steer="1" travel="-0.2 0.2">
+								<vox pos="0.1 -0.75 -0.05" rot="0.0 -180.0 0.0" file="MOD/vehicles/Fire_Department/Fire Truck Ladder.vox" object="wheel_fr"/>
+							</wheel>
+							<wheel name="br" pos="1.3 -1.0 4.0" drive="1" travel="-0.2 0.2">
+								<vox pos="0.05 -0.75 -0.05" rot="0.0 180.0 0.0" file="MOD/vehicles/Fire_Department/Fire Truck Ladder.vox" object="wheel_br"/>
+							</wheel>
+							<wheel name="bl" pos="-1.35 -1.0 4.0" drive="1" travel="-0.2 0.2">
+								<vox pos="0.05 -0.75 -0.05" rot="0.0 180.0 0.0" file="MOD/vehicles/Fire_Department/Fire Truck Ladder.vox" object="wheel_bl"/>
+							</wheel>
+							<body name="door" tags="nocull ALSdoor=driver" pos="-1.6 -0.95 -6.1" rot="0.0 0.0 0.0" dynamic="true">
+								<vox pos="0.1 0.1 0.05" rot="0.0 180.0 0.0" density="1.2" strength="2" file="MOD/vehicles/Fire_Department/Fire Truck Ladder.vox" object="dor10">
+									<joint pos="0.1 1.9 0.5" rot="90.0 0.0 0.0" type="hinge" rotstrength="0" rotspring="0" limits="0 70" sound="false"/>
+									<joint pos="0.1 0.4 0.5" rot="90.0 0.0 0.0" type="hinge" rotstrength="0.01" rotspring="0" limits="0 70" sound="false"/>
+								</vox>
+							</body>
+							<body name="door" tags="nocull ALSdoor" pos="1.6 0.65 4.4" rot="0.0 0.0 0.0" dynamic="true">
+								<vox pos="-0.1 -0.4 -0.65" rot="0.0 -180.0 0.0" density="1.2" strength="2" file="MOD/vehicles/Fire_Department/Fire Truck Ladder.vox" object="dor">
+									<joint pos="0.0 0.8 -0.9" rot="180.0 0.0 0.0" type="hinge" rotstrength="0.01" rotspring="0" limits="0 90" sound="false"/>
+									<joint pos="0.0 0.8 0.8" rot="180.0 0.0 0.0" type="hinge" rotstrength="0.01" rotspring="0" limits="0 90" sound="false"/>
+								</vox>
+							</body>
+							<body name="door" tags="nocull ALSdoor" pos="1.6 0.65 2.2" rot="0.0 0.0 0.0" dynamic="true">
+								<vox pos="-0.1 -0.4 -0.65" rot="0.0 -180.0 0.0" density="1.2" strength="2" file="MOD/vehicles/Fire_Department/Fire Truck Ladder.vox" object="dor">
+									<joint pos="0.0 0.8 -0.9" rot="180.0 0.0 0.0" type="hinge" rotstrength="0.01" rotspring="0" limits="0 90" sound="false"/>
+									<joint pos="0.0 0.8 0.8" rot="180.0 0.0 0.0" type="hinge" rotstrength="0.01" rotspring="0" limits="0 90" sound="false"/>
+								</vox>
+							</body>
+							<body name="door" tags="nocull ALSdoor" pos="-1.6 -1.05 -3.0" rot="0.0 0.0 0.0" dynamic="true">
+								<vox pos="0.1 0.1 0.05" rot="0.0 -180.0 0.0" density="1.2" strength="2" file="MOD/vehicles/Fire_Department/Fire Truck Ladder.vox" object="dor8">
+									<joint pos="0.1 0.6 0.5" rot="90.0 0.0 0.0" type="hinge" rotstrength="0.01" rotspring="0" limits="0 90" sound="false"/>
+									<joint pos="0.1 2.3 0.5" rot="90.0 0.0 0.0" type="hinge" rotstrength="0" rotspring="0" limits="0 90" sound="false"/>
+								</vox>
+							</body>
+							<body name="door" tags="nocull ALSdoor" pos="1.6 -1.05 -3.0" rot="0.0 0.0 0.0" dynamic="true">
+								<vox pos="0.0 0.1 0.05" rot="0.0 -180.0 0.0" density="1.2" strength="2" file="MOD/vehicles/Fire_Department/Fire Truck Ladder.vox" object="dor7">
+									<joint pos="0.0 0.6 0.5" rot="-90.0 0.0 0.0" type="hinge" rotstrength="0.01" rotspring="0" limits="0 90" sound="false"/>
+									<joint pos="0.0 2.3 0.5" rot="-90.0 0.0 0.0" type="hinge" rotstrength="0.01" rotspring="0" limits="0 90" sound="false"/>
+								</vox>
+							</body>
+							<body name="door" tags="nocull ALSdoor" pos="1.6 -0.95 -6.1" rot="0.0 0.0 0.0" dynamic="true">
+								<vox pos="0.0 0.1 0.05" rot="0.0 -180.0 0.0" density="1.2" strength="2" file="MOD/vehicles/Fire_Department/Fire Truck Ladder.vox" object="dor9">
+									<joint pos="0.0 0.4 0.5" rot="-90.0 0.0 0.0" type="hinge" rotstrength="0.01" rotspring="0" limits="0 70" sound="false"/>
+									<joint pos="0.0 1.9 0.5" rot="-90.0 0.0 0.0" type="hinge" rotstrength="0.01" rotspring="0" limits="0 70" sound="false"/>
+								</vox>
+							</body>
+							<body name="door" tags="nocull ALSdoor" pos="-1.5 0.65 3.2" rot="0.0 180.0 0.0" dynamic="true">
+								<vox pos="-0.1 -0.4 -0.65" rot="0.0 -180.0 0.0" density="1.2" strength="2" file="MOD/vehicles/Fire_Department/Fire Truck Ladder.vox" object="dor">
+									<joint pos="0.0 0.8 -0.9" rot="180.0 0.0 0.0" type="hinge" rotstrength="0.01" rotspring="0" limits="0 90" sound="false"/>
+									<joint pos="0.0 0.8 0.8" rot="180.0 0.0 0.0" type="hinge" rotstrength="0.01" rotspring="0" limits="0 90" sound="false"/>
+								</vox>
+							</body>
+							<body name="door" tags="nocull ALSdoor" pos="-1.5 0.65 1.0" rot="0.0 180.0 0.0" dynamic="true">
+								<vox pos="-0.1 -0.4 -0.65" rot="0.0 -180.0 0.0" density="1.2" strength="2" file="MOD/vehicles/Fire_Department/Fire Truck Ladder.vox" object="dor">
+									<joint pos="0.0 0.8 -0.9" rot="180.0 0.0 0.0" type="hinge" rotstrength="0.01" rotspring="0" limits="0 90" sound="false"/>
+									<joint pos="0.0 0.8 0.8" rot="180.0 0.0 0.0" type="hinge" rotstrength="0.01" rotspring="0" limits="0 90" sound="false"/>
+								</vox>
+							</body>
+							<body name="door" tags="nocull ALSdoor" pos="-1.5 0.65 -1.85" rot="0.0 180.0 0.0" dynamic="true">
+								<vox pos="0.0 -1.4 -0.7" rot="0.0 0.0 0.0" density="1.2" strength="2" file="MOD/vehicles/Fire_Department/Fire Truck Ladder.vox" object="dor3">
+									<joint pos="0.1 0.3 0.6" rot="90.0 180.0 0.0" type="hinge" rotstrength="0.01" rotspring="0" limits="0 90" sound="false"/>
+									<joint pos="0.1 1.5 0.6" rot="90.0 180.0 0.0" type="hinge" rotstrength="0" rotspring="0" limits="0 90" sound="false"/>
+								</vox>
+							</body>
+							<body name="door" tags="nocull ALSdoor" pos="-1.5 0.65 5.25" rot="0.0 180.0 0.0" dynamic="true">
+								<vox pos="-0.2 -1.4 -0.5" rot="0.0 0.0 0.0" density="1.2" strength="2" file="MOD/vehicles/Fire_Department/Fire Truck Ladder.vox" object="dor2">
+									<joint pos="0.1 0.2 0.4" rot="90.0 180.0 0.0" type="hinge" rotstrength="0.01" rotspring="0" limits="0 90" sound="false"/>
+									<joint pos="0.1 1.0 0.4" rot="90.0 180.0 0.0" type="hinge" rotstrength="0" rotspring="0" limits="0 90" sound="false"/>
+								</vox>
+							</body>
+							<body name="door" tags="nocull ALSdoor" pos="1.4 -0.75 5.65" rot="0.0 180.0 0.0" dynamic="true">
+								<vox pos="-0.1 0.0 -0.1" rot="0.0 0.0 0.0" density="1.2" strength="2" file="MOD/vehicles/Fire_Department/Fire Truck Ladder.vox" object="dor2">
+									<joint pos="0.0 0.2 0.4" rot="-90.0 -180.0 0.0" type="hinge" rotstrength="0.01" rotspring="0" limits="0 90" sound="false"/>
+									<joint pos="0.0 1.0 0.4" rot="-90.0 -180.0 0.0" type="hinge" rotstrength="0" rotspring="0" limits="0 90" sound="false"/>
+								</vox>
+							</body>
+							<body name="door" tags="nocull ALSdoor" pos="1.7 0.65 -1.85" rot="0.0 180.0 0.0" dynamic="true">
+								<vox pos="0.0 -1.4 -0.7" rot="0.0 0.0 0.0" density="1.2" strength="2" file="MOD/vehicles/Fire_Department/Fire Truck Ladder.vox" object="dor3">
+									<joint pos="0.0 0.3 0.6" rot="-90.0 -180.0 0.0" type="hinge" rotstrength="0.01" rotspring="0" limits="0 90" sound="false"/>
+									<joint pos="0.0 1.5 0.6" rot="-90.0 -180.0 0.0" type="hinge" rotstrength="0" rotspring="0" limits="0 90" sound="false"/>
+								</vox>
+							</body>
+							<voxbox name="Horn and siren" tags="ALShorn=0403030201 GF" pos="-0.55 -1.05 -6.65" rot="0.0 0.0 0.0" density="0.5" strength="0.2" size="2 2 1" material="heavymetal"/>
+						</body>
+						<vehicle name="Crane Top" tags="crane passive cranetop" pos="0.65 -0.5 7.6">
+							<body name="motor" pos="0.0 0.0 4.0" dynamic="true">
+								<vox pos="0.15 0.2 0.15" rot="0.0 -180.0 0.0" density="7" file="MOD/vehicles/Fire_Department/Fire Truck Ladder.vox" object="laddersuport">
+									<joint tags="turn" pos="0.0 0.0 -0.2" rot="-90 0 0" type="hinge" size="0.2"/>
+									<location tags="player" pos="0.05 1.9 -0.2"/>
+									<location tags="exit" pos="0.05 1.9 -0.2"/>
+									<location tags="vital" pos="0.1 0.45 -0.5"/>
+								</vox>
+							</body>
+							<body name="ladder" pos="0.1 1.425 1.305" rot="0.6 0.0 0.0" dynamic="true">
+								<vox pos="0.05 -0.4 -4.55" rot="0.0 -180.0 0.0" density="1" strength="3" file="MOD/vehicles/Fire_Department/Fire Truck Ladder.vox" object="ladder">
+									<joint pos="-0.6 0.1 -6.85" rot="180.0 90.0 0.0" type="hinge" limits="1 80"/>
+									<joint pos="0.7 0.1 -6.85" rot="180.0 90.0 0.0" type="hinge" limits="1 80"/>
+								</vox>
+							</body>
+							<body name="ladder" pos="0.1 1.361 -2.195" rot="0.6 0.0 0.0" dynamic="true">
+								<vox pos="0.05 0.4 -1.95" rot="0.0 -180.0 0.0" density="1" strength="3" file="MOD/vehicles/Fire_Department/Fire Truck Ladder.vox" object="ladder2">
+									<joint tags="extend" pos="0.6 0.0 -5.7" rot="0.0 -180.0 0.0" type="prismatic" rotspring="0" limits="-11 0"/>
+									<joint tags="extend" pos="-0.5 0.0 -5.7" rot="0.0 -180.0 0.0" type="prismatic" rotspring="0" limits="-11 0"/>
+								</vox>
+							</body>
+							<body name="ladder" pos="0.1 1.463 -2.394" rot="0.6 0.0 0.0" dynamic="true">
+								<vox pos="0.05 0.4 -1.95" rot="0.0 -180.0 0.0" density="1" strength="3" file="MOD/vehicles/Fire_Department/Fire Truck Ladder.vox" object="ladder3">
+									<joint tags="extend" pos="0.5 0.0 -5.7" rot="0.0 -180.0 0.0" type="prismatic" rotspring="0" limits="-11 0"/>
+									<joint tags="extend" pos="-0.4 0.0 -5.6" rot="0.0 -180.0 0.0" type="prismatic" rotspring="0" limits="-11 0"/>
+								</vox>
+							</body>
+						</vehicle>
+						<body name="suport" pos="1.5 -2.0 5.65" rot="0.0 -90.0 0.0" dynamic="true">
+							<vox pos="-0.0 0.0 0.0" rot="0.0 90.0 0.0" density="20" strength="20" file="MOD/vehicles/Fire_Department/Fire Truck Ladder.vox" object="suport">
+								<joint pos="-0.5 0.7 0.0" rot="0.0 90.0 0.0" type="prismatic" rotspring="0" collide="true" limits="0 0.8"/>
+							</vox>
+						</body>
+						<body name="suport" pos="2.0 -2.2 5.65" rot="0.0 -90.0 0.0" dynamic="true">
+							<vox pos="-0.0 0.0 0.0" rot="0.0 90.0 0.0" density="50" strength="20" file="MOD/vehicles/Fire_Department/Fire Truck Ladder.vox" object="suport2">
+								<joint pos="-0.1 0.9 0.0" rot="90.0 90.0 0.0" type="prismatic" rotspring="0" limits="0 1.1"/>
+							</vox>
+						</body>
+						<body name="suport" pos="-0.8 -2.3 5.65" rot="0.0 90.0 0.0" dynamic="true">
+							<vox pos="0.0 0.1 0.3" rot="0.0 90.0 0.0" density="50" strength="20" file="MOD/vehicles/Fire_Department/Fire Truck Ladder.vox" object="suport2">
+								<joint pos="-0.1 0.9 0.0" rot="-90.0 90.0 0.0" type="prismatic" rotspring="0" limits="0 1.1"/>
+							</vox>
+						</body>
+						<body name="suport" pos="-0.1 -2.0 5.65" rot="0.0 90.0 0.0" dynamic="true">
+							<vox pos="0.0 0.0 0.1" rot="0.0 90.0 0.0" density="20" strength="20" file="MOD/vehicles/Fire_Department/Fire Truck Ladder.vox" object="suport">
+								<joint pos="-0.5 0.7 0.0" rot="0.0 90.0 0.0" type="prismatic" rotspring="0" limits="0 0.8"/>
+							</vox>
+						</body>
+						<body name="suport" pos="2.3 -2.3 12.35" rot="0.0 -90.0 0.0" dynamic="true">
+							<vox pos="0.0 0.1 0.3" rot="0.0 90.0 0.0" density="50" strength="20" file="MOD/vehicles/Fire_Department/Fire Truck Ladder.vox" object="suport2">
+								<joint pos="-0.1 0.9 0.0" rot="-90.0 -90.0 0.0" type="prismatic" rotspring="0" limits="0 1.1"/>
+							</vox>
+						</body>
+						<body name="suport" pos="1.6 -2.0 12.35" rot="0.0 -90.0 0.0" dynamic="true">
+							<vox pos="0.0 0.0 0.1" rot="0.0 90.0 0.0" density="2" strength="20" file="MOD/vehicles/Fire_Department/Fire Truck Ladder.vox" object="suport">
+								<joint pos="-0.5 0.7 0.0" rot="0.0 90.0 0.0" type="prismatic" rotspring="0" collide="true" limits="0 0.8"/>
+							</vox>
+						</body>
+						<body name="suport" pos="-0.1 -2.0 12.35" rot="0.0 90.0 0.0" dynamic="true">
+							<vox pos="0.0 0.0 0.1" rot="0.0 90.0 0.0" density="20" strength="20" file="MOD/vehicles/Fire_Department/Fire Truck Ladder.vox" object="suport">
+								<joint pos="-0.5 0.7 0.0" rot="0.0 90.0 0.0" type="prismatic" rotspring="0" collide="true" limits="0 0.8"/>
+							</vox>
+						</body>
+						<body name="suport" pos="-0.8 -1.5 12.35" rot="0.0 90.0 0.0" dynamic="true">
+							<vox pos="0.0 -0.7 0.3" rot="0.0 90.0 0.0" density="50" strength="20" file="MOD/vehicles/Fire_Department/Fire Truck Ladder.vox" object="suport2">
+								<joint pos="-0.1 0.9 0.0" rot="90.0 90.0 0.0" type="prismatic" rotspring="0" limits="0 1.1"/>
+							</vox>
+						</body>
+						<group name="lights" pos="0.8 -2.15 5.5" rot="0.0 0.0 0.0">
+							<group name="FAROL FRENTE" pos="0.0 -0.05 -8.05" rot="0.0 180.0 0.0">
+								<vox name="FAROL NORMAL" tags="ALSlight=FFN_E type=2 nocull" pos="1.2 0.6 -0.2" rot="0.0 0.0 0.0" density="1.2" prop="true" file="MOD/vehicles/Fire_Department/Fire Truck Ladder.vox" object="lfl-m">
+									<light name="Front light E" pos="0.05 0.1 0.0" rot="0.0 0.0 0.0" type="cone" color="1 .9 .8" scale="20" angle="90" penumbra="30" size="0.1" reach="100" unshadowed="0.2" fogscale="0" fogiter="0" glare="0.3"/>
+								</vox>
+								<vox name="FAROL NORMAL" tags="ALSlight=FFN_D type=2 nocull" pos="-1.2 0.6 -0.2" rot="0.0 0.0 0.0" density="1.2" prop="true" file="MOD/vehicles/Fire_Department/Fire Truck Ladder.vox" object="lfr-m">
+									<light name="Front light D" pos="0.05 0.1 0.0" rot="0.0 0.0 0.0" type="cone" color="1 .9 .8" scale="20" angle="90" penumbra="30" size="0.1" reach="100" unshadowed="0.2" fogscale="0" fogiter="0" glare="0.3"/>
+								</vox>
+								<vox name="FAROL ALTO/EMERGENCIA ESQUERDO" tags="ALSlight=FFA_E nocull" pos="0.9 0.6 -0.2" rot="0.0 0.0 0.0" density="1.2" prop="true" file="MOD/vehicles/Fire_Department/Fire Truck Ladder.vox" object="lfl-m">
+									<light name="Front light D" pos="0.05 0.1 0.0" rot="0.0 0.0 0.0" type="cone" color="1 .9 .8" scale="200" angle="90" penumbra="30" size="0.1" reach="200" unshadowed="0.2" fogscale="0" fogiter="0" glare="0.5"/>
+								</vox>
+								<vox name="FAROL ALTO/EMERGENCIA DIREITO" tags="ALSlight=FFA_D nocull" pos="-0.9 0.6 -0.2" rot="0.0 0.0 0.0" density="1.2" prop="true" file="MOD/vehicles/Fire_Department/Fire Truck Ladder.vox" object="lfr-m">
+									<light name="Front light D" pos="0.05 0.1 0.0" rot="0.0 0.0 0.0" type="cone" color="1 .9 .8" scale="200" angle="90" penumbra="30" size="0.1" reach="200" unshadowed="0.2" fogscale="0" fogiter="0" glare="0.5"/>
+								</vox>
+								<vox name="FAROL DE MILHA DIREITO" tags="ALSlight=FDM_D type=1 nocull" pos="-1.1 0.0 0.3" rot="0.0 0.0 0.0" density="1.2" prop="true" file="MOD/vehicles/Fire_Department/Fire Truck Ladder.vox" object="highlights">
+									<light name="Front light D" pos="0.0 0.1 0.0" rot="0.0 0.0 0.0" type="cone" color="1 .9 .8" scale="20" angle="90" penumbra="30" size="0.1" reach="100" unshadowed="0.2" fogscale="0.1" glare="0.1"/>
+								</vox>
+								<vox name="FAROL DE MILHA ESQUEDO" tags="ALSlight=FDM_E type=1 nocull" pos="1.2 0.0 0.3" rot="0.0 0.0 0.0" density="1.2" prop="true" file="MOD/vehicles/Fire_Department/Fire Truck Ladder.vox" object="highlights2">
+									<light name="Front light D" pos="0.0 0.1 0.0" rot="0.0 0.0 0.0" type="cone" color="1 .9 .8" scale="20" angle="90" penumbra="30" size="0.1" reach="100" unshadowed="0.2" fogscale="0.1" glare="0.1"/>
+								</vox>
+							</group>
+							<group name="FRENTE EMERGENCIA" pos="0.0 1.15 -7.9" rot="0.0 0.0 0.0">
+								<vox name="FRENTE EMERGENCIA D1" tags="ALSem=FTE_D1 nocull" pos="1.2 0.0 0.05" rot="0.0 180.0 0.0" density="1.2" prop="true" file="MOD/vehicles/Fire_Department/Fire Truck Ladder.vox" object="FD">
+									<light pos="0.05 0.05 -0.05" type="cone" color="1.0 0.0 0.0" angle="120" penumbra="30" size="0.05" unshadowed="0.2" fogscale="0" fogiter="0" glare="0.2"/>
+								</vox>
+								<vox name="FRENTE EMERGENCIA D2" tags="ALSem=FTE_D2 nocull" pos="1.0 0.2 0.05" rot="0.0 180.0 0.0" density="1.2" prop="true" file="MOD/vehicles/Fire_Department/Fire Truck Ladder.vox" object="FE">
+									<light pos="0.05 0.05 -0.05" type="cone" color="0.0 0.0 1.0" angle="120" penumbra="30" size="0.05" unshadowed="0.2" fogscale="0" fogiter="0" glare="0.2"/>
+								</vox>
+								<vox name="FRENTE EMERGENCIA E2" tags="ALSem=FTE_E2 nocull" pos="-1.0 0.2 0.05" rot="0.0 180.0 0.0" density="1.2" prop="true" file="MOD/vehicles/Fire_Department/Fire Truck Ladder.vox" object="FE">
+									<light pos="0.05 0.05 -0.05" type="cone" color="0.0 0.0 1.0" angle="120" penumbra="30" size="0.05" unshadowed="0.2" fogscale="0" fogiter="0" glare="0.2"/>
+								</vox>
+								<vox name="FRENTE EMERGENCIA E1" tags="ALSem=FTE_E1 nocull" pos="-1.2 0.0 0.05" rot="0.0 180.0 0.0" density="1.2" prop="true" file="MOD/vehicles/Fire_Department/Fire Truck Ladder.vox" object="FD">
+									<light pos="0.05 0.05 -0.05" type="cone" color="1.0 0.0 0.0" angle="120" penumbra="30" size="0.05" unshadowed="0.2" fogscale="0" fogiter="0" glare="0.2"/>
+								</vox>
+								<vox name="FRENTE EMERGENCIA GIROFLEX" tags="ALSem=GFE nocull" pos="0.0 0.3 -0.15" rot="0.0 180.0 0.0" density="1.2" prop="true" file="MOD/vehicles/Fire_Department/Fire Truck Ladder.vox" object="spin">
+									<light pos="-0.15 0.05 0.05" rot="0.0 0.0 0.0" type="cone" color="1.0 1.0 1.0" angle="120" size="0.05" reach="10" fogscale="0" fogiter="0" glare="0.1"/>
+									<light pos="0.25 0.05 0.05" rot="0.0 0.0 0.0" type="cone" color="1.0 0.0 0.0" angle="120" size="0.05" reach="10" fogscale="0" fogiter="0" glare="0.1"/>
+									<joint tags="giroflex=20" pos="0.05 0.05 -0.2" rot="0.0 0.0 0.0" type="hinge" rotstrength="0.00005" rotspring="0" sound="false"/>
+								</vox>
+								<vox name="FRENTE EMERGENCIA GIROFLEX" tags="ALSem=GFE nocull" pos="-1.1 0.7 15.6" rot="0.0 -360.0 90.0" density="1.2" prop="true" file="MOD/vehicles/Fire_Department/Fire Truck Ladder.vox" object="RD">
+									<light pos="0.05 0.1 0.0" rot="0.0 0.0 0.0" type="cone" color="1.0 0.0 0.0" angle="120" size="0.05" reach="15" fogscale="0" glare="0.1"/>
+									<joint tags="giroflex=10" pos="0.0 0.1 0.0" rot="0.0 90.0 0.0" type="hinge" rotstrength="0.00005" rotspring="0" sound="false"/>
+								</vox>
+								<vox name="FRENTE EMERGENCIA GIROFLEX" tags="ALSem=GFE nocull" pos="1.0 0.8 15.6" rot="0.0 0.0 -90.0" density="1.2" prop="true" file="MOD/vehicles/Fire_Department/Fire Truck Ladder.vox" object="RD">
+									<light pos="0.05 0.1 0.0" rot="0.0 0.0 0.0" type="cone" color="1.0 0.0 0.0" angle="120" size="0.05" reach="15" fogscale="0" glare="0.1"/>
+									<joint tags="giroflex=10" pos="0.1 0.1 0.0" rot="0.0 90.0 0.0" type="hinge" rotstrength="0.00005" rotspring="0" sound="false"/>
+								</vox>
+							</group>
+							<group name="LADO EMERGENCIA" pos="0.0 2.35 -3.6" rot="0.0 0.0 0.0">
+								<vox name="LADO D1" tags="ALSem=LDE_D1 nocull" pos="1.7 0.0 -1.55" rot="0.0 180.0 0.0" density="1.2" prop="true" file="MOD/vehicles/Fire_Department/Fire Truck Ladder.vox" object="RE">
+									<light pos="0.05 0.1 0.0" rot="0.0 -90.0 0.0" type="cone" color="1.0 0.0 0.0" scale="2" angle="220" penumbra="30" size="0.05" reach="100" unshadowed="1" fogscale="0" fogiter="0" glare="0.2"/>
+								</vox>
+								<vox name="LADO D2" tags="ALSem=LDE_D2 nocull" pos="1.5 -0.4 3.85" rot="0.0 180.0 0.0" density="1.2" prop="true" file="MOD/vehicles/Fire_Department/Fire Truck Ladder.vox" object="RE">
+									<light pos="0.05 0.1 0.0" rot="0.0 -90.0 0.0" type="cone" color="1.0 0.0 0.0" scale="2" angle="220" penumbra="30" size="0.05" reach="100" unshadowed="1" fogscale="0" fogiter="0" glare="0.2"/>
+								</vox>
+								<vox name="LADO D3" tags="ALSem=LDE_D3 nocull" pos="1.5 -1.1 11.25" rot="0.0 180.0 0.0" density="1.2" prop="true" file="MOD/vehicles/Fire_Department/Fire Truck Ladder.vox" object="RE">
+									<light pos="0.05 0.1 0.0" rot="0.0 -90.0 0.0" type="cone" color="1.0 0.0 0.0" scale="2" angle="220" penumbra="30" size="0.05" reach="100" unshadowed="1" fogscale="0" fogiter="0" glare="0.2"/>
+								</vox>
+								<vox name="LADO D4" tags="ALSem=LDE_D4 nocull" pos="1.7 0.0 1.55" rot="0.0 180.0 0.0" density="1.2" prop="true" file="MOD/vehicles/Fire_Department/Fire Truck Ladder.vox" object="RTD">
+									<light pos="0.05 0.1 0.0" rot="0.0 -90.0 0.0" type="cone" color="1.0 0.0 0.0" scale="2" angle="220" penumbra="30" size="0.05" reach="100" unshadowed="1" fogscale="0" fogiter="0" glare="0.2"/>
+								</vox>
+								<vox name="LADO E1" tags="ALSem=LDE_E1 nocull" pos="-1.7 0.0 -1.55" rot="0.0 180.0 0.0" density="1.2" prop="true" file="MOD/vehicles/Fire_Department/Fire Truck Ladder.vox" object="RTE">
+									<light pos="0.05 0.1 0.0" rot="0.0 90.0 0.0" type="cone" color="1.0 0.0 0.0" scale="2" angle="220" penumbra="30" size="0.05" reach="100" unshadowed="1" fogscale="0" fogiter="0" glare="0.2"/>
+								</vox>
+								<vox name="LADO E2" tags="ALSem=LDE_E2 nocull" pos="-1.5 -0.4 3.85" rot="0.0 -180.0 0.0" density="1.2" prop="true" file="MOD/vehicles/Fire_Department/Fire Truck Ladder.vox" object="RTE">
+									<light pos="0.05 0.1 0.0" rot="0.0 90.0 0.0" type="cone" color="1.0 0.0 0.0" scale="2" angle="220" penumbra="30" size="0.05" reach="100" unshadowed="1" fogscale="0" fogiter="0" glare="0.2"/>
+								</vox>
+								<vox name="LADO E3" tags="ALSem=LDE_E3 nocull" pos="-1.5 -1.1 11.25" rot="0.0 -180.0 0.0" density="1.2" prop="true" file="MOD/vehicles/Fire_Department/Fire Truck Ladder.vox" object="RTE">
+									<light pos="0.05 0.1 0.0" rot="0.0 90.0 0.0" type="cone" color="1.0 0.0 0.0" scale="2" angle="220" penumbra="30" size="0.05" reach="100" unshadowed="1" fogscale="0" fogiter="0" glare="0.2"/>
+								</vox>
+								<vox name="LADO E4" tags="ALSem=LDE_E4 nocull" pos="-1.7 0.0 1.55" rot="0.0 180.0 0.0" density="1.2" prop="true" file="MOD/vehicles/Fire_Department/Fire Truck Ladder.vox" object="RD">
+									<light pos="0.05 0.1 0.0" rot="0.0 90.0 0.0" type="cone" color="1.0 0.0 0.0" scale="2" angle="220" penumbra="30" size="0.05" reach="100" unshadowed="1" fogscale="0" fogiter="0" glare="0.2"/>
+								</vox>
+							</group>
+							<group name="CIMA PRIMARIO" pos="0.0 3.05 -6.8" rot="0.0 0.0 0.0">
+								<vox name="CIMA E1" tags="ALSem=CME_E1 nocull" pos="-1.4 0.0 0.15" rot="0.0 180.0 0.0" density="1.2" prop="true" file="MOD/vehicles/Fire_Department/Fire Truck Ladder.vox" object="TD">
+									<light pos="0.0 0.15 0.0" rot="-90.0 -90.0 0.0" color="1.0 0.0 0.0" scale="10" angle="220" penumbra="30" size="0.1" reach="0.1" unshadowed="0" fogscale="0" fogiter="0" glare="0.3"/>
+									<light pos="0.0 0.1 0.0" rot="-90.0 -90.0 0.0" type="cone" color="1.0 0.0 0.0" scale="10" angle="220" penumbra="30" size="0.1" reach="100" unshadowed="0" fogscale="0" fogiter="0"/>
+								</vox>
+								<vox name="CIMA E2" tags="ALSem=CME_E2 nocull" pos="-1.2 0.0 0.05" rot="0.0 180.0 0.0" density="1.2" prop="true" file="MOD/vehicles/Fire_Department/Fire Truck Ladder.vox" object="TE">
+									<light pos="0.0 0.15 0.0" rot="-90.0 -90.0 0.0" color="1.0 0.0 0.0" scale="10" angle="220" penumbra="30" size="0.1" reach="0.1" unshadowed="0" fogscale="0" fogiter="0" glare="0.3"/>
+									<light pos="0.0 0.1 0.0" rot="-90.0 -90.0 0.0" type="cone" color="1.0 0.0 0.0" scale="10" angle="220" penumbra="30" size="0.1" reach="100" unshadowed="0" fogscale="0" fogiter="0"/>
+								</vox>
+								<vox name="CIMA E3" tags="ALSem=CME_E3 nocull" pos="-1.0 0.0 -0.05" rot="0.0 -180.0 0.0" density="1.2" prop="true" file="MOD/vehicles/Fire_Department/Fire Truck Ladder.vox" object="TD">
+									<light pos="0.0 0.15 0.0" rot="-90.0 -90.0 0.0" color="1.0 0.0 0.0" scale="10" angle="220" penumbra="30" size="0.1" reach="0.1" unshadowed="0" fogscale="0" fogiter="0" glare="0.3"/>
+									<light pos="0.0 0.1 0.0" rot="-90.0 -90.0 0.0" type="cone" color="1.0 0.0 0.0" scale="10" angle="220" penumbra="30" size="0.1" reach="100" unshadowed="0" fogscale="0" fogiter="0"/>
+								</vox>
+								<vox name="CIMA E4" tags="ALSem=CME_E4 nocull" pos="-0.8 0.0 -0.15" rot="0.0 -180.0 0.0" density="1.2" prop="true" file="MOD/vehicles/Fire_Department/Fire Truck Ladder.vox" object="TEW">
+									<light pos="0.0 0.15 0.0" rot="-90.0 -90.0 0.0" color="1.0 1.0 1.0" scale="10" angle="220" penumbra="30" size="0.1" reach="0.1" unshadowed="0" fogscale="0" fogiter="0" glare="0.3"/>
+									<light pos="0.0 0.1 0.0" rot="-90.0 -90.0 0.0" type="cone" color="1.0 1.0 1.0" scale="10" angle="220" penumbra="30" size="0.1" reach="100" unshadowed="0" fogscale="0" fogiter="0"/>
+								</vox>
+								<vox name="CIMA E5" tags="ALSem=CME_E5 nocull" pos="-0.6 0.0 -0.25" rot="0.0 -180.0 0.0" density="1.2" prop="true" file="MOD/vehicles/Fire_Department/Fire Truck Ladder.vox" object="TE">
+									<light pos="0.0 0.15 0.0" rot="-90.0 -90.0 0.0" color="1.0 0.0 0.0" scale="10" angle="220" penumbra="30" size="0.1" reach="0.1" unshadowed="0" fogscale="0" fogiter="0" glare="0.3"/>
+									<light pos="0.0 0.1 0.0" rot="-90.0 -90.0 0.0" type="cone" color="1.0 0.0 0.0" scale="10" angle="220" penumbra="30" size="0.1" reach="100" unshadowed="0" fogscale="0" fogiter="0"/>
+								</vox>
+								<vox name="CIMA D1" tags="ALSem=CME_D1 nocull" pos="1.3 0.0 0.15" rot="0.0 180.0 0.0" density="1.2" prop="true" file="MOD/vehicles/Fire_Department/Fire Truck Ladder.vox" object="TD">
+									<light pos="0.0 0.15 0.0" rot="-90.0 -90.0 0.0" color="1.0 0.0 0.0" scale="10" angle="220" penumbra="30" size="0.1" reach="0.1" unshadowed="0" fogscale="0" fogiter="0" glare="0.3"/>
+									<light pos="0.0 0.1 0.0" rot="-90.0 -90.0 0.0" type="cone" color="1.0 0.0 0.0" scale="10" angle="220" penumbra="30" size="0.1" reach="100" unshadowed="0" fogscale="0" fogiter="0"/>
+								</vox>
+								<vox name="CIMA D2" tags="ALSem=CME_D2 nocull" pos="1.1 0.0 0.05" rot="0.0 180.0 0.0" density="1.2" prop="true" file="MOD/vehicles/Fire_Department/Fire Truck Ladder.vox" object="TE">
+									<light pos="0.0 0.15 0.0" rot="-90.0 -90.0 0.0" color="1.0 0.0 0.0" scale="10" angle="220" penumbra="30" size="0.1" reach="0.1" unshadowed="0" fogscale="0" fogiter="0" glare="0.3"/>
+									<light pos="0.0 0.1 0.0" rot="-90.0 -90.0 0.0" type="cone" color="1.0 0.0 0.0" scale="10" angle="220" penumbra="30" size="0.1" reach="100" unshadowed="0" fogscale="0" fogiter="0"/>
+								</vox>
+								<vox name="CIMA D3" tags="ALSem=CME_D3 nocull" pos="0.9 0.0 -0.05" rot="0.0 180.0 0.0" density="1.2" prop="true" file="MOD/vehicles/Fire_Department/Fire Truck Ladder.vox" object="TD">
+									<light pos="0.0 0.15 0.0" rot="-90.0 -90.0 0.0" color="1.0 0.0 0.0" scale="10" angle="220" penumbra="30" size="0.1" reach="0.1" unshadowed="0" fogscale="0" fogiter="0" glare="0.3"/>
+									<light pos="0.0 0.1 0.0" rot="-90.0 -90.0 0.0" type="cone" color="1.0 0.0 0.0" scale="10" angle="220" penumbra="30" size="0.1" reach="100" unshadowed="0" fogscale="0" fogiter="0"/>
+								</vox>
+								<vox name="CIMA D4" tags="ALSem=CME_D4 nocull" pos="0.7 0.0 -0.15" rot="0.0 -180.0 0.0" density="1.2" prop="true" file="MOD/vehicles/Fire_Department/Fire Truck Ladder.vox" object="TEW">
+									<light pos="0.0 0.15 0.0" rot="-90.0 -90.0 0.0" color="1.0 1.0 1.0" scale="10" angle="220" penumbra="30" size="0.1" reach="0.1" unshadowed="0" fogscale="0" fogiter="0" glare="0.3"/>
+									<light pos="0.0 0.1 0.0" rot="-90.0 -90.0 0.0" type="cone" color="1.0 1.0 1.0" scale="10" angle="220" penumbra="30" size="0.1" reach="100" unshadowed="0" fogscale="0" fogiter="0"/>
+								</vox>
+								<vox name="CIMA D5" tags="ALSem=CME_D5 nocull" pos="0.5 0.0 -0.25" rot="0.0 -180.0 0.0" density="1.2" prop="true" file="MOD/vehicles/Fire_Department/Fire Truck Ladder.vox" object="TE">
+									<light pos="0.0 0.15 0.0" rot="-90.0 -90.0 0.0" color="1.0 0.0 0.0" scale="10" angle="220" penumbra="30" size="0.1" reach="0.1" unshadowed="0" fogscale="0" fogiter="0" glare="0.3"/>
+									<light pos="0.0 0.1 0.0" rot="-90.0 -90.0 0.0" type="cone" color="1.0 0.0 0.0" scale="10" angle="220" penumbra="30" size="0.1" reach="100" unshadowed="0" fogscale="0" fogiter="0"/>
+								</vox>
+							</group>
+							<group name="CIMA SECUNDARIO" pos="-1.3 3.05 -5.05" rot="0.0 -180.0 0.0">
+								<vox name="CIMA SECUNDARIO E1" tags="ALSem=C2E_E1 nocull" pos="-0.2 0.0 0.7" rot="0.0 -90.0 0.0" density="1.2" prop="true" file="MOD/vehicles/Fire_Department/Fire Truck Ladder.vox" object="TDS">
+									<light pos="0.05 0.15 0.0" rot="-90.0 -90.0 0.0" color="1.0 0.0 0.0" scale="10" angle="220" penumbra="30" size="0.1" reach="0.1" unshadowed="0" fogscale="0" fogiter="0" glare="0.3"/>
+									<light pos="0.05 0.1 0.0" rot="-90.0 -90.0 0.0" type="cone" color="1.0 0.0 0.0" scale="10" angle="220" penumbra="30" size="0.1" reach="100" unshadowed="0" fogscale="0" fogiter="0"/>
+								</vox>
+								<vox name="CIMA SECUNDARIO E2" tags="ALSem=C2E_E2 nocull" pos="0.0 0.0 0.55" rot="0.0 -90.0 0.0" density="1.2" prop="true" file="MOD/vehicles/Fire_Department/Fire Truck Ladder.vox" object="TDS">
+									<light pos="0.05 0.15 0.0" rot="-90.0 -90.0 0.0" color="1.0 0.0 0.0" scale="10" angle="220" penumbra="30" size="0.1" reach="0.1" unshadowed="0" fogscale="0" fogiter="0" glare="0.3"/>
+									<light pos="0.05 0.1 0.0" rot="-90.0 -90.0 0.0" type="cone" color="1.0 0.0 0.0" scale="10" angle="220" penumbra="30" size="0.1" reach="100" unshadowed="0" fogscale="0" fogiter="0"/>
+								</vox>
+								<vox name="CIMA SECUNDARIO E3" tags="ALSem=C2E_E3 nocull" pos="0.2 0.0 0.4" rot="0.0 -90.0 0.0" density="1.2" prop="true" file="MOD/vehicles/Fire_Department/Fire Truck Ladder.vox" object="TDS">
+									<light pos="0.05 0.15 0.0" rot="-90.0 -90.0 0.0" color="1.0 0.0 0.0" scale="10" angle="220" penumbra="30" size="0.1" reach="0.1" unshadowed="0" fogscale="0" fogiter="0" glare="0.3"/>
+									<light pos="0.05 0.1 0.0" rot="-90.0 -90.0 0.0" type="cone" color="1.0 0.0 0.0" scale="10" angle="220" penumbra="30" size="0.1" reach="100" unshadowed="0" fogscale="0" fogiter="0"/>
+								</vox>
+								<vox name="CIMA SECUNDARIO D1" tags="ALSem=C2E_D1 nocull" pos="-0.2 0.0 -0.7" rot="0.0 90.0 0.0" density="1.2" prop="true" file="MOD/vehicles/Fire_Department/Fire Truck Ladder.vox" object="TDS">
+									<light pos="0.05 0.15 0.0" rot="-90.0 -90.0 0.0" color="1.0 0.0 0.0" scale="10" angle="220" penumbra="30" size="0.1" reach="0.1" unshadowed="0" fogscale="0" fogiter="0" glare="0.3"/>
+									<light pos="0.05 0.1 0.0" rot="-90.0 -90.0 0.0" type="cone" color="1.0 0.0 0.0" scale="10" angle="220" penumbra="30" size="0.1" reach="100" unshadowed="0" fogscale="0" fogiter="0"/>
+								</vox>
+								<vox name="CIMA SECUNDARIO D2" tags="ALSem=C2E_D2 nocull" pos="0.0 0.0 -0.55" rot="0.0 90.0 0.0" density="1.2" prop="true" file="MOD/vehicles/Fire_Department/Fire Truck Ladder.vox" object="TDS">
+									<light pos="0.05 0.15 0.0" rot="-90.0 -90.0 0.0" color="1.0 0.0 0.0" scale="10" angle="220" penumbra="30" size="0.1" reach="0.1" unshadowed="0" fogscale="0" fogiter="0" glare="0.3"/>
+									<light pos="0.05 0.1 0.0" rot="-90.0 -90.0 0.0" type="cone" color="1.0 0.0 0.0" scale="10" angle="220" penumbra="30" size="0.1" reach="100" unshadowed="0" fogscale="0" fogiter="0"/>
+								</vox>
+								<vox name="CIMA SECUNDARIO D3" tags="ALSem=C2E_D3 nocull" pos="0.2 0.0 -0.4" rot="0.0 90.0 0.0" density="1.2" prop="true" file="MOD/vehicles/Fire_Department/Fire Truck Ladder.vox" object="TDS">
+									<light pos="0.05 0.15 0.0" rot="-90.0 -90.0 0.0" color="1.0 0.0 0.0" scale="10" angle="220" penumbra="30" size="0.1" reach="0.1" unshadowed="0" fogscale="0" fogiter="0" glare="0.3"/>
+									<light pos="0.05 0.1 0.0" rot="-90.0 -90.0 0.0" type="cone" color="1.0 0.0 0.0" scale="10" angle="220" penumbra="30" size="0.1" reach="100" unshadowed="0" fogscale="0" fogiter="0"/>
+								</vox>
+							</group>
+							<group name="CIMA SECUNDARIO" pos="1.2 3.05 -5.05" rot="0.0 0.0 0.0">
+								<vox name="CIMA SECUNDARIO E1" tags="ALSem=C2E_E1 nocull" pos="-0.2 0.0 0.7" rot="0.0 -90.0 0.0" density="1.2" prop="true" file="MOD/vehicles/Fire_Department/Fire Truck Ladder.vox" object="TDS">
+									<light pos="0.05 0.15 0.0" rot="-90.0 -90.0 0.0" color="1.0 0.0 0.0" scale="10" angle="220" penumbra="30" size="0.1" reach="0.1" unshadowed="0" fogscale="0" fogiter="0" glare="0.3"/>
+									<light pos="0.05 0.1 0.0" rot="-90.0 -90.0 0.0" type="cone" color="1.0 0.0 0.0" scale="10" angle="220" penumbra="30" size="0.1" reach="100" unshadowed="0" fogscale="0" fogiter="0"/>
+								</vox>
+								<vox name="CIMA SECUNDARIO E2" tags="ALSem=C2E_E2 nocull" pos="0.0 0.0 0.55" rot="0.0 -90.0 0.0" density="1.2" prop="true" file="MOD/vehicles/Fire_Department/Fire Truck Ladder.vox" object="TDS">
+									<light pos="0.05 0.15 0.0" rot="-90.0 -90.0 0.0" color="1.0 0.0 0.0" scale="10" angle="220" penumbra="30" size="0.1" reach="0.1" unshadowed="0" fogscale="0" fogiter="0" glare="0.3"/>
+									<light pos="0.05 0.1 0.0" rot="-90.0 -90.0 0.0" type="cone" color="1.0 0.0 0.0" scale="10" angle="220" penumbra="30" size="0.1" reach="100" unshadowed="0" fogscale="0" fogiter="0"/>
+								</vox>
+								<vox name="CIMA SECUNDARIO E3" tags="ALSem=C2E_E3 nocull" pos="0.2 0.0 0.4" rot="0.0 -90.0 0.0" density="1.2" prop="true" file="MOD/vehicles/Fire_Department/Fire Truck Ladder.vox" object="TDS">
+									<light pos="0.05 0.15 0.0" rot="-90.0 -90.0 0.0" color="1.0 0.0 0.0" scale="10" angle="220" penumbra="30" size="0.1" reach="0.1" unshadowed="0" fogscale="0" fogiter="0" glare="0.3"/>
+									<light pos="0.05 0.1 0.0" rot="-90.0 -90.0 0.0" type="cone" color="1.0 0.0 0.0" scale="10" angle="220" penumbra="30" size="0.1" reach="100" unshadowed="0" fogscale="0" fogiter="0"/>
+								</vox>
+								<vox name="CIMA SECUNDARIO D1" tags="ALSem=C2E_D1 nocull" pos="-0.2 0.0 -0.7" rot="0.0 90.0 0.0" density="1.2" prop="true" file="MOD/vehicles/Fire_Department/Fire Truck Ladder.vox" object="TDS">
+									<light pos="0.05 0.15 0.0" rot="-90.0 -90.0 0.0" color="1.0 0.0 0.0" scale="10" angle="220" penumbra="30" size="0.1" reach="0.1" unshadowed="0" fogscale="0" fogiter="0" glare="0.3"/>
+									<light pos="0.05 0.1 0.0" rot="-90.0 -90.0 0.0" type="cone" color="1.0 0.0 0.0" scale="10" angle="220" penumbra="30" size="0.1" reach="100" unshadowed="0" fogscale="0" fogiter="0"/>
+								</vox>
+								<vox name="CIMA SECUNDARIO D2" tags="ALSem=C2E_D2 nocull" pos="0.0 0.0 -0.55" rot="0.0 90.0 0.0" density="1.2" prop="true" file="MOD/vehicles/Fire_Department/Fire Truck Ladder.vox" object="TDS">
+									<light pos="0.05 0.15 0.0" rot="-90.0 -90.0 0.0" color="1.0 0.0 0.0" scale="10" angle="220" penumbra="30" size="0.1" reach="0.1" unshadowed="0" fogscale="0" fogiter="0" glare="0.3"/>
+									<light pos="0.05 0.1 0.0" rot="-90.0 -90.0 0.0" type="cone" color="1.0 0.0 0.0" scale="10" angle="220" penumbra="30" size="0.1" reach="100" unshadowed="0" fogscale="0" fogiter="0"/>
+								</vox>
+								<vox name="CIMA SECUNDARIO D3" tags="ALSem=C2E_D3 nocull" pos="0.2 0.0 -0.4" rot="0.0 90.0 0.0" density="1.2" prop="true" file="MOD/vehicles/Fire_Department/Fire Truck Ladder.vox" object="TDS">
+									<light pos="0.05 0.15 0.0" rot="-90.0 -90.0 0.0" color="1.0 0.0 0.0" scale="10" angle="220" penumbra="30" size="0.1" reach="0.1" unshadowed="0" fogscale="0" fogiter="0" glare="0.3"/>
+									<light pos="0.05 0.1 0.0" rot="-90.0 -90.0 0.0" type="cone" color="1.0 0.0 0.0" scale="10" angle="220" penumbra="30" size="0.1" reach="100" unshadowed="0" fogscale="0" fogiter="0"/>
+								</vox>
+							</group>
+							<group name="TRAZ EMERGENCIA" pos="-0.1 1.75 8.1" rot="0.0 0.0 0.0">
+								<vox name="TRAZ EMERGENCIA E1" tags="ALSem=TZE_E1 nocull" pos="-0.9 0.0 -0.05" rot="0.0 180.0 0.0" density="1.2" prop="true" file="MOD/vehicles/Fire_Department/Fire Truck Ladder.vox" object="TE2">
+									<light pos="0.0 0.05 -0.1" rot="0.0 180.0 0.0" type="cone" color="1.0 0.0 0.0" angle="180" penumbra="30" size="0.05" unshadowed="0.2" fogscale="0.2" glare="0.2"/>
+								</vox>
+								<vox name="TRAZ EMERGENCIA E2" tags="ALSem=TZE_E2 nocull" pos="-0.7 0.0 -0.05" rot="0.0 180.0 0.0" density="1.2" prop="true" file="MOD/vehicles/Fire_Department/Fire Truck Ladder.vox" object="TD2">
+									<light pos="0.0 0.05 -0.1" rot="0.0 -180.0 0.0" type="cone" color="0.0 0.0 1.0" angle="180" penumbra="30" size="0.05" unshadowed="0.2" fogscale="0.2" glare="0.2"/>
+								</vox>
+								<vox name="TRAZ EMERGENCIA D1" tags="ALSem=TZE_D1 nocull" pos="1.0 0.0 -0.05" rot="0.0 180.0 0.0" density="1.2" prop="true" file="MOD/vehicles/Fire_Department/Fire Truck Ladder.vox" object="TE2">
+									<light pos="0.0 0.05 -0.1" rot="0.0 180.0 0.0" type="cone" color="1.0 0.0 0.0" angle="180" penumbra="30" size="0.05" unshadowed="0.2" fogscale="0.2" glare="0.2"/>
+								</vox>
+								<vox name="TRAZ EMERGENCIA D2" tags="ALSem=TZE_D2 nocull" pos="0.8 0.0 -0.05" rot="0.0 180.0 0.0" density="1.2" prop="true" file="MOD/vehicles/Fire_Department/Fire Truck Ladder.vox" object="TD2">
+									<light pos="0.0 0.05 -0.1" rot="0.0 -180.0 0.0" type="cone" color="0.0 0.0 1.0" angle="180" penumbra="30" size="0.05" unshadowed="0.2" fogscale="0.2" glare="0.2"/>
+								</vox>
+							</group>
+							<group name="FAROL TRAZ" pos="0.0 0.65 8.15" rot="0.0 180.0 0.0">
+								<vox name="LANTERNA TRAZEIRA ESQUERDO" tags="ALSlight=LTN_E type=1 nocull" pos="1.1 0.5 0.0" rot="0.0 0.0 0.0" density="1.2" prop="true" file="MOD/vehicles/Fire_Department/Fire Truck Ladder.vox" object="lfl-mr">
+									<light name="rear light D" pos="0.05 0.1 -0.1" rot="0.0 -180.0 0.0" type="area" color="1 .1 .1" scale="2" size="0.3 0.2" reach="100" unshadowed="0.3" fogscale="0.1" glare="0.1"/>
+								</vox>
+								<vox name="LANTERNA TRAZEIRA DIREITO" tags="ALSlight=LTN_D type=1 nocull" pos="-1.1 0.5 0.0" rot="0.0 0.0 0.0" density="1.2" prop="true" file="MOD/vehicles/Fire_Department/Fire Truck Ladder.vox" object="lfl-ml">
+									<light name="rear light D" pos="0.05 0.1 -0.1" rot="0.0 -180.0 0.0" type="area" color="1 .1 .1" scale="2" size="0.3 0.2" reach="100" unshadowed="0.3" fogscale="0.1" glare="0.1"/>
+								</vox>
+								<vox name="LUZ DE FREIO ESQUERDO" tags="ALSlight=LFN_E type=1 nocull" pos="1.1 0.0 0.0" rot="0.0 0.0 0.0" density="1.2" prop="true" file="MOD/vehicles/Fire_Department/Fire Truck Ladder.vox" object="brake">
+									<light name="rear light D" pos="0.05 0.1 -0.1" rot="0.0 -180.0 0.0" type="area" color="1 .1 .1" scale="2" size="0.3 0.2" reach="100" unshadowed="0.3" fogscale="0.1" glare="0.1"/>
+								</vox>
+								<vox name="LUZ DE FREIO DIREITO" tags="ALSlight=LFN_D type=1 nocull" pos="-1.1 0.0 0.0" rot="0.0 0.0 0.0" density="1.2" prop="true" file="MOD/vehicles/Fire_Department/Fire Truck Ladder.vox" object="brake">
+									<light name="rear light D" pos="0.05 0.1 -0.1" rot="0.0 -180.0 0.0" type="area" color="1 .1 .1" scale="2" size="0.3 0.2" reach="100" unshadowed="0.3" fogscale="0.1" glare="0.1"/>
+								</vox>
+							</group>
+							<group name="PISCA" pos="-0.1 0.05 -0.75" rot="0.0 180.0 0.0">
+								<vox name="PISCA ESQUERDO" tags="ALSlight=PC_E nocull" pos="0.9 0.9 7.1" rot="0.0 0.0 0.0" density="1.2" prop="true" file="MOD/vehicles/Fire_Department/Fire Truck Ladder.vox" object="tl-fl">
+									<light name="rear light D" pos="0.05 0.05 0.0" type="area" color="0.58 0.6 0.22" scale="1" size="0.1 0.1" reach="100" unshadowed="0.3" fogscale="0.1"/>
+								</vox>
+								<vox name="PISCA ESQUERDO" tags="ALSlight=PC_E nocull" pos="1.0 0.9 -8.9" rot="0.0 0.0 0.0" density="1.2" prop="true" file="MOD/vehicles/Fire_Department/Fire Truck Ladder.vox" object="tl-bl">
+									<light name="rear light D" pos="0.05 0.05 -0.1" rot="0.0 180.0 0.0" type="area" color="0.58 0.6 0.22" scale="1" size="0.1 0.1" reach="100" unshadowed="0.3" fogscale="0.1"/>
+								</vox>
+								<vox name="PISCA ESQUERDO" tags="ALSlight=PC_E nocull" pos="1.7 0.0 6.5" rot="0.0 0.0 0.0" density="1.2" prop="true" file="MOD/vehicles/Fire_Department/Fire Truck Ladder.vox" object="tl-fl2">
+									<light name="rear light D" pos="0.05 0.05 0.0" rot="0.0 90.0 0.0" type="area" color="0.58 0.6 0.22" scale="1" size="0.1 0.1" reach="100" unshadowed="0.3" fogscale="0.1"/>
+								</vox>
+								<vox name="PISCA ESQUERDO" tags="ALSlight=PC_E nocull" pos="1.4 0.5 -3.9" rot="0.0 0.0 0.0" density="1.2" prop="true" file="MOD/vehicles/Fire_Department/Fire Truck Ladder.vox" object="tl-fl3">
+									<light name="rear light D" pos="0.05 0.05 -0.05" rot="20.0 90.0 0.0" type="area" color="0.58 0.6 0.22" scale="1" size="0.1 0.1" reach="100" unshadowed="0.3" fogscale="0.1"/>
+								</vox>
+								<vox name="PISCA DIREITO" tags="ALSlight=PC_D nocull" pos="-1.1 0.9 7.1" rot="0.0 0.0 0.0" density="1.2" prop="true" file="MOD/vehicles/Fire_Department/Fire Truck Ladder.vox" object="tl-fr">
+									<light name="rear light D" pos="0.05 0.05 0.0" type="area" color="0.58 0.6 0.22" scale="1" size="0.1 0.1" reach="100" unshadowed="0.3" fogscale="0.1"/>
+								</vox>
+								<vox name="PISCA DIREITO" tags="ALSlight=PC_D nocull" pos="-1.9 0.0 6.5" rot="0.0 0.0 0.0" density="1.2" prop="true" file="MOD/vehicles/Fire_Department/Fire Truck Ladder.vox" object="tl-fr2">
+									<light name="rear light D" pos="0.05 0.05 0.0" rot="0.0 -90.0 0.0" type="area" color="0.58 0.6 0.22" scale="1" size="0.1 0.1" reach="100" unshadowed="0.3" fogscale="0.1"/>
+								</vox>
+								<vox name="PISCA DIREITO" tags="ALSlight=PC_D nocull" pos="-1.6 0.5 -3.9" rot="0.0 0.0 0.0" density="1.2" prop="true" file="MOD/vehicles/Fire_Department/Fire Truck Ladder.vox" object="tl-fr3">
+									<light name="rear light D" pos="0.05 0.05 -0.05" rot="20.0 -90.0 0.0" type="area" color="0.58 0.6 0.22" scale="1" size="0.1 0.1" reach="100" unshadowed="0.3" fogscale="0.1"/>
+								</vox>
+								<vox name="PISCA DIREITO" tags="ALSlight=PC_D nocull" pos="-1.2 0.9 -8.9" rot="0.0 0.0 0.0" density="1.2" prop="true" file="MOD/vehicles/Fire_Department/Fire Truck Ladder.vox" object="tl-br">
+									<light name="rear light D" pos="0.05 0.05 -0.1" rot="0.0 -180.0 0.0" type="area" color="0.58 0.6 0.22" scale="1" size="0.1 0.1" reach="100" unshadowed="0.3" fogscale="0.1"/>
+								</vox>
+							</group>
+							<group pos="-0.1 -0.05 -0.95" rot="0.0 0.0 0.0">
+								<joint pos="-1.15 0.7 -6.8" rot="0.0 0.0 0.0" rotstrength="10000" rotspring="0.5" limits="0"/>
+								<joint pos="-0.95 1.05 -6.8" rot="0.0 0.0 0.0" rotstrength="10000" rotspring="0.5" limits="0"/>
+								<joint pos="-1.15 1.25 -6.8" rot="0.0 0.0 0.0" rotstrength="10000" rotspring="0.5" limits="0"/>
+								<joint pos="-0.95 1.45 -6.8" rot="0.0 0.0 0.0" rotstrength="10000" rotspring="0.5" limits="0"/>
+								<joint pos="-0.85 0.7 -6.8" rot="0.0 0.0 0.0" rotstrength="10000" rotspring="0.5" limits="0"/>
+								<joint pos="-1.1 0.1 -7.3" rot="0.0 0.0 0.0" rotstrength="10000" rotspring="0.5" limits="0"/>
+								<joint pos="1.2 0.1 -7.3" rot="0.0 0.0 0.0" rotstrength="10000" rotspring="0.5" limits="0"/>
+								<joint pos="-1.6 2.5 -4.2" rot="0.0 0.0 0.0" type="hinge" rotstrength="10000" rotspring="0.5" limits="0"/>
+								<joint pos="-1.6 2.5 -1.1" rot="0.0 0.0 0.0" type="hinge" rotstrength="10000" rotspring="0.5" limits="0"/>
+								<joint pos="1.4 3.1 -5.7" rot="0.0 0.0 0.0" type="hinge" rotstrength="10000" rotspring="0.5" limits="0"/>
+								<joint pos="1.7 2.5 -1.1" rot="0.0 0.0 0.0" type="hinge" rotstrength="10000" rotspring="0.5" limits="0"/>
+								<joint pos="1.7 2.5 -4.2" rot="0.0 0.0 0.0" type="hinge" rotstrength="10000" rotspring="0.5" limits="0"/>
+								<joint pos="1.5 2.1 1.2" rot="0.0 0.0 0.0" type="hinge" rotstrength="10000" rotspring="0.5" limits="0"/>
+								<joint pos="1.5 1.4 8.6" rot="0.0 0.0 0.0" type="hinge" rotstrength="10000" rotspring="0.5" limits="0"/>
+								<joint pos="-1.0 3.1 -4.85" rot="0.0 0.0 0.0" type="hinge" rotstrength="10000" rotspring="0.5" limits="0"/>
+								<joint pos="-0.9 1.85 9.0" rot="0.0 0.0 0.0" type="hinge" rotstrength="10000" rotspring="0.5" limits="0"/>
+								<joint pos="-0.7 1.85 9.0" rot="0.0 0.0 0.0" type="hinge" rotstrength="10000" rotspring="0.5" limits="0"/>
+								<joint pos="1.5 0.6 4.15" rot="0.0 0.0 0.0" type="hinge" rotstrength="10000" rotspring="0.5" limits="0"/>
+								<joint pos="-1.05 1.3 9.1" rot="0.0 0.0 0.0" type="hinge" rotstrength="10000" rotspring="0.5" limits="0"/>
+								<joint pos="-1.05 1.05 9.1" rot="0.0 0.0 0.0" type="hinge" rotstrength="10000" rotspring="0.5" limits="0"/>
+								<joint pos="-1.05 0.8 9.1" rot="0.0 0.0 0.0" type="hinge" rotstrength="10000" rotspring="0.5" limits="0"/>
+								<joint pos="-1.4 0.6 4.15" rot="0.0 0.0 0.0" type="hinge" rotstrength="10000" rotspring="0.5" limits="0"/>
+								<joint pos="-1.7 0.15 -6.3" rot="0.0 0.0 0.0" type="hinge" rotstrength="10000" rotspring="0.5" limits="0"/>
+								<joint pos="1.8 0.15 -6.3" rot="0.0 0.0 0.0" type="hinge" rotstrength="10000" rotspring="0.5" limits="0"/>
+								<joint pos="1.15 0.8 9.1" rot="0.0 0.0 0.0" type="hinge" rotstrength="10000" rotspring="0.5" limits="0"/>
+								<joint pos="1.15 1.05 9.1" rot="0.0 0.0 0.0" type="hinge" rotstrength="10000" rotspring="0.5" limits="0"/>
+								<joint pos="1.15 1.3 9.1" rot="0.0 0.0 0.0" type="hinge" rotstrength="10000" rotspring="0.5" limits="0"/>
+								<joint pos="0.8 1.85 9.0" rot="0.0 0.0 0.0" type="hinge" rotstrength="10000" rotspring="0.5" limits="0"/>
+								<joint pos="1.0 1.85 9.0" rot="0.0 0.0 0.0" type="hinge" rotstrength="10000" rotspring="0.5" limits="0"/>
+								<joint pos="1.05 1.45 -6.8" rot="0.0 0.0 0.0" rotstrength="10000" rotspring="0.5" limits="0"/>
+								<joint pos="1.25 1.25 -6.8" rot="0.0 0.0 0.0" rotstrength="10000" rotspring="0.5" limits="0"/>
+								<joint pos="1.05 1.05 -6.8" rot="0.0 0.0 0.0" rotstrength="10000" rotspring="0.5" limits="0"/>
+								<joint pos="1.25 0.7 -6.8" rot="0.0 0.0 0.0" rotstrength="10000" rotspring="0.5" limits="0"/>
+								<joint pos="0.95 0.7 -6.8" rot="0.0 0.0 0.0" rotstrength="10000" rotspring="0.5" limits="0"/>
+								<joint pos="-1.2 3.1 -4.7" rot="0.0 0.0 0.0" type="hinge" rotstrength="10000" rotspring="0.5" limits="0"/>
+								<joint pos="-1.4 3.1 -4.55" rot="0.0 0.0 0.0" type="hinge" rotstrength="10000" rotspring="0.5" limits="0"/>
+								<joint pos="-1.4 3.1 -3.65" rot="0.0 0.0 0.0" type="hinge" rotstrength="10000" rotspring="0.5" limits="0"/>
+								<joint pos="-1.2 3.1 -3.5" rot="0.0 0.0 0.0" type="hinge" rotstrength="10000" rotspring="0.5" limits="0"/>
+								<joint pos="-1.0 3.1 -3.35" rot="0.0 0.0 0.0" type="hinge" rotstrength="10000" rotspring="0.5" limits="0"/>
+								<joint pos="1.3 3.1 -3.5" rot="0.0 180.0 0.0" type="hinge" rotstrength="10000" rotspring="0.5" limits="0"/>
+								<joint pos="1.1 3.1 -3.35" rot="0.0 180.0 0.0" type="hinge" rotstrength="10000" rotspring="0.5" limits="0"/>
+								<joint pos="1.5 3.1 -3.65" rot="0.0 180.0 0.0" type="hinge" rotstrength="10000" rotspring="0.5" limits="0"/>
+								<joint pos="1.5 3.1 -4.55" rot="0.0 180.0 0.0" type="hinge" rotstrength="10000" rotspring="0.5" limits="0"/>
+								<joint pos="1.3 3.1 -4.7" rot="0.0 180.0 0.0" type="hinge" rotstrength="10000" rotspring="0.5" limits="0"/>
+								<joint pos="1.1 3.1 -4.85" rot="0.0 180.0 0.0" type="hinge" rotstrength="10000" rotspring="0.5" limits="0"/>
+								<joint pos="1.2 3.1 -5.8" rot="0.0 0.0 0.0" type="hinge" rotstrength="10000" rotspring="0.5" limits="0"/>
+								<joint pos="1.0 3.1 -5.9" rot="0.0 0.0 0.0" type="hinge" rotstrength="10000" rotspring="0.5" limits="0"/>
+								<joint pos="0.8 3.1 -6.0" rot="0.0 0.0 0.0" type="hinge" rotstrength="10000" rotspring="0.5" limits="0"/>
+								<joint pos="0.6 3.1 -6.1" rot="0.0 0.0 0.0" type="hinge" rotstrength="10000" rotspring="0.5" limits="0"/>
+								<joint pos="-0.5 3.1 -6.1" rot="0.0 0.0 0.0" type="hinge" rotstrength="10000" rotspring="0.5" limits="0"/>
+								<joint pos="-0.7 3.1 -6.0" rot="0.0 0.0 0.0" type="hinge" rotstrength="10000" rotspring="0.5" limits="0"/>
+								<joint pos="-0.9 3.1 -5.9" rot="0.0 0.0 0.0" type="hinge" rotstrength="10000" rotspring="0.5" limits="0"/>
+								<joint pos="-1.1 3.1 -5.8" rot="0.0 0.0 0.0" type="hinge" rotstrength="10000" rotspring="0.5" limits="0"/>
+								<joint pos="-1.3 3.1 -5.7" rot="0.0 0.0 0.0" type="hinge" rotstrength="10000" rotspring="0.5" limits="0"/>
+								<joint pos="-1.4 1.4 8.6" rot="0.0 0.0 0.0" type="hinge" rotstrength="10000" rotspring="0.5" limits="0"/>
+								<joint pos="-1.4 2.1 1.2" rot="0.0 0.0 0.0" type="hinge" rotstrength="10000" rotspring="0.5" limits="0"/>
+							</group>
+						</group>
+					</vehicle>
+				</script>
+			</script>
+		</group>
+		<group name="objects" pos="1.5 2.4 3.0" rot="0.0 0.0 0.0">
+			<vox tags="nocull" pos="-0.2 -1.4 2.7" rot="0.0 0.0 0.0" prop="true" file="MOD/vehicles/Fire_Department/Fire Truck Ladder.vox" object="bucket"/>
+			<vox tags="nocull" pos="-2.2 -1.4 2.7" rot="0.0 0.0 0.0" prop="true" file="MOD/vehicles/Fire_Department/Fire Truck Ladder.vox" object="bucket"/>
+			<vox tags="nocull" pos="-0.2 -0.4 1.2" rot="0.0 0.0 0.0" prop="true" file="MOD/vehicles/Fire_Department/Fire Truck Ladder.vox" object="cone"/>
+			<vox tags="nocull" pos="-0.7 -0.4 1.2" rot="0.0 0.0 0.0" prop="true" file="MOD/vehicles/Fire_Department/Fire Truck Ladder.vox" object="cone"/>
+			<vox tags="nocull" pos="-0.7 -0.4 0.5" rot="0.0 0.0 0.0" prop="true" file="MOD/vehicles/Fire_Department/Fire Truck Ladder.vox" object="cone"/>
+			<vox tags="nocull" pos="-0.2 -0.4 0.5" rot="0.0 0.0 0.0" prop="true" file="MOD/vehicles/Fire_Department/Fire Truck Ladder.vox" object="cone"/>
+			<vox tags="nocull" pos="-0.7 -0.4 -1.0" rot="0.0 0.0 0.0" prop="true" file="MOD/vehicles/Fire_Department/Fire Truck Ladder.vox" object="cone"/>
+			<vox tags="nocull" pos="-0.2 -0.4 -1.0" rot="0.0 0.0 0.0" prop="true" file="MOD/vehicles/Fire_Department/Fire Truck Ladder.vox" object="cone"/>
+			<vox tags="nocull" pos="-0.7 -0.4 -1.9" rot="0.0 0.0 0.0" prop="true" file="MOD/vehicles/Fire_Department/Fire Truck Ladder.vox" object="cone"/>
+			<vox tags="nocull" pos="-0.2 -0.4 -1.9" rot="0.0 0.0 0.0" prop="true" file="MOD/vehicles/Fire_Department/Fire Truck Ladder.vox" object="cone"/>
+			<vox tags="nocull" pos="-2.2 -0.4 -1.9" rot="0.0 0.0 0.0" prop="true" file="MOD/vehicles/Fire_Department/Fire Truck Ladder.vox" object="cone"/>
+			<vox tags="nocull" pos="-1.7 -0.4 -1.9" rot="0.0 0.0 0.0" prop="true" file="MOD/vehicles/Fire_Department/Fire Truck Ladder.vox" object="cone"/>
+			<vox tags="nocull" pos="-1.7 -0.4 -1.0" rot="0.0 0.0 0.0" prop="true" file="MOD/vehicles/Fire_Department/Fire Truck Ladder.vox" object="cone"/>
+			<vox tags="nocull" pos="-2.2 -0.4 -1.0" rot="0.0 0.0 0.0" prop="true" file="MOD/vehicles/Fire_Department/Fire Truck Ladder.vox" object="cone"/>
+			<vox tags="nocull" pos="-2.2 -0.4 0.5" rot="0.0 0.0 0.0" prop="true" file="MOD/vehicles/Fire_Department/Fire Truck Ladder.vox" object="cone"/>
+			<vox tags="nocull" pos="-1.7 -0.4 0.5" rot="0.0 0.0 0.0" prop="true" file="MOD/vehicles/Fire_Department/Fire Truck Ladder.vox" object="cone"/>
+			<vox tags="nocull" pos="-2.2 -0.4 1.2" rot="0.0 0.0 0.0" prop="true" file="MOD/vehicles/Fire_Department/Fire Truck Ladder.vox" object="cone"/>
+			<vox tags="nocull" pos="-1.7 -0.4 1.2" rot="0.0 0.0 0.0" prop="true" file="MOD/vehicles/Fire_Department/Fire Truck Ladder.vox" object="cone"/>
+		</group>
+	</group>
+</prefab>
+

@@ -210,10 +210,100 @@
 						<voxbox pos="0.0 0.0 -0.1" size="102 40 1" brush="MOD/main/building/inner-walls.vox" object="plaster"/>
 					</voxbox>
 				</compound>
-				<compound name="wall" pos="31.6 0.0 -24.4">
-					<voxbox pos="0.1 0.0 -5.09999" rot="0.0 -90.0 0.0" size="562 40 2" brush="MOD/main/building/inner-walls.vox" object="wall">
-						<voxbox pos="0.0 0.0 0.2" size="562 40 1" brush="MOD/main/building/inner-walls.vox" object="plaster"/>
-						<voxbox pos="0.0 0.0 -0.1" size="562 40 1" brush="MOD/main/building/inner-walls.vox" object="plaster"/>
+				<compound name="wall" pos="30.2 0.0 -24.4">
+					<voxbox pos="0.1 0.0 -5.09999" rot="0.0 -90.0 0.0" size="580 40 2" brush="MOD/main/building/inner-walls.vox" object="wall">
+						<voxbox pos="0.0 0.0 0.2" size="580 40 1" brush="MOD/main/building/inner-walls.vox" object="plaster"/>
+						<voxbox pos="0.0 0.0 -0.1" size="578 40 1" brush="MOD/main/building/inner-walls.vox" object="plaster"/>
+					</voxbox>
+				</compound>
+				<compound name="wall" pos="46.0 0.0 -24.4">
+					<voxbox pos="0.1 0.0 -5.09999" rot="0.0 -90.0 0.0" size="580 40 2" brush="MOD/main/building/inner-walls.vox" object="wall">
+						<voxbox pos="0.0 0.0 0.2" size="577 40 1" brush="MOD/main/building/inner-walls.vox" object="plaster"/>
+						<voxbox pos="0.0 0.0 -0.1" size="580 40 1" brush="MOD/main/building/inner-walls.vox" object="plaster"/>
+					</voxbox>
+				</compound>
+				<compound name="wall" pos="41.0 0.0 28.4" rot="0.0 -90.0 0.0">
+					<voxbox pos="0.1 0.0 -5.09999" rot="0.0 -90.0 0.0" size="160 40 2" brush="MOD/main/building/inner-walls.vox" object="wall">
+						<voxbox pos="0.2 0.0 0.2" rot="0.0 0.0 0.0" size="156 40 1" brush="MOD/main/building/inner-walls.vox" object="plaster"/>
+						<voxbox pos="-0.1 0.0 -0.1" size="162 40 1" brush="MOD/main/building/inner-walls.vox" object="plaster"/>
+					</voxbox>
+				</compound>
+				<compound name="wall" pos="35.2 0.0 -29.3" rot="0.0 90.0 0.0">
+					<voxbox pos="0.1 0.0 -5.09999" rot="0.0 -90.0 0.0" size="160 40 2" brush="MOD/main/building/inner-walls.vox" object="wall">
+						<voxbox pos="0.2 0.0 0.2" rot="0.0 0.0 0.0" size="156 40 1" brush="MOD/main/building/inner-walls.vox" object="plaster"/>
+						<voxbox pos="-0.1 0.0 -0.1" size="162 40 1" brush="MOD/main/building/inner-walls.vox" object="plaster"/>
+					</voxbox>
+				</compound>
+				<compound name="wall" pos="46.0 0.0 38.8">
+					<voxbox pos="0.1 0.0 -5.1" rot="0.0 -90.0 0.0" size="433 40 2" brush="MOD/main/building/inner-walls.vox" object="wall">
+						<voxbox pos="0.0 0.0 0.2" size="433 40 1" brush="MOD/main/building/inner-walls.vox" object="plaster"/>
+						<voxbox pos="0.0 0.0 -0.1" size="433 40 1" brush="MOD/main/building/inner-walls.vox" object="plaster"/>
+					</voxbox>
+				</compound>
+				<compound name="wall" pos="41.0 0.0 76.89999" rot="0.0 -90.0 0.0">
+					<voxbox pos="0.1 0.0 -5.09999" rot="0.0 -90.0 0.0" size="160 40 2" brush="MOD/main/building/inner-walls.vox" object="wall">
+						<voxbox pos="0.2 0.0 0.2" rot="0.0 0.0 0.0" size="156 40 1" brush="MOD/main/building/inner-walls.vox" object="plaster"/>
+						<voxbox pos="-0.1 0.0 -0.1" size="162 40 1" brush="MOD/main/building/inner-walls.vox" object="plaster"/>
+					</voxbox>
+				</compound>
+				<compound name="wall" pos="35.2 0.0 33.9" rot="0.0 90.0 0.0">
+					<voxbox pos="0.1 0.0 -5.09999" rot="0.0 -90.0 0.0" size="160 40 2" brush="MOD/main/building/inner-walls.vox" object="wall">
+						<voxbox pos="0.2 0.0 0.2" rot="0.0 0.0 0.0" size="156 40 1" brush="MOD/main/building/inner-walls.vox" object="plaster"/>
+						<voxbox pos="-0.1 0.0 -0.1" size="162 40 1" brush="MOD/main/building/inner-walls.vox" object="plaster"/>
+					</voxbox>
+				</compound>
+				<compound name="wall" pos="54.7 0.0 33.9" rot="0.0 90.0 0.0">
+					<voxbox pos="0.1 0.0 -3.29999" rot="0.0 -90.0 0.0" size="123 40 2" brush="MOD/main/building/inner-walls.vox" object="wall">
+						<voxbox pos="0.2 0.0 0.2" rot="0.0 0.0 0.0" size="121 40 1" brush="MOD/main/building/inner-walls.vox" object="plaster"/>
+						<voxbox pos="0.2 0.0 -0.1" rot="0.0 0.0 0.0" size="121 40 1" brush="MOD/main/building/inner-walls.vox" object="plaster"/>
+					</voxbox>
+				</compound>
+				<compound name="wall" pos="54.7 0.0 14.3" rot="0.0 90.0 0.0">
+					<voxbox pos="0.1 0.0 -3.29999" rot="0.0 -90.0 0.0" size="123 40 2" brush="MOD/main/building/inner-walls.vox" object="wall">
+						<voxbox pos="0.2 0.0 0.2" rot="0.0 0.0 0.0" size="121 40 1" brush="MOD/main/building/inner-walls.vox" object="plaster"/>
+						<voxbox pos="0.2 0.0 -0.1" rot="0.0 0.0 0.0" size="121 40 1" brush="MOD/main/building/inner-walls.vox" object="plaster"/>
+					</voxbox>
+				</compound>
+				<compound name="wall" pos="30.2 0.0 38.8">
+					<voxbox pos="0.1 0.0 -4.99999" rot="0.0 -90.0 0.0" size="432 40 2" brush="MOD/main/building/inner-walls.vox" object="wall">
+						<voxbox pos="0.0 0.0 0.2" size="433 40 1" brush="MOD/main/building/inner-walls.vox" object="plaster"/>
+						<voxbox pos="0.0 0.0 -0.1" size="433 40 1" brush="MOD/main/building/inner-walls.vox" object="plaster"/>
+					</voxbox>
+				</compound>
+				<compound name="wall" pos="51.5 0.0 38.8">
+					<voxbox pos="0.1 0.0 -44.19999" rot="0.0 -90.0 0.0" size="947 40 2" brush="MOD/main/building/inner-walls.vox" object="wall">
+						<voxbox pos="0.0 0.0 0.2" size="947 40 1" brush="MOD/main/building/inner-walls.vox" object="plaster"/>
+						<voxbox pos="0.0 0.0 -0.1" size="947 40 1" brush="MOD/main/building/inner-walls.vox" object="plaster"/>
+					</voxbox>
+				</compound>
+				<compound name="wall" pos="56.5 0.0 -5.3" rot="0.0 90.0 0.0">
+					<voxbox pos="0.1 0.0 -5.09999" rot="0.0 -90.0 0.0" size="42 40 2" brush="MOD/main/building/inner-walls.vox" object="wall">
+						<voxbox pos="0.2 0.0 0.2" rot="0.0 0.0 0.0" size="40 40 1" brush="MOD/main/building/inner-walls.vox" object="plaster"/>
+						<voxbox pos="-0.1 0.0 -0.1" size="43 40 1" brush="MOD/main/building/inner-walls.vox" object="plaster"/>
+					</voxbox>
+				</compound>
+				<compound name="wall" pos="-3.8 0.0 -58.8" rot="0.0 90.0 0.0">
+					<voxbox pos="0.1 0.0 -10.79999" rot="0.0 -90.0 0.0" size="731 40 2" brush="MOD/main/building/inner-walls.vox" object="wall">
+						<voxbox pos="0.0 0.0 0.2" size="728 40 1" brush="MOD/main/building/inner-walls.vox" object="plaster"/>
+						<voxbox pos="0.0 0.0 -0.1" size="731 40 1" brush="MOD/main/building/inner-walls.vox" object="plaster"/>
+					</voxbox>
+				</compound>
+				<compound name="wall" pos="-14.5 0.0 -39.8" rot="0.0 -180.0 0.0">
+					<voxbox pos="0.1 0.0 -5.09999" rot="0.0 -90.0 0.0" size="242 40 2" brush="MOD/main/building/inner-walls.vox" object="wall">
+						<voxbox pos="0.2 0.0 0.2" rot="0.0 0.0 0.0" size="237 40 1" brush="MOD/main/building/inner-walls.vox" object="plaster"/>
+						<voxbox pos="-0.1 0.0 -0.1" size="243 40 1" brush="MOD/main/building/inner-walls.vox" object="plaster"/>
+					</voxbox>
+				</compound>
+				<compound name="wall" pos="-3.8 0.0 -34.8" rot="0.0 90.0 0.0">
+					<voxbox pos="0.1 0.0 -10.79999" rot="0.0 -90.0 0.0" size="731 40 2" brush="MOD/main/building/inner-walls.vox" object="wall">
+						<voxbox pos="0.0 0.0 0.2" size="731 40 1" brush="MOD/main/building/inner-walls.vox" object="plaster"/>
+						<voxbox pos="0.0 0.0 -0.1" size="729 40 1" brush="MOD/main/building/inner-walls.vox" object="plaster"/>
+					</voxbox>
+				</compound>
+				<compound name="wall" pos="58.4 0.0 -45.60001" rot="0.0 0.0 0.0">
+					<voxbox pos="0.1 0.0 -13.29999" rot="0.0 -90.0 0.0" size="242 40 2" brush="MOD/main/building/inner-walls.vox" object="wall">
+						<voxbox pos="0.2 0.0 0.2" rot="0.0 0.0 0.0" size="156 40 1" brush="MOD/main/building/inner-walls.vox" object="plaster"/>
+						<voxbox pos="-0.1 0.0 -0.1" size="162 40 1" brush="MOD/main/building/inner-walls.vox" object="plaster"/>
 					</voxbox>
 				</compound>
 			</group>

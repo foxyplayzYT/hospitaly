@@ -1,0 +1,12 @@
+<prefab version="1.1.0">
+	<group pos="0.2 0.0 5.1">
+		<vox pos="-0.1 0.0 -0.1" file="MOD/main/props/doors1.vox" object="inner-back-wood">
+			<vox pos="0.0 0.0 0.2" file="MOD/main/props/doors1.vox" object="inner-front-wood"/>
+			<vox pos="0.0 0.1 0.2" prop="true" file="MOD/main/props/doors1.vox" object="door1">
+				<joint pos="0.7 0.3 0.0"/>
+				<joint pos="0.7 1.9 0.0"/>
+			</vox>
+		</vox>
+	</group>
+</prefab>
+

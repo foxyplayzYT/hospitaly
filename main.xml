@@ -1,4 +1,4 @@
-<scene version="1.1.0" shadowVolume="250 70 300">
+<scene version="1.4.0" shadowVolume="250 70 300">
 	<environment template="sunset" pos="-10.4 5.8 -18.3"/>
 	<script pos="-10.4 5.8 -18.3" file="main.lua"/>
 	<script pos="-10.4 5.8 -18.3" file="sandbox.lua"/>
@@ -32,7 +32,7 @@
 		<voxbox pos="17.4 0.0 -32.0" rot="0.0 0.0 0.0" size="86 2 395" brush="MOD/main/building/building.vox" object="part1.5"/>
 		<voxbox pos="-38.0 0.0 -67.0" rot="0.0 -180.0 0.0" size="120 2 240" brush="MOD/main/building/building.vox" object="part1.5"/>
 		<voxbox pos="9.6 0.0 7.5" rot="0.0 0.0 0.0" size="164 2 205" brush="MOD/main/building/building.vox" object="part1.5"/>
-		<voxbox pos="-15.0 0.0 10.9" rot="0.0 0.0 0.0" size="10 100 20" brush="MOD/main/building/building.vox" object="c"/>
+		<voxbox pos="-15.0 0.0 10.9" rot="0.0 0.0 0.0" size="10 358 20" brush="MOD/main/building/building.vox" object="c"/>
 		<voxbox pos="-45.1 0.0 -125.7" rot="0.0 180.0 0.0" size="43 100 30" brush="MOD/main/building/building.vox" object="part2"/>
 		<voxbox pos="20.0 0.0 -125.7" rot="0.0 180.0 0.0" size="43 100 30" brush="MOD/main/building/building.vox" object="part2"/>
 		<voxbox pos="-17.4 0.0 -23.8" rot="0.0 0.0 0.0" size="34 2 78" brush="MOD/main/building/building.vox" object="half"/>
@@ -574,7 +574,7 @@
 					<vox pos="17.9 0.0 -2.6" rot="0.0 -180.0 0.0" strength="1.3" prop="true" file="MOD/main/props/hospital-assets2.vox" object="waiting-chair"/>
 					<vox pos="17.8 0.0 -1.6" rot="0.0 0.0 0.0" strength="1.3" prop="true" file="MOD/main/props/hospital-assets2.vox" object="waiting-chair"/>
 					<vox pos="15.2 0.0 -1.6" rot="0.0 0.0 0.0" strength="1.3" prop="true" file="MOD/main/props/hospital-assets2.vox" object="waiting-chair"/>
-					<vox pos="22.0 0.0 -5.1" rot="0.0 0.0 0.0" strength="1.3" prop="true" file="MOD/main/props/potted_plants.vox" object="big_leaf_white"/>
+					<vox pos="21.7 0.0 -5.1" rot="0.0 0.0 0.0" strength="1.3" prop="true" file="MOD/main/props/potted_plants.vox" object="big_leaf_white"/>
 					<vox pos="22.0 0.0 5.2" rot="0.0 0.0 0.0" strength="1.3" prop="true" file="MOD/main/props/potted_plants.vox" object="small_white"/>
 					<vox pos="17.8 0.0 2.3" rot="0.0 0.0 0.0" strength="1.3" prop="true" file="MOD/main/props/hospital-assets2.vox" object="waiting-chair"/>
 					<vox pos="15.2 0.0 2.3" rot="0.0 0.0 0.0" strength="1.3" prop="true" file="MOD/main/props/hospital-assets2.vox" object="waiting-chair"/>
@@ -1032,12 +1032,15 @@
 				<voxbox pos="-14.0 0.2 10.9" rot="0.0 90.0 0.0" size="253 41 3" brush="MOD/main/building/walls.vox" object="windowhigh"/>
 				<voxbox pos="-14.0 0.2 10.9" size="3 41 21" brush="MOD/main/building/walls.vox" object="PIllar"/>
 				<voxbox pos="-14.0 4.1 -14.4" rot="0.0 90.0 0.0" size="109 2 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
+				<voxbox pos="-14.0 8.4 -14.4" rot="0.0 90.0 0.0" size="91 2 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
 				<voxbox pos="-37.7 0.2 -91.3" rot="0.0 0.0 0.0" size="231 41 3" brush="MOD/main/building/walls.vox" object="glasswall"/>
 				<voxbox pos="-14.6 0.2 -91.3" rot="0.0 0.0 0.0" size="6 41 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
 				<voxbox pos="-38.0 0.2 -91.3" rot="0.0 0.0 0.0" size="3 41 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
 				<vox pos="4.2 0.2 30.7" rot="0.0 0.0 0.0" file="MOD/main/building/walls.vox" object="elevator wall"/>
 				<voxbox pos="-17.4 0.2 -23.8" rot="0.0 0.0 0.0" size="34 41 78" brush="MOD/main/building/walls.vox" object="halfwindow"/>
 				<voxbox pos="-56.6 0.2 -54.0" rot="0.0 0.0 0.0" size="66 41 120" brush="MOD/main/building/walls.vox" object="entranceglasswall"/>
+				<voxbox pos="-14.0 0.2 -14.4" rot="0.0 90.0 0.0" size="19 39 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
+				<voxbox pos="-14.0 0.2 -23.5" rot="0.0 90.0 0.0" size="18 39 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
 			</group>
 			<vox pos="4.2 4.3 30.7" rot="0.0 0.0 0.0" file="MOD/main/building/building.vox" object="utilitything2"/>
 			<voxbox pos="26.0 4.3 10.0" rot="0.0 0.0 0.0" size="50 2 180" brush="MOD/main/building/building.vox" object="part1.5"/>
@@ -1079,33 +1082,363 @@
 				<voxbox pos="50.3 0.0 0.0" rot="0.0 0.0 0.0" size="40 24 54" brush="MOD/main/building/building.vox" object="roof2"/>
 				<voxbox pos="54.3 0.0 10.8" rot="0.0 -180.0 0.0" size="40 24 54" brush="MOD/main/building/building.vox" object="roof1"/>
 			</group>
+			<group name="3rd floor walls" pos="21.9 0.2 52.3">
+				<voxbox pos="-17.5 0.0 21.7" rot="0.0 0.0 0.0" size="127 41 3" brush="MOD/main/building/walls.vox" object="windowhigh"/>
+				<voxbox pos="-19.6 0.0 -97.7" rot="0.0 0.0 0.0" size="295 41 3" brush="MOD/main/building/walls.vox" object="windowhigh"/>
+				<voxbox pos="1.5 0.0 21.7" rot="0.0 0.0 0.0" size="110 41 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
+				<voxbox pos="12.5 0.0 12.0" rot="0.0 0.0 0.0" size="76 41 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
+				<voxbox pos="11.7 0.0 -73.0" rot="0.0 0.0 0.0" size="81 41 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
+				<voxbox pos="-2.7 0.0 -63.5" rot="0.0 180.0 0.0" size="148 41 3" brush="MOD/main/building/walls.vox" object="windowhigh"/>
+				<voxbox pos="-19.9 0.0 22.0" rot="0.0 90.0 0.0" size="24 41 24" brush="MOD/main/building/walls.vox" object="cornerwindowhigh"/>
+				<voxbox pos="-19.9 0.0 -20.4" rot="0.0 90.0 0.0" size="19 39 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
+				<voxbox pos="19.8 0.0 -72.1" rot="0.0 90.0 0.0" size="9 41 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
+				<voxbox pos="-19.9 0.0 -97.39999" rot="0.0 90.0 0.0" size="3 41 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
+				<voxbox pos="11.7 0.0 -96.1" rot="0.0 90.0 0.0" size="16 41 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
+				<voxbox pos="9.9 0.0 -97.7" rot="0.0 0.0 0.0" size="18 41 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
+				<voxbox pos="-19.9 0.0 -29.5" rot="0.0 90.0 0.0" size="3 41 24" brush="MOD/main/building/walls.vox" object="PIllar"/>
+				<voxbox pos="-19.9 0.0 4.9" rot="0.0 90.0 0.0" size="253 41 3" brush="MOD/main/building/walls.vox" object="windowhigh"/>
+				<voxbox pos="-17.49999 0.0 -29.8" rot="0.0 0.0 0.0" size="148 41 3" brush="MOD/main/building/walls.vox" object="windowhigh"/>
+				<voxbox pos="-23.3 0.0 -29.8" rot="0.0 0.0 0.0" size="34 41 78" brush="MOD/main/building/walls.vox" object="halfwindow"/>
+				<voxbox pos="-0.3 0.0 -29.5" rot="0.0 -180.0 0.0" size="24 41 24" brush="MOD/main/building/walls.vox" object="cornerwall"/>
+				<voxbox pos="-0.3 0.0 -63.8" rot="0.0 -90.0 0.0" size="24 41 24" brush="MOD/main/building/walls.vox" object="cornerwall"/>
+				<voxbox pos="-19.9 0.0 -63.5" rot="0.0 90.0 0.0" size="24 41 24" brush="MOD/main/building/walls.vox" object="cornerwindowhigh"/>
+				<voxbox pos="-19.9 0.0 19.6" rot="0.0 90.0 0.0" size="126 41 3" brush="MOD/main/building/walls.vox" object="windowhigh"/>
+				<voxbox pos="-19.9 0.0 4.9" rot="0.0 0.0 0.0" size="3 41 21" brush="MOD/main/building/walls.vox" object="PIllar"/>
+				<voxbox pos="12.2 0.0 22.0" rot="0.0 90.0 0.0" size="100 41 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
+				<voxbox pos="19.8 0.0 12.0" rot="0.0 90.0 0.0" size="126 41 3" brush="MOD/main/building/walls.vox" object="windowhigh"/>
+				<voxbox pos="19.8 0.0 -0.6" rot="0.0 90.0 0.0" size="715 41 3" brush="MOD/main/building/walls.vox" object="windowhigh"/>
+				<voxbox pos="-0.6 0.0 -31.9" rot="0.0 90.0 0.0" size="295 41 3" brush="MOD/main/building/walls.vox" object="glasswall2"/>
+				<voxbox pos="-19.9 0.0 -65.9" rot="0.0 90.0 0.0" size="315 41 3" brush="MOD/main/building/walls.vox" object="windowhigh"/>
+				<voxbox pos="11.7 0.0 -73.0" rot="0.0 90.0 0.0" size="231 41 3" brush="MOD/main/building/walls.vox" object="windowhigh"/>
+			</group>
 		</group>
-		<group name="floor4" layer="floor4">
-			<vox pos="4.2 13.1 30.7" rot="0.0 0.0 0.0" file="MOD/main/building/walls.vox" object="elevator wall"/>
-			<vox pos="4.2 12.9 30.7" rot="0.0 0.0 0.0" file="MOD/main/building/building.vox" object="utilitything2"/>
+		<group pos="4.3 12.9 -29.1">
+			<group name="floor4" pos="-4.3 -12.9 29.1" layer="floor4">
+				<vox pos="4.2 13.1 30.7" rot="0.0 0.0 0.0" file="MOD/main/building/walls.vox" object="elevator wall"/>
+				<vox pos="4.2 12.9 30.7" rot="0.0 0.0 0.0" file="MOD/main/building/building.vox" object="utilitything2"/>
+				<vox pos="-2.2 12.9 17.8" rot="0.0 0.0 0.0" file="MOD/main/building/building.vox" object="part1"/>
+				<voxbox pos="5.3 12.9 -32.0" rot="0.0 0.0 0.0" size="207 2 395" brush="MOD/main/building/building.vox" object="part1.5"/>
+				<voxbox pos="5.6 12.9 -23.5" rot="0.0 180.0 0.0" size="24 2 24" brush="MOD/main/building/floor0.vox" object="corner2.0"/>
+				<voxbox pos="5.6 12.9 -57.8" rot="0.0 -90.0 0.0" size="24 2 24" brush="MOD/main/building/floor0.vox" object="corner2.0"/>
+				<voxbox pos="-14.0 12.9 -57.5" rot="0.0 90.0 0.0" size="24 2 24" brush="MOD/main/building/floor0.vox" object="corner"/>
+				<voxbox pos="5.3 12.9 -67.0" rot="0.0 0.0 0.0" size="207 2 395" brush="MOD/main/building/building.vox" object="part1.5"/>
+				<voxbox pos="-14.0 12.9 -67.0" rot="0.0 0.0 0.0" size="193 2 71" brush="MOD/main/building/building.vox" object="part1.5"/>
+				<voxbox pos="9.6 12.9 7.5" rot="0.0 0.0 0.0" size="164 2 108" brush="MOD/main/building/building.vox" object="part1.5"/>
+				<voxbox pos="9.6 12.9 18.3" rot="0.0 0.0 0.0" size="88 2 97" brush="MOD/main/building/building.vox" object="part1.5"/>
+				<voxbox pos="-11.6 12.9 -59.9" rot="0.0 0.0 0.0" size="169 2 24" brush="MOD/main/building/building.vox" object="part1.5"/>
+				<voxbox pos="-14.0 12.9 -23.8" rot="0.0 0.0 0.0" size="194 2 313" brush="MOD/main/building/building.vox" object="part1.5"/>
+				<voxbox pos="17.9 12.9 -67.0" rot="0.0 180.0 0.0" size="319 2 247" brush="MOD/main/building/building.vox" object="part2"/>
+				<voxbox pos="-17.4 12.9 -23.8" rot="0.0 0.0 0.0" size="34 2 78" brush="MOD/main/building/building.vox" object="half"/>
+				<group>
+					<voxbox pos="-11.6 13.1 27.7" rot="0.0 0.0 0.0" size="127 41 3" brush="MOD/main/building/walls.vox" object="windowhigh"/>
+					<voxbox pos="-13.7 13.1 -91.7" rot="0.0 0.0 0.0" size="295 41 3" brush="MOD/main/building/walls.vox" object="windowhigh"/>
+					<voxbox pos="7.4 13.1 27.7" rot="0.0 0.0 0.0" size="110 41 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
+					<voxbox pos="18.4 13.1 18.0" rot="0.0 0.0 0.0" size="76 41 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
+					<voxbox pos="17.6 13.1 -67.0" rot="0.0 0.0 0.0" size="81 41 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
+					<voxbox pos="3.2 13.1 -57.5" rot="0.0 -180.0 0.0" size="148 41 3" brush="MOD/main/building/walls.vox" object="windowhigh"/>
+					<voxbox pos="-14.0 13.1 28.0" rot="0.0 90.0 0.0" size="24 41 24" brush="MOD/main/building/walls.vox" object="cornerwindowhigh"/>
+					<voxbox pos="-14.0 13.1 -14.4" rot="0.0 90.0 0.0" size="19 41 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
+					<voxbox pos="25.7 13.1 -66.1" rot="0.0 90.0 0.0" size="9 41 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
+					<voxbox pos="-14.0 13.1 -91.39999" rot="0.0 90.0 0.0" size="3 41 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
+					<voxbox pos="17.6 13.1 -90.1" rot="0.0 90.0 0.0" size="16 41 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
+					<voxbox pos="15.8 13.1 -91.7" rot="0.0 0.0 0.0" size="18 41 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
+					<voxbox pos="-14.0 13.1 -23.5" rot="0.0 90.0 0.0" size="3 41 24" brush="MOD/main/building/walls.vox" object="PIllar"/>
+					<voxbox pos="-14.0 13.1 10.9" rot="0.0 90.0 0.0" size="253 41 3" brush="MOD/main/building/walls.vox" object="windowhigh"/>
+					<voxbox pos="-11.59999 13.1 -23.8" rot="0.0 0.0 0.0" size="148 41 3" brush="MOD/main/building/walls.vox" object="windowhigh"/>
+					<voxbox pos="-17.4 13.1 -23.8" rot="0.0 0.0 0.0" size="34 41 78" brush="MOD/main/building/walls.vox" object="halfwindow"/>
+					<voxbox pos="5.6 13.1 -23.5" rot="0.0 180.0 0.0" size="24 41 24" brush="MOD/main/building/walls.vox" object="cornerwall"/>
+					<voxbox pos="5.6 13.1 -57.8" rot="0.0 -90.0 0.0" size="24 41 24" brush="MOD/main/building/walls.vox" object="cornerwall"/>
+					<voxbox pos="-14.0 13.1 -57.5" rot="0.0 90.0 0.0" size="24 41 24" brush="MOD/main/building/walls.vox" object="cornerwindowhigh"/>
+					<voxbox pos="-14.0 13.1 25.6" rot="0.0 90.0 0.0" size="126 41 3" brush="MOD/main/building/walls.vox" object="windowhigh"/>
+					<voxbox pos="-14.0 13.1 10.9" rot="0.0 0.0 0.0" size="3 41 21" brush="MOD/main/building/walls.vox" object="PIllar"/>
+					<voxbox pos="18.1 13.1 28.0" rot="0.0 90.0 0.0" size="100 41 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
+					<voxbox pos="25.7 13.1 18.0" rot="0.0 90.0 0.0" size="126 41 3" brush="MOD/main/building/walls.vox" object="windowhigh"/>
+					<voxbox pos="25.7 13.1 5.4" rot="0.0 90.0 0.0" size="715 41 3" brush="MOD/main/building/walls.vox" object="windowhigh"/>
+					<voxbox pos="5.3 13.1 -25.9" rot="0.0 90.0 0.0" size="295 41 3" brush="MOD/main/building/walls.vox" object="glasswall2"/>
+					<voxbox pos="-14.0 13.1 -59.9" rot="0.0 90.0 0.0" size="315 41 3" brush="MOD/main/building/walls.vox" object="windowhigh"/>
+					<voxbox pos="17.6 13.1 -67.0" rot="0.0 90.0 0.0" size="231 41 3" brush="MOD/main/building/walls.vox" object="windowhigh"/>
+				</group>
+			</group>
 		</group>
 		<group name="floor5" layer="floor5">
 			<vox pos="4.2 17.4 30.7" rot="0.0 0.0 0.0" file="MOD/main/building/walls.vox" object="elevator wall"/>
 			<vox pos="4.2 17.2 30.7" rot="0.0 0.0 0.0" file="MOD/main/building/building.vox" object="utilitything2"/>
+			<vox pos="-2.2 17.2 17.8" rot="0.0 0.0 0.0" file="MOD/main/building/building.vox" object="part1"/>
+			<voxbox pos="5.3 17.2 -32.0" rot="0.0 0.0 0.0" size="207 2 395" brush="MOD/main/building/building.vox" object="part1.5"/>
+			<voxbox pos="5.6 17.2 -23.5" rot="0.0 -180.0 0.0" size="24 2 24" brush="MOD/main/building/floor0.vox" object="corner2.0"/>
+			<voxbox pos="5.6 17.2 -57.8" rot="0.0 -90.0 0.0" size="24 2 24" brush="MOD/main/building/floor0.vox" object="corner2.0"/>
+			<voxbox pos="-14.0 17.2 -57.5" rot="0.0 90.0 0.0" size="24 2 24" brush="MOD/main/building/floor0.vox" object="corner"/>
+			<voxbox pos="5.3 17.2 -67.0" rot="0.0 0.0 0.0" size="207 2 395" brush="MOD/main/building/building.vox" object="part1.5"/>
+			<voxbox pos="-14.0 17.2 -67.0" rot="0.0 0.0 0.0" size="193 2 71" brush="MOD/main/building/building.vox" object="part1.5"/>
+			<voxbox pos="9.6 17.2 7.5" rot="0.0 0.0 0.0" size="164 2 108" brush="MOD/main/building/building.vox" object="part1.5"/>
+			<voxbox pos="9.6 17.2 18.3" rot="0.0 0.0 0.0" size="88 2 97" brush="MOD/main/building/building.vox" object="part1.5"/>
+			<voxbox pos="-11.6 17.2 -59.9" rot="0.0 0.0 0.0" size="169 2 24" brush="MOD/main/building/building.vox" object="part1.5"/>
+			<voxbox pos="-14.0 17.2 -23.8" rot="0.0 0.0 0.0" size="194 2 313" brush="MOD/main/building/building.vox" object="part1.5"/>
+			<voxbox pos="17.9 17.2 -67.0" rot="0.0 -180.0 0.0" size="319 2 247" brush="MOD/main/building/building.vox" object="part2"/>
+			<voxbox pos="-17.4 17.2 -23.8" rot="0.0 0.0 0.0" size="34 2 78" brush="MOD/main/building/building.vox" object="half"/>
+			<group name="walls">
+				<voxbox pos="-11.6 17.4 27.7" rot="0.0 0.0 0.0" size="127 41 3" brush="MOD/main/building/walls.vox" object="windowhigh"/>
+				<voxbox pos="-13.7 17.4 -91.7" rot="0.0 0.0 0.0" size="295 41 3" brush="MOD/main/building/walls.vox" object="windowhigh"/>
+				<voxbox pos="7.4 17.4 27.7" rot="0.0 0.0 0.0" size="110 41 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
+				<voxbox pos="17.6 17.4 -67.0" rot="0.0 0.0 0.0" size="72 41 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
+				<voxbox pos="20.5 17.4 7.5" rot="0.0 0.0 0.0" size="22 41 3" brush="MOD/main/building/walls.vox" object="windowhigh"/>
+				<voxbox pos="3.2 17.4 -57.5" rot="0.0 180.0 0.0" size="148 41 3" brush="MOD/main/building/walls.vox" object="windowhigh"/>
+				<voxbox pos="-14.0 17.4 28.0" rot="0.0 90.0 0.0" size="24 41 24" brush="MOD/main/building/walls.vox" object="cornerwindowhigh"/>
+				<voxbox pos="25.1 17.4 7.8" rot="0.0 180.0 0.0" size="24 41 24" brush="MOD/main/building/walls.vox" object="cornerwindowhigh"/>
+				<voxbox pos="18.1 17.4 7.5" rot="0.0 0.0 0.0" size="24 41 24" brush="MOD/main/building/walls.vox" object="cornerwindowhigh"/>
+				<voxbox pos="-14.0 17.4 -14.4" rot="0.0 90.0 0.0" size="19 41 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
+				<voxbox pos="24.8 17.4 -66.2" rot="0.0 90.0 0.0" size="8 41 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
+				<voxbox pos="18.1 17.4 27.7" rot="0.0 90.0 0.0" size="9 41 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
+				<voxbox pos="-14.0 17.4 -91.39999" rot="0.0 90.0 0.0" size="3 41 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
+				<voxbox pos="17.6 17.4 -90.1" rot="0.0 90.0 0.0" size="16 41 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
+				<voxbox pos="15.8 17.4 -91.7" rot="0.0 0.0 0.0" size="18 41 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
+				<voxbox pos="-14.0 17.4 -23.5" rot="0.0 90.0 0.0" size="3 41 24" brush="MOD/main/building/walls.vox" object="PIllar"/>
+				<voxbox pos="-14.0 17.4 10.9" rot="0.0 90.0 0.0" size="253 41 3" brush="MOD/main/building/walls.vox" object="windowhigh"/>
+				<voxbox pos="-11.59999 17.4 -23.8" rot="0.0 0.0 0.0" size="148 41 3" brush="MOD/main/building/walls.vox" object="windowhigh"/>
+				<voxbox pos="-17.4 17.4 -23.8" rot="0.0 0.0 0.0" size="34 41 78" brush="MOD/main/building/walls.vox" object="halfwindow"/>
+				<voxbox pos="5.6 17.4 -23.5" rot="0.0 -180.0 0.0" size="24 41 24" brush="MOD/main/building/walls.vox" object="cornerwall"/>
+				<voxbox pos="5.6 17.4 -57.8" rot="0.0 -90.0 0.0" size="24 41 24" brush="MOD/main/building/walls.vox" object="cornerwall"/>
+				<voxbox pos="-14.0 17.4 -57.5" rot="0.0 90.0 0.0" size="24 41 24" brush="MOD/main/building/walls.vox" object="cornerwindowhigh"/>
+				<voxbox pos="-14.0 17.4 25.6" rot="0.0 90.0 0.0" size="126 41 3" brush="MOD/main/building/walls.vox" object="windowhigh"/>
+				<voxbox pos="-14.0 17.4 10.9" rot="0.0 0.0 0.0" size="3 41 21" brush="MOD/main/building/walls.vox" object="PIllar"/>
+				<voxbox pos="18.1 17.4 26.8" rot="0.0 90.0 0.0" size="169 41 3" brush="MOD/main/building/walls.vox" object="windowhigh"/>
+				<voxbox pos="24.8 17.4 5.4" rot="0.0 90.0 0.0" size="316 41 3" brush="MOD/main/building/walls.vox" object="windowhigh"/>
+				<voxbox pos="24.8 17.4 -55.7" rot="0.0 90.0 0.0" size="105 41 3" brush="MOD/main/building/walls.vox" object="windowhigh"/>
+				<voxbox pos="5.3 17.4 -25.9" rot="0.0 90.0 0.0" size="295 41 3" brush="MOD/main/building/walls.vox" object="glasswall2"/>
+				<voxbox pos="24.8 17.4 -26.2" rot="0.0 90.0 0.0" size="295 41 3" brush="MOD/main/building/walls.vox" object="glasswall2"/>
+				<voxbox pos="-14.0 17.4 -59.9" rot="0.0 90.0 0.0" size="315 41 3" brush="MOD/main/building/walls.vox" object="windowhigh"/>
+				<voxbox pos="17.6 17.4 -67.0" rot="0.0 90.0 0.0" size="231 41 3" brush="MOD/main/building/walls.vox" object="windowhigh"/>
+			</group>
 		</group>
 		<group name="floor6" layer="floor6">
 			<vox pos="4.2 21.7 30.7" rot="0.0 0.0 0.0" file="MOD/main/building/walls.vox" object="elevator wall"/>
 			<vox pos="4.2 21.5 30.7" rot="0.0 0.0 0.0" file="MOD/main/building/building.vox" object="utilitything2"/>
+			<vox pos="-2.2 21.5 17.8" rot="0.0 0.0 0.0" file="MOD/main/building/building.vox" object="part1"/>
+			<voxbox pos="5.3 21.5 -32.0" rot="0.0 0.0 0.0" size="175 2 398" brush="MOD/main/building/building.vox" object="part1.5"/>
+			<voxbox pos="22.8 21.5 -27.5" rot="0.0 0.0 0.0" size="23 2 330" brush="MOD/main/building/building.vox" object="part1.5"/>
+			<voxbox pos="5.6 21.5 -23.5" rot="0.0 180.0 0.0" size="24 2 24" brush="MOD/main/building/floor0.vox" object="corner2.0"/>
+			<voxbox pos="18.1 21.5 7.5" rot="0.0 0.0 0.0" size="24 2 24" brush="MOD/main/building/floor0.vox" object="corner2.0"/>
+			<voxbox pos="5.6 21.5 -57.8" rot="0.0 -90.0 0.0" size="24 2 24" brush="MOD/main/building/floor0.vox" object="corner2.0"/>
+			<voxbox pos="-14.0 21.5 -57.5" rot="0.0 90.0 0.0" size="24 2 24" brush="MOD/main/building/floor0.vox" object="corner"/>
+			<voxbox pos="25.1 21.5 7.8" rot="0.0 180.0 0.0" size="24 2 24" brush="MOD/main/building/floor0.vox" object="corner"/>
+			<voxbox pos="5.3 21.5 -67.0" rot="0.0 0.0 0.0" size="198 2 395" brush="MOD/main/building/building.vox" object="part1.5"/>
+			<voxbox pos="-14.0 21.5 -67.0" rot="0.0 0.0 0.0" size="193 2 71" brush="MOD/main/building/building.vox" object="part1.5"/>
+			<voxbox pos="9.6 21.5 7.5" rot="0.0 0.0 0.0" size="88 2 108" brush="MOD/main/building/building.vox" object="part1.5"/>
+			<voxbox pos="9.6 21.5 18.3" rot="0.0 0.0 0.0" size="88 2 97" brush="MOD/main/building/building.vox" object="part1.5"/>
+			<voxbox pos="-11.6 21.5 -59.9" rot="0.0 0.0 0.0" size="169 2 24" brush="MOD/main/building/building.vox" object="part1.5"/>
+			<voxbox pos="-14.0 21.5 -23.8" rot="0.0 0.0 0.0" size="194 2 313" brush="MOD/main/building/building.vox" object="part1.5"/>
+			<voxbox pos="17.9 21.5 -67.0" rot="0.0 180.0 0.0" size="319 2 247" brush="MOD/main/building/building.vox" object="part2"/>
+			<voxbox pos="-17.4 21.5 -23.8" rot="0.0 0.0 0.0" size="34 2 78" brush="MOD/main/building/building.vox" object="half"/>
+			<group name="walls">
+				<voxbox pos="-11.6 21.7 27.7" rot="0.0 0.0 0.0" size="127 41 3" brush="MOD/main/building/walls.vox" object="windowhigh"/>
+				<voxbox pos="-13.7 21.7 -91.7" rot="0.0 0.0 0.0" size="295 41 3" brush="MOD/main/building/walls.vox" object="windowhigh"/>
+				<voxbox pos="7.4 21.7 27.7" rot="0.0 0.0 0.0" size="110 41 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
+				<voxbox pos="17.6 21.7 -67.0" rot="0.0 0.0 0.0" size="72 41 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
+				<voxbox pos="20.5 21.7 7.5" rot="0.0 0.0 0.0" size="22 41 3" brush="MOD/main/building/walls.vox" object="windowhigh"/>
+				<voxbox pos="3.2 21.7 -57.5" rot="0.0 -180.0 0.0" size="148 41 3" brush="MOD/main/building/walls.vox" object="windowhigh"/>
+				<voxbox pos="-14.0 21.7 28.0" rot="0.0 90.0 0.0" size="24 41 24" brush="MOD/main/building/walls.vox" object="cornerwindowhigh"/>
+				<voxbox pos="25.1 21.7 7.8" rot="0.0 -180.0 0.0" size="24 41 24" brush="MOD/main/building/walls.vox" object="cornerwindowhigh"/>
+				<voxbox pos="18.1 21.7 7.5" rot="0.0 0.0 0.0" size="24 41 24" brush="MOD/main/building/walls.vox" object="cornerwindowhigh"/>
+				<voxbox pos="-14.0 21.7 -14.4" rot="0.0 90.0 0.0" size="19 41 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
+				<voxbox pos="24.8 21.7 -66.2" rot="0.0 90.0 0.0" size="8 41 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
+				<voxbox pos="18.1 21.7 27.7" rot="0.0 90.0 0.0" size="9 41 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
+				<voxbox pos="-14.0 21.7 -91.39999" rot="0.0 90.0 0.0" size="3 41 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
+				<voxbox pos="17.6 21.7 -90.1" rot="0.0 90.0 0.0" size="16 41 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
+				<voxbox pos="15.8 21.7 -91.7" rot="0.0 0.0 0.0" size="18 41 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
+				<voxbox pos="-14.0 21.7 -23.5" rot="0.0 90.0 0.0" size="3 41 24" brush="MOD/main/building/walls.vox" object="PIllar"/>
+				<voxbox pos="-14.0 21.7 10.9" rot="0.0 90.0 0.0" size="253 41 3" brush="MOD/main/building/walls.vox" object="windowhigh"/>
+				<voxbox pos="-11.59999 21.7 -23.8" rot="0.0 0.0 0.0" size="148 41 3" brush="MOD/main/building/walls.vox" object="windowhigh"/>
+				<voxbox pos="-17.4 21.7 -23.8" rot="0.0 0.0 0.0" size="34 41 78" brush="MOD/main/building/walls.vox" object="halfwindow"/>
+				<voxbox pos="5.6 21.7 -23.5" rot="0.0 180.0 0.0" size="24 41 24" brush="MOD/main/building/walls.vox" object="cornerwall"/>
+				<voxbox pos="5.6 21.7 -57.8" rot="0.0 -90.0 0.0" size="24 41 24" brush="MOD/main/building/walls.vox" object="cornerwall"/>
+				<voxbox pos="-14.0 21.7 -57.5" rot="0.0 90.0 0.0" size="24 41 24" brush="MOD/main/building/walls.vox" object="cornerwindowhigh"/>
+				<voxbox pos="-14.0 21.7 25.6" rot="0.0 90.0 0.0" size="126 41 3" brush="MOD/main/building/walls.vox" object="windowhigh"/>
+				<voxbox pos="-14.0 21.7 10.9" rot="0.0 0.0 0.0" size="3 41 21" brush="MOD/main/building/walls.vox" object="PIllar"/>
+				<voxbox pos="18.1 21.7 26.8" rot="0.0 90.0 0.0" size="169 41 3" brush="MOD/main/building/walls.vox" object="windowhigh"/>
+				<voxbox pos="24.8 21.7 5.4" rot="0.0 90.0 0.0" size="316 41 3" brush="MOD/main/building/walls.vox" object="windowhigh"/>
+				<voxbox pos="24.8 21.7 -55.7" rot="0.0 90.0 0.0" size="105 41 3" brush="MOD/main/building/walls.vox" object="windowhigh"/>
+				<voxbox pos="5.3 21.7 -25.9" rot="0.0 90.0 0.0" size="295 41 3" brush="MOD/main/building/walls.vox" object="glasswall2"/>
+				<voxbox pos="24.8 21.7 -26.2" rot="0.0 90.0 0.0" size="295 41 3" brush="MOD/main/building/walls.vox" object="glasswall2"/>
+				<voxbox pos="-14.0 21.7 -59.9" rot="0.0 90.0 0.0" size="315 41 3" brush="MOD/main/building/walls.vox" object="windowhigh"/>
+				<voxbox pos="17.6 21.7 -67.0" rot="0.0 90.0 0.0" size="231 41 3" brush="MOD/main/building/walls.vox" object="windowhigh"/>
+			</group>
 		</group>
 		<group name="floor7" layer="floor7">
 			<vox pos="4.2 26.0 30.7" rot="0.0 0.0 0.0" file="MOD/main/building/walls.vox" object="elevator wall"/>
 			<vox pos="4.2 25.8 30.7" rot="0.0 0.0 0.0" file="MOD/main/building/building.vox" object="utilitything2"/>
+			<vox pos="-2.2 25.8 17.8" rot="0.0 0.0 0.0" file="MOD/main/building/building.vox" object="part1"/>
+			<voxbox pos="5.3 25.8 -32.0" rot="0.0 0.0 0.0" size="175 2 398" brush="MOD/main/building/building.vox" object="part1.5"/>
+			<voxbox pos="22.8 25.8 -27.5" rot="0.0 0.0 0.0" size="23 2 330" brush="MOD/main/building/building.vox" object="part1.5"/>
+			<voxbox pos="5.6 25.8 -23.5" rot="0.0 -180.0 0.0" size="24 2 24" brush="MOD/main/building/floor0.vox" object="corner2.0"/>
+			<voxbox pos="18.1 25.8 7.5" rot="0.0 0.0 0.0" size="24 2 24" brush="MOD/main/building/floor0.vox" object="corner2.0"/>
+			<voxbox pos="5.6 25.8 -57.8" rot="0.0 -90.0 0.0" size="24 2 24" brush="MOD/main/building/floor0.vox" object="corner2.0"/>
+			<voxbox pos="-14.0 25.8 -57.5" rot="0.0 90.0 0.0" size="24 2 24" brush="MOD/main/building/floor0.vox" object="corner"/>
+			<voxbox pos="25.1 25.8 7.8" rot="0.0 -180.0 0.0" size="24 2 24" brush="MOD/main/building/floor0.vox" object="corner"/>
+			<voxbox pos="5.3 25.8 -67.0" rot="0.0 0.0 0.0" size="198 2 395" brush="MOD/main/building/building.vox" object="part1.5"/>
+			<voxbox pos="-14.0 25.8 -67.0" rot="0.0 0.0 0.0" size="193 2 71" brush="MOD/main/building/building.vox" object="part1.5"/>
+			<voxbox pos="9.6 25.8 7.5" rot="0.0 0.0 0.0" size="88 2 108" brush="MOD/main/building/building.vox" object="part1.5"/>
+			<voxbox pos="9.6 25.8 18.3" rot="0.0 0.0 0.0" size="88 2 97" brush="MOD/main/building/building.vox" object="part1.5"/>
+			<voxbox pos="-11.6 25.8 -59.9" rot="0.0 0.0 0.0" size="169 2 24" brush="MOD/main/building/building.vox" object="part1.5"/>
+			<voxbox pos="-14.0 25.8 -23.8" rot="0.0 0.0 0.0" size="194 2 313" brush="MOD/main/building/building.vox" object="part1.5"/>
+			<voxbox pos="17.9 25.8 -67.0" rot="0.0 -180.0 0.0" size="319 2 247" brush="MOD/main/building/building.vox" object="part2"/>
+			<voxbox pos="-17.4 25.8 -23.8" rot="0.0 0.0 0.0" size="34 2 78" brush="MOD/main/building/building.vox" object="half"/>
+			<group name="walls" pos="0.0 4.3 0.0" rot="0.0 0.0 0.0">
+				<voxbox pos="-11.6 21.7 27.7" rot="0.0 0.0 0.0" size="127 41 3" brush="MOD/main/building/walls.vox" object="windowhigh"/>
+				<voxbox pos="-13.7 21.7 -91.7" rot="0.0 0.0 0.0" size="295 41 3" brush="MOD/main/building/walls.vox" object="windowhigh"/>
+				<voxbox pos="7.4 21.7 27.7" rot="0.0 0.0 0.0" size="110 41 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
+				<voxbox pos="17.6 21.7 -67.0" rot="0.0 0.0 0.0" size="72 41 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
+				<voxbox pos="20.5 21.7 7.5" rot="0.0 0.0 0.0" size="22 41 3" brush="MOD/main/building/walls.vox" object="windowhigh"/>
+				<voxbox pos="3.2 21.7 -57.5" rot="0.0 -180.0 0.0" size="148 41 3" brush="MOD/main/building/walls.vox" object="windowhigh"/>
+				<voxbox pos="-14.0 21.7 28.0" rot="0.0 90.0 0.0" size="24 41 24" brush="MOD/main/building/walls.vox" object="cornerwindowhigh"/>
+				<voxbox pos="25.1 21.7 7.8" rot="0.0 -180.0 0.0" size="24 41 24" brush="MOD/main/building/walls.vox" object="cornerwindowhigh"/>
+				<voxbox pos="18.1 21.7 7.5" rot="0.0 0.0 0.0" size="24 41 24" brush="MOD/main/building/walls.vox" object="cornerwindowhigh"/>
+				<voxbox pos="-14.0 21.7 -14.4" rot="0.0 90.0 0.0" size="19 41 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
+				<voxbox pos="24.8 21.7 -66.2" rot="0.0 90.0 0.0" size="8 41 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
+				<voxbox pos="18.1 21.7 27.7" rot="0.0 90.0 0.0" size="9 41 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
+				<voxbox pos="-14.0 21.7 -91.39999" rot="0.0 90.0 0.0" size="3 41 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
+				<voxbox pos="17.6 21.7 -90.1" rot="0.0 90.0 0.0" size="16 41 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
+				<voxbox pos="15.8 21.7 -91.7" rot="0.0 0.0 0.0" size="18 41 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
+				<voxbox pos="-14.0 21.7 -23.5" rot="0.0 90.0 0.0" size="3 41 24" brush="MOD/main/building/walls.vox" object="PIllar"/>
+				<voxbox pos="-14.0 21.7 10.9" rot="0.0 90.0 0.0" size="253 41 3" brush="MOD/main/building/walls.vox" object="windowhigh"/>
+				<voxbox pos="-11.59999 21.7 -23.8" rot="0.0 0.0 0.0" size="148 41 3" brush="MOD/main/building/walls.vox" object="windowhigh"/>
+				<voxbox pos="-17.4 21.7 -23.8" rot="0.0 0.0 0.0" size="34 41 78" brush="MOD/main/building/walls.vox" object="halfwindow"/>
+				<voxbox pos="5.6 21.7 -23.5" rot="0.0 180.0 0.0" size="24 41 24" brush="MOD/main/building/walls.vox" object="cornerwall"/>
+				<voxbox pos="5.6 21.7 -57.8" rot="0.0 -90.0 0.0" size="24 41 24" brush="MOD/main/building/walls.vox" object="cornerwall"/>
+				<voxbox pos="-14.0 21.7 -57.5" rot="0.0 90.0 0.0" size="24 41 24" brush="MOD/main/building/walls.vox" object="cornerwindowhigh"/>
+				<voxbox pos="-14.0 21.7 25.6" rot="0.0 90.0 0.0" size="126 41 3" brush="MOD/main/building/walls.vox" object="windowhigh"/>
+				<voxbox pos="-14.0 21.7 10.9" rot="0.0 0.0 0.0" size="3 41 21" brush="MOD/main/building/walls.vox" object="PIllar"/>
+				<voxbox pos="18.1 21.7 26.8" rot="0.0 90.0 0.0" size="169 41 3" brush="MOD/main/building/walls.vox" object="windowhigh"/>
+				<voxbox pos="24.8 21.7 5.4" rot="0.0 90.0 0.0" size="316 41 3" brush="MOD/main/building/walls.vox" object="windowhigh"/>
+				<voxbox pos="24.8 21.7 -55.7" rot="0.0 90.0 0.0" size="105 41 3" brush="MOD/main/building/walls.vox" object="windowhigh"/>
+				<voxbox pos="5.3 21.7 -25.9" rot="0.0 90.0 0.0" size="295 41 3" brush="MOD/main/building/walls.vox" object="glasswall2"/>
+				<voxbox pos="24.8 21.7 -26.2" rot="0.0 90.0 0.0" size="295 41 3" brush="MOD/main/building/walls.vox" object="glasswall2"/>
+				<voxbox pos="-14.0 21.7 -59.9" rot="0.0 90.0 0.0" size="315 41 3" brush="MOD/main/building/walls.vox" object="windowhigh"/>
+				<voxbox pos="17.6 21.7 -67.0" rot="0.0 90.0 0.0" size="231 41 3" brush="MOD/main/building/walls.vox" object="windowhigh"/>
+			</group>
 		</group>
 		<group name="floor8" layer="floor8">
 			<vox pos="4.2 30.3 30.7" rot="0.0 0.0 0.0" file="MOD/main/building/walls.vox" object="elevator wall"/>
 			<vox pos="4.2 30.1 30.7" rot="0.0 0.0 0.0" file="MOD/main/building/building.vox" object="utilitything2"/>
-		</group>
-		<group name="floor9" layer="floor9">
-			<vox pos="4.2 34.6 30.7" rot="0.0 0.0 0.0" file="MOD/main/building/walls.vox" object="elevator wall"/>
-			<vox pos="4.2 34.4 30.7" rot="0.0 0.0 0.0" file="MOD/main/building/building.vox" object="utilitything2"/>
+			<vox pos="-2.2 30.1 17.8" rot="0.0 0.0 0.0" file="MOD/main/building/building.vox" object="part1"/>
+			<voxbox pos="5.3 30.1 -32.0" rot="0.0 0.0 0.0" size="175 2 398" brush="MOD/main/building/building.vox" object="part1.5"/>
+			<voxbox pos="22.8 30.1 -27.5" rot="0.0 0.0 0.0" size="23 2 330" brush="MOD/main/building/building.vox" object="part1.5"/>
+			<voxbox pos="5.6 30.1 -23.5" rot="0.0 180.0 0.0" size="24 2 24" brush="MOD/main/building/floor0.vox" object="corner2.0"/>
+			<voxbox pos="18.1 30.1 7.5" rot="0.0 0.0 0.0" size="24 2 24" brush="MOD/main/building/floor0.vox" object="corner2.0"/>
+			<voxbox pos="5.6 30.1 -57.8" rot="0.0 -90.0 0.0" size="24 2 24" brush="MOD/main/building/floor0.vox" object="corner2.0"/>
+			<voxbox pos="-14.0 30.1 -57.5" rot="0.0 90.0 0.0" size="24 2 24" brush="MOD/main/building/floor0.vox" object="corner"/>
+			<voxbox pos="25.1 30.1 7.8" rot="0.0 180.0 0.0" size="24 2 24" brush="MOD/main/building/floor0.vox" object="corner"/>
+			<voxbox pos="5.3 30.1 -67.0" rot="0.0 0.0 0.0" size="198 2 395" brush="MOD/main/building/building.vox" object="part1.5"/>
+			<voxbox pos="-14.0 30.1 -67.0" rot="0.0 0.0 0.0" size="193 2 71" brush="MOD/main/building/building.vox" object="part1.5"/>
+			<voxbox pos="9.6 30.1 7.5" rot="0.0 0.0 0.0" size="88 2 108" brush="MOD/main/building/building.vox" object="part1.5"/>
+			<voxbox pos="9.6 30.1 18.3" rot="0.0 0.0 0.0" size="88 2 97" brush="MOD/main/building/building.vox" object="part1.5"/>
+			<voxbox pos="-11.6 30.1 -59.9" rot="0.0 0.0 0.0" size="169 2 24" brush="MOD/main/building/building.vox" object="part1.5"/>
+			<voxbox pos="-14.0 30.1 -23.8" rot="0.0 0.0 0.0" size="194 2 313" brush="MOD/main/building/building.vox" object="part1.5"/>
+			<voxbox pos="17.9 30.1 -67.0" rot="0.0 180.0 0.0" size="319 2 247" brush="MOD/main/building/building.vox" object="part2"/>
+			<voxbox pos="-17.4 30.1 -23.8" rot="0.0 0.0 0.0" size="34 2 78" brush="MOD/main/building/building.vox" object="half"/>
+			<group name="walls" pos="0.0 8.6 0.0" rot="0.0 0.0 0.0">
+				<voxbox pos="-11.6 21.7 27.7" rot="0.0 0.0 0.0" size="127 41 3" brush="MOD/main/building/walls.vox" object="windowhigh"/>
+				<voxbox pos="7.4 21.7 27.7" rot="0.0 0.0 0.0" size="110 41 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
+				<voxbox pos="7.7 21.7 -57.8" rot="0.0 0.0 0.0" size="110 41 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
+				<voxbox pos="20.7 21.7 -57.8" rot="0.0 0.0 0.0" size="44 41 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
+				<voxbox pos="24.8 21.7 -57.5" rot="0.0 0.0 0.0" size="3 41 18" brush="MOD/main/building/walls.vox" object="PIllar"/>
+				<voxbox pos="20.5 21.7 7.5" rot="0.0 0.0 0.0" size="22 41 3" brush="MOD/main/building/walls.vox" object="windowhigh"/>
+				<voxbox pos="-14.0 21.7 28.0" rot="0.0 90.0 0.0" size="24 41 24" brush="MOD/main/building/walls.vox" object="cornerwindowhigh"/>
+				<voxbox pos="25.1 21.7 7.8" rot="0.0 -180.0 0.0" size="24 41 24" brush="MOD/main/building/walls.vox" object="cornerwindowhigh"/>
+				<voxbox pos="18.1 21.7 7.5" rot="0.0 0.0 0.0" size="24 41 24" brush="MOD/main/building/walls.vox" object="cornerwindowhigh"/>
+				<voxbox pos="-14.0 21.7 -14.4" rot="0.0 90.0 0.0" size="19 41 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
+				<voxbox pos="18.1 21.7 27.7" rot="0.0 90.0 0.0" size="9 41 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
+				<voxbox pos="-14.0 21.7 -23.5" rot="0.0 90.0 0.0" size="3 41 24" brush="MOD/main/building/walls.vox" object="PIllar"/>
+				<voxbox pos="-14.0 21.7 10.9" rot="0.0 90.0 0.0" size="253 41 3" brush="MOD/main/building/walls.vox" object="windowhigh"/>
+				<voxbox pos="-11.59999 21.7 -23.8" rot="0.0 0.0 0.0" size="148 41 3" brush="MOD/main/building/walls.vox" object="windowhigh"/>
+				<voxbox pos="-17.4 21.7 -23.8" rot="0.0 0.0 0.0" size="34 41 78" brush="MOD/main/building/walls.vox" object="halfwindow"/>
+				<voxbox pos="5.6 21.7 -23.5" rot="0.0 180.0 0.0" size="24 41 24" brush="MOD/main/building/walls.vox" object="cornerwall"/>
+				<voxbox pos="5.3 21.7 -57.8" rot="0.0 0.0 0.0" size="24 41 24" brush="MOD/main/building/walls.vox" object="cornerwall"/>
+				<voxbox pos="-14.0 21.7 25.6" rot="0.0 90.0 0.0" size="126 41 3" brush="MOD/main/building/walls.vox" object="windowhigh"/>
+				<voxbox pos="-14.0 21.7 10.9" rot="0.0 0.0 0.0" size="3 41 21" brush="MOD/main/building/walls.vox" object="PIllar"/>
+				<voxbox pos="18.1 21.7 26.8" rot="0.0 90.0 0.0" size="169 41 3" brush="MOD/main/building/walls.vox" object="windowhigh"/>
+				<voxbox pos="24.8 21.7 5.4" rot="0.0 90.0 0.0" size="316 41 3" brush="MOD/main/building/walls.vox" object="windowhigh"/>
+				<voxbox pos="5.3 21.7 -25.9" rot="0.0 90.0 0.0" size="295 41 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
+				<voxbox pos="24.8 21.7 -26.2" rot="0.0 90.0 0.0" size="295 41 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
+				<voxbox pos="18.7 21.7 -57.8" rot="0.0 0.0 0.0" size="21 41 3" brush="MOD/main/building/walls.vox" object="door"/>
+			</group>
 		</group>
 		<group name="roof" layer="roof">
-			<vox pos="4.2 38.7 30.7" rot="0.0 0.0 0.0" file="MOD/main/building/building.vox" object="utilitything3"/>
+			<vox pos="4.2 34.4 30.7" rot="0.0 0.0 0.0" file="MOD/main/building/building.vox" object="utilitything3"/>
+			<voxbox pos="9.6 34.4 7.5" rot="0.0 0.0 0.0" size="88 2 108" brush="MOD/main/building/building.vox" object="part1.5"/>
+			<voxbox pos="9.6 34.4 18.3" rot="0.0 0.0 0.0" size="88 2 97" brush="MOD/main/building/building.vox" object="part1.5"/>
+			<vox pos="-2.2 34.4 17.8" rot="0.0 0.0 0.0" file="MOD/main/building/building.vox" object="part1"/>
+			<voxbox pos="-14.0 34.4 -23.8" rot="0.0 0.0 0.0" size="194 2 313" brush="MOD/main/building/building.vox" object="part1.5"/>
+			<voxbox pos="5.3 34.4 -32.0" rot="0.0 0.0 0.0" size="175 2 398" brush="MOD/main/building/building.vox" object="part1.5"/>
+			<voxbox pos="-17.4 34.4 -23.8" rot="0.0 0.0 0.0" size="34 2 78" brush="MOD/main/building/building.vox" object="half"/>
+			<voxbox pos="5.3 34.4 -55.7" rot="0.0 0.0 0.0" size="198 2 395" brush="MOD/main/building/building.vox" object="part1.5"/>
+			<voxbox pos="7.7 34.4 -57.8" rot="0.0 0.0 0.0" size="174 2 21" brush="MOD/main/building/building.vox" object="part1.5"/>
+			<voxbox pos="22.8 34.4 -27.5" rot="0.0 0.0 0.0" size="23 2 330" brush="MOD/main/building/building.vox" object="part1.5"/>
+			<voxbox pos="25.1 34.4 7.8" rot="0.0 -180.0 0.0" size="24 2 24" brush="MOD/main/building/floor0.vox" object="corner"/>
+			<voxbox pos="5.3 34.4 -57.8" rot="0.0 0.0 0.0" size="24 2 24" brush="MOD/main/building/floor0.vox" object="corner"/>
+			<voxbox pos="5.6 34.4 -23.5" rot="0.0 -180.0 0.0" size="24 2 24" brush="MOD/main/building/floor0.vox" object="corner2.0"/>
+			<voxbox pos="18.1 34.4 7.5" rot="0.0 0.0 0.0" size="24 2 24" brush="MOD/main/building/floor0.vox" object="corner2.0"/>
+			<voxbox pos="-50.0 8.8 -91.0" rot="0.0 -180.0 0.0" size="64 12 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
+			<voxbox pos="-56.4 8.8 -91.0" rot="0.0 -180.0 0.0" size="17 12 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
+			<voxbox pos="-58.1 8.8 -91.3" rot="0.0 90.0 0.0" size="347 12 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
+			<voxbox pos="-38.3 8.8 -90.6" rot="0.0 90.0 0.0" size="7 12 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
+			<voxbox pos="-38.0 8.8 -67.0" rot="0.0 0.0 0.0" size="3 12 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
+			<voxbox pos="-38.0 8.8 -91.3" rot="0.0 0.0 0.0" size="3 12 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
+			<voxbox pos="-37.7 8.8 -91.3" rot="0.0 0.0 0.0" size="231 12 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
+			<voxbox pos="-37.7 8.8 -67.0" rot="0.0 0.0 0.0" size="231 12 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
+			<voxbox pos="-38.3 8.8 -67.5" rot="0.0 90.0 0.0" size="231 12 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
+			<voxbox pos="-38.3 8.8 -66.7" rot="0.0 90.0 0.0" size="8 12 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
+			<voxbox pos="-57.8 8.8 -126.0" rot="0.0 0.0 0.0" size="820 12 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
+			<voxbox pos="24.0 8.8 -126.0" rot="0.0 0.0 0.0" size="20 12 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
+			<voxbox pos="25.7 8.8 -125.0" rot="0.0 90.0 0.0" size="7 12 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
+			<voxbox pos="25.7 8.8 -91.3" rot="0.0 90.0 0.0" size="337 12 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
+			<voxbox pos="17.6 8.8 -91.0" rot="0.0 90.0 0.0" size="3 12 17" brush="MOD/main/building/walls.vox" object="PIllar"/>
+			<voxbox pos="25.7 8.8 -91.0" rot="0.0 -180.0 0.0" size="64 12 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
+			<voxbox pos="25.7 8.8 -91.0" rot="0.0 90.0 0.0" size="3 12 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
+			<voxbox pos="-14.6 8.8 -91.3" rot="0.0 0.0 0.0" size="6 12 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
+			<voxbox pos="-14.6 8.8 -67.0" rot="0.0 0.0 0.0" size="6 12 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
+		</group>
+		<group name="railings/outdoor building props">
+			<voxbox pos="-14.0 8.8 -23.9" rot="0.0 90.0 0.0" size="81 12 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
+			<voxbox pos="-13.7 8.8 -32.0" rot="0.0 180.0 0.0" size="363 12 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
+			<voxbox pos="-50.0 8.8 -32.3" rot="0.0 90.0 0.0" size="100 12 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
+			<voxbox pos="-50.0 8.8 -53.7" rot="0.0 90.0 0.0" size="376 12 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
+			<voxbox pos="-56.6 8.8 -54.0" rot="0.0 0.0 0.0" size="66 12 120" brush="MOD/main/building/walls.vox" object="entrancewindow"/>
+			<voxbox pos="-17.4 34.6 -23.8" rot="0.0 0.0 0.0" size="34 12 78" brush="MOD/main/building/walls.vox" object="halfwindow"/>
+			<voxbox pos="-14.0 34.6 10.9" rot="0.0 90.0 0.0" size="253 12 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
+			<voxbox pos="-14.0 34.6 -14.4" rot="0.0 90.0 0.0" size="19 12 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
+			<voxbox pos="-14.0 34.6 25.6" rot="0.0 90.0 0.0" size="126 12 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
+			<voxbox pos="-14.0 34.6 10.9" rot="0.0 0.0 0.0" size="3 12 21" brush="MOD/main/building/walls.vox" object="PIllar"/>
+			<voxbox pos="-14.0 34.6 28.0" rot="0.0 90.0 0.0" size="24 12 24" brush="MOD/main/building/walls.vox" object="cornerwall"/>
+			<voxbox pos="-11.6 34.6 27.7" rot="0.0 0.0 0.0" size="130 12 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
+			<voxbox pos="7.1 34.6 27.7" rot="0.0 0.0 0.0" size="113 12 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
+			<voxbox pos="18.1 34.6 26.8" rot="0.0 90.0 0.0" size="169 12 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
+			<voxbox pos="18.1 34.6 7.5" rot="0.0 0.0 0.0" size="24 12 24" brush="MOD/main/building/walls.vox" object="cornerwall"/>
+			<voxbox pos="25.1 34.6 7.8" rot="0.0 -180.0 0.0" size="24 12 24" brush="MOD/main/building/walls.vox" object="cornerwall"/>
+			<voxbox pos="20.5 34.6 7.5" rot="0.0 0.0 0.0" size="22 12 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
+			<voxbox pos="24.8 34.6 5.4" rot="0.0 90.0 0.0" size="316 12 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
+			<voxbox pos="24.8 34.6 -26.2" rot="0.0 90.0 0.0" size="295 12 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
+			<voxbox pos="18.7 34.6 -57.8" rot="0.0 0.0 0.0" size="21 12 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
+			<voxbox pos="24.8 34.6 -57.5" rot="0.0 0.0 0.0" size="3 12 18" brush="MOD/main/building/walls.vox" object="PIllar"/>
+			<voxbox pos="7.7 34.6 -57.8" rot="0.0 0.0 0.0" size="110 12 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
+			<voxbox pos="5.3 34.6 -57.8" rot="0.0 0.0 0.0" size="24 12 24" brush="MOD/main/building/walls.vox" object="cornerwall"/>
+			<voxbox pos="5.3 34.6 -25.9" rot="0.0 90.0 0.0" size="295 12 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
+			<voxbox pos="5.6 34.6 -23.5" rot="0.0 180.0 0.0" size="24 12 24" brush="MOD/main/building/walls.vox" object="cornerwall"/>
+			<voxbox pos="-11.6 34.6 -23.8" rot="0.0 0.0 0.0" size="148 12 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
+			<voxbox pos="-14.0 34.6 -23.5" rot="0.0 90.0 0.0" size="3 12 24" brush="MOD/main/building/walls.vox" object="PIllar"/>
+			<voxbox pos="18.1 34.6 27.7" rot="0.0 90.0 0.0" size="9 12 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
+			<vox pos="4.2 34.6 30.7" rot="0.0 0.0 0.0" file="MOD/main/building/walls.vox" object="elevator wall railing"/>
+			<voxbox pos="24.8 30.3 -57.8" rot="0.0 90.0 0.0" size="84 12 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
+			<voxbox pos="24.8 30.3 -66.2" rot="0.0 90.0 0.0" size="8 12 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
+			<voxbox pos="17.6 30.3 -67.0" rot="0.0 0.0 0.0" size="72 12 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
+			<voxbox pos="17.6 30.3 -67.0" rot="0.0 90.0 0.0" size="231 12 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
+			<voxbox pos="15.8 30.3 -91.7" rot="0.0 0.0 0.0" size="18 12 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
+			<voxbox pos="17.6 30.3 -90.1" rot="0.0 90.0 0.0" size="16 12 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
+			<voxbox pos="-13.7 30.3 -91.7" rot="0.0 0.0 0.0" size="295 12 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
+			<voxbox pos="-14.0 30.3 -91.4" rot="0.0 90.0 0.0" size="3 12 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
+			<voxbox pos="-14.0 30.3 -59.9" rot="0.0 90.0 0.0" size="315 12 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
+			<voxbox pos="3.2 30.3 -57.5" rot="0.0 180.0 0.0" size="148 12 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
+			<voxbox pos="-14.0 30.3 -57.5" rot="0.0 90.0 0.0" size="24 12 24" brush="MOD/main/building/walls.vox" object="cornerwall"/>
+			<voxbox pos="5.6 30.3 -57.8" rot="0.0 -90.0 0.0" size="24 12 24" brush="MOD/main/building/walls.vox" object="cornerwall"/>
 		</group>
 	</group>
 	<group name="background" pos="107.3 9.7 73.0">

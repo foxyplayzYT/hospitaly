@@ -50,94 +50,210 @@
 		<vox pos="4.2 -0.4 30.6" rot="0.0 0.0 0.0" file="MOD/main/building/building.vox" object="utilitything"/>
 		<group name="1st floor" layer="floor1">
 			<group name="outside-walls" pos="-13.6 0.2 -46.3">
-				<voxbox pos="-0.4 0.0 74.3" rot="0.0 90.0 0.0" size="24 41 24" brush="MOD/main/building/walls.vox" object="cornerglasswall"/>
-				<voxbox pos="2.0 0.0 74.0" size="1 41 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
-				<voxbox pos="-0.4 0.0 71.9" rot="0.0 90.0 0.0" size="126 41 3" brush="MOD/main/building/walls.vox" object="glasswall"/>
-				<voxbox pos="-0.4 0.0 21.0" rot="0.0 90.0 0.0" size="64 41 3" brush="MOD/main/building/walls.vox" object="glasswall"/>
-				<voxbox pos="-36.2 0.0 0.8" rot="0.0 90.0 0.0" size="1 39 0" brush="MOD/main/building/walls.vox" object="door thing"/>
-				<voxbox pos="-36.4 0.0 0.8" rot="0.0 90.0 0.0" size="1 39 0" brush="MOD/main/building/walls.vox" object="door thing"/>
-				<voxbox pos="-36.4 3.8 0.8" rot="0.0 90.0 0.0" size="48 1 3" brush="MOD/main/building/walls.vox" object="dooy thing2"/>
-				<voxbox pos="-36.4 0.0 0.8" rot="0.0 90.0 0.0" size="48 1 3" brush="MOD/main/building/walls.vox" object="dooy thing2"/>
-				<voxbox pos="-36.4 3.9 4.3" rot="0.0 90.0 0.0" size="120 2 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
-				<voxbox pos="-36.4 0.0 -29.8" rot="0.0 90.0 0.0" size="127 41 3" brush="MOD/main/building/walls.vox" object="glasswall"/>
-				<voxbox pos="-36.4 0.0 -7.7" rot="0.0 90.0 0.0" size="211 41 3" brush="MOD/main/building/walls.vox" object="glasswall">
-					<voxbox pos="-0.0 0.0 0.2" size="211 40 1" brush="MOD/main/building/inner-walls.vox" object="plaster">
-						<voxbox pos="0.1 0.1 0.0" rot="0.0 0.0 0.0" size="20 38 0" brush="hole"/>
-						<voxbox pos="2.2 0.1 0.0" rot="0.0 0.0 0.0" size="20 38 0" brush="hole"/>
-						<voxbox pos="4.3 0.1 0.0" rot="0.0 0.0 0.0" size="20 38 0" brush="hole"/>
-						<voxbox pos="10.6 0.1 0.0" rot="0.0 0.0 0.0" size="20 38 0" brush="hole"/>
-						<voxbox pos="6.4 0.1 0.0" rot="0.0 0.0 0.0" size="20 38 0" brush="hole"/>
-						<voxbox pos="8.5 0.1 0.0" rot="0.0 0.0 0.0" size="20 38 0" brush="hole"/>
-						<voxbox pos="16.9 0.1 0.0" rot="0.0 0.0 0.0" size="20 38 0" brush="hole"/>
-						<voxbox pos="19.0 0.1 0.0" rot="0.0 0.0 0.0" size="20 38 0" brush="hole"/>
-						<voxbox pos="12.7 0.1 0.0" rot="0.0 0.0 0.0" size="20 38 0" brush="hole"/>
-						<voxbox pos="14.8 0.1 0.0" rot="0.0 0.0 0.0" size="20 38 0" brush="hole"/>
+				<compound pos="0.8 0.0 73.1">
+					<voxbox pos="-1.2 0.0 1.2" rot="0.0 90.0 0.0" size="24 41 24" brush="MOD/main/building/walls.vox" object="cornerglasswall"/>
+				</compound>
+				<compound pos="2.1 0.0 74.2">
+					<voxbox pos="-0.1 0.0 -0.2" size="1 41 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
+				</compound>
+				<compound pos="-0.3 0.0 65.6">
+					<voxbox pos="-0.1 0.0 6.3" rot="0.0 90.0 0.0" size="126 41 3" brush="MOD/main/building/walls.vox" object="glasswall"/>
+				</compound>
+				<compound pos="-0.3 0.0 17.8">
+					<voxbox pos="-0.1 0.0 3.2" rot="0.0 90.0 0.0" size="64 41 3" brush="MOD/main/building/walls.vox" object="glasswall"/>
+				</compound>
+				<compound pos="-36.1 0.0 0.8">
+					<voxbox pos="-0.1 0.0 0.0" rot="0.0 90.0 0.0" size="1 39 0" brush="MOD/main/building/walls.vox" object="door thing"/>
+				</compound>
+				<compound pos="-36.4 0.0 0.8">
+					<voxbox pos="0.0 0.0 0.0" rot="0.0 90.0 0.0" size="1 39 0" brush="MOD/main/building/walls.vox" object="door thing"/>
+				</compound>
+				<compound pos="-36.2 3.8 -1.6">
+					<voxbox pos="-0.2 0.0 2.4" rot="0.0 90.0 0.0" size="48 1 3" brush="MOD/main/building/walls.vox" object="dooy thing2"/>
+				</compound>
+				<compound pos="-36.2 0.0 -1.6">
+					<voxbox pos="-0.2 0.0 2.4" rot="0.0 90.0 0.0" size="48 1 3" brush="MOD/main/building/walls.vox" object="dooy thing2"/>
+				</compound>
+				<compound pos="-36.2 3.9 -1.7">
+					<voxbox pos="-0.2 0.0 6.0" rot="0.0 90.0 0.0" size="120 2 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
+				</compound>
+				<compound pos="-36.2 0.0 -36.1">
+					<voxbox pos="-0.2 0.0 6.3" rot="0.0 90.0 0.0" size="127 41 3" brush="MOD/main/building/walls.vox" object="glasswall"/>
+				</compound>
+				<compound pos="-36.2 0.0 -18.2">
+					<voxbox pos="-0.2 0.0 10.5" rot="0.0 90.0 0.0" size="211 41 3" brush="MOD/main/building/walls.vox" object="glasswall">
+						<voxbox pos="-0.0 0.0 0.2" size="211 40 1" brush="MOD/main/building/inner-walls.vox" object="plaster">
+							<voxbox pos="0.1 0.1 0.0" rot="0.0 0.0 0.0" size="20 38 0" brush="hole"/>
+							<voxbox pos="2.2 0.1 0.0" rot="0.0 0.0 0.0" size="20 38 0" brush="hole"/>
+							<voxbox pos="4.3 0.1 0.0" rot="0.0 0.0 0.0" size="20 38 0" brush="hole"/>
+							<voxbox pos="10.6 0.1 0.0" rot="0.0 0.0 0.0" size="20 38 0" brush="hole"/>
+							<voxbox pos="6.4 0.1 0.0" rot="0.0 0.0 0.0" size="20 38 0" brush="hole"/>
+							<voxbox pos="8.5 0.1 0.0" rot="0.0 0.0 0.0" size="20 38 0" brush="hole"/>
+							<voxbox pos="16.9 0.1 0.0" rot="0.0 0.0 0.0" size="20 38 0" brush="hole"/>
+							<voxbox pos="19.0 0.1 0.0" rot="0.0 0.0 0.0" size="20 38 0" brush="hole"/>
+							<voxbox pos="12.7 0.1 0.0" rot="0.0 0.0 0.0" size="20 38 0" brush="hole"/>
+							<voxbox pos="14.8 0.1 0.0" rot="0.0 0.0 0.0" size="20 38 0" brush="hole"/>
+						</voxbox>
 					</voxbox>
-				</voxbox>
-				<voxbox pos="31.2 0.0 -21.2" rot="0.0 90.0 0.0" size="231 41 3" brush="MOD/main/building/walls.vox" object="glasswall"/>
-				<voxbox pos="-0.4 0.0 -21.2" rot="0.0 90.0 0.0" size="231 41 3" brush="MOD/main/building/walls.vox" object="glasswall"/>
-				<voxbox pos="-0.4 0.0 -20.4" rot="0.0 90.0 0.0" size="8 41 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
-				<voxbox pos="-0.4 0.0 -44.3" rot="0.0 90.0 0.0" size="7 41 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
-				<voxbox pos="-24.7 0.0 -44.49998" rot="0.0 90.0 0.0" size="5 41 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
-				<voxbox pos="-24.7 0.0 -20.4" rot="0.0 90.0 0.0" size="8 41 3" brush="MOD/main/building/walls.vox" object="PIllar">
-					<voxbox pos="0.0 0.0 0.0" size="8 40 1" brush="MOD/main/building/inner-walls.vox" object="plaster"/>
-				</voxbox>
-				<voxbox pos="-24.7 0.0 -27.6" rot="0.0 90.0 0.0" size="22 41 3" brush="MOD/main/building/walls.vox" object="PIllar">
-					<voxbox pos="0.0 0.0 0.0" size="18 40 1" brush="MOD/main/building/inner-walls.vox" object="plaster"/>
-				</voxbox>
-				<voxbox pos="-36.1 0.0 -29.8" rot="0.0 -90.0 0.0" size="10 41 3" brush="MOD/main/building/walls.vox" object="PIllar">
-					<voxbox pos="0.3 0.0 -0.0" size="7 40 1" brush="MOD/main/building/inner-walls.vox" object="plaster"/>
-				</voxbox>
+				</compound>
+				<compound pos="31.3 0.0 -32.7">
+					<voxbox pos="-0.1 0.0 11.5" rot="0.0 90.0 0.0" size="231 41 3" brush="MOD/main/building/walls.vox" object="glasswall"/>
+				</compound>
+				<compound pos="-0.3 0.0 -32.7">
+					<voxbox pos="-0.1 0.0 11.5" rot="0.0 90.0 0.0" size="231 41 3" brush="MOD/main/building/walls.vox" object="glasswall"/>
+				</compound>
+				<compound pos="-0.3 0.0 -20.8">
+					<voxbox pos="-0.1 0.0 0.4" rot="0.0 90.0 0.0" size="8 41 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
+				</compound>
+				<compound pos="-0.2 0.0 -44.6">
+					<voxbox pos="-0.2 0.0 0.3" rot="0.0 90.0 0.0" size="7 41 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
+				</compound>
+				<compound pos="-24.6 0.0 -44.7">
+					<voxbox pos="-0.1 0.0 0.20002" rot="0.0 90.0 0.0" size="5 41 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
+				</compound>
+				<compound pos="-24.6 0.0 -20.8">
+					<voxbox pos="-0.1 0.0 0.4" rot="0.0 90.0 0.0" size="8 41 3" brush="MOD/main/building/walls.vox" object="PIllar">
+						<voxbox pos="0.0 0.0 0.0" size="8 40 1" brush="MOD/main/building/inner-walls.vox" object="plaster"/>
+					</voxbox>
+				</compound>
+				<compound pos="-24.6 0.0 -28.7">
+					<voxbox pos="-0.1 0.0 1.1" rot="0.0 90.0 0.0" size="22 41 3" brush="MOD/main/building/walls.vox" object="PIllar">
+						<voxbox pos="0.0 0.0 0.0" size="18 40 1" brush="MOD/main/building/inner-walls.vox" object="plaster"/>
+					</voxbox>
+				</compound>
+				<compound pos="-36.2 0.0 -29.3">
+					<voxbox pos="0.1 0.0 -0.5" rot="0.0 -90.0 0.0" size="10 41 3" brush="MOD/main/building/walls.vox" object="PIllar">
+						<voxbox pos="0.3 0.0 -0.0" size="7 40 1" brush="MOD/main/building/inner-walls.vox" object="plaster"/>
+					</voxbox>
+				</compound>
 				<voxbox pos="-24.4 0.0 -20.7" rot="0.0 0.0 0.0" size="3 41 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
-				<voxbox pos="-24.4 0.0 -45.0" rot="0.0 0.0 0.0" size="90 41 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
-				<voxbox pos="-9.4 0.0 -45.0" rot="0.0 0.0 0.0" size="90 41 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
-				<voxbox pos="-15.4 3.9 -45.0" rot="0.0 0.0 0.0" size="60 2 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
-				<voxbox pos="-15.4 3.8 -45.0" rot="0.0 0.0 0.0" size="60 1 3" brush="MOD/main/building/walls.vox" object="dooy thing2"/>
-				<voxbox pos="-15.4 0.0 -45.0" rot="0.0 0.0 0.0" size="60 1 3" brush="MOD/main/building/walls.vox" object="dooy thing2"/>
-				<voxbox pos="-15.4 0.1 -45.0" rot="0.0 0.0 0.0" size="1 37 3" brush="MOD/main/building/walls.vox" object="door thing"/>
-				<voxbox pos="-9.5 0.1 -45.0" rot="0.0 0.0 0.0" size="1 37 3" brush="MOD/main/building/walls.vox" object="door thing"/>
-				<voxbox pos="-1.0 0.0 -20.7" rot="0.0 0.0 0.0" size="6 41 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
-				<voxbox pos="-24.7 0.0 -21.2" rot="0.0 90.0 0.0" size="64 41 3" brush="MOD/main/building/walls.vox" object="glasswall">
-					<voxbox pos="0.0 0.0 0.0" size="64 40 1" brush="MOD/main/building/inner-walls.vox" object="plaster">
-						<voxbox pos="0.1 0.1 0.0" rot="0.0 0.0 0.0" size="20 38 0" brush="hole"/>
-						<voxbox pos="2.2 0.1 0.0" rot="0.0 0.0 0.0" size="20 38 0" brush="hole"/>
-						<voxbox pos="4.3 0.1 0.0" rot="0.0 0.0 0.0" size="20 38 0" brush="hole"/>
+				<compound pos="-19.9 0.0 -44.8">
+					<voxbox pos="-4.5 0.0 -0.2" rot="0.0 0.0 0.0" size="90 41 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
+				</compound>
+				<compound pos="-4.9 0.0 -44.8">
+					<voxbox pos="-4.5 0.0 -0.2" rot="0.0 0.0 0.0" size="90 41 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
+				</compound>
+				<compound pos="-12.4 3.9 -44.8">
+					<voxbox pos="-3.0 0.0 -0.2" rot="0.0 0.0 0.0" size="60 2 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
+				</compound>
+				<compound pos="-12.4 3.8 -44.8">
+					<voxbox pos="-3.0 0.0 -0.2" rot="0.0 0.0 0.0" size="60 1 3" brush="MOD/main/building/walls.vox" object="dooy thing2"/>
+				</compound>
+				<compound pos="-12.4 0.0 -44.8">
+					<voxbox pos="-3.0 0.0 -0.2" rot="0.0 0.0 0.0" size="60 1 3" brush="MOD/main/building/walls.vox" object="dooy thing2"/>
+				</compound>
+				<compound pos="-15.3 0.1 -44.8">
+					<voxbox pos="-0.1 0.0 -0.2" rot="0.0 0.0 0.0" size="1 37 3" brush="MOD/main/building/walls.vox" object="door thing"/>
+				</compound>
+				<compound pos="-9.4 0.1 -44.8">
+					<voxbox pos="-0.1 0.0 -0.2" rot="0.0 0.0 0.0" size="1 37 3" brush="MOD/main/building/walls.vox" object="door thing"/>
+				</compound>
+				<compound pos="-0.7 0.0 -20.6">
+					<voxbox pos="-0.3 0.0 -0.1" rot="0.0 0.0 0.0" size="6 41 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
+				</compound>
+				<compound pos="-24.6 0.0 -24.4">
+					<voxbox pos="-0.1 0.0 3.2" rot="0.0 90.0 0.0" size="64 41 3" brush="MOD/main/building/walls.vox" object="glasswall">
+						<voxbox pos="0.0 0.0 0.0" size="64 40 1" brush="MOD/main/building/inner-walls.vox" object="plaster">
+							<voxbox pos="0.1 0.1 0.0" rot="0.0 0.0 0.0" size="20 38 0" brush="hole"/>
+							<voxbox pos="2.2 0.1 0.0" rot="0.0 0.0 0.0" size="20 38 0" brush="hole"/>
+							<voxbox pos="4.3 0.1 0.0" rot="0.0 0.0 0.0" size="20 38 0" brush="hole"/>
+						</voxbox>
 					</voxbox>
-				</voxbox>
-				<voxbox pos="-24.7 0.0 -29.8" rot="0.0 90.0 0.0" size="148 41 3" brush="MOD/main/building/walls.vox" object="glasswall"/>
-				<voxbox pos="-24.1 0.0 -20.7" rot="0.0 0.0 0.0" size="231 41 3" brush="MOD/main/building/walls.vox" object="glasswall"/>
-				<voxbox pos="2.0 0.0 74.0" rot="0.0 0.0 0.0" size="127 41 3" brush="MOD/main/building/walls.vox" object="glasswall"/>
-				<voxbox pos="21.0 0.0 74.0" rot="0.0 0.0 0.0" size="183 41 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
-				<voxbox pos="31.2 0.0 -20.7" rot="0.0 90.0 0.0" size="5 41 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
-				<voxbox pos="31.2 0.0 -20.7" rot="0.0 0.0 0.0" size="81 41 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
-				<voxbox pos="31.2 0.0 -44.3" rot="0.0 90.0 0.0" size="4 41 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
-				<voxbox pos="-0.7 0.0 14.3" rot="0.0 180.0 0.0" size="232 41 3" brush="MOD/main/building/walls.vox" object="glasswall"/>
-				<voxbox pos="-36.4 0.0 -44.7" rot="0.0 180.0 0.0" size="64 41 3" brush="MOD/main/building/walls.vox" object="windowhigh"/>
-				<voxbox pos="39.3 0.0 -44.7" rot="0.0 180.0 0.0" size="64 41 3" brush="MOD/main/building/walls.vox" object="windowhigh"/>
-				<voxbox pos="-44.2 0.0 -79.7" rot="0.0 0.0 0.0" size="820 41 3" brush="MOD/main/building/walls.vox" object="windowhigh"/>
-				<voxbox pos="-44.5 0.0 -45.0" rot="0.0 90.0 0.0" size="337 41 3" brush="MOD/main/building/walls.vox" object="windowhigh"/>
-				<voxbox pos="39.30001 0.0 -45.0" rot="0.0 90.0 0.0" size="337 41 3" brush="MOD/main/building/walls.vox" object="windowhigh"/>
-				<voxbox pos="-0.4 0.0 14.6" rot="0.0 90.0 0.0" size="3 41 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
-				<voxbox pos="-0.7 0.0 14.3" rot="0.0 90.0 0.0" size="3 41 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
-				<voxbox pos="-0.4 0.0 14.3" rot="0.0 90.0 0.0" size="3 41 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
-				<voxbox pos="-23.9 0.0 14.3" rot="0.0 180.0 0.0" size="125 41 3" brush="MOD/main/building/walls.vox" object="PIllar">
-					<voxbox pos="0.5 0.0 0.2" size="118 40 1" brush="MOD/main/building/inner-walls.vox" object="plaster"/>
-				</voxbox>
-				<voxbox pos="-36.4 0.0 14.3" rot="0.0 90.0 0.0" size="100 41 3" brush="MOD/main/building/walls.vox" object="PIllar">
-					<voxbox pos="0.2 0.0 0.2" size="98 40 1" brush="MOD/main/building/inner-walls.vox" object="plaster"/>
-				</voxbox>
-				<voxbox pos="-36.4 0.0 4.3" rot="0.0 90.0 0.0" size="35 39 0" brush="MOD/main/building/walls.vox" object="PIllar"/>
-				<voxbox pos="-36.2 0.0 4.3" rot="0.0 90.0 0.0" size="35 39 0" brush="MOD/main/building/inner-walls.vox" object="plaster"/>
-				<voxbox pos="39.3 0.0 74.3" rot="0.0 90.0 0.0" size="100 41 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
-				<voxbox pos="44.3 0.0 74.3" rot="0.0 90.0 0.0" size="154 41 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
-				<voxbox pos="39.6 0.0 74.3" rot="0.0 90.0 0.0" size="3 41 47" brush="MOD/main/building/walls.vox" object="PIllar"/>
-				<voxbox pos="39.3 0.0 62.2" rot="0.0 90.0 0.0" size="100 41 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
-				<voxbox pos="39.3 0.0 25.9" rot="0.0 90.0 0.0" size="466 41 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
-				<voxbox pos="39.3 0.0 48.4" rot="0.0 90.0 0.0" size="30 41 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
-				<voxbox pos="39.3 3.9 52.2" rot="0.0 90.0 0.0" size="38 2 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
-				<voxbox pos="39.3 3.8 52.2" rot="0.0 90.0 0.0" size="38 1 3" brush="MOD/main/building/walls.vox" object="dooy thing2"/>
-				<voxbox pos="39.3 3.8 45.4" rot="0.0 90.0 0.0" size="38 1 3" brush="MOD/main/building/walls.vox" object="dooy thing2"/>
-				<voxbox pos="39.3 3.8 38.6" rot="0.0 90.0 0.0" size="38 1 3" brush="MOD/main/building/walls.vox" object="dooy thing2"/>
+				</compound>
+				<compound pos="-24.6 0.0 -37.2">
+					<voxbox pos="-0.1 0.0 7.4" rot="0.0 90.0 0.0" size="148 41 3" brush="MOD/main/building/walls.vox" object="glasswall"/>
+				</compound>
+				<compound pos="-12.5 0.0 -20.6">
+					<voxbox pos="-11.6 0.0 -0.1" rot="0.0 0.0 0.0" size="231 41 3" brush="MOD/main/building/walls.vox" object="glasswall"/>
+				</compound>
+				<compound pos="8.4 0.0 74.2">
+					<voxbox pos="-6.4 0.0 -0.2" rot="0.0 0.0 0.0" size="127 41 3" brush="MOD/main/building/walls.vox" object="glasswall"/>
+				</compound>
+				<compound pos="30.2 0.0 74.2">
+					<voxbox pos="-9.2 0.0 -0.2" rot="0.0 0.0 0.0" size="183 41 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
+				</compound>
+				<compound pos="31.4 0.0 -20.9">
+					<voxbox pos="-0.2 0.0 0.2" rot="0.0 90.0 0.0" size="5 41 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
+				</compound>
+				<compound pos="35.3 0.0 -20.6">
+					<voxbox pos="-4.1 0.0 -0.1" rot="0.0 0.0 0.0" size="81 41 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
+				</compound>
+				<compound pos="31.4 0.0 -44.5">
+					<voxbox pos="-0.2 0.0 0.2" rot="0.0 90.0 0.0" size="4 41 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
+				</compound>
+				<compound pos="-12.3 0.0 14.2">
+					<voxbox pos="11.6 0.0 0.1" rot="0.0 180.0 0.0" size="232 41 3" brush="MOD/main/building/walls.vox" object="glasswall"/>
+				</compound>
+				<compound pos="-39.6 0.0 -44.8">
+					<voxbox pos="3.2 0.0 0.1" rot="0.0 180.0 0.0" size="64 41 3" brush="MOD/main/building/walls.vox" object="windowhigh"/>
+				</compound>
+				<compound pos="36.1 0.0 -44.8">
+					<voxbox pos="3.2 0.0 0.1" rot="0.0 180.0 0.0" size="64 41 3" brush="MOD/main/building/walls.vox" object="windowhigh"/>
+				</compound>
+				<compound pos="-3.2 0.0 -79.5">
+					<voxbox pos="-41.0 0.0 -0.2" rot="0.0 0.0 0.0" size="820 41 3" brush="MOD/main/building/walls.vox" object="windowhigh"/>
+				</compound>
+				<compound pos="-44.4 0.0 -61.8">
+					<voxbox pos="-0.1 0.0 16.8" rot="0.0 90.0 0.0" size="337 41 3" brush="MOD/main/building/walls.vox" object="windowhigh"/>
+				</compound>
+				<compound pos="39.5 0.0 -61.8">
+					<voxbox pos="-0.19999 0.0 16.8" rot="0.0 90.0 0.0" size="337 41 3" brush="MOD/main/building/walls.vox" object="windowhigh"/>
+				</compound>
+				<compound pos="-0.2 0.0 14.5">
+					<voxbox pos="-0.2 0.0 0.1" rot="0.0 90.0 0.0" size="3 41 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
+				</compound>
+				<compound pos="-0.5 0.0 14.2">
+					<voxbox pos="-0.2 0.0 0.1" rot="0.0 90.0 0.0" size="3 41 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
+				</compound>
+				<compound pos="-0.2 0.0 14.2">
+					<voxbox pos="-0.2 0.0 0.1" rot="0.0 90.0 0.0" size="3 41 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
+				</compound>
+				<compound pos="-30.1 0.0 14.2">
+					<voxbox pos="6.2 0.0 0.1" rot="0.0 180.0 0.0" size="125 41 3" brush="MOD/main/building/walls.vox" object="PIllar">
+						<voxbox pos="0.5 0.0 0.2" size="118 40 1" brush="MOD/main/building/inner-walls.vox" object="plaster"/>
+					</voxbox>
+				</compound>
+				<compound pos="-36.2 0.0 9.3">
+					<voxbox pos="-0.2 0.0 5.0" rot="0.0 90.0 0.0" size="100 41 3" brush="MOD/main/building/walls.vox" object="PIllar">
+						<voxbox pos="0.2 0.0 0.2" size="98 40 1" brush="MOD/main/building/inner-walls.vox" object="plaster"/>
+					</voxbox>
+				</compound>
+				<compound pos="-36.4 0.0 2.6">
+					<voxbox pos="0.0 0.0 1.7" rot="0.0 90.0 0.0" size="35 39 0" brush="MOD/main/building/walls.vox" object="PIllar"/>
+				</compound>
+				<compound pos="-36.1 0.0 2.6">
+					<voxbox pos="-0.1 0.0 1.7" rot="0.0 90.0 0.0" size="35 39 0" brush="MOD/main/building/inner-walls.vox" object="plaster"/>
+				</compound>
+				<compound pos="39.4 0.0 69.3">
+					<voxbox pos="-0.1 0.0 5.0" rot="0.0 90.0 0.0" size="100 41 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
+				</compound>
+				<compound pos="44.4 0.0 66.6">
+					<voxbox pos="-0.1 0.0 7.7" rot="0.0 90.0 0.0" size="154 41 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
+				</compound>
+				<compound pos="41.9 0.0 74.2">
+					<voxbox pos="-2.3 0.0 0.1" rot="0.0 90.0 0.0" size="3 41 47" brush="MOD/main/building/walls.vox" object="PIllar"/>
+				</compound>
+				<compound pos="39.4 0.0 57.2">
+					<voxbox pos="-0.1 0.0 5.0" rot="0.0 90.0 0.0" size="100 41 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
+				</compound>
+				<compound pos="39.4 0.0 2.6">
+					<voxbox pos="-0.1 0.0 23.3" rot="0.0 90.0 0.0" size="466 41 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
+				</compound>
+				<compound pos="39.4 0.0 46.9">
+					<voxbox pos="-0.1 0.0 1.5" rot="0.0 90.0 0.0" size="30 41 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
+				</compound>
+				<compound pos="39.4 3.9 50.3">
+					<voxbox pos="-0.1 0.0 1.9" rot="0.0 90.0 0.0" size="38 2 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
+				</compound>
+				<compound pos="39.4 3.8 50.3">
+					<voxbox pos="-0.1 0.0 1.9" rot="0.0 90.0 0.0" size="38 1 3" brush="MOD/main/building/walls.vox" object="dooy thing2"/>
+				</compound>
+				<compound pos="39.4 3.8 43.5">
+					<voxbox pos="-0.1 0.0 1.9" rot="0.0 90.0 0.0" size="38 1 3" brush="MOD/main/building/walls.vox" object="dooy thing2"/>
+				</compound>
+				<compound pos="39.4 3.8 36.7">
+					<voxbox pos="-0.1 0.0 1.9" rot="0.0 90.0 0.0" size="38 1 3" brush="MOD/main/building/walls.vox" object="dooy thing2"/>
+				</compound>
 				<voxbox pos="39.3 3.8 31.8" rot="0.0 90.0 0.0" size="38 1 3" brush="MOD/main/building/walls.vox" object="dooy thing2"/>
 				<voxbox pos="39.3 3.9 45.4" rot="0.0 90.0 0.0" size="38 2 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
 				<voxbox pos="39.3 3.9 38.6" rot="0.0 90.0 0.0" size="38 2 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
@@ -152,14 +268,20 @@
 				<voxbox pos="42.0 0.0 56.3" rot="0.0 0.0 0.0" size="21 41 3" brush="MOD/main/building/walls.vox" object="windowhigh"/>
 				<voxbox pos="44.3 0.0 58.9" rot="0.0 90.0 0.0" size="21 41 3" brush="MOD/main/building/walls.vox" object="windowhigh"/>
 				<voxbox pos="39.3 0.0 28.0" rot="0.0 90.0 0.0" size="21 41 3" brush="MOD/main/building/walls.vox" object="door"/>
-				<voxbox pos="-36.4 0.0 -42.5" rot="0.0 90.0 0.0" size="25 41 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
+				<compound pos="-36.2 0.0 -43.7">
+					<voxbox pos="-0.2 0.0 1.2" rot="0.0 90.0 0.0" size="25 41 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
+				</compound>
 				<voxbox pos="-44.5 0.0 -78.7" rot="0.0 90.0 0.0" size="10 41 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
 				<voxbox pos="39.3 0.0 -78.7" rot="0.0 90.0 0.0" size="7 41 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
 				<voxbox pos="39.3 0.0 -44.7" rot="0.0 90.0 0.0" size="3 41 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
 				<voxbox pos="31.2 0.0 -44.7" rot="0.0 90.0 0.0" size="3 41 17" brush="MOD/main/building/walls.vox" object="PIllar"/>
-				<voxbox pos="-42.8 0.0 -44.7" rot="0.0 180.0 0.0" size="17 41 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
+				<compound pos="-43.6 0.0 -44.8">
+					<voxbox pos="0.8 0.0 0.1" rot="0.0 180.0 0.0" size="17 41 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
+				</compound>
 				<voxbox pos="37.6 0.0 -79.7" rot="0.0 0.0 0.0" size="20 41 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
-				<voxbox pos="-0.4 0.0 57.2" rot="0.0 90.0 0.0" size="253 41 3" brush="MOD/main/building/walls.vox" object="glasswall"/>
+				<compound pos="-0.3 0.0 44.6">
+					<voxbox pos="-0.1 0.0 12.6" rot="0.0 90.0 0.0" size="253 41 3" brush="MOD/main/building/walls.vox" object="glasswall"/>
+				</compound>
 				<voxbox pos="-0.4 0.0 57.2" size="3 41 21" brush="MOD/main/building/walls.vox" object="PIllar"/>
 				<voxbox pos="-0.2 0.0 24.2" rot="0.0 90.0 0.0" size="1 39 1" brush="MOD/main/building/walls.vox" object="door thing"/>
 				<voxbox pos="-0.4 3.8 28.9" rot="0.0 90.0 0.0" size="48 1 3" brush="MOD/main/building/walls.vox" object="dooy thing2"/>
@@ -174,7 +296,9 @@
 				<voxbox pos="-0.2 0.0 24.1" rot="0.0 90.0 0.0" size="31 39 0" brush="MOD/main/building/walls.vox" object="PIllar"/>
 				<voxbox pos="-36.4 0.0 -3.9" rot="0.0 90.0 0.0" size="1 39 0" brush="MOD/main/building/walls.vox" object="door thing"/>
 				<voxbox pos="-36.2 0.0 -3.9" rot="0.0 90.0 0.0" size="1 39 0" brush="MOD/main/building/walls.vox" object="door thing"/>
-				<voxbox pos="-36.4 0.0 -4.0" rot="0.0 90.0 0.0" size="37 39 0" brush="MOD/main/building/walls.vox" object="PIllar"/>
+				<compound pos="-36.4 0.0 -5.8">
+					<voxbox pos="0.0 0.0 1.8" rot="0.0 90.0 0.0" size="37 39 0" brush="MOD/main/building/walls.vox" object="PIllar"/>
+				</compound>
 				<voxbox pos="-36.2 0.0 -4.0" rot="0.0 90.0 0.0" size="37 39 0" brush="MOD/main/building/inner-walls.vox" object="plaster"/>
 				<voxbox pos="39.3 0.0 31.8" rot="0.0 90.0 0.0" size="38 1 3" brush="MOD/main/building/walls.vox" object="dooy thing2"/>
 				<voxbox pos="39.3 0.0 38.6" rot="0.0 90.0 0.0" size="38 1 3" brush="MOD/main/building/walls.vox" object="dooy thing2"/>
@@ -194,7 +318,6 @@
 				<compound name="wall" pos="-0.1 0.0 0.0">
 					<voxbox pos="0.1 0.0 -5.09999" rot="0.0 -90.0 0.0" size="101 40 2" brush="MOD/main/building/inner-walls.vox" object="wall">
 						<voxbox pos="0.0 0.0 0.2" size="102 40 1" brush="MOD/main/building/inner-walls.vox" object="plaster"/>
-						<voxbox pos="0.0 0.0 -0.1" size="99 40 1" brush="MOD/main/building/inner-walls.vox" object="plaster2"/>
 					</voxbox>
 				</compound>
 				<compound name="wall" pos="-6.6 0.0 -14.3" rot="0.0 90.0 0.0">
@@ -204,9 +327,8 @@
 					</voxbox>
 				</compound>
 				<compound name="wall" pos="12.4 0.0 4.9" rot="0.0 90.0 0.0">
-					<voxbox pos="0.1 0.0 -12.6" rot="0.0 -90.0 0.0" size="244 40 2" brush="MOD/main/building/inner-walls.vox" object="wall">
-						<voxbox pos="0.0 0.0 0.2" size="244 40 1" brush="MOD/main/building/inner-walls.vox" object="plaster"/>
-						<voxbox pos="0.3 0.0 -0.1" rot="0.0 0.0 0.0" size="238 40 1" brush="MOD/main/building/inner-walls.vox" object="plaster2"/>
+					<voxbox pos="0.1 0.0 -12.6" rot="0.0 -90.0 0.0" size="32 40 2" brush="MOD/main/building/inner-walls.vox" object="wall">
+						<voxbox pos="0.0 0.0 0.2" size="30 40 1" brush="MOD/main/building/inner-walls.vox" object="plaster3"/>
 					</voxbox>
 				</compound>
 				<compound name="wall" pos="24.1 0.0 0.0">
@@ -222,33 +344,27 @@
 					</voxbox>
 				</compound>
 				<compound name="wall" pos="8.0 0.0 0.0">
-					<voxbox pos="0.1 0.0 -5.1" rot="0.0 -90.0 0.0" size="101 40 2" brush="MOD/main/building/inner-walls.vox" object="wall">
-						<voxbox pos="0.0 0.0 0.2" size="98 40 1" brush="MOD/main/building/inner-walls.vox" object="plaster2"/>
-						<voxbox pos="0.0 0.0 -0.1" size="98 40 1" brush="MOD/main/building/inner-walls.vox" object="plaster2"/>
+					<voxbox pos="0.3 0.0 -5.1" rot="0.0 -90.0 0.0" size="198 40 3" brush="MOD/main/building/inner-walls.vox" object="wall">
+						<voxbox pos="0.0 0.0 -0.1" size="99 40 1" brush="MOD/main/building/inner-walls.vox" object="plaster2"/>
+						<voxbox pos="10.1 0.0 -0.1" size="99 40 1" brush="MOD/main/building/inner-walls.vox" object="plaster"/>
 					</voxbox>
 				</compound>
 				<compound name="wall" pos="2.9 0.0 12.2">
-					<voxbox pos="0.1 0.0 -2.7" rot="0.0 -90.0 0.0" size="54 40 2" brush="MOD/main/building/inner-walls.vox" object="wall">
-						<voxbox pos="-0.1 0.0 0.2" rot="0.0 0.0 0.0" size="56 40 1" brush="MOD/main/building/inner-walls.vox" object="plaster"/>
+					<voxbox pos="0.1 0.0 -7.2" rot="0.0 -90.0 0.0" size="99 40 2" brush="MOD/main/building/inner-walls.vox" object="wall">
+						<voxbox pos="0.0 0.0 0.2" rot="0.0 0.0 0.0" size="99 40 1" brush="MOD/main/building/inner-walls.vox" object="plaster3"/>
 						<voxbox pos="0.3 0.0 -0.1" size="48 40 1" brush="MOD/main/building/inner-walls.vox" object="plaster"/>
-					</voxbox>
-				</compound>
-				<compound name="wall" pos="24.1 0.0 12.2" rot="0.0 -180.0 0.0">
-					<voxbox pos="0.1 0.0 -2.7" rot="0.0 -90.0 0.0" size="54 40 2" brush="MOD/main/building/inner-walls.vox" object="wall">
-						<voxbox pos="-0.1 0.0 0.2" rot="0.0 0.0 0.0" size="56 40 1" brush="MOD/main/building/inner-walls.vox" object="plaster"/>
-						<voxbox pos="0.3 0.0 -0.1" size="48 40 1" brush="MOD/main/building/inner-walls.vox" object="plaster"/>
-					</voxbox>
-				</compound>
-				<compound name="wall" pos="2.7 0.0 9.6" rot="0.0 90.0 0.0">
-					<voxbox pos="0.1 0.0 0.1" rot="0.0 -90.0 0.0" size="214 40 2" brush="MOD/main/building/inner-walls.vox" object="wall">
-						<voxbox pos="0.2 0.0 0.2" rot="0.0 0.0 0.0" size="210 40 1" brush="MOD/main/building/inner-walls.vox" object="plaster"/>
-						<voxbox pos="0.0 0.0 -0.1" size="214 40 1" brush="MOD/main/building/inner-walls.vox" object="plaster"/>
 					</voxbox>
 				</compound>
 				<compound name="wall" pos="2.7 0.0 14.8" rot="0.0 90.0 0.0">
-					<voxbox pos="0.1 0.0 0.1" rot="0.0 -90.0 0.0" size="214 40 2" brush="MOD/main/building/inner-walls.vox" object="wall">
-						<voxbox pos="0.0 0.0 0.2" size="214 40 1" brush="MOD/main/building/inner-walls.vox" object="plaster"/>
-						<voxbox pos="0.2 0.0 -0.1" rot="0.0 0.0 0.0" size="210 40 1" brush="MOD/main/building/inner-walls.vox" object="plaster"/>
+					<voxbox pos="0.1 0.0 0.1" rot="0.0 -90.0 0.0" size="55 40 2" brush="MOD/main/building/inner-walls.vox" object="wall">
+						<voxbox pos="-0.1 0.0 0.2" rot="0.0 0.0 0.0" size="57 40 1" brush="MOD/main/building/inner-walls.vox" object="plaster"/>
+					</voxbox>
+				</compound>
+				<compound name="wall" pos="8.2 0.0 4.9" rot="0.0 90.0 0.0">
+					<voxbox pos="0.1 0.0 0.1" rot="0.0 -90.0 0.0" size="159 40 2" brush="MOD/main/building/inner-walls.vox" object="wall">
+						<voxbox pos="0.0 0.0 -0.1" size="78 40 1" brush="MOD/main/building/inner-walls.vox" object="plaster2"/>
+						<voxbox pos="8.0 0.0 -0.1" size="76 40 1" brush="MOD/main/building/inner-walls.vox" object="plaster2"/>
+						<voxbox pos="0.0 0.0 0.2" size="159 40 1" brush="MOD/main/building/inner-walls.vox" object="plaster"/>
 					</voxbox>
 				</compound>
 				<compound name="wall" pos="24.2 0.0 24.2" rot="0.0 180.0 0.0">
@@ -351,13 +467,13 @@
 				</compound>
 				<compound name="wall" pos="-3.8 0.0 -58.8" rot="0.0 90.0 0.0">
 					<voxbox pos="0.1 0.0 -10.79999" rot="0.0 -90.0 0.0" size="731 40 2" brush="MOD/main/building/inner-walls.vox" object="wall">
-						<voxbox pos="0.2 0.0 0.2" rot="0.0 0.0 0.0" size="726 40 1" brush="MOD/main/building/inner-walls.vox" object="plaster"/>
+						<voxbox pos="0.2 0.0 0.2" rot="0.0 0.0 0.0" size="87 40 1" brush="MOD/main/building/inner-walls.vox" object="plaster4"/>
 						<voxbox pos="0.0 0.0 -0.1" size="731 40 1" brush="MOD/main/building/inner-walls.vox" object="plaster"/>
 					</voxbox>
 				</compound>
 				<compound name="wall" pos="-14.5 0.0 -39.8" rot="0.0 -180.0 0.0">
 					<voxbox pos="0.1 0.0 -5.09999" rot="0.0 -90.0 0.0" size="242 40 2" brush="MOD/main/building/inner-walls.vox" object="wall">
-						<voxbox pos="0.2 0.0 0.2" rot="0.0 0.0 0.0" size="237 40 1" brush="MOD/main/building/inner-walls.vox" object="plaster"/>
+						<voxbox pos="10.1 0.0 0.2" rot="0.0 0.0 0.0" size="138 40 1" brush="MOD/main/building/inner-walls.vox" object="plaster4"/>
 						<voxbox pos="-0.1 0.0 -0.1" size="244 40 1" brush="MOD/main/building/inner-walls.vox" object="plaster"/>
 					</voxbox>
 				</compound>
@@ -373,6 +489,41 @@
 						<voxbox pos="-0.1 0.0 -0.1" size="244 40 1" brush="MOD/main/building/inner-walls.vox" object="plaster"/>
 					</voxbox>
 				</compound>
+				<group pos="21.9 0.0 -46.8">
+					<compound name="wall" pos="0.0 0.0 2.1">
+						<voxbox pos="36.4 0.0 0.1" rot="0.0 -180.0 0.0" size="727 40 2" brush="MOD/main/building/inner-walls.vox" object="wall">
+							<voxbox pos="64.0 0.0 0.2" rot="0.0 0.0 0.0" size="87 40 1" brush="MOD/main/building/inner-walls.vox" object="plaster4"/>
+							<voxbox pos="59.9 0.0 0.2" rot="0.0 0.0 0.0" size="39 40 1" brush="MOD/main/building/inner-walls.vox" object="plaster2"/>
+							<voxbox pos="59.9 0.0 14.0" rot="0.0 0.0 0.0" size="39 40 1" brush="MOD/main/building/inner-walls.vox" object="plaster2"/>
+						</voxbox>
+					</compound>
+					<compound name="wall" pos="15.3 0.0 -4.9">
+						<voxbox pos="0.1 0.0 -7.0" rot="0.0 -90.0 0.0" size="139 40 2" brush="MOD/main/building/inner-walls.vox" object="wall"/>
+					</compound>
+					<compound name="wall" pos="8.3 0.0 -4.9">
+						<voxbox pos="0.1 0.0 -7.0" rot="0.0 -90.0 0.0" size="139 40 2" brush="MOD/main/building/inner-walls.vox" object="wall"/>
+					</compound>
+					<compound name="wall" pos="0.6 0.0 -4.9">
+						<voxbox pos="0.1 0.0 -7.0" rot="0.0 -90.0 0.0" size="139 40 2" brush="MOD/main/building/inner-walls.vox" object="wall"/>
+					</compound>
+					<compound name="wall" pos="-8.6 0.0 -4.9">
+						<voxbox pos="0.1 0.0 -7.0" rot="0.0 -90.0 0.0" size="139 40 2" brush="MOD/main/building/inner-walls.vox" object="wall"/>
+					</compound>
+					<compound name="wall" pos="-12.7 0.0 -4.9">
+						<voxbox pos="0.1 0.0 -7.0" rot="0.0 -90.0 0.0" size="139 40 2" brush="MOD/main/building/inner-walls.vox" object="wall"/>
+					</compound>
+					<compound name="wall" pos="-27.5 0.0 -5.0">
+						<voxbox pos="0.1 0.0 -6.9" rot="0.0 -90.0 0.0" size="139 40 2" brush="MOD/main/building/inner-walls.vox" object="wall">
+							<voxbox pos="0.0 0.0 0.2" rot="0.0 0.0 0.0" size="138 40 1" brush="MOD/main/building/inner-walls.vox" object="plaster4"/>
+							<voxbox pos="0.0 0.0 -0.1" rot="0.0 0.0 0.0" size="138 40 1" brush="MOD/main/building/inner-walls.vox" object="plaster2"/>
+						</voxbox>
+					</compound>
+					<compound name="wall" pos="-23.4 0.0 -4.9">
+						<voxbox pos="0.1 0.0 -7.0" rot="0.0 -90.0 0.0" size="139 40 2" brush="MOD/main/building/inner-walls.vox" object="wall">
+							<voxbox pos="0.0 0.0 0.2" rot="0.0 0.0 0.0" size="138 40 1" brush="MOD/main/building/inner-walls.vox" object="plaster2"/>
+						</voxbox>
+					</compound>
+				</group>
 				<compound name="wall" pos="8.0 0.0 24.6">
 					<voxbox pos="0.1 0.0 -5.2" rot="0.0 -90.0 0.0" size="99 40 2" brush="MOD/main/building/inner-walls.vox" object="wall">
 						<voxbox pos="0.0 0.0 0.2" size="99 40 1" brush="MOD/main/building/inner-walls.vox" object="plaster2"/>
@@ -415,31 +566,6 @@
 					<vox pos="2.6 0.0 4.0" rot="0.0 -170.0 0.0" prop="true" file="MOD/main/props/potted_plants.vox" object="big_leaf_black"/>
 					<vox pos="2.8 0.0 -4.1" rot="0.0 -170.0 0.0" prop="true" file="MOD/main/props/potted_plants.vox" object="short_round_black"/>
 					<instance pos="0.2 0.0 5.1" rot="0.0 0.0 0.0" file="MOD/main/props/door1.xml"/>
-				</group>
-				<group name="office" pos="-34.0 0.2 -61.8">
-					<vox pos="2.2 0.0 0.1" rot="0.0 0.0 0.0" density="1.3" prop="true" file="MOD/main/props/hospital-assets2.vox" object="desk1">
-						<vox pos="1.2 0.0 0.0" rot="0.0 0.0 0.0" prop="true" file="MOD/main/props/hospital-assets2.vox" object="computer"/>
-						<vox pos="0.5 1.0 0.1" rot="0.0 0.0 0.0" prop="true" file="MOD/main/props/hospital-assets2.vox" object="monitor"/>
-						<vox pos="0.5 1.0 -0.3" rot="0.0 0.0 0.0" prop="true" file="MOD/main/props/hospital-assets2.vox" object="keyboard"/>
-					</vox>
-					<vox pos="-2.0 0.0 -1.5" rot="0.0 20.0 0.0" density="1.6" prop="true" file="MOD/main/props/hospital-assets2.vox" object="table"/>
-					<instance pos="0.2 0.0 5.1" rot="0.0 0.0 0.0" file="MOD/main/props/door1.xml"/>
-					<vox pos="-3.4 0.0 0.7" rot="0.0 90.0 0.0" file="MOD/main/props/hospital-assets2.vox" object="shelf1"/>
-					<vox pos="-3.4 0.0 3.6" rot="0.0 90.0 0.0" file="MOD/main/props/hospital-assets2.vox" object="shelf1"/>
-					<vox pos="-3.4 0.0 1.6" rot="0.0 90.0 0.0" file="MOD/main/props/hospital-assets2.vox" object="shelf2"/>
-					<vox pos="-3.4 0.0 2.7" rot="0.0 90.0 0.0" file="MOD/main/props/hospital-assets2.vox" object="sink-shelf"/>
-					<vox pos="-3.4 2.0 1.6" rot="0.0 90.0 0.0" file="MOD/main/props/hospital-assets2.vox" object="shelf-top"/>
-					<vox pos="2.2 0.0 -1.7" rot="0.0 -40.0 0.0" prop="true" file="MOD/main/props/hospital-assets2.vox" object="chair1"/>
-					<vox pos="3.7 1.7 -0.5" rot="0.0 -90.0 0.0" desc='"Every Dobs doctor of dibinity"' density="0.5" prop="true" file="MOD/main/props/hospital-assets2.vox" object="painting1">
-						<joint pos="-0.0 1.0 -0.1" collide="true"/>
-					</vox>
-					<vox pos="2.8 0.0 2.1" rot="0.0 -170.0 0.0" prop="true" file="MOD/main/props/hospital-assets2.vox" object="chair2"/>
-					<vox pos="1.0 0.0 2.1" rot="0.0 160.0 0.0" prop="true" file="MOD/main/props/hospital-assets2.vox" object="chair2"/>
-					<vox pos="-2.7 0.0 4.5" rot="0.0 -180.0 0.0" prop="true" file="MOD/main/props/potted_plants.vox" object="box_plant_white"/>
-					<vox pos="-2.8 0.0 -4.1" rot="0.0 -110.0 0.0" prop="true" file="MOD/main/props/potted_plants.vox" object="short_round_black"/>
-					<vox pos="-0.3 3.7 0.1" rot="0.0 0.0 0.0" prop="false" file="MOD/main/props/hospital-assets2.vox" object="light">
-						<light pos="0.05 0.0 -0.05" rot="90.0 0.0 0.0" type="area" scale="2.5" size="0.3 1.3"/>
-					</vox>
 				</group>
 				<group name="office" pos="-17.9 0.2 -61.8">
 					<vox pos="2.2 0.0 0.1" rot="0.0 0.0 0.0" density="1.3" prop="true" file="MOD/main/props/hospital-assets2.vox" object="desk1">
@@ -545,7 +671,7 @@
 					</vox>
 				</group>
 				<group name="wating-area" pos="-43.9 0.2 -54.8" rot="0.0 -90.0 0.0">
-					<vox pos="5.4 0.0 -4.9" density="1.6" prop="false" file="MOD/main/props/hospital-assets2.vox" object="info desk">
+					<vox pos="4.6 0.0 -6.0" density="1.6" prop="false" file="MOD/main/props/hospital-assets2.vox" object="info desk">
 						<vox pos="1.8 0.9 0.95" rot="0.0 0.0 0.0" prop="true" file="MOD/main/props/hospital-assets2.vox" object="monitor"/>
 						<vox pos="2.4 0.0 0.8" rot="0.0 0.0 0.0" prop="true" file="MOD/main/props/hospital-assets2.vox" object="computer"/>
 						<vox pos="1.8 0.9 0.7" rot="0.0 0.0 0.0" prop="true" file="MOD/main/props/hospital-assets2.vox" object="keyboard"/>
@@ -554,9 +680,9 @@
 						<vox pos="-2.3 0.0 0.8" rot="0.0 0.0 0.0" prop="true" file="MOD/main/props/hospital-assets2.vox" object="computer"/>
 					</vox>
 					<instance pos="6.5 0.0 -8.8" rot="0.0 0.0 0.0" file="MOD/main/props/door1.xml"/>
-					<vox pos="7.4 0.0 -5.4" rot="0.0 -10.0 0.0" prop="true" file="MOD/main/props/hospital-assets2.vox" object="chair1"/>
-					<vox pos="5.4 0.0 -5.4" rot="0.0 10.0 0.0" prop="true" file="MOD/main/props/hospital-assets2.vox" object="chair1"/>
-					<vox pos="3.3 0.0 -5.4" rot="0.0 0.0 0.0" prop="true" file="MOD/main/props/hospital-assets2.vox" object="chair1"/>
+					<vox pos="6.6 0.0 -6.5" rot="0.0 -10.0 0.0" prop="true" file="MOD/main/props/hospital-assets2.vox" object="chair1"/>
+					<vox pos="4.6 0.0 -6.5" rot="0.0 10.0 0.0" prop="true" file="MOD/main/props/hospital-assets2.vox" object="chair1"/>
+					<vox pos="2.5 0.0 -6.5" rot="0.0 0.0 0.0" prop="true" file="MOD/main/props/hospital-assets2.vox" object="chair1"/>
 					<vox pos="13.4 0.0 -5.2" rot="0.0 0.0 0.0" strength="1.3" prop="true" file="MOD/main/props/hospital-assets2.vox" object="waiting-chair"/>
 					<vox pos="16.7 0.0 -5.2" rot="0.0 0.0 0.0" strength="1.3" prop="true" file="MOD/main/props/hospital-assets2.vox" object="waiting-chair"/>
 					<vox pos="15.0 1.6 -5.7" rot="0.0 0.0 0.0" prop="false" file="MOD/main/props/hospital-assets2.vox" object="poster1"/>
@@ -580,28 +706,6 @@
 					<vox pos="15.2 0.0 2.3" rot="0.0 0.0 0.0" strength="1.3" prop="true" file="MOD/main/props/hospital-assets2.vox" object="waiting-chair"/>
 					<vox pos="17.9 0.0 1.3" rot="0.0 -180.0 0.0" strength="1.3" prop="true" file="MOD/main/props/hospital-assets2.vox" object="waiting-chair"/>
 					<vox pos="15.3 0.0 1.3" rot="0.0 -180.0 0.0" strength="1.3" prop="true" file="MOD/main/props/hospital-assets2.vox" object="waiting-chair"/>
-					<script name="TV" pos="21.6 3.2 -5.1" rot="0.0 -50.0 0.0" file="terminal.lua">
-						<body tags="interact" pos="0.0 -0.33 0.1" rot="7.0 0.0 0.0" dynamic="true">
-							<vox pos="0.0 -0.2 -0.0" strength="5" file="MOD/main/props/hospital-assets2.vox" object="tv-part2">
-								<screen tags="terminal" pos="0.0 0.25 0.1" rot="0.0 0.0 0.0" size="0.6 0.3" bulge="0.03" script="MOD/scripts/tv_ads.lua" enabled="true"/>
-							</vox>
-						</body>
-						<vox pos="0.0 -0.4 0.2" strength="5" file="MOD/main/props/hospital-assets2.vox" object="tv-part1">
-							<joint pos="-0.4 0.2 -0.1" rot="0.0 90.0 0.0" type="hinge" rotstrength="0.05"/>
-							<joint pos="0.4 0.2 -0.1" rot="0.0 90.0 0.0" type="hinge" rotstrength="0.05"/>
-						</vox>
-					</script>
-					<script name="TV" pos="21.6 3.2 5.2" rot="0.0 -120.0 0.0" file="terminal.lua">
-						<body tags="interact" pos="0.0 -0.33 0.1" rot="7.0 0.0 0.0" dynamic="true">
-							<vox pos="0.0 -0.2 -0.0" strength="5" file="MOD/main/props/hospital-assets2.vox" object="tv-part2">
-								<screen tags="terminal" pos="0.0 0.25 0.1" rot="0.0 0.0 0.0" size="0.6 0.3" bulge="0.03" script="MOD/scripts/tv_ads.lua" enabled="true"/>
-							</vox>
-						</body>
-						<vox pos="0.0 -0.4 0.2" strength="5" file="MOD/main/props/hospital-assets2.vox" object="tv-part1">
-							<joint pos="-0.4 0.2 -0.1" rot="0.0 90.0 0.0" type="hinge" rotstrength="0.05"/>
-							<joint pos="0.4 0.2 -0.1" rot="0.0 90.0 0.0" type="hinge" rotstrength="0.05"/>
-						</vox>
-					</script>
 					<vox pos="-3.0 0.0 5.2" rot="0.0 -180.0 0.0" strength="1.3" prop="true" file="MOD/main/props/hospital-assets2.vox" object="waiting-chair"/>
 					<vox pos="-6.3 0.0 5.2" rot="0.0 -180.0 0.0" strength="1.3" prop="true" file="MOD/main/props/hospital-assets2.vox" object="waiting-chair"/>
 					<vox pos="-9.6 0.0 5.2" rot="0.0 -180.0 0.0" strength="1.3" prop="true" file="MOD/main/props/hospital-assets2.vox" object="waiting-chair"/>
@@ -623,28 +727,6 @@
 					<vox pos="-4.8 0.0 -2.3" rot="0.0 -180.0 0.0" strength="1.3" prop="true" file="MOD/main/props/hospital-assets2.vox" object="waiting-chair"/>
 					<vox pos="-7.5 0.0 -1.3" rot="0.0 0.0 0.0" strength="1.3" prop="true" file="MOD/main/props/hospital-assets2.vox" object="waiting-chair"/>
 					<vox pos="-4.9 0.0 -1.3" rot="0.0 0.0 0.0" strength="1.3" prop="true" file="MOD/main/props/hospital-assets2.vox" object="waiting-chair"/>
-					<script name="TV" pos="-19.5 3.2 5.1" rot="0.0 130.0 0.0" file="terminal.lua">
-						<body tags="interact" pos="0.0 -0.33 0.1" rot="7.0 0.0 0.0" dynamic="true">
-							<vox pos="0.0 -0.2 -0.0" strength="5" file="MOD/main/props/hospital-assets2.vox" object="tv-part2">
-								<screen tags="terminal" pos="0.0 0.25 0.1" rot="0.0 0.0 0.0" size="0.6 0.3" bulge="0.03" script="MOD/scripts/tv_ads.lua" enabled="true"/>
-							</vox>
-						</body>
-						<vox pos="0.0 -0.4 0.2" strength="5" file="MOD/main/props/hospital-assets2.vox" object="tv-part1">
-							<joint pos="-0.4 0.2 -0.1" rot="0.0 90.0 0.0" type="hinge" rotstrength="0.05"/>
-							<joint pos="0.4 0.2 -0.1" rot="0.0 90.0 0.0" type="hinge" rotstrength="0.05"/>
-						</vox>
-					</script>
-					<script name="TV" pos="-19.5 3.2 -4.99999" rot="0.0 60.0 0.0" file="terminal.lua">
-						<body tags="interact" pos="0.0 -0.33 0.1" rot="7.0 0.0 0.0" dynamic="true">
-							<vox pos="0.0 -0.2 -0.0" strength="5" file="MOD/main/props/hospital-assets2.vox" object="tv-part2">
-								<screen tags="terminal" pos="0.0 0.25 0.1" rot="0.0 0.0 0.0" size="0.6 0.3" bulge="0.03" script="MOD/scripts/tv_ads.lua" enabled="true"/>
-							</vox>
-						</body>
-						<vox pos="0.0 -0.4 0.2" strength="5" file="MOD/main/props/hospital-assets2.vox" object="tv-part1">
-							<joint pos="-0.4 0.2 -0.1" rot="0.0 90.0 0.0" type="hinge" rotstrength="0.05"/>
-							<joint pos="0.4 0.2 -0.1" rot="0.0 90.0 0.0" type="hinge" rotstrength="0.05"/>
-						</vox>
-					</script>
 					<vox pos="-13.4 0.0 -5.0" rot="0.0 0.0 0.0" strength="1.3" prop="true" file="MOD/main/props/hospital-assets2.vox" object="waiting-chair"/>
 					<vox pos="-13.1 0.0 5.2" rot="0.0 -180.0 0.0" strength="1.3" prop="true" file="MOD/main/props/hospital-assets2.vox" object="waiting-chair"/>
 					<vox pos="-17.4 0.0 -5.0" rot="0.0 0.0 0.0" strength="1.3" prop="true" file="MOD/main/props/hospital-assets2.vox" object="waiting-chair"/>
@@ -657,28 +739,6 @@
 					<vox pos="-12.3 0.0 1.6" rot="0.0 -180.0 0.0" strength="1.3" prop="true" file="MOD/main/props/hospital-assets2.vox" object="waiting-chair"/>
 					<vox pos="-12.4 0.0 2.6" rot="0.0 0.0 0.0" strength="1.3" prop="true" file="MOD/main/props/hospital-assets2.vox" object="waiting-chair"/>
 					<vox pos="-15.0 0.0 2.6" rot="0.0 0.0 0.0" strength="1.3" prop="true" file="MOD/main/props/hospital-assets2.vox" object="waiting-chair"/>
-					<script name="TV" pos="-10.2 3.2 -4.99999" rot="0.0 60.0 0.0" file="terminal.lua">
-						<body tags="interact" pos="0.0 -0.33 0.1" rot="7.0 0.0 0.0" dynamic="true">
-							<vox pos="0.0 -0.2 -0.0" strength="5" file="MOD/main/props/hospital-assets2.vox" object="tv-part2">
-								<screen tags="terminal" pos="0.0 0.25 0.1" rot="0.0 0.0 0.0" size="0.6 0.3" bulge="0.03" script="MOD/scripts/tv_ads.lua" enabled="true"/>
-							</vox>
-						</body>
-						<vox pos="0.0 -0.4 0.2" strength="5" file="MOD/main/props/hospital-assets2.vox" object="tv-part1">
-							<joint pos="-0.4 0.2 -0.1" rot="0.0 90.0 0.0" type="hinge" rotstrength="0.05"/>
-							<joint pos="0.4 0.2 -0.1" rot="0.0 90.0 0.0" type="hinge" rotstrength="0.05"/>
-						</vox>
-					</script>
-					<script name="TV" pos="-10.2 3.2 5.1" rot="0.0 130.0 0.0" file="terminal.lua">
-						<body tags="interact" pos="0.0 -0.33 0.1" rot="7.0 0.0 0.0" dynamic="true">
-							<vox pos="0.0 -0.2 -0.0" strength="5" file="MOD/main/props/hospital-assets2.vox" object="tv-part2">
-								<screen tags="terminal" pos="0.0 0.25 0.1" rot="0.0 0.0 0.0" size="0.6 0.3" bulge="0.03" script="MOD/scripts/tv_ads.lua" enabled="true"/>
-							</vox>
-						</body>
-						<vox pos="0.0 -0.4 0.2" strength="5" file="MOD/main/props/hospital-assets2.vox" object="tv-part1">
-							<joint pos="-0.4 0.2 -0.1" rot="0.0 90.0 0.0" type="hinge" rotstrength="0.05"/>
-							<joint pos="0.4 0.2 -0.1" rot="0.0 90.0 0.0" type="hinge" rotstrength="0.05"/>
-						</vox>
-					</script>
 				</group>
 				<group pos="-0.3 0.2 -51.9" rot="0.0 0.0 0.0">
 					<vox pos="-6.8 0.0 18.0" rot="0.0 -180.0 0.0" strength="1.3" prop="false" file="MOD/main/props/hospital-assets2.vox" object="counter"/>
@@ -726,189 +786,195 @@
 					<vox pos="-2.3 0.1 4.9" rot="0.0 -180.0 0.0" prop="true" file="MOD/main/props/hospital-assets3.vox" object="table1"/>
 					<vox pos="-2.3 0.1 3.4" rot="0.0 -90.0 0.0" prop="true" file="MOD/main/props/hospital-assets3.vox" object="chair"/>
 				</group>
-			</group>
-			<voxagon pos="0.0 4.2 -106.3" brush="MOD/main/building/inner-tiles.vox" object="tile1" offset="-3 0 -2" extrude="1">
-				<vertex pos="-57.8 -19.4"/>
-				<vertex pos="25.7 -19.4"/>
-				<vertex pos="25.7 15.0"/>
-				<vertex pos="-57.8 15.0"/>
-			</voxagon>
-			<voxagon pos="0.0 0.1 -106.3" brush="MOD/main/building/inner-tiles.vox" object="tile2" offset="-3 0 -2" extrude="1">
-				<vertex pos="-57.8 -19.4"/>
-				<vertex pos="25.7 -19.4"/>
-				<vertex pos="25.7 15.0"/>
-				<vertex pos="-57.8 15.0"/>
-			</voxagon>
-			<voxagon pos="-35.1 4.2 -52.1" rot="0.0 0.0 0.0" brush="MOD/main/building/inner-tiles.vox" object="tile1" extrude="1">
-				<vertex pos="-14.6 -39.2"/>
-				<vertex pos="-3.2 -39.2"/>
-				<vertex pos="-3.2 -14.6"/>
-				<vertex pos="21.3 -14.6"/>
-				<vertex pos="21.3 19.8"/>
-				<vertex pos="-14.6 19.8"/>
-				<group pos="1.0 0.1 1.1">
-					<voxbox pos="-12.9 -0.1 13.0" rot="0.0 0.0 0.0" size="19 0 19" brush="MOD/main/building/inner-tiles.vox" object="light">
-						<light pos="0.95 0.0 0.95" rot="90.0 0.0 0.0" type="area" scale="2.7" size="1.9 1.9"/>
-					</voxbox>
-					<voxbox pos="-6.9 -0.1 13.0" rot="0.0 0.0 0.0" size="19 0 19" brush="MOD/main/building/inner-tiles.vox" object="light">
-						<light pos="0.95 0.0 0.95" rot="90.0 0.0 0.0" type="area" scale="2.7" size="1.9 1.9"/>
-					</voxbox>
-					<voxbox pos="-6.9 -0.1 5.0" rot="0.0 0.0 0.0" size="19 0 19" brush="MOD/main/building/inner-tiles.vox" object="light">
-						<light pos="0.95 0.0 0.95" rot="90.0 0.0 0.0" type="area" scale="2.7" size="1.9 1.9"/>
-					</voxbox>
-					<voxbox pos="-12.9 -0.1 5.0" rot="0.0 0.0 0.0" size="19 0 19" brush="MOD/main/building/inner-tiles.vox" object="light">
-						<light pos="0.95 0.0 0.95" rot="90.0 0.0 0.0" type="area" scale="2.7" size="1.9 1.9"/>
-					</voxbox>
-					<voxbox pos="-6.9 -0.1 -3.0" rot="0.0 0.0 0.0" size="19 0 19" brush="MOD/main/building/inner-tiles.vox" object="light">
-						<light pos="0.95 0.0 0.95" rot="90.0 0.0 0.0" type="area" scale="2.7" size="1.9 1.9"/>
-					</voxbox>
-					<voxbox pos="-12.9 -0.1 -3.0" rot="0.0 0.0 0.0" size="19 0 19" brush="MOD/main/building/inner-tiles.vox" object="light">
-						<light pos="0.95 0.0 0.95" rot="90.0 0.0 0.0" type="area" scale="2.7" size="1.9 1.9"/>
-					</voxbox>
-					<voxbox pos="-6.9 -0.1 -11.0" rot="0.0 0.0 0.0" size="19 0 19" brush="MOD/main/building/inner-tiles.vox" object="light">
-						<light pos="0.95 0.0 0.95" rot="90.0 0.0 0.0" type="area" scale="2.7" size="1.9 1.9"/>
-					</voxbox>
-					<voxbox pos="-12.9 -0.1 -11.0" rot="0.0 0.0 0.0" size="19 0 19" brush="MOD/main/building/inner-tiles.vox" object="light">
-						<light pos="0.95 0.0 0.95" rot="90.0 0.0 0.0" type="area" scale="2.7" size="1.9 1.9"/>
-					</voxbox>
-					<voxbox pos="-6.9 -0.1 -19.0" rot="0.0 0.0 0.0" size="19 0 19" brush="MOD/main/building/inner-tiles.vox" object="light">
-						<light pos="0.95 0.0 0.95" rot="90.0 0.0 0.0" type="area" scale="2.7" size="1.9 1.9"/>
-					</voxbox>
-					<voxbox pos="-12.9 -0.1 -19.0" rot="0.0 0.0 0.0" size="19 0 19" brush="MOD/main/building/inner-tiles.vox" object="light">
-						<light pos="0.95 0.0 0.95" rot="90.0 0.0 0.0" type="area" scale="2.7" size="1.9 1.9"/>
-					</voxbox>
-					<voxbox pos="-6.9 -0.1 -27.0" rot="0.0 0.0 0.0" size="19 0 19" brush="MOD/main/building/inner-tiles.vox" object="light">
-						<light pos="0.95 0.0 0.95" rot="90.0 0.0 0.0" type="area" scale="2.7" size="1.9 1.9"/>
-					</voxbox>
-					<voxbox pos="-12.9 -0.1 -27.0" rot="0.0 0.0 0.0" size="19 0 19" brush="MOD/main/building/inner-tiles.vox" object="light">
-						<light pos="0.95 0.0 0.95" rot="90.0 0.0 0.0" type="area" scale="2.7" size="1.9 1.9"/>
-					</voxbox>
-					<voxbox pos="-6.9 -0.1 -35.0" rot="0.0 0.0 0.0" size="19 0 19" brush="MOD/main/building/inner-tiles.vox" object="light">
-						<light pos="0.95 0.0 0.95" rot="90.0 0.0 0.0" type="area" scale="2.7" size="1.9 1.9"/>
-					</voxbox>
-					<voxbox pos="-12.9 -0.1 -35.0" rot="0.0 0.0 0.0" size="19 0 19" brush="MOD/main/building/inner-tiles.vox" object="light">
-						<light pos="0.95 0.0 0.95" rot="90.0 0.0 0.0" type="area" scale="2.7" size="1.9 1.9"/>
-					</voxbox>
-					<voxbox pos="1.1 -0.1 -3.0" rot="0.0 0.0 0.0" size="19 0 19" brush="MOD/main/building/inner-tiles.vox" object="light">
-						<light pos="0.95 0.0 0.95" rot="90.0 0.0 0.0" type="area" scale="2.7" size="1.9 1.9"/>
-					</voxbox>
-					<voxbox pos="1.1 -0.1 5.0" rot="0.0 0.0 0.0" size="19 0 19" brush="MOD/main/building/inner-tiles.vox" object="light">
-						<light pos="0.95 0.0 0.95" rot="90.0 0.0 0.0" type="area" scale="2.7" size="1.9 1.9"/>
-					</voxbox>
-					<voxbox pos="9.1 -0.1 -3.0" rot="0.0 0.0 0.0" size="19 0 19" brush="MOD/main/building/inner-tiles.vox" object="light">
-						<light pos="0.95 0.0 0.95" rot="90.0 0.0 0.0" type="area" scale="2.7" size="1.9 1.9"/>
-					</voxbox>
-					<voxbox pos="9.1 -0.1 5.0" rot="0.0 0.0 0.0" size="19 0 19" brush="MOD/main/building/inner-tiles.vox" object="light">
-						<light pos="0.95 0.0 0.95" rot="90.0 0.0 0.0" type="area" scale="2.7" size="1.9 1.9"/>
-					</voxbox>
-					<voxbox pos="17.1 -0.1 -3.0" rot="0.0 0.0 0.0" size="19 0 19" brush="MOD/main/building/inner-tiles.vox" object="light">
-						<light pos="0.95 0.0 0.95" rot="90.0 0.0 0.0" type="area" scale="2.7" size="1.9 1.9"/>
-					</voxbox>
-					<voxbox pos="17.1 -0.1 5.0" rot="0.0 0.0 0.0" size="19 0 19" brush="MOD/main/building/inner-tiles.vox" object="light">
-						<light pos="0.95 0.0 0.95" rot="90.0 0.0 0.0" type="area" scale="2.7" size="1.9 1.9"/>
-					</voxbox>
+				<group name="mri room" pos="-47.1 0.2 -114.3" rot="0.0 0.0 0.0">
+					<instance pos="0.4 0.0 -6.1" rot="0.0 180.0 0.0" file="MOD/main/props/door1.xml"/>
+					<instance pos="3.5 0.0 -2.5" rot="0.0 -90.0 0.0" file="MOD/main/props/door1.xml"/>
 				</group>
-			</voxagon>
-			<voxagon pos="0.8 4.2 -52.1" rot="0.0 0.0 0.0" brush="MOD/main/building/inner-tiles.vox" object="tile1" offset="-1 0 0" extrude="1">
-				<vertex pos="-14.6 -39.2"/>
-				<vertex pos="-3.2 -39.2"/>
-				<vertex pos="16.8 -39.2"/>
-				<vertex pos="16.7 -14.6"/>
-				<vertex pos="24.9 -14.6"/>
-				<vertex pos="24.9 24.2"/>
-				<vertex pos="12.5 24.2"/>
-				<vertex pos="12.5 79.8"/>
-				<vertex pos="-12.3 79.8"/>
-				<vertex pos="-13.0 79.7"/>
-				<vertex pos="-13.5 79.5"/>
-				<vertex pos="-14.0 79.1"/>
-				<vertex pos="-14.3 78.6"/>
-				<vertex pos="-14.4 78.4"/>
-				<vertex pos="-14.5 78.0"/>
-				<vertex pos="-14.5 77.6"/>
-				<vertex pos="-14.5 74.2"/>
-				<voxbox pos="-5.8 -0.1 14.1" rot="0.0 0.0 0.0" size="19 0 19" brush="MOD/main/building/inner-tiles.vox" object="light">
-					<light pos="0.95 0.0 0.95" rot="90.0 0.0 0.0" type="area" scale="2.7" size="1.9 1.9"/>
+			</group>
+			<group name="floor" pos="-16.0 0.1 -49.0">
+				<voxagon pos="16.8 0.0 -3.1" rot="0.0 0.0 0.0" brush="MOD/main/building/inner-tiles.vox" object="tile2" offset="-1 0 0" extrude="1">
+					<vertex pos="-14.6 -39.2"/>
+					<vertex pos="-3.2 -39.2"/>
+					<vertex pos="16.8 -39.2"/>
+					<vertex pos="16.7 -14.6"/>
+					<vertex pos="24.9 -14.6"/>
+					<vertex pos="24.9 24.2"/>
+					<vertex pos="12.5 24.2"/>
+					<vertex pos="12.5 79.8"/>
+					<vertex pos="-12.3 79.8"/>
+					<vertex pos="-13.0 79.7"/>
+					<vertex pos="-13.5 79.5"/>
+					<vertex pos="-14.0 79.1"/>
+					<vertex pos="-14.3 78.6"/>
+					<vertex pos="-14.4 78.4"/>
+					<vertex pos="-14.5 78.0"/>
+					<vertex pos="-14.5 77.6"/>
+					<vertex pos="-14.5 74.2"/>
+				</voxagon>
+				<voxagon pos="-19.1 0.0 -3.1" rot="0.0 0.0 0.0" brush="MOD/main/building/inner-tiles.vox" object="floor1" extrude="1">
+					<vertex pos="5.5 -14.6"/>
+					<vertex pos="21.0 -14.6"/>
+					<vertex pos="21.0 -4.8"/>
+					<vertex pos="5.5 -4.8"/>
+				</voxagon>
+				<voxagon pos="-19.1 0.0 -3.1" rot="0.0 0.0 0.0" brush="MOD/main/building/inner-tiles.vox" object="tile2" extrude="1">
+					<vertex pos="-14.6 -39.2"/>
+					<vertex pos="-3.2 -39.2"/>
+					<vertex pos="-3.2 -14.6"/>
+					<vertex pos="21.3 -14.6"/>
+					<vertex pos="21.3 19.8"/>
+					<vertex pos="-14.6 19.8"/>
+				</voxagon>
+				<voxagon pos="-19.1 0.0 21.5" rot="0.0 0.0 0.0" brush="MOD/main/building/inner-tiles.vox" object="floor1" extrude="1">
+					<vertex pos="-2.7 -14.6"/>
+					<vertex pos="21.0 -14.6"/>
+					<vertex pos="21.0 -4.8"/>
+					<vertex pos="-2.7 -4.8"/>
+				</voxagon>
+				<voxagon pos="15.1 0.1 2.2" rot="0.0 0.0 0.0" brush="MOD/main/building/inner-tiles.vox" object="floor1" axis="z" extrude="1">
+					<vertex pos="-6.7 -11.6"/>
+					<vertex pos="8.7 -11.6"/>
+					<vertex pos="8.7 13.4"/>
+					<vertex pos="-6.7 13.4"/>
+				</voxagon>
+				<voxbox pos="-41.8 0.0 -76.7" rot="0.0 0.0 0.0" size="835 0 344" brush="MOD/main/building/inner-tiles.vox" object="tile2" offset="1 0 2">
+					<voxbox pos="5.5 0.1 5.5" rot="0.0 .0 0.0" size="85 1 137" brush="MOD/main/building/inner-tiles.vox" object="carpet" offset="1 0 2" color="0.63 0.63 0.63"/>
+					<voxbox pos="6.5 0.1 6.5" rot="0.0 0.0 0.0" size="65 1 117" brush="MOD/main/building/inner-tiles.vox" object="carpet" offset="1 0 2" color="1.0 1.0 1.0"/>
 				</voxbox>
-				<voxbox pos="2.2 -0.1 14.1" rot="0.0 0.0 0.0" size="19 0 19" brush="MOD/main/building/inner-tiles.vox" object="light">
-					<light pos="0.95 0.0 0.95" rot="90.0 0.0 0.0" type="area" scale="2.7" size="1.9 1.9"/>
-				</voxbox>
-				<voxbox pos="2.2 -0.1 8.1" rot="0.0 0.0 0.0" size="19 0 19" brush="MOD/main/building/inner-tiles.vox" object="light">
-					<light pos="0.95 0.0 0.95" rot="90.0 0.0 0.0" type="area" scale="2.7" size="1.9 1.9"/>
-				</voxbox>
-				<voxbox pos="-5.8 -0.1 8.1" rot="0.0 0.0 0.0" size="19 0 19" brush="MOD/main/building/inner-tiles.vox" object="light">
-					<light pos="0.95 0.0 0.95" rot="90.0 0.0 0.0" type="area" scale="2.7" size="1.9 1.9"/>
-				</voxbox>
-				<voxbox pos="2.2 -0.1 -3.9" rot="0.0 0.0 0.0" size="19 0 19" brush="MOD/main/building/inner-tiles.vox" object="light">
-					<light pos="0.95 0.0 0.95" rot="90.0 0.0 0.0" type="area" scale="2.7" size="1.9 1.9"/>
-				</voxbox>
-				<voxbox pos="-5.8 -0.1 -3.9" rot="0.0 0.0 0.0" size="19 0 19" brush="MOD/main/building/inner-tiles.vox" object="light">
-					<light pos="0.95 0.0 0.95" rot="90.0 0.0 0.0" type="area" scale="2.7" size="1.9 1.9"/>
-				</voxbox>
-				<voxbox pos="2.2 -0.1 2.1" rot="0.0 0.0 0.0" size="19 0 19" brush="MOD/main/building/inner-tiles.vox" object="light">
-					<light pos="0.95 0.0 0.95" rot="90.0 0.0 0.0" type="area" scale="2.7" size="1.9 1.9"/>
-				</voxbox>
-				<voxbox pos="-5.8 -0.1 2.1" rot="0.0 0.0 0.0" size="19 0 19" brush="MOD/main/building/inner-tiles.vox" object="light">
-					<light pos="0.95 0.0 0.95" rot="90.0 0.0 0.0" type="area" scale="2.7" size="1.9 1.9"/>
-				</voxbox>
-				<voxbox pos="2.2 -0.1 -15.9" rot="0.0 0.0 0.0" size="19 0 19" brush="MOD/main/building/inner-tiles.vox" object="light">
-					<light pos="0.95 0.0 0.95" rot="90.0 0.0 0.0" type="area" scale="2.7" size="1.9 1.9"/>
-				</voxbox>
-				<voxbox pos="-5.8 -0.1 -15.9" rot="0.0 0.0 0.0" size="19 0 19" brush="MOD/main/building/inner-tiles.vox" object="light">
-					<light pos="0.95 0.0 0.95" rot="90.0 0.0 0.0" type="area" scale="2.7" size="1.9 1.9"/>
-				</voxbox>
-				<voxbox pos="2.2 -0.1 -9.9" rot="0.0 0.0 0.0" size="19 0 19" brush="MOD/main/building/inner-tiles.vox" object="light">
-					<light pos="0.95 0.0 0.95" rot="90.0 0.0 0.0" type="area" scale="2.7" size="1.9 1.9"/>
-				</voxbox>
-				<voxbox pos="-5.8 -0.1 -9.9" rot="0.0 0.0 0.0" size="19 0 19" brush="MOD/main/building/inner-tiles.vox" object="light">
-					<light pos="0.95 0.0 0.95" rot="90.0 0.0 0.0" type="area" scale="2.7" size="1.9 1.9"/>
-				</voxbox>
-			</voxagon>
-			<voxagon pos="0.8 0.1 -52.1" rot="0.0 0.0 0.0" brush="MOD/main/building/inner-tiles.vox" object="tile2" offset="-1 0 0" extrude="1">
-				<vertex pos="-14.6 -39.2"/>
-				<vertex pos="-3.2 -39.2"/>
-				<vertex pos="16.8 -39.2"/>
-				<vertex pos="16.7 -14.6"/>
-				<vertex pos="24.9 -14.6"/>
-				<vertex pos="24.9 24.2"/>
-				<vertex pos="12.5 24.2"/>
-				<vertex pos="12.5 79.8"/>
-				<vertex pos="-12.3 79.8"/>
-				<vertex pos="-13.0 79.7"/>
-				<vertex pos="-13.5 79.5"/>
-				<vertex pos="-14.0 79.1"/>
-				<vertex pos="-14.3 78.6"/>
-				<vertex pos="-14.4 78.4"/>
-				<vertex pos="-14.5 78.0"/>
-				<vertex pos="-14.5 77.6"/>
-				<vertex pos="-14.5 74.2"/>
-			</voxagon>
-			<voxagon pos="-35.1 0.1 -27.5" rot="0.0 0.0 0.0" brush="MOD/main/building/inner-tiles.vox" object="floor1" extrude="1">
-				<vertex pos="-2.7 -14.6"/>
-				<vertex pos="21.0 -14.6"/>
-				<vertex pos="21.0 -4.8"/>
-				<vertex pos="-2.7 -4.8"/>
-			</voxagon>
-			<voxagon pos="-35.1 0.1 -52.1" rot="0.0 0.0 0.0" brush="MOD/main/building/inner-tiles.vox" object="floor1" extrude="1">
-				<vertex pos="-2.7 -14.6"/>
-				<vertex pos="21.0 -14.6"/>
-				<vertex pos="21.0 -4.8"/>
-				<vertex pos="-2.7 -4.8"/>
-			</voxagon>
-			<voxagon pos="-35.1 0.1 -52.1" rot="0.0 0.0 0.0" brush="MOD/main/building/inner-tiles.vox" object="tile2" extrude="1">
-				<vertex pos="-14.6 -39.2"/>
-				<vertex pos="-3.2 -39.2"/>
-				<vertex pos="-3.2 -14.6"/>
-				<vertex pos="21.3 -14.6"/>
-				<vertex pos="21.3 19.8"/>
-				<vertex pos="-14.6 19.8"/>
-			</voxagon>
-			<voxagon pos="-0.9 0.2 -46.8" rot="0.0 0.0 0.0" brush="MOD/main/building/inner-tiles.vox" object="floor1" axis="z" extrude="1">
-				<vertex pos="-6.7 -11.6"/>
-				<vertex pos="8.7 -11.6"/>
-				<vertex pos="8.7 13.4"/>
-				<vertex pos="-6.7 13.4"/>
-			</voxagon>
+			</group>
+			<group pos="-16.0 4.1 -49.0" layer="dadsa">
+				<voxagon pos="16.8 0.1 -3.1" rot="0.0 0.0 0.0" brush="MOD/main/building/inner-tiles.vox" object="tile1" offset="-1 0 0" extrude="1">
+					<vertex pos="-14.6 -39.2"/>
+					<vertex pos="-3.2 -39.2"/>
+					<vertex pos="16.8 -39.2"/>
+					<vertex pos="16.7 -14.6"/>
+					<vertex pos="24.9 -14.6"/>
+					<vertex pos="24.9 24.2"/>
+					<vertex pos="12.5 24.2"/>
+					<vertex pos="12.5 79.8"/>
+					<vertex pos="-12.3 79.8"/>
+					<vertex pos="-13.0 79.7"/>
+					<vertex pos="-13.5 79.5"/>
+					<vertex pos="-14.0 79.1"/>
+					<vertex pos="-14.3 78.6"/>
+					<vertex pos="-14.4 78.4"/>
+					<vertex pos="-14.5 78.0"/>
+					<vertex pos="-14.5 77.6"/>
+					<vertex pos="-14.5 74.2"/>
+					<voxbox pos="-5.8 -0.1 14.1" rot="0.0 0.0 0.0" size="19 0 19" brush="MOD/main/building/inner-tiles.vox" object="light">
+						<light pos="0.95 0.0 0.95" rot="90.0 0.0 0.0" type="area" scale="2.7" size="1.9 1.9"/>
+					</voxbox>
+					<voxbox pos="2.2 -0.1 14.1" rot="0.0 0.0 0.0" size="19 0 19" brush="MOD/main/building/inner-tiles.vox" object="light">
+						<light pos="0.95 0.0 0.95" rot="90.0 0.0 0.0" type="area" scale="2.7" size="1.9 1.9"/>
+					</voxbox>
+					<voxbox pos="2.2 -0.1 8.1" rot="0.0 0.0 0.0" size="19 0 19" brush="MOD/main/building/inner-tiles.vox" object="light">
+						<light pos="0.95 0.0 0.95" rot="90.0 0.0 0.0" type="area" scale="2.7" size="1.9 1.9"/>
+					</voxbox>
+					<voxbox pos="-5.8 -0.1 8.1" rot="0.0 0.0 0.0" size="19 0 19" brush="MOD/main/building/inner-tiles.vox" object="light">
+						<light pos="0.95 0.0 0.95" rot="90.0 0.0 0.0" type="area" scale="2.7" size="1.9 1.9"/>
+					</voxbox>
+					<voxbox pos="2.2 -0.1 -3.9" rot="0.0 0.0 0.0" size="19 0 19" brush="MOD/main/building/inner-tiles.vox" object="light">
+						<light pos="0.95 0.0 0.95" rot="90.0 0.0 0.0" type="area" scale="2.7" size="1.9 1.9"/>
+					</voxbox>
+					<voxbox pos="-5.8 -0.1 -3.9" rot="0.0 0.0 0.0" size="19 0 19" brush="MOD/main/building/inner-tiles.vox" object="light">
+						<light pos="0.95 0.0 0.95" rot="90.0 0.0 0.0" type="area" scale="2.7" size="1.9 1.9"/>
+					</voxbox>
+					<voxbox pos="2.2 -0.1 2.1" rot="0.0 0.0 0.0" size="19 0 19" brush="MOD/main/building/inner-tiles.vox" object="light">
+						<light pos="0.95 0.0 0.95" rot="90.0 0.0 0.0" type="area" scale="2.7" size="1.9 1.9"/>
+					</voxbox>
+					<voxbox pos="-5.8 -0.1 2.1" rot="0.0 0.0 0.0" size="19 0 19" brush="MOD/main/building/inner-tiles.vox" object="light">
+						<light pos="0.95 0.0 0.95" rot="90.0 0.0 0.0" type="area" scale="2.7" size="1.9 1.9"/>
+					</voxbox>
+					<voxbox pos="2.2 -0.1 -15.9" rot="0.0 0.0 0.0" size="19 0 19" brush="MOD/main/building/inner-tiles.vox" object="light">
+						<light pos="0.95 0.0 0.95" rot="90.0 0.0 0.0" type="area" scale="2.7" size="1.9 1.9"/>
+					</voxbox>
+					<voxbox pos="-5.8 -0.1 -15.9" rot="0.0 0.0 0.0" size="19 0 19" brush="MOD/main/building/inner-tiles.vox" object="light">
+						<light pos="0.95 0.0 0.95" rot="90.0 0.0 0.0" type="area" scale="2.7" size="1.9 1.9"/>
+					</voxbox>
+					<voxbox pos="2.2 -0.1 -9.9" rot="0.0 0.0 0.0" size="19 0 19" brush="MOD/main/building/inner-tiles.vox" object="light">
+						<light pos="0.95 0.0 0.95" rot="90.0 0.0 0.0" type="area" scale="2.7" size="1.9 1.9"/>
+					</voxbox>
+					<voxbox pos="-5.8 -0.1 -9.9" rot="0.0 0.0 0.0" size="19 0 19" brush="MOD/main/building/inner-tiles.vox" object="light">
+						<light pos="0.95 0.0 0.95" rot="90.0 0.0 0.0" type="area" scale="2.7" size="1.9 1.9"/>
+					</voxbox>
+				</voxagon>
+				<voxagon pos="-19.1 0.1 -3.1" rot="0.0 0.0 0.0" brush="MOD/main/building/inner-tiles.vox" object="tile1" extrude="1">
+					<vertex pos="-14.6 -39.2"/>
+					<vertex pos="-3.2 -39.2"/>
+					<vertex pos="-3.2 -14.6"/>
+					<vertex pos="21.3 -14.6"/>
+					<vertex pos="21.3 19.8"/>
+					<vertex pos="-14.6 19.8"/>
+					<group pos="1.0 0.1 1.1">
+						<voxbox pos="-12.9 -0.1 13.0" rot="0.0 0.0 0.0" size="19 0 19" brush="MOD/main/building/inner-tiles.vox" object="light">
+							<light pos="0.95 0.0 0.95" rot="90.0 0.0 0.0" type="area" scale="2.7" size="1.9 1.9"/>
+						</voxbox>
+						<voxbox pos="-6.9 -0.1 13.0" rot="0.0 0.0 0.0" size="19 0 19" brush="MOD/main/building/inner-tiles.vox" object="light">
+							<light pos="0.95 0.0 0.95" rot="90.0 0.0 0.0" type="area" scale="2.7" size="1.9 1.9"/>
+						</voxbox>
+						<voxbox pos="-6.9 -0.1 5.0" rot="0.0 0.0 0.0" size="19 0 19" brush="MOD/main/building/inner-tiles.vox" object="light">
+							<light pos="0.95 0.0 0.95" rot="90.0 0.0 0.0" type="area" scale="2.7" size="1.9 1.9"/>
+						</voxbox>
+						<voxbox pos="-12.9 -0.1 5.0" rot="0.0 0.0 0.0" size="19 0 19" brush="MOD/main/building/inner-tiles.vox" object="light">
+							<light pos="0.95 0.0 0.95" rot="90.0 0.0 0.0" type="area" scale="2.7" size="1.9 1.9"/>
+						</voxbox>
+						<voxbox pos="-6.9 -0.1 -3.0" rot="0.0 0.0 0.0" size="19 0 19" brush="MOD/main/building/inner-tiles.vox" object="light">
+							<light pos="0.95 0.0 0.95" rot="90.0 0.0 0.0" type="area" scale="2.7" size="1.9 1.9"/>
+						</voxbox>
+						<voxbox pos="-12.9 -0.1 -3.0" rot="0.0 0.0 0.0" size="19 0 19" brush="MOD/main/building/inner-tiles.vox" object="light">
+							<light pos="0.95 0.0 0.95" rot="90.0 0.0 0.0" type="area" scale="2.7" size="1.9 1.9"/>
+						</voxbox>
+						<voxbox pos="-6.9 -0.1 -11.0" rot="0.0 0.0 0.0" size="19 0 19" brush="MOD/main/building/inner-tiles.vox" object="light">
+							<light pos="0.95 0.0 0.95" rot="90.0 0.0 0.0" type="area" scale="2.7" size="1.9 1.9"/>
+						</voxbox>
+						<voxbox pos="-12.9 -0.1 -11.0" rot="0.0 0.0 0.0" size="19 0 19" brush="MOD/main/building/inner-tiles.vox" object="light">
+							<light pos="0.95 0.0 0.95" rot="90.0 0.0 0.0" type="area" scale="2.7" size="1.9 1.9"/>
+						</voxbox>
+						<voxbox pos="-6.9 -0.1 -19.0" rot="0.0 0.0 0.0" size="19 0 19" brush="MOD/main/building/inner-tiles.vox" object="light">
+							<light pos="0.95 0.0 0.95" rot="90.0 0.0 0.0" type="area" scale="2.7" size="1.9 1.9"/>
+						</voxbox>
+						<voxbox pos="-12.9 -0.1 -19.0" rot="0.0 0.0 0.0" size="19 0 19" brush="MOD/main/building/inner-tiles.vox" object="light">
+							<light pos="0.95 0.0 0.95" rot="90.0 0.0 0.0" type="area" scale="2.7" size="1.9 1.9"/>
+						</voxbox>
+						<voxbox pos="-6.9 -0.1 -27.0" rot="0.0 0.0 0.0" size="19 0 19" brush="MOD/main/building/inner-tiles.vox" object="light">
+							<light pos="0.95 0.0 0.95" rot="90.0 0.0 0.0" type="area" scale="2.7" size="1.9 1.9"/>
+						</voxbox>
+						<voxbox pos="-12.9 -0.1 -27.0" rot="0.0 0.0 0.0" size="19 0 19" brush="MOD/main/building/inner-tiles.vox" object="light">
+							<light pos="0.95 0.0 0.95" rot="90.0 0.0 0.0" type="area" scale="2.7" size="1.9 1.9"/>
+						</voxbox>
+						<voxbox pos="-6.9 -0.1 -35.0" rot="0.0 0.0 0.0" size="19 0 19" brush="MOD/main/building/inner-tiles.vox" object="light">
+							<light pos="0.95 0.0 0.95" rot="90.0 0.0 0.0" type="area" scale="2.7" size="1.9 1.9"/>
+						</voxbox>
+						<voxbox pos="-12.9 -0.1 -35.0" rot="0.0 0.0 0.0" size="19 0 19" brush="MOD/main/building/inner-tiles.vox" object="light">
+							<light pos="0.95 0.0 0.95" rot="90.0 0.0 0.0" type="area" scale="2.7" size="1.9 1.9"/>
+						</voxbox>
+						<voxbox pos="1.1 -0.1 -3.0" rot="0.0 0.0 0.0" size="19 0 19" brush="MOD/main/building/inner-tiles.vox" object="light">
+							<light pos="0.95 0.0 0.95" rot="90.0 0.0 0.0" type="area" scale="2.7" size="1.9 1.9"/>
+						</voxbox>
+						<voxbox pos="1.1 -0.1 5.0" rot="0.0 0.0 0.0" size="19 0 19" brush="MOD/main/building/inner-tiles.vox" object="light">
+							<light pos="0.95 0.0 0.95" rot="90.0 0.0 0.0" type="area" scale="2.7" size="1.9 1.9"/>
+						</voxbox>
+						<voxbox pos="9.1 -0.1 -3.0" rot="0.0 0.0 0.0" size="19 0 19" brush="MOD/main/building/inner-tiles.vox" object="light">
+							<light pos="0.95 0.0 0.95" rot="90.0 0.0 0.0" type="area" scale="2.7" size="1.9 1.9"/>
+						</voxbox>
+						<voxbox pos="9.1 -0.1 5.0" rot="0.0 0.0 0.0" size="19 0 19" brush="MOD/main/building/inner-tiles.vox" object="light">
+							<light pos="0.95 0.0 0.95" rot="90.0 0.0 0.0" type="area" scale="2.7" size="1.9 1.9"/>
+						</voxbox>
+						<voxbox pos="17.1 -0.1 -3.0" rot="0.0 0.0 0.0" size="19 0 19" brush="MOD/main/building/inner-tiles.vox" object="light">
+							<light pos="0.95 0.0 0.95" rot="90.0 0.0 0.0" type="area" scale="2.7" size="1.9 1.9"/>
+						</voxbox>
+						<voxbox pos="17.1 -0.1 5.0" rot="0.0 0.0 0.0" size="19 0 19" brush="MOD/main/building/inner-tiles.vox" object="light">
+							<light pos="0.95 0.0 0.95" rot="90.0 0.0 0.0" type="area" scale="2.7" size="1.9 1.9"/>
+						</voxbox>
+					</group>
+				</voxagon>
+				<voxagon pos="16.0 0.1 -57.3" brush="MOD/main/building/inner-tiles.vox" object="tile1" offset="-3 0 -2" extrude="1">
+					<vertex pos="-57.8 -19.4"/>
+					<vertex pos="25.7 -19.4"/>
+					<vertex pos="25.7 15.0"/>
+					<vertex pos="-57.8 15.0"/>
+				</voxagon>
+			</group>
 		</group>
 		<group name="basement" pos="4.2 -4.0 30.7" layer="floor0">
 			<vox pos="0.0 -0.9 0.0" rot="0.0 0.0 0.0" file="MOD/main/building/floor0.vox" object="elevator wall"/>
@@ -1397,7 +1463,7 @@
 			<voxbox pos="-14.6 8.8 -91.3" rot="0.0 0.0 0.0" size="6 12 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
 			<voxbox pos="-14.6 8.8 -67.0" rot="0.0 0.0 0.0" size="6 12 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
 		</group>
-		<group name="railings/outdoor building props">
+		<group name="railings/outdoor building props" layer="roof">
 			<voxbox pos="-14.0 8.8 -23.9" rot="0.0 90.0 0.0" size="81 12 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
 			<voxbox pos="-13.7 8.8 -32.0" rot="0.0 180.0 0.0" size="363 12 3" brush="MOD/main/building/walls.vox" object="PIllar"/>
 			<voxbox pos="-50.0 8.8 -32.3" rot="0.0 90.0 0.0" size="100 12 3" brush="MOD/main/building/walls.vox" object="PIllar"/>

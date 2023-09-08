@@ -1,7 +1,7 @@
 name = Vida Hospital
 author = FoxyPlayzYT, Mr.Random, Murdoc
 description = Informative description here
-tags=
+tags=Map
 
 # If description contains [noupload] the description on Steam workshop will not be overwritten.
 # Available tags (comma-separated):

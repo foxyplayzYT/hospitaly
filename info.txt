@@ -1,5 +1,5 @@
 name = Vida Hospital
-author = FoxyPlayzYT, Mr.Random, Murdoc
+author = FoxyPlayzYT, Mr.Random
 description = Informative description here
 tags=Map
 

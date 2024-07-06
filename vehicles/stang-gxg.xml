@@ -1,0 +1,39 @@
+<prefab version="1.5.4">
+	<group name="instance=MOD/vehicles/stang-gxg.xml" pos="-0.8 -5.4 11.5" rot="0.0 -90.0 0.0">
+		<vehicle name="Stang" pos="0.1 0.0 0.1" rot="0.0 0.0 0.0" sound="musclecar 1.2" spring="0.8" damping="0.6" topspeed="80" acceleration="4" strength="7" antispin="0.2" steerassist="0.5" friction="1.6">
+			<body pos="-0.1 0.45 -0.45" dynamic="true">
+				<vox pos="-0.05 -0.2 0.35" density="1.5" strength="2" file="MOD/vehicles/stang-gxg.vox" object="body">
+					<group pos="0.0 0.5 0.0">
+						<light pos="0.65 0.2 2.25" rot="-20.0 0.0 0.0" type="area" color="1 0.1 0.1" size="0.1 0.2" unshadowed="0.3" glare="0.2"/>
+						<light pos="-0.55 0.2 2.25" rot="-20.0 0.0 0.0" type="area" color="1 0.1 0.1" size="0.1 0.2" unshadowed="0.3" glare="0.2"/>
+						<light pos="0.45 0.2 2.25" rot="-20.0 0.0 0.0" type="area" color="1 0.1 0.1" size="0.1 0.2" unshadowed="0.3" glare="0.2"/>
+						<light pos="-0.45 0.2 2.25" rot="-20.0 0.0 0.0" type="area" size="0.1 0.2" unshadowed="0.3"/>
+						<light pos="0.55 0.2 2.25" rot="-20.0 0.0 0.0" type="area" size="0.1 0.2" unshadowed="0.3"/>
+						<light pos="-0.35 0.2 2.25" rot="-20.0 0.0 0.0" type="area" color="1 0.1 0.1" size="0.1 0.2" unshadowed="0.3" glare="0.2"/>
+						<light pos="-0.7 0.05 -2.2" rot="0 180 0" type="cone" color="1 0.9 0.8" scale="20" penumbra="30" unshadowed="0.3" glare="0.3"/>
+						<light pos="0.8 0.05 -2.2" rot="0 180 0" type="cone" color="1 0.9 0.8" scale="20" penumbra="30" unshadowed="0.3" glare="0.3"/>
+					</group>
+					<location tags="vital" pos="0.05 0.2 -1.6"/>
+					<location tags="player" pos="-0.35 1.1 -0.05"/>
+					<location tags="exhaust" pos="-0.5 0.1 2.3"/>
+					<location tags="exhaust" pos="0.6 0.1 2.3"/>
+					<group name="spoiler" pos="0.0 0.8 1.95" rot="5"/>
+					<vox pos="-0.39 0.5 -0.275" rot="-2.0 0.0 0.0" file="MOD/vehicles/stang-gxg.vox" object="str-wheel"/>
+				</vox>
+				<wheel name="fr" pos="0.75 0.05 -1.2" steer="1" travel="-0.1 0.2">
+					<vox pos="0.1 -0.35 0.05" file="MOD/vehicles/stang-gxg.vox" object="wheel_fr"/>
+				</wheel>
+				<wheel name="fl" pos="-0.75 0.05 -1.2" steer="1" travel="-0.1 0.2">
+					<vox pos="-0.1 -0.35 0.05" file="MOD/vehicles/stang-gxg.vox" object="wheel_fl"/>
+				</wheel>
+				<wheel name="br" pos="0.75 0.05 1.6" drive="1" travel="-0.1 0.2">
+					<vox pos="0.1 -0.35 0.05" file="MOD/vehicles/stang-gxg.vox" object="wheel_br"/>
+				</wheel>
+				<wheel name="bl" pos="-0.75 0.05 1.6" drive="1" travel="-0.1 0.2">
+					<vox pos="-0.1 -0.35 0.05" file="MOD/vehicles/stang-gxg.vox" object="wheel_bl"/>
+				</wheel>
+			</body>
+		</vehicle>
+	</group>
+</prefab>
+

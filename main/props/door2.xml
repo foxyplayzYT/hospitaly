@@ -1,5 +1,5 @@
-<prefab version="1.4.0">
-	<group name="instance=MOD/main/props/door2.xml" pos="0.2 0.0 5.1" rot="0.0 0.0 0.0">
+<prefab version="1.6.0">
+	<group name="instance=MOD/main/props/door2.xml" pos="20.4 30.3 -12.4" rot="0.0 0.0 0.0">
 		<vox pos="-0.1 0.0 -0.1" rot="0.0 -180.0 0.0" file="MOD/main/props/doors1.vox" object="inner-back-metal">
 			<vox pos="0.1 0.0 -0.3" rot="0.0 180.0 0.0" file="MOD/main/props/doors1.vox" object="inner-front-metal"/>
 			<vox pos="0.1 0.1 -0.2" rot="0.0 180.0 0.0" prop="true" file="MOD/main/props/doors1.vox" object="door2">

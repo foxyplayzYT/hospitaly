@@ -1,4 +1,4 @@
-<scene version="1.5.4" shadowVolume="150 70 230">
+<scene version="1.6.0" shadowVolume="150 70 230">
 	<environment template="sunset" pos="10.0 5.8 -6.8" sunLength="50"/>
 	<script pos="10.0 5.8 -6.8" file="main.lua"/>
 	<script pos="10.0 5.8 -6.8" file="sandbox.lua"/>
@@ -7,8 +7,8 @@
 		<group name="heightmap" pos="-98.00001 -5.8 -51.1" rot="0.0 0.0 0.0" prop0="texture=1 0.45">
 			<voxscript pos="153.0 -0.0 -115.3" rot="0.0 -90.0 0.0" texture="0" file="MOD/scripts/heightmap.lua">
 				<parameters scale="255" file="MOD/heightmap/hospital.png"/>
-				<voxbox pos="209.2 7.4 115.7" size="99 4 61" brush="hole" offset="-53.0 -3.0 -36.0"/>
 			</voxscript>
+			<voxbox name="parkinglot hole" pos="31.2 7.4 103.8" rot="0.0 90.0 0.0" size="99 4 61" brush="hole" offset="-53.0 -3.0 -36.0"/>
 			<voxbox pos="-64.5 6.9 204.20001" rot="0.0 90.0 0.0" size="863 9 112" brush="MOD/main/props/road/roadsegments.vox" object="112"/>
 			<voxbox pos="-64.5 6.9 10.2" rot="0.0 90.0 0.0" size="1321 9 112" brush="MOD/main/props/road/roadsegments.vox" object="112"/>
 			<voxbox pos="-64.5 6.9 117.89999" rot="0.0 90.0 0.0" size="45 9 112" brush="MOD/main/props/road/roadsegments.vox" object="111"/>
@@ -19,7 +19,6 @@
 				<vertex pos="1.0 29.4"/>
 				<vertex pos="-3.6 21.0"/>
 			</voxagon>
-			<group name="parking lot" pos="-16.2 7.0 64.1"/>
 		</group>
 	</group>
 	<group name="building" pos="12.2 0.5 39.9" rot="0.0 0.0 0.0">
@@ -13800,11 +13799,27 @@
 				<compound pos="16.4 21.7 -57.6">
 					<voxbox pos="-8.7 0.0 -0.2" rot="0.0 0.0 0.0" size="174 41 3" brush="MOD/main/building/walls.vox" object="wall" offset="0.0 0.0 0.0">
 						<voxbox pos="7.3 0.0 0.3" rot="0.0 0.0 0.0" size="98 40 1" brush="MOD/main/building/inner-walls.vox" object="plaster2" offset="1.0 0.0 2.0"/>
+						<voxbox pos="0.0 0.0 0.3" rot="0.0 0.0 0.0" size="68 40 1" brush="MOD/main/building/inner-walls.vox" object="plaster2" offset="5.0 0.0 2.0"/>
 					</voxbox>
 				</compound>
-				<voxbox pos="5.3 21.7 -57.8" rot="0.0 0.0 0.0" size="24 41 24" brush="MOD/main/building/walls.vox" object="cornerwall"/>
+				<voxbox pos="5.3 21.7 -57.8" rot="0.0 0.0 0.0" size="24 41 24" brush="MOD/main/building/walls.vox" object="cornerwall">
+					<voxbox pos="0.3 0.0 2.2" rot="0.0 71.7 0.0" size="5 40 1" brush="MOD/main/building/inner-walls.vox" object="plaster2" offset="0.0 0.0 0.0">
+						<voxbox pos="0.5 0.0 0.0" rot="0.0 -15.1 0.0" size="5 40 1" brush="MOD/main/building/inner-walls.vox" object="plaster2" offset="0.0 0.0 0.0">
+							<voxbox pos="0.5 0.0 -0.0" rot="0.0 -10.0 0.0" size="5 40 1" brush="MOD/main/building/inner-walls.vox" object="plaster2" offset="0.0 0.0 0.0">
+								<voxbox pos="0.5 0.0 -0.0" rot="0.0 -10.0 0.0" size="5 40 1" brush="MOD/main/building/inner-walls.vox" object="plaster2" offset="0.0 0.0 0.0">
+									<voxbox pos="0.5 0.0 -0.0" rot="0.0 -10.0 0.0" size="5 40 1" brush="MOD/main/building/inner-walls.vox" object="plaster2" offset="0.0 0.0 0.0">
+										<voxbox pos="0.5 0.0 -0.0" rot="0.0 -10.0 0.0" size="5 40 1" brush="MOD/main/building/inner-walls.vox" object="plaster2" offset="0.0 0.0 0.0"/>
+									</voxbox>
+								</voxbox>
+							</voxbox>
+						</voxbox>
+					</voxbox>
+				</voxbox>
 				<compound pos="5.4 21.7 -40.6">
-					<voxbox pos="-0.1 0.0 14.7" rot="0.0 90.0 0.0" size="295 41 3" brush="MOD/main/building/walls.vox" object="wall"/>
+					<voxbox pos="-0.1 0.0 14.7" rot="0.0 90.0 0.0" size="295 41 3" brush="MOD/main/building/walls.vox" object="wall">
+						<voxbox pos="13.0 0.0 0.3" rot="0.0 0.0 0.0" size="167 40 1" brush="MOD/main/building/inner-walls.vox" object="plaster2" offset="1.0 0.0 2.0"/>
+						<voxbox pos="-0.3 0.0 0.2" rot="0.0 0.0 0.0" size="41 40 2" brush="MOD/main/building/inner-walls.vox" object="plaster" offset="-3.0 0.0 1.0"/>
+					</voxbox>
 				</compound>
 				<compound pos="24.9 21.7 -26.0">
 					<voxbox pos="-0.1 0.0 31.4" rot="0.0 90.0 0.0" size="629 41 3" brush="MOD/main/building/walls.vox" object="wall" offset="-316.0 0.0 -0.00002">
@@ -13882,6 +13897,7 @@
 				<voxbox pos="-17.4 21.7 -23.8" rot="0.0 0.0 0.0" size="34 41 78" brush="MOD/main/building/walls.vox" object="halfwindow"/>
 				<compound pos="-5.4 21.7 -23.6">
 					<voxbox pos="-8.6 0.0 -0.2" rot="0.0 0.0 0.0" size="172 41 3" brush="MOD/main/building/walls.vox" object="wall" offset="-24.0 0.0 0.0">
+						<voxbox pos="4.7 0.0 0.3" rot="0.0 0.0 0.0" size="123 40 1" brush="MOD/main/building/inner-walls.vox" object="plaster2" offset="-3.0 0.0 0.0" color="0.69 0.59 0.59"/>
 						<vox pos="16.1 1.2 0.2" file="MOD/main/building/windows.vox" object="window2"/>
 						<vox pos="9.8 1.2 0.2" file="MOD/main/building/windows.vox" object="window2"/>
 						<vox pos="14.0 1.2 0.2" file="MOD/main/building/windows.vox" object="window2"/>
@@ -13891,8 +13907,22 @@
 						<vox pos="3.5 1.2 0.2" file="MOD/main/building/windows.vox" object="window2"/>
 					</voxbox>
 				</compound>
-				<voxbox pos="5.6 21.7 -23.5" rot="0.0 -180.0 0.0" size="24 41 24" brush="MOD/main/building/walls.vox" object="cornerwall"/>
-				<group name="inner-walls">
+				<voxbox pos="5.6 21.7 -23.5" rot="0.0 -180.0 0.0" size="24 41 24" brush="MOD/main/building/walls.vox" object="cornerwall">
+					<voxbox pos="2.1 0.0 0.1" rot="0.0 -172.60001 0.0" size="4 40 1" brush="MOD/main/building/inner-walls.vox" object="plaster" offset="0.0 0.0 0.0">
+						<voxbox pos="0.38 0.0 0.0" rot="0.0 12.6 0.0" size="4 40 1" brush="MOD/main/building/inner-walls.vox" object="plaster" offset="0.0 0.0 0.0">
+							<voxbox pos="0.38 0.0 0.0" rot="0.0 8.5 0.0" size="4 40 1" brush="MOD/main/building/inner-walls.vox" object="plaster" offset="0.0 0.0 0.0">
+								<voxbox pos="0.38 0.0 0.0" rot="0.0 9.7 0.0" size="4 40 1" brush="MOD/main/building/inner-walls.vox" object="plaster" offset="0.0 0.0 0.0">
+									<voxbox pos="0.38 0.0 0.0" rot="0.0 10.8 0.0" size="4 40 1" brush="MOD/main/building/inner-walls.vox" object="plaster" offset="0.0 0.0 0.0">
+										<voxbox pos="0.37 0.0 0.0" rot="0.0 12.6 0.0" size="8 40 1" brush="MOD/main/building/inner-walls.vox" object="plaster" offset="0.0 0.0 0.0">
+											<voxbox pos="0.76 0.0 0.01" rot="0.0 14.3 0.0" size="5 40 1" brush="MOD/main/building/inner-walls.vox" object="plaster" offset="0.0 0.0 0.0"/>
+										</voxbox>
+									</voxbox>
+								</voxbox>
+							</voxbox>
+						</voxbox>
+					</voxbox>
+				</voxbox>
+				<group name="inner-walls" prop0="texture=13 0.3">
 					<group name="elevator" pos="10.7 21.7 -34.3">
 						<compound name="wall" pos="-0.99999 0.0 -4.2" rot="0.0 -90.0 0.0">
 							<voxbox pos="0.0 0.0 -5.2" rot="0.0 -90.0 0.0" size="93 40 3" brush="MOD/main/building/inner-walls.vox" object="wall" offset="0.0 0.0 0.0">
@@ -13932,63 +13962,102 @@
 						<voxbox pos="0.0 0.0 -5.2" rot="0.0 -90.0 0.0" size="214 40 3" brush="MOD/main/building/inner-walls.vox" object="wall" offset="0.0 0.0 0.0">
 							<voxbox pos="0.0 0.0 -0.2" rot="0.0 0.0 0.0" size="89 40 2" brush="MOD/main/building/inner-walls.vox" object="plaster" offset="3.0 0.0 1.0"/>
 							<voxbox pos="0.0 0.0 0.3" rot="0.0 0.0 0.0" size="214 40 2" brush="MOD/main/building/inner-walls.vox" object="plaster" offset="-3.0 0.0 0.0"/>
+							<voxbox pos="9.3 0.0 -0.1" rot="0.0 0.0 0.0" size="120 40 1" brush="MOD/main/building/inner-walls.vox" object="plaster3" offset="0.0 0.0 0.0"/>
 						</voxbox>
 					</compound>
 					<compound name="wall" pos="8.90001 21.7 19.3" rot="0.0 -90.0 0.0">
 						<voxbox pos="0.0 0.0 -5.2" rot="0.0 -90.0 0.0" size="238 40 3" brush="MOD/main/building/inner-walls.vox" object="wall" offset="0.0 0.0 0.0">
 							<voxbox pos="-0.1 0.0 -0.2" rot="0.0 0.0 0.0" size="240 40 2" brush="MOD/main/building/inner-walls.vox" object="plaster" offset="1.0 0.0 1.0"/>
+							<voxbox pos="0.4 0.0 0.3" rot="0.0 0.0 0.0" size="111 40 1" brush="MOD/main/building/inner-walls.vox" object="plaster5" offset="0.0 0.0 0.0" color="0.76 0.76 0.76"/>
+							<voxbox pos="12.0 0.0 0.3" rot="0.0 0.0 0.0" size="114 40 1" brush="MOD/main/building/inner-walls.vox" object="plaster12" offset="0.0 0.0 0.0"/>
 						</voxbox>
 					</compound>
 					<compound name="wall" pos="8.90001 21.7 -3.6" rot="0.0 -90.0 0.0">
 						<voxbox pos="0.0 0.0 -5.2" rot="0.0 -90.0 0.0" size="238 40 3" brush="MOD/main/building/inner-walls.vox" object="wall" offset="0.0 0.0 0.0">
 							<voxbox pos="0.0 0.0 0.3" rot="0.0 0.0 0.0" size="238 40 2" brush="MOD/main/building/inner-walls.vox" object="plaster" offset="1.0 0.0 0.0"/>
+							<voxbox pos="0.4 0.0 -0.1" rot="0.0 0.0 0.0" size="84 40 1" brush="MOD/main/building/inner-walls.vox" object="plaster9" offset="-19.0 0.0 0.0"/>
+							<voxbox pos="9.3 0.0 -0.1" rot="0.0 0.0 0.0" size="66 40 1" brush="MOD/main/building/inner-walls.vox" object="plaster11" offset="0.0 0.0 0.0"/>
+							<voxbox pos="16.4 0.0 -0.1" rot="0.0 0.0 0.0" size="70 40 1" brush="MOD/main/building/inner-walls.vox" object="plaster11" offset="2.0 0.0 0.0"/>
 						</voxbox>
 					</compound>
 					<compound name="wall" pos="-9.69999 21.7 13.8" rot="0.0 180.0 0.0">
 						<voxbox pos="0.0 0.0 -5.2" rot="0.0 -90.0 0.0" size="226 40 3" brush="MOD/main/building/inner-walls.vox" object="wall" offset="0.0 0.0 0.0">
 							<voxbox pos="-0.3 0.0 -0.2" rot="0.0 0.0 0.0" size="233 40 2" brush="MOD/main/building/inner-walls.vox" object="plaster" offset="1.0 0.0 1.0"/>
+							<voxbox pos="9.8 0.0 0.3" rot="0.0 0.0 0.0" size="128 40 1" brush="MOD/main/building/inner-walls.vox" object="plaster11"/>
+							<voxbox pos="0.0 0.0 0.3" rot="0.0 0.0 0.0" size="95 40 1" brush="MOD/main/building/inner-walls.vox" object="plaster12" offset="0.0 0.0 0.0"/>
 						</voxbox>
 					</compound>
 					<compound name="wall" pos="14.0 21.7 7.7">
 						<voxbox pos="-0.19999 0.0 11.3" rot="0.0 90.0 0.0" size="226 40 3" brush="MOD/main/building/inner-walls.vox" object="wall" offset="0.0 0.0 0.0">
 							<voxbox pos="-0.3 0.0 0.3" rot="0.0 0.0 0.0" size="233 40 2" brush="MOD/main/building/inner-walls.vox" object="plaster" offset="1.0 0.0 .0"/>
+							<voxbox pos="0.0 0.0 -0.1" rot="0.0 0.0 0.0" size="94 40 1" brush="MOD/main/building/inner-walls.vox" object="plaster5" offset="0.0 0.0 0.0" color="0.76 0.76 0.76"/>
+							<voxbox pos="9.8 0.0 -0.1" rot="0.0 0.0 0.0" size="128 40 1" brush="MOD/main/building/inner-walls.vox" object="plaster9" offset="-19.0 0.0 -0.0"/>
 						</voxbox>
 					</compound>
-					<group name="security &amp; servers" pos="2.2 21.7 7.7">
-						<compound name="wall" pos="0.3 0.0 1.6" rot="0.0 90.0 0.0">
-							<voxbox pos="-0.19999 0.0 11.3" rot="0.0 90.0 0.0" size="232 40 3" brush="MOD/main/building/inner-walls.vox" object="wall" offset="0.0 0.0 0.0"/>
-						</compound>
-						<compound name="wall" pos="2.9 0.0 -0.0">
-							<voxbox pos="-0.19999 0.0 1.5" rot="0.0 90.0 0.0" size="128 40 3" brush="MOD/main/building/inner-walls.vox" object="wall" offset="98.00001 0.0 0.00001"/>
-						</compound>
-						<compound name="wall" pos="-4.8 0.0 0.0">
-							<voxbox pos="-0.19999 0.0 1.5" rot="0.0 90.0 0.0" size="128 40 3" brush="MOD/main/building/inner-walls.vox" object="wall" offset="98.00001 0.0 0.00001"/>
-						</compound>
-						<compound name="wall" pos="1.4 0.0 -0.0">
-							<voxbox pos="-0.19999 0.0 11.3" rot="0.0 90.0 0.0" size="95 40 3" brush="MOD/main/building/inner-walls.vox" object="wall" offset="0.0 0.0 0.0"/>
-						</compound>
-					</group>
+					<compound name="wall" pos="2.5 21.7 9.3" rot="0.0 90.0 0.0">
+						<voxbox pos="-0.19999 0.0 11.3" rot="0.0 90.0 0.0" size="232 40 3" brush="MOD/main/building/inner-walls.vox" object="wall" offset="0.0 0.0 0.0">
+							<voxbox pos="0.0 0.0 -0.1" rot="0.0 0.0 0.0" size="113 40 1" brush="MOD/main/building/inner-walls.vox" object="plaster5" offset="0.0 0.0 0.0" color="0.76 0.76 0.76"/>
+							<voxbox pos="0.1 0.0 0.3" rot="0.0 0.0 0.0" size="84 40 1" brush="MOD/main/building/inner-walls.vox" object="plaster9" offset="-19.0 0.0 0.0"/>
+							<voxbox pos="9.0 0.0 0.3" rot="0.0 0.0 0.0" size="66 40 1" brush="MOD/main/building/inner-walls.vox" object="plaster11" offset="0.0 0.0 0.0"/>
+							<voxbox pos="16.1 0.0 0.3" rot="0.0 0.0 0.0" size="70 40 1" brush="MOD/main/building/inner-walls.vox" object="plaster11" offset="2.0 0.0 0.0"/>
+							<voxbox pos="11.7 0.0 -0.1" rot="0.0 0.0 0.0" size="114 40 1" brush="MOD/main/building/inner-walls.vox" object="plaster12" offset="0.0 0.0 0.0"/>
+						</voxbox>
+					</compound>
+					<compound name="wall" pos="5.1 21.7 7.7" rot="0.0 0.0 0.0">
+						<voxbox pos="-0.19999 0.0 1.5" rot="0.0 90.0 0.0" size="128 40 3" brush="MOD/main/building/inner-walls.vox" object="wall" offset="98.00001 0.0 0.00001">
+							<voxbox pos="0.0 0.0 0.3" rot="0.0 0.0 0.0" size="128 40 1" brush="MOD/main/building/inner-walls.vox" object="plaster9" offset="-19.0 0.0 -0.0"/>
+							<voxbox pos="0.0 0.0 -0.1" rot="0.0 0.0 0.0" size="128 40 1" brush="MOD/main/building/inner-walls.vox" object="plaster11"/>
+						</voxbox>
+					</compound>
+					<compound name="wall" pos="-2.0 21.7 7.7" rot="0.0 0.0 0.0">
+						<voxbox pos="-0.19999 0.0 1.5" rot="0.0 90.0 0.0" size="128 40 3" brush="MOD/main/building/inner-walls.vox" object="wall" offset="98.00001 0.0 0.00001">
+							<voxbox pos="0.0 0.0 -0.1" rot="0.0 0.0 0.0" size="128 40 1" brush="MOD/main/building/inner-walls.vox" object="plaster11"/>
+							<voxbox pos="0.0 0.0 0.3" rot="0.0 0.0 0.0" size="128 40 1" brush="MOD/main/building/inner-walls.vox" object="plaster11"/>
+						</voxbox>
+					</compound>
+					<compound name="wall" pos="2.4 21.7 7.7" rot="0.0 0.0 0.0">
+						<voxbox pos="-0.19999 0.0 11.3" rot="0.0 90.0 0.0" size="95 40 3" brush="MOD/main/building/inner-walls.vox" object="wall" offset="0.0 0.0 0.0">
+							<voxbox pos="0.0 0.0 0.3" rot="0.0 0.0 0.0" size="94 40 1" brush="MOD/main/building/inner-walls.vox" object="plaster5" offset="0.0 0.0 0.0" color="0.76 0.76 0.76"/>
+							<voxbox pos="0.0 0.0 -0.1" rot="0.0 0.0 0.0" size="95 40 1" brush="MOD/main/building/inner-walls.vox" object="plaster12" offset="0.0 0.0 0.0"/>
+						</voxbox>
+					</compound>
 					<compound name="wall" pos="-9.69999 21.7 -13.1" rot="0.0 180.0 0.0">
 						<voxbox pos="0.0 0.0 -5.2" rot="0.0 -90.0 0.0" size="156 40 3" brush="MOD/main/building/inner-walls.vox" object="wall" offset="0.0 0.0 0.0">
 							<voxbox pos="0.0 0.0 -0.2" rot="0.0 0.0 0.0" size="156 40 2" brush="MOD/main/building/inner-walls.vox" object="plaster" offset="0.0 0.0 1.0"/>
+							<voxbox pos="0.3 0.0 0.3" rot="0.0 0.0 0.0" size="75 40 1" brush="MOD/main/building/inner-walls.vox" object="plaster2" offset="0.0 0.0 0.0" color="0.69 0.59 0.59"/>
+							<voxbox pos="8.3 0.0 0.3" rot="0.0 0.0 0.0" size="73 40 1" brush="MOD/main/building/inner-walls.vox" object="plaster2" offset="0.0 0.0 0.0" color="0.69 0.59 0.59"/>
 						</voxbox>
 					</compound>
 					<compound name="wall" pos="-4.19999 21.7 -8.2" rot="0.0 90.0 0.0">
 						<voxbox pos="0.0 0.0 -5.2" rot="0.0 -90.0 0.0" size="253 40 3" brush="MOD/main/building/inner-walls.vox" object="wall" offset="0.0 0.0 0.0">
 							<voxbox pos="-0.4 0.0 0.3" rot="0.0 0.0 0.0" size="257 40 2" brush="MOD/main/building/inner-walls.vox" object="plaster" offset="-3.0 0.0 0.0"/>
+							<voxbox pos="12.9 0.0 -0.1" rot="0.0 0.0 0.0" size="120 40 1" brush="MOD/main/building/inner-walls.vox" object="plaster3" offset="0.0 0.0 0.0"/>
+							<voxbox pos="0.0 0.0 -0.1" rot="0.0 0.0 0.0" size="125 40 1" brush="MOD/main/building/inner-walls.vox" object="plaster2" offset="0.0 0.0 0.0" color="0.69 0.59 0.59"/>
+						</voxbox>
+					</compound>
+					<compound name="wall" pos="-4.19999 21.7 -16.1" rot="0.0 90.0 0.0">
+						<voxbox pos="0.0 0.0 -5.2" rot="0.0 -90.0 0.0" size="125 40 3" brush="MOD/main/building/inner-walls.vox" object="wall" offset="0.0 0.0 0.0">
+							<voxbox pos="0.0 0.0 -0.1" rot="0.0 0.0 0.0" size="125 40 1" brush="MOD/main/building/inner-walls.vox" object="plaster2" offset="0.0 0.0 0.0" color="0.69 0.59 0.59"/>
+							<voxbox pos="0.0 0.0 0.3" rot="0.0 0.0 0.0" size="125 40 1" brush="MOD/main/building/inner-walls.vox" object="plaster2" offset="0.0 0.0 0.0" color="0.69 0.59 0.59"/>
 						</voxbox>
 					</compound>
 					<compound name="wall" pos="3.10001 21.7 -9.3" rot="0.0 -180.0 0.0">
-						<voxbox pos="-0.0 0.0 -1.1" rot="0.0 -90.0 0.0" size="115 40 3" brush="MOD/main/building/inner-walls.vox" object="wall" offset="41.0 0.0 0.0"/>
+						<voxbox pos="-0.0 0.0 -1.1" rot="0.0 -90.0 0.0" size="115 40 3" brush="MOD/main/building/inner-walls.vox" object="wall" offset="41.0 0.0 0.0">
+							<voxbox pos="0.0 0.0 0.3" rot="0.0 0.0 0.0" size="115 40 1" brush="MOD/main/building/inner-walls.vox" object="plaster3" offset="0.0 0.0 0.0"/>
+							<voxbox pos="0.0 0.0 -0.1" rot="0.0 0.0 0.0" size="75 40 1" brush="MOD/main/building/inner-walls.vox" object="plaster2" offset="0.0 0.0 0.0" color="0.69 0.59 0.59"/>
+							<voxbox pos="8.0 0.0 -0.1" rot="0.0 0.0 0.0" size="35 40 1" brush="MOD/main/building/inner-walls.vox" object="plaster2" offset="0.0 0.0 0.0" color="0.69 0.59 0.59"/>
+						</voxbox>
 					</compound>
 					<compound name="wall" pos="15.60001 21.7 -9.3" rot="0.0 -180.0 0.0">
 						<voxbox pos="-0.0 0.0 -1.1" rot="0.0 -90.0 0.0" size="115 40 3" brush="MOD/main/building/inner-walls.vox" object="wall" offset="41.0 0.0 0.0">
 							<voxbox pos="-0.4 0.0 0.3" rot="0.0 0.0 0.0" size="118 40 2" brush="MOD/main/building/inner-walls.vox" object="plaster" offset="-3.0 0.0 0.0"/>
+							<voxbox pos="0.0 0.0 -0.1" rot="0.0 0.0 0.0" size="115 40 1" brush="MOD/main/building/inner-walls.vox" object="plaster3" offset="0.0 0.0 0.0"/>
 						</voxbox>
 					</compound>
 					<compound name="wall" pos="3.40001 21.7 -19.7" rot="0.0 0.0 0.0">
 						<voxbox pos="0.0 0.0 -3.8" rot="0.0 -90.0 0.0" size="38 40 3" brush="MOD/main/building/inner-walls.vox" object="wall" offset="14.0 0.0 0.0">
 							<voxbox pos="0.0 0.0 -0.2" rot="0.0 0.0 0.0" size="34 40 2" brush="MOD/main/building/inner-walls.vox" object="plaster" offset="-3.0 0.0 1.0"/>
+							<voxbox pos="-0.0 0.0 0.3" rot="0.0 0.0 0.0" size="38 40 1" brush="MOD/main/building/inner-walls.vox" object="plaster2" offset="-3.0 0.0 0.0" color="0.69 0.59 0.59"/>
 						</voxbox>
 					</compound>
 					<compound name="wall" pos="14.90001 21.7 -52.3" rot="0.0 0.0 0.0">
@@ -14004,6 +14073,709 @@
 			<vox pos="3.6 30.3 -83.0" rot="0.0 -180.0 0.0" texture="5 0.2" blendtexture="3 0.1" file="MOD/main/props/helipad.vox" object="ramp">
 				<voxbox pos="0.15 1.5 0.8" rot="0.0 180.0 -10.0" size="98 2 16" brush="MOD/main/props/helipad.vox" object="ramp2" offset="0.0 0.0 0.0"/>
 			</vox>
+			<group name="props">
+				<group name="room2" pos="7.9 30.3 -41.4" rot="0.0 180.0 0.0">
+					<vox pos="2.1 2.3 6.2" rot="0.0 -90.0 0.0" prop="false" file="MOD/main/props/hospital-assets1.vox" object="bed-lamp">
+						<light pos="0.0 0.1 0.0" rot="10.0 0.0 0.0" type="area" scale="1.5" size="1 0.2" reach="6"/>
+					</vox>
+					<vox pos="-0.1 0.0 3.3" rot="0.0 -90.0 0.0" density="1.2" prop="true" file="MOD/main/props/hospital-assets1.vox" object="curtain-stand">
+						<voxbox tags="nocull" pos="0.0 2.0 -2.0" density="0.05" prop="true" size="1 7 3" material="plaster" color="0.2 0.42 0.6">
+							<joint pos="0.05 0.7 0.15" rot="0.0 0.0 0.0" type="prismatic" limits="0 3.9" autodisable="true"/>
+						</voxbox>
+						<voxbox tags="nocull" pos="0.0 1.3 -2.0" density="0.05" prop="true" size="1 7 3" material="plaster" color="0.2 0.42 0.6">
+							<joint pos="0.05 0.7 0.15" type="hinge"/>
+						</voxbox>
+						<voxbox tags="nocull" pos="0.0 0.4 -2.0" rot="0.0 0.0 0.0" density="0.05" prop="true" size="1 9 3" material="plaster" color="0.2 0.42 0.6">
+							<joint pos="0.05 0.9 0.15" type="hinge"/>
+						</voxbox>
+						<voxbox tags="nocull" pos="0.0 0.4 -1.7" rot="0.0 0.0 0.0" density="0.05" prop="true" size="1 9 3" material="plaster" color="0.18 0.38 0.54">
+							<joint pos="0.05 0.9 0.15" type="hinge"/>
+						</voxbox>
+						<voxbox tags="nocull" pos="0.0 2.0 -1.7" density="0.05" prop="true" size="1 7 3" material="plaster" color="0.18 0.38 0.54">
+							<joint pos="0.05 0.7 0.15" rot="0.0 0.0 0.0" type="prismatic" limits="-0.3 3.6" autodisable="true"/>
+						</voxbox>
+						<voxbox tags="nocull" pos="0.0 1.3 -1.7" density="0.05" prop="true" size="1 7 3" material="plaster" color="0.18 0.38 0.54">
+							<joint pos="0.05 0.7 0.15" type="hinge"/>
+						</voxbox>
+						<voxbox tags="nocull" pos="0.0 2.0 -1.4" density="0.05" prop="true" size="1 7 3" material="plaster" color="0.2 0.42 0.6">
+							<joint pos="0.05 0.7 0.15" rot="0.0 0.0 0.0" type="prismatic" limits="-0.6 3.3" autodisable="true"/>
+						</voxbox>
+						<voxbox tags="nocull" pos="0.0 1.3 -1.4" density="0.05" prop="true" size="1 7 3" material="plaster" color="0.2 0.42 0.6">
+							<joint pos="0.05 0.7 0.15" type="hinge"/>
+						</voxbox>
+						<voxbox tags="nocull" pos="0.0 0.4 -1.4" rot="0.0 0.0 0.0" density="0.05" prop="true" size="1 9 3" material="plaster" color="0.2 0.42 0.6">
+							<joint pos="0.05 0.9 0.15" type="hinge"/>
+						</voxbox>
+						<voxbox tags="nocull" pos="0.0 0.4 -1.1" rot="0.0 0.0 0.0" density="0.05" prop="true" size="1 9 3" material="plaster" color="0.18 0.38 0.54">
+							<joint pos="0.05 0.9 0.15" type="hinge"/>
+						</voxbox>
+						<voxbox tags="nocull" pos="0.0 2.0 -1.1" density="0.05" prop="true" size="1 7 3" material="plaster" color="0.18 0.38 0.54">
+							<joint pos="0.05 0.7 0.15" rot="0.0 0.0 0.0" type="prismatic" limits="-0.9 3" autodisable="true"/>
+						</voxbox>
+						<voxbox tags="nocull" pos="0.0 1.3 -1.1" density="0.05" prop="true" size="1 7 3" material="plaster" color="0.18 0.38 0.54">
+							<joint pos="0.05 0.7 0.15" type="hinge"/>
+						</voxbox>
+						<voxbox tags="nocull" pos="0.0 2.0 -0.8" density="0.05" prop="true" size="1 7 3" material="plaster" color="0.2 0.42 0.6">
+							<joint pos="0.05 0.7 0.15" rot="0.0 0.0 0.0" type="prismatic" limits="-1.2 2.7" autodisable="true"/>
+						</voxbox>
+						<voxbox tags="nocull" pos="0.0 1.3 -0.8" density="0.05" prop="true" size="1 7 3" material="plaster" color="0.2 0.42 0.6">
+							<joint pos="0.05 0.7 0.15" type="hinge"/>
+						</voxbox>
+						<voxbox tags="nocull" pos="0.0 0.4 -0.8" rot="0.0 0.0 0.0" density="0.05" prop="true" size="1 9 3" material="plaster" color="0.2 0.42 0.6">
+							<joint pos="0.05 0.9 0.15" type="hinge"/>
+						</voxbox>
+						<voxbox tags="nocull" pos="0.0 0.4 -0.5" rot="0.0 0.0 0.0" density="0.05" prop="true" size="1 9 3" material="plaster" color="0.18 0.38 0.54">
+							<joint pos="0.05 0.9 0.15" type="hinge"/>
+						</voxbox>
+						<voxbox tags="nocull" pos="0.0 2.0 -0.5" density="0.05" prop="true" size="1 7 3" material="plaster" color="0.18 0.38 0.54">
+							<joint pos="0.05 0.7 0.15" rot="0.0 0.0 0.0" type="prismatic" limits="-1.5 2.4" autodisable="true"/>
+						</voxbox>
+						<voxbox tags="nocull" pos="0.0 1.3 -0.5" density="0.05" prop="true" size="1 7 3" material="plaster" color="0.18 0.38 0.54">
+							<joint pos="0.05 0.7 0.15" type="hinge"/>
+						</voxbox>
+						<voxbox tags="nocull" pos="0.0 2.0 -0.2" density="0.05" prop="true" size="1 7 3" material="plaster" color="0.2 0.42 0.6">
+							<joint pos="0.05 0.7 0.15" rot="0.0 0.0 0.0" type="prismatic" limits="-1.8 2.1" autodisable="true"/>
+						</voxbox>
+						<voxbox tags="nocull" pos="0.0 1.3 -0.2" density="0.05" prop="true" size="1 7 3" material="plaster" color="0.2 0.42 0.6">
+							<joint pos="0.05 0.7 0.15" type="hinge"/>
+						</voxbox>
+						<voxbox tags="nocull" pos="0.0 0.4 -0.2" rot="0.0 0.0 0.0" density="0.05" prop="true" size="1 9 3" material="plaster" color="0.2 0.42 0.6">
+							<joint pos="0.05 0.9 0.15" type="hinge"/>
+						</voxbox>
+						<voxbox tags="nocull" pos="0.0 0.4 0.1" rot="0.0 0.0 0.0" density="0.05" prop="true" size="1 9 3" material="plaster" color="0.18 0.38 0.54">
+							<joint pos="0.05 0.9 0.15" type="hinge"/>
+						</voxbox>
+						<voxbox tags="nocull" pos="0.0 2.0 0.1" density="0.05" prop="true" size="1 7 3" material="plaster" color="0.18 0.38 0.54">
+							<joint pos="0.05 0.7 0.15" rot="0.0 0.0 0.0" type="prismatic" limits="-2.1 1.8" autodisable="true"/>
+						</voxbox>
+						<voxbox tags="nocull" pos="0.0 1.3 0.1" density="0.05" prop="true" size="1 7 3" material="plaster" color="0.18 0.38 0.54">
+							<joint pos="0.05 0.7 0.15" type="hinge"/>
+						</voxbox>
+						<voxbox tags="nocull" pos="0.0 2.0 0.4" density="0.05" prop="true" size="1 7 3" material="plaster" color="0.2 0.42 0.6">
+							<joint pos="0.05 0.7 0.15" rot="0.0 0.0 0.0" type="prismatic" limits="-2.4 1.5" autodisable="true"/>
+						</voxbox>
+						<voxbox tags="nocull" pos="0.0 1.3 0.4" density="0.05" prop="true" size="1 7 3" material="plaster" color="0.2 0.42 0.6">
+							<joint pos="0.05 0.7 0.15" type="hinge"/>
+						</voxbox>
+						<voxbox tags="nocull" pos="0.0 0.4 0.4" rot="0.0 0.0 0.0" density="0.05" prop="true" size="1 9 3" material="plaster" color="0.2 0.42 0.6">
+							<joint pos="0.05 0.9 0.15" type="hinge"/>
+						</voxbox>
+						<voxbox tags="nocull" pos="0.0 0.4 0.7" rot="0.0 0.0 0.0" density="0.05" prop="true" size="1 9 3" material="plaster" color="0.18 0.38 0.54">
+							<joint pos="0.05 0.9 0.15" type="hinge"/>
+						</voxbox>
+						<voxbox tags="nocull" pos="0.0 2.0 0.7" density="0.05" prop="true" size="1 7 3" material="plaster" color="0.18 0.38 0.54">
+							<joint pos="0.05 0.7 0.15" rot="0.0 0.0 0.0" type="prismatic" limits="-2.7 1.2" autodisable="true"/>
+						</voxbox>
+						<voxbox tags="nocull" pos="0.0 1.3 0.7" density="0.05" prop="true" size="1 7 3" material="plaster" color="0.18 0.38 0.54">
+							<joint pos="0.05 0.7 0.15" type="hinge"/>
+						</voxbox>
+						<voxbox tags="nocull" pos="0.0 2.0 1.0" density="0.05" prop="true" size="1 7 3" material="plaster" color="0.2 0.42 0.6">
+							<joint pos="0.05 0.7 0.15" rot="0.0 0.0 0.0" type="prismatic" limits="-3 0.9" autodisable="true"/>
+						</voxbox>
+						<voxbox tags="nocull" pos="0.0 1.3 1.0" density="0.05" prop="true" size="1 7 3" material="plaster" color="0.2 0.42 0.6">
+							<joint pos="0.05 0.7 0.15" type="hinge"/>
+						</voxbox>
+						<voxbox tags="nocull" pos="0.0 0.4 1.0" rot="0.0 0.0 0.0" density="0.05" prop="true" size="1 9 3" material="plaster" color="0.2 0.42 0.6">
+							<joint pos="0.05 0.9 0.15" type="hinge"/>
+						</voxbox>
+						<voxbox tags="nocull" pos="0.0 0.4 1.3" rot="0.0 0.0 0.0" density="0.05" prop="true" size="1 9 3" material="plaster" color="0.18 0.38 0.54">
+							<joint pos="0.05 0.9 0.15" type="hinge"/>
+						</voxbox>
+						<voxbox tags="nocull" pos="0.0 2.0 1.3" density="0.05" prop="true" size="1 7 3" material="plaster" color="0.18 0.38 0.54">
+							<joint pos="0.05 0.7 0.15" rot="0.0 0.0 0.0" type="prismatic" limits="-3.3 0.6" autodisable="true"/>
+						</voxbox>
+						<voxbox tags="nocull" pos="0.0 1.3 1.3" density="0.05" prop="true" size="1 7 3" material="plaster" color="0.18 0.38 0.54">
+							<joint pos="0.05 0.7 0.15" type="hinge"/>
+						</voxbox>
+						<voxbox tags="nocull" pos="0.0 2.0 1.6" density="0.05" prop="true" size="1 7 3" material="plaster" color="0.2 0.42 0.6">
+							<joint pos="0.05 0.7 0.15" rot="0.0 0.0 0.0" type="prismatic" limits="-3.6 0.3" autodisable="true"/>
+						</voxbox>
+						<voxbox tags="nocull" pos="0.0 1.3 1.6" density="0.05" prop="true" size="1 7 3" material="plaster" color="0.2 0.42 0.6">
+							<joint pos="0.05 0.7 0.15" type="hinge"/>
+						</voxbox>
+						<voxbox tags="nocull" pos="0.0 0.4 1.6" rot="0.0 0.0 0.0" density="0.05" prop="true" size="1 9 3" material="plaster" color="0.2 0.42 0.6">
+							<joint pos="0.05 0.9 0.15" type="hinge"/>
+						</voxbox>
+					</vox>
+					<vox pos="-0.5 0.0 1.7" rot="0.0 -60.0 0.0" prop="true" file="MOD/main/props/hospital-assets1.vox" object="trolley"/>
+					<vox pos="1.4 0.0 1.5" rot="0.0 -120.0 0.0" prop="true" file="MOD/main/props/hospital-assets1.vox" object="stand"/>
+					<vox pos="0.6 0.0 0.0" rot="0.0 -90.0 0.0" prop="true" file="MOD/main/props/hospital-assets1.vox" object="bed-table"/>
+					<vox pos="0.5 0.0 -0.4" rot="0.0 -90.0 0.0" density="1.5" prop="true" file="MOD/main/props/hospital-assets1.vox" object="hospital-bed"/>
+					<vox pos="1.8 0.0 -1.9" rot="0.0 -90.0 0.0" density="1.2" prop="true" file="MOD/main/props/hospital-assets1.vox" object="bedside-locker"/>
+					<vox pos="2.1 2.3 -0.4" rot="0.0 -90.0 0.0" prop="false" file="MOD/main/props/hospital-assets1.vox" object="bed-lamp">
+						<light pos="0.0 0.1 0.0" rot="10.0 0.0 0.0" type="area" scale="1.5" size="1 0.2" reach="6"/>
+					</vox>
+					<vox pos="-0.5 0.0 8.3" rot="0.0 -60.0 0.0" prop="true" file="MOD/main/props/hospital-assets1.vox" object="trolley"/>
+					<vox pos="1.4 0.0 8.1" rot="0.0 -120.0 0.0" prop="true" file="MOD/main/props/hospital-assets1.vox" object="stand"/>
+					<vox pos="0.6 0.0 6.6" rot="0.0 -90.0 0.0" prop="true" file="MOD/main/props/hospital-assets1.vox" object="bed-table"/>
+					<vox pos="0.5 0.0 6.2" rot="0.0 -90.0 0.0" density="1.5" prop="true" file="MOD/main/props/hospital-assets1.vox" object="hospital-bed"/>
+					<vox pos="1.8 0.0 4.7" rot="0.0 -90.0 0.0" density="1.2" prop="true" file="MOD/main/props/hospital-assets1.vox" object="bedside-locker"/>
+					<vox pos="-6.0 0.0 13.2" rot="0.0 90.0 0.0" density="1.2" prop="true" file="MOD/main/props/Surgical-room.vox" object="shelf1"/>
+					<vox pos="-6.0 0.0 11.7" rot="0.0 90.0 0.0" density="1.2" prop="true" file="MOD/main/props/Surgical-room.vox" object="shelf1"/>
+					<vox pos="-6.5 1.5 0.4" rot="0.0 90.0 0.0" density="1.2" prop="true" file="MOD/main/props/Surgical-room.vox" object="whiteboard"/>
+					<vox pos="-6.1 2.1 11.7" rot="0.0 90.0 0.0" density="1.2" prop="true" file="MOD/main/props/Surgical-room.vox" object="top-shelf"/>
+					<vox pos="-6.1 2.1 10.2" rot="0.0 90.0 0.0" density="1.2" prop="true" file="MOD/main/props/Surgical-room.vox" object="top-shelf"/>
+					<vox pos="-6.1 2.1 13.2" rot="0.0 90.0 0.0" density="1.2" prop="true" file="MOD/main/props/Surgical-room.vox" object="top-shelf"/>
+					<vox pos="-0.1 0.0 9.6" rot="0.0 -90.0 0.0" density="1.2" prop="true" file="MOD/main/props/hospital-assets1.vox" object="curtain-stand">
+						<voxbox tags="nocull" pos="0.0 2.0 -2.0" density="0.05" prop="true" size="1 7 3" material="plaster" color="0.2 0.42 0.6">
+							<joint pos="0.05 0.7 0.15" rot="0.0 0.0 0.0" type="prismatic" limits="0 3.9" autodisable="true"/>
+						</voxbox>
+						<voxbox tags="nocull" pos="0.0 1.3 -2.0" density="0.05" prop="true" size="1 7 3" material="plaster" color="0.2 0.42 0.6">
+							<joint pos="0.05 0.7 0.15" type="hinge"/>
+						</voxbox>
+						<voxbox tags="nocull" pos="0.0 0.4 -2.0" rot="0.0 0.0 0.0" density="0.05" prop="true" size="1 9 3" material="plaster" color="0.2 0.42 0.6">
+							<joint pos="0.05 0.9 0.15" type="hinge"/>
+						</voxbox>
+						<voxbox tags="nocull" pos="0.0 0.4 -1.7" rot="0.0 0.0 0.0" density="0.05" prop="true" size="1 9 3" material="plaster" color="0.18 0.38 0.54">
+							<joint pos="0.05 0.9 0.15" type="hinge"/>
+						</voxbox>
+						<voxbox tags="nocull" pos="0.0 2.0 -1.7" density="0.05" prop="true" size="1 7 3" material="plaster" color="0.18 0.38 0.54">
+							<joint pos="0.05 0.7 0.15" rot="0.0 0.0 0.0" type="prismatic" limits="-0.3 3.6" autodisable="true"/>
+						</voxbox>
+						<voxbox tags="nocull" pos="0.0 1.3 -1.7" density="0.05" prop="true" size="1 7 3" material="plaster" color="0.18 0.38 0.54">
+							<joint pos="0.05 0.7 0.15" type="hinge"/>
+						</voxbox>
+						<voxbox tags="nocull" pos="0.0 2.0 -1.4" density="0.05" prop="true" size="1 7 3" material="plaster" color="0.2 0.42 0.6">
+							<joint pos="0.05 0.7 0.15" rot="0.0 0.0 0.0" type="prismatic" limits="-0.6 3.3" autodisable="true"/>
+						</voxbox>
+						<voxbox tags="nocull" pos="0.0 1.3 -1.4" density="0.05" prop="true" size="1 7 3" material="plaster" color="0.2 0.42 0.6">
+							<joint pos="0.05 0.7 0.15" type="hinge"/>
+						</voxbox>
+						<voxbox tags="nocull" pos="0.0 0.4 -1.4" rot="0.0 0.0 0.0" density="0.05" prop="true" size="1 9 3" material="plaster" color="0.2 0.42 0.6">
+							<joint pos="0.05 0.9 0.15" type="hinge"/>
+						</voxbox>
+						<voxbox tags="nocull" pos="0.0 0.4 -1.1" rot="0.0 0.0 0.0" density="0.05" prop="true" size="1 9 3" material="plaster" color="0.18 0.38 0.54">
+							<joint pos="0.05 0.9 0.15" type="hinge"/>
+						</voxbox>
+						<voxbox tags="nocull" pos="0.0 2.0 -1.1" density="0.05" prop="true" size="1 7 3" material="plaster" color="0.18 0.38 0.54">
+							<joint pos="0.05 0.7 0.15" rot="0.0 0.0 0.0" type="prismatic" limits="-0.9 3" autodisable="true"/>
+						</voxbox>
+						<voxbox tags="nocull" pos="0.0 1.3 -1.1" density="0.05" prop="true" size="1 7 3" material="plaster" color="0.18 0.38 0.54">
+							<joint pos="0.05 0.7 0.15" type="hinge"/>
+						</voxbox>
+						<voxbox tags="nocull" pos="0.0 2.0 -0.8" density="0.05" prop="true" size="1 7 3" material="plaster" color="0.2 0.42 0.6">
+							<joint pos="0.05 0.7 0.15" rot="0.0 0.0 0.0" type="prismatic" limits="-1.2 2.7" autodisable="true"/>
+						</voxbox>
+						<voxbox tags="nocull" pos="0.0 1.3 -0.8" density="0.05" prop="true" size="1 7 3" material="plaster" color="0.2 0.42 0.6">
+							<joint pos="0.05 0.7 0.15" type="hinge"/>
+						</voxbox>
+						<voxbox tags="nocull" pos="0.0 0.4 -0.8" rot="0.0 0.0 0.0" density="0.05" prop="true" size="1 9 3" material="plaster" color="0.2 0.42 0.6">
+							<joint pos="0.05 0.9 0.15" type="hinge"/>
+						</voxbox>
+						<voxbox tags="nocull" pos="0.0 0.4 -0.5" rot="0.0 0.0 0.0" density="0.05" prop="true" size="1 9 3" material="plaster" color="0.18 0.38 0.54">
+							<joint pos="0.05 0.9 0.15" type="hinge"/>
+						</voxbox>
+						<voxbox tags="nocull" pos="0.0 2.0 -0.5" density="0.05" prop="true" size="1 7 3" material="plaster" color="0.18 0.38 0.54">
+							<joint pos="0.05 0.7 0.15" rot="0.0 0.0 0.0" type="prismatic" limits="-1.5 2.4" autodisable="true"/>
+						</voxbox>
+						<voxbox tags="nocull" pos="0.0 1.3 -0.5" density="0.05" prop="true" size="1 7 3" material="plaster" color="0.18 0.38 0.54">
+							<joint pos="0.05 0.7 0.15" type="hinge"/>
+						</voxbox>
+						<voxbox tags="nocull" pos="0.0 2.0 -0.2" density="0.05" prop="true" size="1 7 3" material="plaster" color="0.2 0.42 0.6">
+							<joint pos="0.05 0.7 0.15" rot="0.0 0.0 0.0" type="prismatic" limits="-1.8 2.1" autodisable="true"/>
+						</voxbox>
+						<voxbox tags="nocull" pos="0.0 1.3 -0.2" density="0.05" prop="true" size="1 7 3" material="plaster" color="0.2 0.42 0.6">
+							<joint pos="0.05 0.7 0.15" type="hinge"/>
+						</voxbox>
+						<voxbox tags="nocull" pos="0.0 0.4 -0.2" rot="0.0 0.0 0.0" density="0.05" prop="true" size="1 9 3" material="plaster" color="0.2 0.42 0.6">
+							<joint pos="0.05 0.9 0.15" type="hinge"/>
+						</voxbox>
+						<voxbox tags="nocull" pos="0.0 0.4 0.1" rot="0.0 0.0 0.0" density="0.05" prop="true" size="1 9 3" material="plaster" color="0.18 0.38 0.54">
+							<joint pos="0.05 0.9 0.15" type="hinge"/>
+						</voxbox>
+						<voxbox tags="nocull" pos="0.0 2.0 0.1" density="0.05" prop="true" size="1 7 3" material="plaster" color="0.18 0.38 0.54">
+							<joint pos="0.05 0.7 0.15" rot="0.0 0.0 0.0" type="prismatic" limits="-2.1 1.8" autodisable="true"/>
+						</voxbox>
+						<voxbox tags="nocull" pos="0.0 1.3 0.1" density="0.05" prop="true" size="1 7 3" material="plaster" color="0.18 0.38 0.54">
+							<joint pos="0.05 0.7 0.15" type="hinge"/>
+						</voxbox>
+						<voxbox tags="nocull" pos="0.0 2.0 0.4" density="0.05" prop="true" size="1 7 3" material="plaster" color="0.2 0.42 0.6">
+							<joint pos="0.05 0.7 0.15" rot="0.0 0.0 0.0" type="prismatic" limits="-2.4 1.5" autodisable="true"/>
+						</voxbox>
+						<voxbox tags="nocull" pos="0.0 1.3 0.4" density="0.05" prop="true" size="1 7 3" material="plaster" color="0.2 0.42 0.6">
+							<joint pos="0.05 0.7 0.15" type="hinge"/>
+						</voxbox>
+						<voxbox tags="nocull" pos="0.0 0.4 0.4" rot="0.0 0.0 0.0" density="0.05" prop="true" size="1 9 3" material="plaster" color="0.2 0.42 0.6">
+							<joint pos="0.05 0.9 0.15" type="hinge"/>
+						</voxbox>
+						<voxbox tags="nocull" pos="0.0 0.4 0.7" rot="0.0 0.0 0.0" density="0.05" prop="true" size="1 9 3" material="plaster" color="0.18 0.38 0.54">
+							<joint pos="0.05 0.9 0.15" type="hinge"/>
+						</voxbox>
+						<voxbox tags="nocull" pos="0.0 2.0 0.7" density="0.05" prop="true" size="1 7 3" material="plaster" color="0.18 0.38 0.54">
+							<joint pos="0.05 0.7 0.15" rot="0.0 0.0 0.0" type="prismatic" limits="-2.7 1.2" autodisable="true"/>
+						</voxbox>
+						<voxbox tags="nocull" pos="0.0 1.3 0.7" density="0.05" prop="true" size="1 7 3" material="plaster" color="0.18 0.38 0.54">
+							<joint pos="0.05 0.7 0.15" type="hinge"/>
+						</voxbox>
+						<voxbox tags="nocull" pos="0.0 2.0 1.0" density="0.05" prop="true" size="1 7 3" material="plaster" color="0.2 0.42 0.6">
+							<joint pos="0.05 0.7 0.15" rot="0.0 0.0 0.0" type="prismatic" limits="-3 0.9" autodisable="true"/>
+						</voxbox>
+						<voxbox tags="nocull" pos="0.0 1.3 1.0" density="0.05" prop="true" size="1 7 3" material="plaster" color="0.2 0.42 0.6">
+							<joint pos="0.05 0.7 0.15" type="hinge"/>
+						</voxbox>
+						<voxbox tags="nocull" pos="0.0 0.4 1.0" rot="0.0 0.0 0.0" density="0.05" prop="true" size="1 9 3" material="plaster" color="0.2 0.42 0.6">
+							<joint pos="0.05 0.9 0.15" type="hinge"/>
+						</voxbox>
+						<voxbox tags="nocull" pos="0.0 0.4 1.3" rot="0.0 0.0 0.0" density="0.05" prop="true" size="1 9 3" material="plaster" color="0.18 0.38 0.54">
+							<joint pos="0.05 0.9 0.15" type="hinge"/>
+						</voxbox>
+						<voxbox tags="nocull" pos="0.0 2.0 1.3" density="0.05" prop="true" size="1 7 3" material="plaster" color="0.18 0.38 0.54">
+							<joint pos="0.05 0.7 0.15" rot="0.0 0.0 0.0" type="prismatic" limits="-3.3 0.6" autodisable="true"/>
+						</voxbox>
+						<voxbox tags="nocull" pos="0.0 1.3 1.3" density="0.05" prop="true" size="1 7 3" material="plaster" color="0.18 0.38 0.54">
+							<joint pos="0.05 0.7 0.15" type="hinge"/>
+						</voxbox>
+						<voxbox tags="nocull" pos="0.0 2.0 1.6" density="0.05" prop="true" size="1 7 3" material="plaster" color="0.2 0.42 0.6">
+							<joint pos="0.05 0.7 0.15" rot="0.0 0.0 0.0" type="prismatic" limits="-3.6 0.3" autodisable="true"/>
+						</voxbox>
+						<voxbox tags="nocull" pos="0.0 1.3 1.6" density="0.05" prop="true" size="1 7 3" material="plaster" color="0.2 0.42 0.6">
+							<joint pos="0.05 0.7 0.15" type="hinge"/>
+						</voxbox>
+						<voxbox tags="nocull" pos="0.0 0.4 1.6" rot="0.0 0.0 0.0" density="0.05" prop="true" size="1 9 3" material="plaster" color="0.2 0.42 0.6">
+							<joint pos="0.05 0.9 0.15" type="hinge"/>
+						</voxbox>
+					</vox>
+					<vox pos="0.6 0.0 12.9" rot="0.0 -90.0 0.0" prop="true" file="MOD/main/props/hospital-assets1.vox" object="bed-table"/>
+					<vox pos="0.5 0.0 12.5" rot="0.0 -90.0 0.0" density="1.5" prop="true" file="MOD/main/props/hospital-assets1.vox" object="hospital-bed"/>
+					<vox pos="1.8 0.0 11.0" rot="0.0 -90.0 0.0" density="1.2" prop="true" file="MOD/main/props/hospital-assets1.vox" object="bedside-locker"/>
+					<vox pos="2.1 2.3 12.5" rot="0.0 -90.0 0.0" prop="false" file="MOD/main/props/hospital-assets1.vox" object="bed-lamp">
+						<light pos="0.0 0.1 0.0" rot="10.0 0.0 0.0" type="area" scale="1.5" size="1 0.2" reach="6"/>
+					</vox>
+					<vox pos="1.4 0.0 14.4" rot="0.0 -120.0 0.0" prop="true" file="MOD/main/props/hospital-assets1.vox" object="stand"/>
+					<vox pos="-0.5 0.0 14.6" rot="0.0 -60.0 0.0" prop="true" file="MOD/main/props/hospital-assets1.vox" object="trolley"/>
+					<vox pos="-6.2 0.0 0.7" rot="0.0 -90.0 0.0" prop="true" file="MOD/main/props/hollowrock_lab_table.vox"/>
+				</group>
+				<group name="waiting room" pos="16.4 30.3 -23.3" rot="0.0 180.0 0.0">
+					<vox pos="-3.0 0.0 2.1" rot="0.0 90.0 0.0" strength="1.3" prop="true" file="MOD/main/props/hospital-assets2.vox" object="waiting-chair"/>
+					<vox pos="-4.0 0.0 2.0" rot="0.0 -90.0 0.0" strength="1.3" prop="true" file="MOD/main/props/hospital-assets2.vox" object="waiting-chair"/>
+					<vox pos="-4.0 0.0 4.8" rot="0.0 -90.0 0.0" strength="1.3" prop="true" file="MOD/main/props/hospital-assets2.vox" object="waiting-chair"/>
+					<vox pos="-3.0 0.0 4.9" rot="0.0 90.0 0.0" strength="1.3" prop="true" file="MOD/main/props/hospital-assets2.vox" object="waiting-chair"/>
+					<vox pos="-4.0 0.0 11.5" rot="0.0 -90.0 0.0" strength="1.3" prop="true" file="MOD/main/props/hospital-assets2.vox" object="waiting-chair"/>
+					<vox pos="-3.0 0.0 11.6" rot="0.0 90.0 0.0" strength="1.3" prop="true" file="MOD/main/props/hospital-assets2.vox" object="waiting-chair"/>
+					<vox pos="-4.0 0.0 8.7" rot="0.0 -90.0 0.0" strength="1.3" prop="true" file="MOD/main/props/hospital-assets2.vox" object="waiting-chair"/>
+					<vox pos="-3.0 0.0 8.8" rot="0.0 90.0 0.0" strength="1.3" prop="true" file="MOD/main/props/hospital-assets2.vox" object="waiting-chair"/>
+					<vox pos="2.3 0.0 1.3" rot="0.0 180.0 0.0" strength="1.3" prop="true" file="MOD/main/props/hospital-assets2.vox" object="waiting-chair"/>
+					<vox pos="5.1 0.0 1.3" rot="0.0 180.0 0.0" strength="1.3" prop="true" file="MOD/main/props/hospital-assets2.vox" object="waiting-chair"/>
+					<vox pos="5.0 0.0 2.3" rot="0.0 0.0 0.0" strength="1.3" prop="true" file="MOD/main/props/hospital-assets2.vox" object="waiting-chair"/>
+					<vox pos="2.2 0.0 2.3" rot="0.0 0.0 0.0" strength="1.3" prop="true" file="MOD/main/props/hospital-assets2.vox" object="waiting-chair"/>
+				</group>
+				<group name="reception" pos="9.7 30.3 -12.9">
+					<vox pos="-1.5 0.0 -6.0" rot="0.0 0.0 0.0" prop="true" file="MOD/main/props/filing_cabinet.vox"/>
+					<vox pos="5.1 0.0 1.9" rot="0.0 -90.0 0.0" prop="true" file="MOD/main/props/filing_cabinet.vox"/>
+					<vox pos="5.1 0.0 1.0" rot="0.0 -90.0 0.0" prop="true" file="MOD/main/props/filing_cabinet.vox"/>
+					<vox pos="-4.2 0.0 -5.6" rot="0.0 -80.0 0.0" prop="true" file="MOD/main/props/villa_sofa_chair.vox"/>
+					<vox pos="-2.8 0.0 -5.6" rot="0.0 -90.0 0.0" prop="true" file="MOD/main/props/villa_sofa_chair.vox"/>
+					<vox pos="-3.6 0.0 1.4" rot="0.0 -90.0 0.0" prop="true" file="MOD/main/props/villa_sofa.vox"/>
+					<vox pos="-5.3 0.0 -5.8" rot="0.0 100.0 0.0" prop="true" file="MOD/main/props/potted_plants.vox" object="short_round_black"/>
+					<vox pos="-4.4 0.0 3.8" rot="0.0 -20.0 0.0" prop="true" file="MOD/main/props/potted_plants.vox" object="long_round_white"/>
+					<vox pos="5.1 0.0 0.1" rot="0.0 -90.0 0.0" prop="true" file="MOD/main/props/filing_cabinet.vox"/>
+					<vox pos="5.3 2.0 1.1" rot="0.0 -150.0 0.0" prop="true" file="MOD/main/props/villa_cardboard_box_2.vox"/>
+					<vox pos="-5.8 0.0 -3.0" rot="0.0 90.0 0.0" prop="true" file="MOD/main/props/office_supplies.vox" object="printer"/>
+					<vox pos="5.4 0.0 -3.2" rot="0.0 -90.0 0.0" prop="true" file="MOD/main/props/office_supplies.vox" object="printer"/>
+					<vox pos="5.3 2.0 0.1" rot="0.0 0.0 0.0" prop="true" file="MOD/main/props/office_supplies.vox" object="paperbox"/>
+					<vox pos="-5.8 0.0 0.0" rot="0.0 90.0 0.0" prop="true" file="MOD/main/props/marina_bookshelf.vox"/>
+					<vox pos="-5.8 0.0 2.5" rot="0.0 90.0 0.0" prop="true" file="MOD/main/props/marina_bookshelf.vox"/>
+					<vox pos="-2.3 0.9 4.5" rot="0.0 -180.0 0.0" prop="false" file="MOD/main/props/office_supplies.vox" object="whiteboard"/>
+					<vox pos="-0.6 0.0 -6.0" rot="0.0 0.0 0.0" prop="true" file="MOD/main/props/filing_cabinet.vox"/>
+					<vox pos="5.7 0.8 -1.5" rot="0.0 -90.0 0.0" prop="false" file="MOD/main/props/hospital-assets2.vox" object="poster1"/>
+				</group>
+				<group name="server room" pos="9.0 30.3 14.8">
+					<vox pos="4.3 0.0 -3.2" rot="0.0 0.0 0.0" prop="false" file="MOD/main/props/quillez_server.vox"/>
+					<vox pos="4.3 0.0 -1.0" rot="0.0 0.0 0.0" prop="false" file="MOD/main/props/quillez_server.vox"/>
+					<vox pos="4.3 0.0 -2.1" rot="0.0 0.0 0.0" prop="false" file="MOD/main/props/quillez_server.vox"/>
+					<vox pos="4.3 0.0 3.4" rot="0.0 0.0 0.0" prop="false" file="MOD/main/props/quillez_server.vox"/>
+					<vox pos="4.3 0.0 2.3" rot="0.0 0.0 0.0" prop="false" file="MOD/main/props/quillez_server.vox"/>
+					<vox pos="4.3 0.0 1.2" rot="0.0 0.0 0.0" prop="false" file="MOD/main/props/quillez_server.vox"/>
+					<vox pos="4.3 0.0 0.1" rot="0.0 0.0 0.0" prop="false" file="MOD/main/props/quillez_server.vox"/>
+					<vox pos="0.6 0.0 2.3" rot="0.0 0.0 0.0" prop="false" file="MOD/main/props/quillez_server.vox"/>
+					<vox pos="0.6 0.0 1.2" rot="0.0 0.0 0.0" prop="false" file="MOD/main/props/quillez_server.vox"/>
+					<vox pos="0.6 0.0 0.1" rot="0.0 0.0 0.0" prop="false" file="MOD/main/props/quillez_server.vox"/>
+					<vox pos="0.6 0.0 -1.0" rot="0.0 0.0 0.0" prop="false" file="MOD/main/props/quillez_server.vox"/>
+					<vox pos="0.6 0.0 -2.1" rot="0.0 0.0 0.0" prop="false" file="MOD/main/props/quillez_server.vox"/>
+					<vox pos="0.6 0.0 -3.2" rot="0.0 0.0 0.0" prop="false" file="MOD/main/props/quillez_server.vox"/>
+					<vox pos="1.4 0.0 -3.3" rot="0.0 -180.0 0.0" prop="false" file="MOD/main/props/quillez_server.vox"/>
+					<vox pos="1.4 0.0 -2.2" rot="0.0 -180.0 0.0" prop="false" file="MOD/main/props/quillez_server.vox"/>
+					<vox pos="1.4 0.0 -1.1" rot="0.0 -180.0 0.0" prop="false" file="MOD/main/props/quillez_server.vox"/>
+					<vox pos="1.4 0.0 0.0" rot="0.0 -180.0 0.0" prop="false" file="MOD/main/props/quillez_server.vox"/>
+					<vox pos="1.4 0.0 1.1" rot="0.0 -180.0 0.0" prop="false" file="MOD/main/props/quillez_server.vox"/>
+					<vox pos="1.4 0.0 2.2" rot="0.0 -180.0 0.0" prop="false" file="MOD/main/props/quillez_server.vox"/>
+					<vox pos="-6.0 0.0 -4.4" rot="0.0 -180.0 0.0" prop="false" file="MOD/main/props/quillez_server.vox"/>
+					<vox pos="-6.0 0.0 -3.3" rot="0.0 -180.0 0.0" prop="false" file="MOD/main/props/quillez_server.vox"/>
+					<vox pos="-6.0 0.0 -2.2" rot="0.0 -180.0 0.0" prop="false" file="MOD/main/props/quillez_server.vox"/>
+					<vox pos="-6.0 0.0 -1.1" rot="0.0 -180.0 0.0" prop="false" file="MOD/main/props/quillez_server.vox"/>
+					<vox pos="-6.0 0.0 0.0" rot="0.0 -180.0 0.0" prop="false" file="MOD/main/props/quillez_server.vox"/>
+					<vox pos="-6.0 0.0 1.1" rot="0.0 -180.0 0.0" prop="false" file="MOD/main/props/quillez_server.vox"/>
+					<vox pos="-6.0 0.0 2.2" rot="0.0 -180.0 0.0" prop="false" file="MOD/main/props/quillez_server.vox"/>
+					<vox pos="-6.0 0.0 3.3" rot="0.0 -180.0 0.0" prop="false" file="MOD/main/props/quillez_server.vox"/>
+					<vox pos="-2.4 0.0 -3.3" rot="0.0 -180.0 0.0" prop="false" file="MOD/main/props/quillez_server.vox"/>
+					<vox pos="-3.2 0.0 -3.2" rot="0.0 0.0 0.0" prop="false" file="MOD/main/props/quillez_server.vox"/>
+					<vox pos="-2.4 0.0 -2.2" rot="0.0 -180.0 0.0" prop="false" file="MOD/main/props/quillez_server.vox"/>
+					<vox pos="-3.2 0.0 -2.1" rot="0.0 0.0 0.0" prop="false" file="MOD/main/props/quillez_server.vox"/>
+					<vox pos="-3.2 0.0 -1.0" rot="0.0 0.0 0.0" prop="false" file="MOD/main/props/quillez_server.vox"/>
+					<vox pos="-2.4 0.0 -1.1" rot="0.0 -180.0 0.0" prop="false" file="MOD/main/props/quillez_server.vox"/>
+					<vox pos="-2.4 0.0 0.0" rot="0.0 -180.0 0.0" prop="false" file="MOD/main/props/quillez_server.vox"/>
+					<vox pos="-3.2 0.0 0.1" rot="0.0 0.0 0.0" prop="false" file="MOD/main/props/quillez_server.vox"/>
+					<vox pos="-3.2 0.0 1.2" rot="0.0 0.0 0.0" prop="false" file="MOD/main/props/quillez_server.vox"/>
+					<vox pos="-2.4 0.0 1.1" rot="0.0 -180.0 0.0" prop="false" file="MOD/main/props/quillez_server.vox"/>
+					<vox pos="-2.4 0.0 2.2" rot="0.0 -180.0 0.0" prop="false" file="MOD/main/props/quillez_server.vox"/>
+					<vox pos="-3.2 0.0 2.3" rot="0.0 0.0 0.0" prop="false" file="MOD/main/props/quillez_server.vox"/>
+				</group>
+				<group name="security" pos="8.3 30.3 4.3" rot="0.0 -90.0 0.0">
+					<vox pos="1.7 0.0 -0.1" file="MOD/main/props/security.vox" object="desk">
+						<vox pos="2.7 0.9 -1.5" rot="0.0 -90.0 0.0" prop="true" file="MOD/main/props/hospital-assets2.vox" object="tv-part2"/>
+						<vox pos="2.2 0.9 -1.5" rot="0.0 -90.0 0.0" prop="true" file="MOD/main/props/hospital-assets2.vox" object="keyboard"/>
+						<vox pos="-1.6 0.9 2.2" rot="0.0 -180.0 0.0" prop="true" file="MOD/main/props/hospital-assets2.vox" object="keyboard"/>
+						<vox pos="-0.6 -0.0 2.5" rot="0.0 -180.0 0.0" prop="true" file="MOD/main/props/hospital-assets2.vox" object="computer"/>
+						<vox pos="-0.2 0.0 2.5" rot="0.0 -180.0 0.0" prop="true" file="MOD/main/props/hospital-assets2.vox" object="computer"/>
+						<vox pos="2.6 0.9 -0.6" rot="0.0 -100.0 0.0" prop="true" file="MOD/main/props/hospital-assets2.vox" object="tv-part2"/>
+						<vox pos="2.6 1.0 0.1" rot="90.0 0.0 0.0" prop="true" file="MOD/main/props/marina_bluetide_can.vox"/>
+						<vox pos="2.43 1.0 0.11" rot="90.0 40.0 0.0" prop="true" file="MOD/main/props/marina_bluetide_can.vox"/>
+						<vox pos="2.53 1.0 0.21" rot="90.0 20.0 0.0" prop="true" file="MOD/main/props/marina_bluetide_can.vox"/>
+						<vox pos="-1.8 0.9 2.7" rot="0.0 -180.0 0.0" prop="true" file="MOD/main/props/hospital-assets2.vox" object="tv-part2"/>
+						<vox pos="-0.89631 0.9 2.6422" rot="0.0 -170.0 0.0" prop="true" file="MOD/main/props/hospital-assets2.vox" object="tv-part2"/>
+						<vox pos="-0.296 0.9 2.342" rot="0.0 -50.0 0.0" prop="true" file="MOD/main/props/office-props.vox" object="mug"/>
+						<vox pos="-3.896 0.0 2.442" rot="0.0 0.0 0.0" prop="true" file="MOD/main/props/office-props.vox" object="dispenser"/>
+						<vox pos="2.2 0.9 -0.1" rot="0.0 -20.0 0.0" prop="true" file="MOD/main/props/office-props.vox" object="mug"/>
+						<vox pos="2.204 0.9 2.242" rot="0.0 50.0 0.0" prop="true" file="MOD/main/props/hospital-assets2.vox" object="monitor"/>
+						<vox pos="2.4 0.0 -0.7" rot="0.0 -90.0 0.0" prop="true" file="MOD/main/props/hospital-assets2.vox" object="computer"/>
+						<vox pos="2.4 0.0 -2.8" rot="0.0 -90.0 0.0" prop="true" file="MOD/main/props/hospital-assets2.vox" object="computer"/>
+						<vox pos="2.4 0.0 -0.3" rot="0.0 -90.0 0.0" prop="true" file="MOD/main/props/hospital-assets2.vox" object="computer"/>
+						<vox pos="0.80183 1.0 2.26977" rot="90.0 110.0 0.0" prop="true" file="MOD/main/props/marina_bluetide_can.vox"/>
+						<vox pos="0.85058 1.0 2.1066" rot="90.0 70.0 0.0" prop="true" file="MOD/main/props/marina_bluetide_can.vox"/>
+					</vox>
+					<group name="screens1" pos="4.6 1.5 -0.4">
+						<vox pos="0.0 1.4 -2.4" rot="0.0 100.0 0.0" file="MOD/main/props/security.vox" object="tv"/>
+						<vox pos="0.0 0.7 -2.4" rot="0.0 100.0 0.0" file="MOD/main/props/security.vox" object="tv"/>
+						<vox pos="0.0 -0.0 -2.4" rot="0.0 100.0 0.0" file="MOD/main/props/security.vox" object="tv"/>
+						<vox pos="0.1 0.0 -1.2" rot="0.0 90.0 0.0" file="MOD/main/props/security.vox" object="tv"/>
+						<vox pos="0.1 -0.0 0.0" rot="0.0 90.0 0.0" file="MOD/main/props/security.vox" object="tv"/>
+						<vox pos="0.1 0.0 1.2" rot="0.0 90.0 0.0" file="MOD/main/props/security.vox" object="tv"/>
+						<vox pos="0.0 -0.0 2.4" rot="0.0 80.0 0.0" file="MOD/main/props/security.vox" object="tv"/>
+						<vox pos="0.1 0.7 0.0" rot="0.0 90.0 0.0" file="MOD/main/props/security.vox" object="tv"/>
+						<vox pos="0.1 1.4 0.0" rot="0.0 90.0 0.0" file="MOD/main/props/security.vox" object="tv"/>
+						<vox pos="0.1 1.4 -1.2" rot="0.0 90.0 0.0" file="MOD/main/props/security.vox" object="tv"/>
+						<vox pos="0.1 0.7 -1.2" rot="0.0 90.0 0.0" file="MOD/main/props/security.vox" object="tv"/>
+						<vox pos="0.0 1.4 2.4" rot="0.0 80.0 0.0" file="MOD/main/props/security.vox" object="tv"/>
+						<vox pos="0.1 0.7 1.2" rot="0.0 90.0 0.0" file="MOD/main/props/security.vox" object="tv"/>
+						<vox pos="0.0 0.7 2.4" rot="0.0 80.0 0.0" file="MOD/main/props/security.vox" object="tv"/>
+						<vox pos="0.1 1.4 1.2" rot="0.0 90.0 0.0" file="MOD/main/props/security.vox" object="tv"/>
+					</group>
+					<group name="screens2" pos="1.4 1.5 2.8">
+						<vox pos="2.4 -0.0 0.0" rot="0.0 10.0 0.0" file="MOD/main/props/security.vox" object="tv"/>
+						<vox pos="2.4 0.7 0.0" rot="0.0 10.0 0.0" file="MOD/main/props/security.vox" object="tv"/>
+						<vox pos="2.4 1.4 0.0" rot="0.0 10.0 0.0" file="MOD/main/props/security.vox" object="tv"/>
+						<vox pos="1.2 1.4 0.1" rot="0.0 0.0 0.0" file="MOD/main/props/security.vox" object="tv"/>
+						<vox pos="-0.0 1.4 0.1" rot="0.0 0.0 0.0" file="MOD/main/props/security.vox" object="tv"/>
+						<vox pos="-2.4 0.7 -0.0" rot="0.0 -10.0 0.0" file="MOD/main/props/security.vox" object="tv"/>
+						<vox pos="-2.4 -0.0 -0.0" rot="0.0 -10.0 0.0" file="MOD/main/props/security.vox" object="tv"/>
+						<vox pos="-2.4 1.4 -0.0" rot="0.0 -10.0 0.0" file="MOD/main/props/security.vox" object="tv"/>
+						<vox pos="-1.2 1.4 0.1" rot="0.0 0.0 0.0" file="MOD/main/props/security.vox" object="tv"/>
+						<vox pos="-1.2 0.7 0.1" rot="0.0 0.0 0.0" file="MOD/main/props/security.vox" object="tv"/>
+						<vox pos="-1.2 -0.0 0.1" rot="0.0 0.0 0.0" file="MOD/main/props/security.vox" object="tv"/>
+						<vox pos="-0.0 -0.0 0.1" rot="0.0 0.0 0.0" file="MOD/main/props/security.vox" object="tv"/>
+						<vox pos="1.2 -0.0 0.1" rot="0.0 0.0 0.0" file="MOD/main/props/security.vox" object="tv"/>
+						<vox pos="1.2 0.7 0.1" rot="0.0 0.0 0.0" file="MOD/main/props/security.vox" object="tv"/>
+						<vox pos="-0.0 0.7 0.1" rot="0.0 0.0 0.0" file="MOD/main/props/security.vox" object="tv"/>
+					</group>
+					<vox pos="0.0 0.0 0.9" rot="0.0 -10.0 0.0" prop="true" file="MOD/main/props/hospital-assets2.vox" object="chair1"/>
+					<vox pos="2.5 0.0 0.9" rot="0.0 40.0 0.0" prop="true" file="MOD/main/props/hospital-assets2.vox" object="chair1"/>
+					<vox pos="2.8 0.0 -1.6" rot="0.0 40.0 0.0" prop="true" file="MOD/main/props/hospital-assets2.vox" object="chair1"/>
+					<vox pos="-0.2 0.0 -4.7" rot="0.0 0.0 0.0" prop="true" file="MOD/main/props/filing_cabinet.vox"/>
+					<vox pos="-1.1 0.0 -4.7" rot="0.0 0.0 0.0" prop="true" file="MOD/main/props/filing_cabinet.vox"/>
+					<vox pos="-2.0 0.0 -4.7" rot="0.0 0.0 0.0" prop="true" file="MOD/main/props/filing_cabinet.vox"/>
+					<vox pos="-7.4 0.0 0.3" rot="0.0 90.0 0.0" prop="true" file="MOD/main/props/potted_plants.vox" object="box_plant_white"/>
+					<vox pos="4.1 0.0 -3.5" rot="0.0 90.0 0.0" prop="true" file="MOD/main/props/potted_plants.vox" object="small_white"/>
+					<vox pos="-4.6 0.0 2.3" rot="0.0 180.0 0.0" prop="true" file="MOD/main/props/filing_cabinet.vox"/>
+					<vox pos="-5.5 0.0 2.3" rot="0.0 180.0 0.0" prop="true" file="MOD/main/props/filing_cabinet.vox"/>
+					<vox pos="-3.7 0.0 2.3" rot="0.0 180.0 0.0" prop="true" file="MOD/main/props/filing_cabinet.vox"/>
+				</group>
+				<group name="Bathroom" pos="-5.0 30.3 1.3" rot="0.0 90.0 0.0">
+					<voxbox name="stalls" pos="-7.8 0.0 7.5" rot="0.0 0.0 0.0" texture="4 0.35" size="61 32 23" brush="MOD/main/props/bathroom props.vox" object="stall" offset="1">
+						<vox pos="5.3 0.5 0.0" rot="0.0 -180.0 0.0" texture="4 0.35" prop="true" file="MOD/main/props/bathroom props.vox" object="stall-door">
+							<joint pos="-0.6 0.4 0.0" rot="90" type="hinge" rotspring="0.3" limits="0 90"/>
+							<joint pos="-0.6 1.8 0.0" rot="90" type="hinge" rotspring="0.3" limits="0 90"/>
+						</vox>
+						<vox pos="5.4 0.0 1.9" rot="0.0 90.0 0.0" texture="4 0.2" prop="false" file="MOD/main/props/lee_toilet_2.vox" object="toilet"/>
+						<vox pos="3.9 0.0 1.9" rot="0.0 90.0 0.0" texture="4 0.2" prop="false" file="MOD/main/props/lee_toilet_2.vox" object="toilet"/>
+						<vox pos="2.4 0.0 1.9" rot="0.0 90.0 0.0" texture="4 0.2" prop="false" file="MOD/main/props/lee_toilet_2.vox" object="toilet"/>
+						<vox pos="0.9 0.0 1.9" rot="0.0 90.0 0.0" texture="4 0.2" prop="false" file="MOD/main/props/lee_toilet_2.vox" object="toilet"/>
+						<vox pos="3.8 0.5 0.0" rot="0.0 -180.0 0.0" texture="4 0.35" prop="true" file="MOD/main/props/bathroom props.vox" object="stall-door">
+							<joint pos="-0.6 0.4 0.0" rot="90" type="hinge" rotspring="0.3" limits="0 90"/>
+							<joint pos="-0.6 1.8 0.0" rot="90" type="hinge" rotspring="0.3" limits="0 90"/>
+						</vox>
+						<vox pos="2.3 0.5 0.0" rot="0.0 -180.0 0.0" texture="4 0.35" prop="true" file="MOD/main/props/bathroom props.vox" object="stall-door">
+							<joint pos="-0.6 0.4 0.0" rot="90" type="hinge" rotspring="0.3" limits="0 90"/>
+							<joint pos="-0.6 1.8 0.0" rot="90" type="hinge" rotspring="0.3" limits="0 90"/>
+						</vox>
+						<vox pos="0.8 0.5 0.0" rot="0.0 -180.0 0.0" texture="4 0.35" prop="true" file="MOD/main/props/bathroom props.vox" object="stall-door">
+							<joint pos="-0.6 0.4 0.0" rot="90" type="hinge" rotspring="0.3" limits="0 90"/>
+							<joint pos="-0.6 1.8 0.0" rot="90" type="hinge" rotspring="0.3" limits="0 90"/>
+						</vox>
+					</voxbox>
+					<voxbox name="stalls" pos="-1.6 0.0 -2.0" rot="0.0 -180.0 0.0" texture="4 0.35" size="61 32 23" brush="MOD/main/props/bathroom props.vox" object="stall" offset="1">
+						<vox pos="5.3 0.5 0.0" rot="0.0 -180.0 0.0" texture="4 0.35" prop="true" file="MOD/main/props/bathroom props.vox" object="stall-door">
+							<joint pos="-0.6 0.4 0.0" rot="90" type="hinge" rotspring="0.3" limits="0 90"/>
+							<joint pos="-0.6 1.8 0.0" rot="90" type="hinge" rotspring="0.3" limits="0 90"/>
+						</vox>
+						<vox pos="5.4 0.0 1.9" rot="0.0 90.0 0.0" texture="4 0.2" prop="false" file="MOD/main/props/lee_toilet_2.vox" object="toilet"/>
+						<vox pos="3.9 0.0 1.9" rot="0.0 90.0 0.0" texture="4 0.2" prop="false" file="MOD/main/props/lee_toilet_2.vox" object="toilet"/>
+						<vox pos="2.4 0.0 1.9" rot="0.0 90.0 0.0" texture="4 0.2" prop="false" file="MOD/main/props/lee_toilet_2.vox" object="toilet"/>
+						<vox pos="0.9 0.0 1.9" rot="0.0 90.0 0.0" texture="4 0.2" prop="false" file="MOD/main/props/lee_toilet_2.vox" object="toilet"/>
+						<vox pos="3.8 0.5 0.0" rot="0.0 -180.0 0.0" texture="4 0.35" prop="true" file="MOD/main/props/bathroom props.vox" object="stall-door">
+							<joint pos="-0.6 0.4 0.0" rot="90" type="hinge" rotspring="0.3" limits="0 90"/>
+							<joint pos="-0.6 1.8 0.0" rot="90" type="hinge" rotspring="0.3" limits="0 90"/>
+						</vox>
+						<vox pos="2.3 0.5 0.0" rot="0.0 -180.0 0.0" texture="4 0.35" prop="true" file="MOD/main/props/bathroom props.vox" object="stall-door">
+							<joint pos="-0.6 0.4 0.0" rot="90" type="hinge" rotspring="0.3" limits="0 90"/>
+							<joint pos="-0.6 1.8 0.0" rot="90" type="hinge" rotspring="0.3" limits="0 90"/>
+						</vox>
+						<vox pos="0.8 0.5 0.0" rot="0.0 -180.0 0.0" texture="4 0.35" prop="true" file="MOD/main/props/bathroom props.vox" object="stall-door">
+							<joint pos="-0.6 0.4 0.0" rot="90" type="hinge" rotspring="0.3" limits="0 90"/>
+							<joint pos="-0.6 1.8 0.0" rot="90" type="hinge" rotspring="0.3" limits="0 90"/>
+						</vox>
+					</voxbox>
+					<vox pos="-5.0 0.5 3.5" texture="1 0.5" file="MOD/main/props/bathroom props.vox" object="urinal"/>
+					<vox pos="-6.4 0.5 3.5" texture="1 0.5" file="MOD/main/props/bathroom props.vox" object="urinal"/>
+					<vox pos="1.2 0.7 3.8" texture="1 0.5" file="MOD/main/props/bathroom props.vox" object="sink"/>
+					<vox pos="3.2 1.6 3.3" texture="1 0.5" file="MOD/main/props/bathroom props.vox" object="light-small">
+						<light pos="0.0 0.5 0.0" scale="0.3"/>
+					</vox>
+					<vox pos="-0.7 1.6 3.3" texture="1 0.5" file="MOD/main/props/bathroom props.vox" object="light-small">
+						<light pos="0.0 0.5 0.0" scale="0.3"/>
+					</vox>
+					<vox pos="-5.7 0.4 3.7" texture="2 0.5" file="MOD/main/props/bathroom props.vox" object="1"/>
+					<vox pos="-7.1 0.4 3.7" texture="2 0.5" file="MOD/main/props/bathroom props.vox" object="1"/>
+					<vox pos="-4.3 0.4 3.7" texture="2 0.5" file="MOD/main/props/bathroom props.vox" object="1"/>
+					<vox pos="1.3 0.7 2.1" rot="0.0 -180.0 0.0" texture="1 0.5" file="MOD/main/props/bathroom props.vox" object="sink"/>
+					<vox pos="3.2 1.6 2.6" rot="0.0 -180.0 0.0" texture="1 0.5" file="MOD/main/props/bathroom props.vox" object="light-small">
+						<light pos="0.0 0.5 0.0" scale="0.3"/>
+					</vox>
+					<vox pos="-0.7 1.6 2.6" rot="0.0 -180.0 0.0" texture="1 0.5" file="MOD/main/props/bathroom props.vox" object="light-small">
+						<light pos="0.0 0.5 0.0" scale="0.3"/>
+					</vox>
+					<vox pos="-2.9 0.4 3.7" texture="2 0.5" file="MOD/main/props/bathroom props.vox" object="1"/>
+					<vox pos="-3.6 0.5 3.5" texture="1 0.5" file="MOD/main/props/bathroom props.vox" object="urinal"/>
+					<vox pos="-2.6 0.7 2.1" rot="0.0 -180.0 0.0" texture="1 0.5" file="MOD/main/props/bathroom props.vox" object="sink"/>
+					<vox pos="-4.6 1.6 2.6" rot="0.0 -180.0 0.0" texture="1 0.5" file="MOD/main/props/bathroom props.vox" object="light-small">
+						<light pos="0.0 0.5 0.0" scale="0.3"/>
+					</vox>
+				</group>
+				<group name="Storage room" pos="-2.3 30.3 13.6">
+					<vox pos="3.9 -0.0 -1.1" rot="0.0 0.0 0.0" prop="false" file="MOD/main/props/hospital-assets4.vox" object="shelf2"/>
+					<vox pos="0.3 0.0 -1.1" rot="0.0 0.0 0.0" prop="false" file="MOD/main/props/hospital-assets4.vox" object="shelf2"/>
+					<vox pos="-3.5 0.0 -1.1" rot="0.0 0.0 0.0" prop="false" file="MOD/main/props/hospital-assets4.vox" object="shelf2"/>
+					<group pos="0.9 0.0 4.9">
+						<vox pos="-0.1 0.0 0.0" rot="0.0 -90.0 0.0" file="MOD/main/props/hospital-assets4.vox" object="shelf">
+							<vox pos="-0.1 0.1 -0.4" prop="true" file="MOD/main/props/hospital-assets4.vox" object="shelf storage">
+								<joint pos="0.3 0.0 0.0" rot="0.0 -90.0 0.0" type="prismatic" rotstrength="0.5" limits="0 0.3"/>
+							</vox>
+							<vox pos="-0.1 0.7 -0.4" prop="true" file="MOD/main/props/hospital-assets4.vox" object="shelf storage">
+								<joint pos="0.3 0.0 0.0" rot="0.0 -90.0 0.0" type="prismatic" rotstrength="0.5" limits="0 0.3"/>
+							</vox>
+							<vox pos="-0.1 1.3 -0.4" prop="true" file="MOD/main/props/hospital-assets4.vox" object="shelf storage">
+								<joint pos="0.3 0.0 0.0" rot="0.0 -90.0 0.0" type="prismatic" rotstrength="0.5" limits="0 0.3"/>
+							</vox>
+							<vox pos="-0.1 1.9 -0.4" prop="true" file="MOD/main/props/hospital-assets4.vox" object="shelf storage">
+								<joint pos="0.3 0.0 0.0" rot="0.0 -90.0 0.0" type="prismatic" rotstrength="0.5" limits="0 0.3"/>
+							</vox>
+							<vox pos="-0.1 1.9 0.3" prop="true" file="MOD/main/props/hospital-assets4.vox" object="shelf storage">
+								<joint pos="0.3 0.0 0.0" rot="0.0 -90.0 0.0" type="prismatic" rotstrength="0.5" limits="0 0.3"/>
+							</vox>
+							<vox pos="-0.1 1.3 0.3" prop="true" file="MOD/main/props/hospital-assets4.vox" object="shelf storage">
+								<joint pos="0.3 0.0 0.0" rot="0.0 -90.0 0.0" type="prismatic" rotstrength="0.5" limits="0 0.3"/>
+							</vox>
+							<vox pos="-0.1 0.7 0.3" prop="true" file="MOD/main/props/hospital-assets4.vox" object="shelf storage">
+								<joint pos="0.3 0.0 0.0" rot="0.0 -90.0 0.0" type="prismatic" rotstrength="0.5" limits="0 0.3"/>
+							</vox>
+							<vox pos="-0.1 0.1 0.3" prop="true" file="MOD/main/props/hospital-assets4.vox" object="shelf storage">
+								<joint pos="0.3 0.0 0.0" rot="0.0 -90.0 0.0" type="prismatic" rotstrength="0.5" limits="0 0.3"/>
+							</vox>
+						</vox>
+						<vox pos="1.3 0.0 0.0" rot="0.0 -90.0 0.0" file="MOD/main/props/hospital-assets4.vox" object="shelf">
+							<vox pos="-0.1 0.1 -0.4" prop="true" file="MOD/main/props/hospital-assets4.vox" object="shelf storage">
+								<joint pos="0.3 0.0 0.0" rot="0.0 -90.0 0.0" type="prismatic" rotstrength="0.5" limits="0 0.3"/>
+							</vox>
+							<vox pos="-0.1 0.7 -0.4" prop="true" file="MOD/main/props/hospital-assets4.vox" object="shelf storage">
+								<joint pos="0.3 0.0 0.0" rot="0.0 -90.0 0.0" type="prismatic" rotstrength="0.5" limits="0 0.3"/>
+							</vox>
+							<vox pos="-0.1 1.3 -0.4" prop="true" file="MOD/main/props/hospital-assets4.vox" object="shelf storage">
+								<joint pos="0.3 0.0 0.0" rot="0.0 -90.0 0.0" type="prismatic" rotstrength="0.5" limits="0 0.3"/>
+							</vox>
+							<vox pos="-0.1 1.9 -0.4" prop="true" file="MOD/main/props/hospital-assets4.vox" object="shelf storage">
+								<joint pos="0.3 0.0 0.0" rot="0.0 -90.0 0.0" type="prismatic" rotstrength="0.5" limits="0 0.3"/>
+							</vox>
+							<vox pos="-0.1 1.9 0.3" prop="true" file="MOD/main/props/hospital-assets4.vox" object="shelf storage">
+								<joint pos="0.3 0.0 0.0" rot="0.0 -90.0 0.0" type="prismatic" rotstrength="0.5" limits="0 0.3"/>
+							</vox>
+							<vox pos="-0.1 1.3 0.3" prop="true" file="MOD/main/props/hospital-assets4.vox" object="shelf storage">
+								<joint pos="0.3 0.0 0.0" rot="0.0 -90.0 0.0" type="prismatic" rotstrength="0.5" limits="0 0.3"/>
+							</vox>
+							<vox pos="-0.1 0.7 0.3" prop="true" file="MOD/main/props/hospital-assets4.vox" object="shelf storage">
+								<joint pos="0.3 0.0 0.0" rot="0.0 -90.0 0.0" type="prismatic" rotstrength="0.5" limits="0 0.3"/>
+							</vox>
+							<vox pos="-0.1 0.1 0.3" prop="true" file="MOD/main/props/hospital-assets4.vox" object="shelf storage">
+								<joint pos="0.3 0.0 0.0" rot="0.0 -90.0 0.0" type="prismatic" rotstrength="0.5" limits="0 0.3"/>
+							</vox>
+						</vox>
+						<vox pos="2.7 0.0 0.0" rot="0.0 -90.0 0.0" file="MOD/main/props/hospital-assets4.vox" object="shelf">
+							<vox pos="-0.1 0.1 -0.4" prop="true" file="MOD/main/props/hospital-assets4.vox" object="shelf storage">
+								<joint pos="0.3 0.0 0.0" rot="0.0 -90.0 0.0" type="prismatic" rotstrength="0.5" limits="0 0.3"/>
+							</vox>
+							<vox pos="-0.1 0.7 -0.4" prop="true" file="MOD/main/props/hospital-assets4.vox" object="shelf storage">
+								<joint pos="0.3 0.0 0.0" rot="0.0 -90.0 0.0" type="prismatic" rotstrength="0.5" limits="0 0.3"/>
+							</vox>
+							<vox pos="-0.1 1.3 -0.4" prop="true" file="MOD/main/props/hospital-assets4.vox" object="shelf storage">
+								<joint pos="0.3 0.0 0.0" rot="0.0 -90.0 0.0" type="prismatic" rotstrength="0.5" limits="0 0.3"/>
+							</vox>
+							<vox pos="-0.1 1.9 -0.4" prop="true" file="MOD/main/props/hospital-assets4.vox" object="shelf storage">
+								<joint pos="0.3 0.0 0.0" rot="0.0 -90.0 0.0" type="prismatic" rotstrength="0.5" limits="0 0.3"/>
+							</vox>
+							<vox pos="-0.1 1.9 0.3" prop="true" file="MOD/main/props/hospital-assets4.vox" object="shelf storage">
+								<joint pos="0.3 0.0 0.0" rot="0.0 -90.0 0.0" type="prismatic" rotstrength="0.5" limits="0 0.3"/>
+							</vox>
+							<vox pos="-0.1 1.3 0.3" prop="true" file="MOD/main/props/hospital-assets4.vox" object="shelf storage">
+								<joint pos="0.3 0.0 0.0" rot="0.0 -90.0 0.0" type="prismatic" rotstrength="0.5" limits="0 0.3"/>
+							</vox>
+							<vox pos="-0.1 0.7 0.3" prop="true" file="MOD/main/props/hospital-assets4.vox" object="shelf storage">
+								<joint pos="0.3 0.0 0.0" rot="0.0 -90.0 0.0" type="prismatic" rotstrength="0.5" limits="0 0.3"/>
+							</vox>
+							<vox pos="-0.1 0.1 0.3" prop="true" file="MOD/main/props/hospital-assets4.vox" object="shelf storage">
+								<joint pos="0.3 0.0 0.0" rot="0.0 -90.0 0.0" type="prismatic" rotstrength="0.5" limits="0 0.3"/>
+							</vox>
+						</vox>
+					</group>
+					<group pos="-6.2 0.0 4.9">
+						<vox pos="-0.1 0.0 0.0" rot="0.0 -90.0 0.0" file="MOD/main/props/hospital-assets4.vox" object="shelf">
+							<vox pos="-0.1 0.1 -0.4" prop="true" file="MOD/main/props/hospital-assets4.vox" object="shelf storage">
+								<joint pos="0.3 0.0 0.0" rot="0.0 -90.0 0.0" type="prismatic" rotstrength="0.5" limits="0 0.3"/>
+							</vox>
+							<vox pos="-0.1 0.7 -0.4" prop="true" file="MOD/main/props/hospital-assets4.vox" object="shelf storage">
+								<joint pos="0.3 0.0 0.0" rot="0.0 -90.0 0.0" type="prismatic" rotstrength="0.5" limits="0 0.3"/>
+							</vox>
+							<vox pos="-0.1 1.3 -0.4" prop="true" file="MOD/main/props/hospital-assets4.vox" object="shelf storage">
+								<joint pos="0.3 0.0 0.0" rot="0.0 -90.0 0.0" type="prismatic" rotstrength="0.5" limits="0 0.3"/>
+							</vox>
+							<vox pos="-0.1 1.9 -0.4" prop="true" file="MOD/main/props/hospital-assets4.vox" object="shelf storage">
+								<joint pos="0.3 0.0 0.0" rot="0.0 -90.0 0.0" type="prismatic" rotstrength="0.5" limits="0 0.3"/>
+							</vox>
+							<vox pos="-0.1 1.9 0.3" prop="true" file="MOD/main/props/hospital-assets4.vox" object="shelf storage">
+								<joint pos="0.3 0.0 0.0" rot="0.0 -90.0 0.0" type="prismatic" rotstrength="0.5" limits="0 0.3"/>
+							</vox>
+							<vox pos="-0.1 1.3 0.3" prop="true" file="MOD/main/props/hospital-assets4.vox" object="shelf storage">
+								<joint pos="0.3 0.0 0.0" rot="0.0 -90.0 0.0" type="prismatic" rotstrength="0.5" limits="0 0.3"/>
+							</vox>
+							<vox pos="-0.1 0.7 0.3" prop="true" file="MOD/main/props/hospital-assets4.vox" object="shelf storage">
+								<joint pos="0.3 0.0 0.0" rot="0.0 -90.0 0.0" type="prismatic" rotstrength="0.5" limits="0 0.3"/>
+							</vox>
+							<vox pos="-0.1 0.1 0.3" prop="true" file="MOD/main/props/hospital-assets4.vox" object="shelf storage">
+								<joint pos="0.3 0.0 0.0" rot="0.0 -90.0 0.0" type="prismatic" rotstrength="0.5" limits="0 0.3"/>
+							</vox>
+						</vox>
+						<vox pos="1.3 0.0 0.0" rot="0.0 -90.0 0.0" file="MOD/main/props/hospital-assets4.vox" object="shelf">
+							<vox pos="-0.1 0.1 -0.4" prop="true" file="MOD/main/props/hospital-assets4.vox" object="shelf storage">
+								<joint pos="0.3 0.0 0.0" rot="0.0 -90.0 0.0" type="prismatic" rotstrength="0.5" limits="0 0.3"/>
+							</vox>
+							<vox pos="-0.1 0.7 -0.4" prop="true" file="MOD/main/props/hospital-assets4.vox" object="shelf storage">
+								<joint pos="0.3 0.0 0.0" rot="0.0 -90.0 0.0" type="prismatic" rotstrength="0.5" limits="0 0.3"/>
+							</vox>
+							<vox pos="-0.1 1.3 -0.4" prop="true" file="MOD/main/props/hospital-assets4.vox" object="shelf storage">
+								<joint pos="0.3 0.0 0.0" rot="0.0 -90.0 0.0" type="prismatic" rotstrength="0.5" limits="0 0.3"/>
+							</vox>
+							<vox pos="-0.1 1.9 -0.4" prop="true" file="MOD/main/props/hospital-assets4.vox" object="shelf storage">
+								<joint pos="0.3 0.0 0.0" rot="0.0 -90.0 0.0" type="prismatic" rotstrength="0.5" limits="0 0.3"/>
+							</vox>
+							<vox pos="-0.1 1.9 0.3" prop="true" file="MOD/main/props/hospital-assets4.vox" object="shelf storage">
+								<joint pos="0.3 0.0 0.0" rot="0.0 -90.0 0.0" type="prismatic" rotstrength="0.5" limits="0 0.3"/>
+							</vox>
+							<vox pos="-0.1 1.3 0.3" prop="true" file="MOD/main/props/hospital-assets4.vox" object="shelf storage">
+								<joint pos="0.3 0.0 0.0" rot="0.0 -90.0 0.0" type="prismatic" rotstrength="0.5" limits="0 0.3"/>
+							</vox>
+							<vox pos="-0.1 0.7 0.3" prop="true" file="MOD/main/props/hospital-assets4.vox" object="shelf storage">
+								<joint pos="0.3 0.0 0.0" rot="0.0 -90.0 0.0" type="prismatic" rotstrength="0.5" limits="0 0.3"/>
+							</vox>
+							<vox pos="-0.1 0.1 0.3" prop="true" file="MOD/main/props/hospital-assets4.vox" object="shelf storage">
+								<joint pos="0.3 0.0 0.0" rot="0.0 -90.0 0.0" type="prismatic" rotstrength="0.5" limits="0 0.3"/>
+							</vox>
+						</vox>
+						<vox pos="2.7 0.0 0.0" rot="0.0 -90.0 0.0" file="MOD/main/props/hospital-assets4.vox" object="shelf">
+							<vox pos="-0.1 0.1 -0.4" prop="true" file="MOD/main/props/hospital-assets4.vox" object="shelf storage">
+								<joint pos="0.3 0.0 0.0" rot="0.0 -90.0 0.0" type="prismatic" rotstrength="0.5" limits="0 0.3"/>
+							</vox>
+							<vox pos="-0.1 0.7 -0.4" prop="true" file="MOD/main/props/hospital-assets4.vox" object="shelf storage">
+								<joint pos="0.3 0.0 0.0" rot="0.0 -90.0 0.0" type="prismatic" rotstrength="0.5" limits="0 0.3"/>
+							</vox>
+							<vox pos="-0.1 1.3 -0.4" prop="true" file="MOD/main/props/hospital-assets4.vox" object="shelf storage">
+								<joint pos="0.3 0.0 0.0" rot="0.0 -90.0 0.0" type="prismatic" rotstrength="0.5" limits="0 0.3"/>
+							</vox>
+							<vox pos="-0.1 1.9 -0.4" prop="true" file="MOD/main/props/hospital-assets4.vox" object="shelf storage">
+								<joint pos="0.3 0.0 0.0" rot="0.0 -90.0 0.0" type="prismatic" rotstrength="0.5" limits="0 0.3"/>
+							</vox>
+							<vox pos="-0.1 1.9 0.3" prop="true" file="MOD/main/props/hospital-assets4.vox" object="shelf storage">
+								<joint pos="0.3 0.0 0.0" rot="0.0 -90.0 0.0" type="prismatic" rotstrength="0.5" limits="0 0.3"/>
+							</vox>
+							<vox pos="-0.1 1.3 0.3" prop="true" file="MOD/main/props/hospital-assets4.vox" object="shelf storage">
+								<joint pos="0.3 0.0 0.0" rot="0.0 -90.0 0.0" type="prismatic" rotstrength="0.5" limits="0 0.3"/>
+							</vox>
+							<vox pos="-0.1 0.7 0.3" prop="true" file="MOD/main/props/hospital-assets4.vox" object="shelf storage">
+								<joint pos="0.3 0.0 0.0" rot="0.0 -90.0 0.0" type="prismatic" rotstrength="0.5" limits="0 0.3"/>
+							</vox>
+							<vox pos="-0.1 0.1 0.3" prop="true" file="MOD/main/props/hospital-assets4.vox" object="shelf storage">
+								<joint pos="0.3 0.0 0.0" rot="0.0 -90.0 0.0" type="prismatic" rotstrength="0.5" limits="0 0.3"/>
+							</vox>
+						</vox>
+					</group>
+				</group>
+				<group name="neurology office" pos="-0.9 30.3 -12.3">
+					<vox pos="0.3 0.0 -1.4" rot="0.0 -90.0 0.0" prop="true" file="MOD/main/props/hospital-assets2.vox" object="desk1">
+						<vox pos="1.2 1.0 -0.3" prop="true" file="MOD/main/props/hospital-assets2.vox" object="computer"/>
+						<vox pos="0.6 1.0 -0.2" rot="0.0 10.0 0.0" prop="true" file="MOD/main/props/hospital-assets2.vox" object="monitor"/>
+						<vox pos="0.6 1.0 -0.6" rot="0.0 10.0 0.0" prop="true" file="MOD/main/props/hospital-assets2.vox" object="keyboard"/>
+						<vox pos="-1.2 1.0 0.1" rot="0.0 -110.0 0.0" prop="true" file="MOD/main/props/hospital-assets2.vox" object="globe"/>
+					</vox>
+					<vox pos="2.0 0.0 -1.2" rot="0.0 -90.0 0.0" prop="true" file="MOD/main/props/hospital-assets2.vox" object="chair1"/>
+					<vox pos="3.2 0.0 -1.5" rot="0.0 -90.0 0.0" prop="true" file="MOD/main/props/filing_cabinet.vox"/>
+					<vox pos="3.2 0.0 -2.4" rot="0.0 -90.0 0.0" prop="true" file="MOD/main/props/filing_cabinet.vox"/>
+					<vox pos="3.1 0.0 0.0" rot="0.0 100.0 0.0" prop="true" file="MOD/main/props/potted_plants.vox" object="long_round_white"/>
+					<vox pos="-7.2 0.0 3.2" rot="0.0 100.0 0.0" prop="true" file="MOD/main/props/potted_plants.vox" object="long_round_white"/>
+					<vox pos="2.0 0.0 2.2" rot="0.0 -90.0 0.0" prop="true" file="MOD/main/props/hospital-assets2.vox" object="table"/>
+					<vox pos="-1.4 0.0 -0.6" rot="0.0 10.0 0.0" prop="true" file="MOD/main/props/hospital-assets3.vox" object="chair2"/>
+					<vox pos="-1.4 0.0 -2.0" rot="0.0 -20.0 0.0" prop="true" file="MOD/main/props/hospital-assets3.vox" object="chair2"/>
+					<vox pos="-2.9 0.0 -2.9" rot="0.0 0.0 0.0" prop="false" file="MOD/main/props/hospital-assets2.vox" object="shelf2"/>
+					<vox pos="-3.9 0.0 -2.9" rot="0.0 0.0 0.0" prop="false" file="MOD/main/props/hospital-assets2.vox" object="shelf3"/>
+					<vox pos="-4.9 0.0 -2.9" rot="0.0 0.0 0.0" prop="false" file="MOD/main/props/hospital-assets2.vox" object="shelf2"/>
+					<vox pos="-3.9 1.9 -3.0" rot="0.0 0.0 0.0" prop="false" file="MOD/main/props/hospital-assets2.vox" object="shelf-top"/>
+					<vox pos="0.4 2.2 -3.3" rot="0.0 0.0 0.0" prop="false" file="MOD/main/props/hospital-assets2.vox" object="painting1"/>
+					<vox pos="1.3 2.2 -3.3" rot="0.0 0.0 0.0" prop="false" file="MOD/main/props/hospital-assets2.vox" object="painting1"/>
+				</group>
+				<group name="neurology office" pos="-0.9 30.3 -19.6">
+					<vox pos="0.3 0.0 -1.4" rot="0.0 -90.0 0.0" prop="true" file="MOD/main/props/hospital-assets2.vox" object="desk1">
+						<vox pos="1.2 1.0 -0.3" prop="true" file="MOD/main/props/hospital-assets2.vox" object="computer"/>
+						<vox pos="0.6 1.0 -0.2" rot="0.0 10.0 0.0" prop="true" file="MOD/main/props/hospital-assets2.vox" object="monitor"/>
+						<vox pos="0.6 1.0 -0.6" rot="0.0 10.0 0.0" prop="true" file="MOD/main/props/hospital-assets2.vox" object="keyboard"/>
+						<vox pos="-1.2 1.0 0.1" rot="0.0 -110.0 0.0" prop="true" file="MOD/main/props/hospital-assets2.vox" object="globe"/>
+					</vox>
+					<vox pos="2.0 0.0 -1.2" rot="0.0 -90.0 0.0" prop="true" file="MOD/main/props/hospital-assets2.vox" object="chair1"/>
+					<vox pos="3.2 0.0 -1.5" rot="0.0 -90.0 0.0" prop="true" file="MOD/main/props/filing_cabinet.vox"/>
+					<vox pos="3.2 0.0 -2.4" rot="0.0 -90.0 0.0" prop="true" file="MOD/main/props/filing_cabinet.vox"/>
+					<vox pos="3.1 0.0 0.0" rot="0.0 100.0 0.0" prop="true" file="MOD/main/props/potted_plants.vox" object="long_round_white"/>
+					<vox pos="-7.4 0.0 -2.8" rot="0.0 110.0 0.0" prop="true" file="MOD/main/props/potted_plants.vox" object="long_round_white"/>
+					<vox pos="2.0 0.0 2.2" rot="0.0 -90.0 0.0" prop="true" file="MOD/main/props/hospital-assets2.vox" object="table"/>
+					<vox pos="-1.4 0.0 -0.6" rot="0.0 10.0 0.0" prop="true" file="MOD/main/props/hospital-assets3.vox" object="chair2"/>
+					<vox pos="-1.4 0.0 -2.0" rot="0.0 -20.0 0.0" prop="true" file="MOD/main/props/hospital-assets3.vox" object="chair2"/>
+					<vox pos="-4.8 0.0 2.9" rot="0.0 180.0 0.0" prop="false" file="MOD/main/props/hospital-assets2.vox" object="shelf2"/>
+					<vox pos="-3.8 0.0 2.9" rot="0.0 180.0 0.0" prop="false" file="MOD/main/props/hospital-assets2.vox" object="shelf3"/>
+					<vox pos="-2.8 0.0 2.9" rot="0.0 180.0 0.0" prop="false" file="MOD/main/props/hospital-assets2.vox" object="shelf2"/>
+					<vox pos="-3.8 1.9 3.0" rot="0.0 180.0 0.0" prop="false" file="MOD/main/props/hospital-assets2.vox" object="shelf-top"/>
+					<vox pos="0.4 2.2 3.3" rot="0.0 -180.0 0.0" prop="false" file="MOD/main/props/hospital-assets2.vox" object="painting1"/>
+					<vox pos="-0.5 2.2 3.3" rot="0.0 -180.0 0.0" prop="false" file="MOD/main/props/hospital-assets2.vox" object="painting1"/>
+				</group>
+				<instance pos="20.4 30.3 -20.0" rot="0.0 0.0 0.0" file="MOD/main/props/door3.xml"/>
+				<instance pos="12.4 30.3 -8.1" rot="0.0 0.0 0.0" file="MOD/main/props/door6.xml"/>
+				<instance pos="12.6 30.3 9.4" rot="0.0 -180.0 0.0" file="MOD/main/props/door2.xml"/>
+				<instance pos="11.8 30.3 -3.7" rot="0.0 -180.0 0.0" file="MOD/main/props/door4.xml"/>
+				<instance pos="1.0 30.3 -3.7" rot="0.0 -180.0 0.0" file="MOD/main/props/door4.xml"/>
+				<instance pos="-5.5 30.3 -3.7" rot="0.0 -180.0 0.0" file="MOD/main/props/door4.xml"/>
+			</group>
 		</group>
 		<group name="roof" pos="0.0 5.8 0.0" layer="roof">
 			<vox pos="4.2 34.4 30.7" rot="0.0 0.0 0.0" file="MOD/main/building/building.vox" object="utilitything3"/>
@@ -14181,190 +14953,182 @@
 		</group>
 	</group>
 	<group pos="-5.1 5.8 -11.8" layer="12">
-		<voxbox pos="48.3 0.0 61.7" size="45 2 240" brush="MOD/main/building/outdoors/sidewalk.vox" object="2" offset="-15.0 0.0 269.0"/>
-		<voxbox pos="-56.6 0.0 103.2" rot="0.0 90.0 0.0" size="45 2 1083" brush="MOD/main/building/outdoors/sidewalk.vox" object="2" offset="-152.0 0.0 269.0"/>
-		<voxbox pos="-54.2 0.1 95.60001" rot="0.0 90.0 0.0" size="23 2 90" brush="MOD/main/building/outdoors/sidewalk.vox" object="2" offset="-181.0 0.0 281.0"/>
-		<voxbox pos="43.3 0.0 61.7" rot="0.0 90.0 0.0" size="30 2 95" brush="MOD/main/building/outdoors/sidewalk.vox" object="2" offset="-15.0 0.0 272.0"/>
 		<voxbox pos="-71.7 0.0 -128.89999" size="38 2 3190" brush="MOD/main/building/outdoors/sidewalk.vox" object="2" offset="8.0 0.0 -163.0"/>
 		<voxbox pos="-52.80001 0.0 -66.49997" size="32 2 114" offset="14.0 0.0 -93.0"/>
-		<voxbox pos="37.3 0.0 -74.3" rot="0.0 90.0 0.0" size="27 2 60" brush="MOD/main/building/outdoors/sidewalk.vox" object="2" offset="14.0 0.0 -166.0"/>
-		<voxbox pos="-44.0 0.0 -74.3" rot="0.0 90.0 0.0" size="27 2 119" brush="MOD/main/building/outdoors/sidewalk.vox" object="2" offset="14.0 0.0 -214.0"/>
-		<voxbox pos="-35.1 0.0 -77.0" rot="0.0 90.0 0.0" size="27 2 103" brush="MOD/main/building/outdoors/sidewalk.vox" object="2" offset="14.0 0.0 -247.0"/>
-		<voxbox pos="30.0 0.0 -77.0" rot="0.0 90.0 0.0" size="27 2 103" brush="MOD/main/building/outdoors/sidewalk.vox" object="2" offset="14.0 0.0 -247.0"/>
-		<voxbox pos="-27.8 0.0 -74.3" rot="0.0 90.0 0.0" size="27 2 608" brush="MOD/main/building/outdoors/sidewalk.vox" object="2" offset="14.00003 0.0 -714.0"/>
-		<voxbox pos="43.3 0.0 -77.0" rot="0.0 0.0 0.0" size="39 2 965" brush="MOD/main/building/outdoors/sidewalk.vox" object="2" offset="14.00003 0.0 -741.0"/>
-		<voxagon pos="-49.0 0.0 -29.2" brush="MOD/main/building/outdoors/sidewalk.vox" object="2" extrude="2">
-			<vertex pos="5.0 18.5"/>
-			<vertex pos="5.0 27.8"/>
-			<vertex pos="-4.3 27.8"/>
-			<vertex pos="-4.3 38.1"/>
-			<vertex pos="8.3 38.1"/>
-			<vertex pos="8.3 119.1"/>
-			<vertex pos="12.3 119.1"/>
-			<vertex pos="12.3 53.5"/>
-			<vertex pos="46.7 53.4"/>
-			<vertex pos="46.7 119.4"/>
-			<vertex pos="76.9 119.4"/>
-			<vertex pos="76.9 109.5"/>
-			<vertex pos="83.0 109.5"/>
-			<vertex pos="83.0 119.4"/>
-			<vertex pos="97.3 119.4"/>
-			<vertex pos="97.3 114.9"/>
-			<vertex pos="83.6 114.9"/>
-			<vertex pos="83.6 108.9"/>
-			<vertex pos="76.3 108.8"/>
-			<vertex pos="76.3 114.9"/>
-			<vertex pos="52.3 114.9"/>
-			<vertex pos="52.3 48.9"/>
-			<vertex pos="16.3 48.9"/>
-			<vertex pos="16.3 38.3"/>
-			<vertex pos="16.3 -10.1"/>
-			<vertex pos="8.2 -10.1"/>
-			<vertex pos="8.2 -45.1"/>
-			<vertex pos="5.0 -45.1"/>
-			<vertex pos="5.0 -33.3"/>
-			<vertex pos="5.6 -33.3"/>
-			<vertex pos="5.6 -28.7"/>
-			<vertex pos="5.0 -28.7"/>
-			<vertex pos="5.0 -14.9"/>
-			<vertex pos="5.0 22.8"/>
-			<vertex pos="-1.0 14.4"/>
-			<vertex pos="-4.3 14.4"/>
-			<vertex pos="-4.3 29.8"/>
-			<vertex pos="-4.3 74.5"/>
-			<vertex pos="8.3 74.5"/>
-			<vertex pos="8.3 79.9"/>
-			<vertex pos="-4.3 79.9"/>
-			<vertex pos="-4.3 115.9"/>
-			<vertex pos="8.3 115.9"/>
-			<vertex pos="8.3 119.1"/>
-			<vertex pos="-7.6 119.1"/>
-			<vertex pos="-7.6 -5.0"/>
-			<vertex pos="-7.6 -7.3"/>
-			<vertex pos="-7.6 -7.5"/>
-			<vertex pos="-4.4 -9.2"/>
-			<vertex pos="-1.0 -11.3"/>
-			<vertex pos="5.0 -14.9"/>
-			<vertex pos="5.0 -3.1"/>
-			<vertex pos="2.2 1.0"/>
-			<vertex pos="2.2 14.4"/>
-			<voxbox tags="nocull" pos="-7.3 0.1 -7.6" rot="0.0 -90.0 0.0" size="350 2 3" brush="MOD/main/building/outdoors/sidewalk.vox" object="3"/>
-			<voxbox tags="nocull" pos="-7.3 0.1 38.5" rot="0.0 -90.0 0.0" size="355 2 3" brush="MOD/main/building/outdoors/sidewalk.vox" object="3"/>
-			<voxbox tags="nocull" pos="-7.3 0.1 80.4" rot="0.0 -90.0 0.0" size="382 2 3" brush="MOD/main/building/outdoors/sidewalk.vox" object="3"/>
-			<voxbox tags="nocull" pos="-7.6 0.1 -7.6" rot="0.0 31.0 0.0" size="148 2 3" brush="MOD/main/building/outdoors/sidewalk.vox" object="3"/>
-			<voxbox tags="nocull" pos="4.95 0.1 -15.0" rot="0.0 90.0 0.0" size="110 2 3" brush="MOD/main/building/outdoors/sidewalk.vox" object="3"/>
-			<voxbox tags="nocull" pos="4.95 0.11 -25.93" rot="0.0 90.0 -20.0" size="3 2 3" brush="MOD/main/building/outdoors/sidewalk.vox" object="3"/>
-			<voxbox tags="nocull" pos="5.25 0.11 -36.07" rot="0.0 -90.0 -20.0" size="3 2 3" brush="MOD/main/building/outdoors/sidewalk.vox" object="3"/>
-			<voxbox tags="nocull" pos="4.95 0.1 -36.0" rot="0.0 90.0 0.0" size="118 2 3" brush="MOD/main/building/outdoors/sidewalk.vox" object="3"/>
-			<voxbox tags="nocull" pos="-7.6 0.11 38.57" rot="0.0 90.0 -20.0" size="3 2 3" brush="MOD/main/building/outdoors/sidewalk.vox" object="3"/>
-			<voxbox tags="nocull" pos="-7.3 0.11 27.33" rot="0.0 -90.0 -20.0" size="3 2 3" brush="MOD/main/building/outdoors/sidewalk.vox" object="3"/>
-			<voxbox tags="nocull" pos="-7.6 0.11 80.46999" rot="0.0 90.0 -20.0" size="3 2 3" brush="MOD/main/building/outdoors/sidewalk.vox" object="3"/>
-			<voxbox tags="nocull" pos="-7.3 0.11 73.92999" rot="0.0 -90.0 -20.0" size="3 2 3" brush="MOD/main/building/outdoors/sidewalk.vox" object="3"/>
-			<voxbox tags="nocull" pos="-7.3 0.11 118.52999" rot="0.0 -90.0 -20.0" size="3 2 3" brush="MOD/main/building/outdoors/sidewalk.vox" object="3"/>
-			<voxbox tags="nocull" pos="12.3 0.11 118.52999" rot="0.0 -90.0 -20.0" size="3 2 3" brush="MOD/main/building/outdoors/sidewalk.vox" object="3"/>
-			<voxbox tags="nocull" pos="-4.2 0.1 38.1" rot="0.0 -90.0 0.0" size="364 2 3" brush="MOD/main/building/outdoors/sidewalk.vox" object="3"/>
-			<voxbox tags="nocull" pos="-4.5 0.1 38.0" rot="0.0 0.0 0.0" size="130 2 3" brush="MOD/main/building/outdoors/sidewalk.vox" object="3"/>
-			<voxbox tags="nocull" pos="-4.5 0.1 27.8" rot="0.0 0.0 0.0" size="95 2 3" brush="MOD/main/building/outdoors/sidewalk.vox" object="3"/>
-			<voxbox tags="nocull" pos="4.885 0.1 28.1" rot="0.0 90.0 0.0" size="53 2 3" brush="MOD/main/building/outdoors/sidewalk.vox" object="3"/>
-			<voxbox tags="nocull" pos="4.9 0.1 18.33" rot="0.0 90.0 0.0" size="212 2 3" brush="MOD/main/building/outdoors/sidewalk.vox" object="3"/>
-			<voxbox tags="nocull" pos="1.9 0.1 14.16" rot="0.0 90.0 0.0" size="129 2 3" brush="MOD/main/building/outdoors/sidewalk.vox" object="3"/>
-			<voxbox tags="nocull" pos="4.94 0.1 22.98" rot="0.0 125.1 0.0" size="106 2 3" brush="MOD/main/building/outdoors/sidewalk.vox" object="3"/>
-			<voxbox tags="nocull" pos="4.95 0.1 18.51" rot="0.0 125.0 0.0" size="53 2 3" brush="MOD/main/building/outdoors/sidewalk.vox" object="3"/>
-			<voxbox tags="nocull" pos="5.18 0.1 -2.89" rot="0.0 -125.0 0.0" size="53 2 3" brush="MOD/main/building/outdoors/sidewalk.vox" object="3"/>
-			<voxbox tags="nocull" pos="-4.5 0.1 27.8" rot="0.0 90.0 0.0" size="135 2 3" brush="MOD/main/building/outdoors/sidewalk.vox" object="3"/>
-			<voxbox tags="nocull" pos="-4.5 0.1 14.145" rot="0.0 0.0 0.0" size="36 2 3" brush="MOD/main/building/outdoors/sidewalk.vox" object="3"/>
-			<voxbox tags="nocull" pos="-4.5 0.1 74.3" rot="0.0 0.0 0.0" size="130 2 3" brush="MOD/main/building/outdoors/sidewalk.vox" object="3"/>
-			<voxbox tags="nocull" pos="8.5 0.1 38.1" rot="0.0 -90.0 0.0" size="364 2 3" brush="MOD/main/building/outdoors/sidewalk.vox" object="3"/>
-			<voxbox tags="nocull" pos="12.3 0.1 53.4" rot="0.0 -90.0 0.0" size="652 2 3" brush="MOD/main/building/outdoors/sidewalk.vox" object="3"/>
-			<voxbox tags="nocull" pos="-4.5 0.1 115.70001" rot="0.0 0.0 0.0" size="130 2 3" brush="MOD/main/building/outdoors/sidewalk.vox" object="3"/>
-			<voxbox tags="nocull" pos="-4.5 0.1 118.80001" rot="0.0 0.0 0.0" size="130 2 3" brush="MOD/main/building/outdoors/sidewalk.vox" object="3"/>
-			<voxbox tags="nocull" pos="-4.2 0.1 79.7" rot="0.0 -90.0 0.0" size="363 2 3" brush="MOD/main/building/outdoors/sidewalk.vox" object="3"/>
-			<voxbox tags="nocull" pos="8.5 0.1 79.7" rot="0.0 -90.0 0.0" size="363 2 3" brush="MOD/main/building/outdoors/sidewalk.vox" object="3"/>
-			<voxbox tags="nocull" pos="-4.5 0.1 79.60001" rot="0.0 0.0 0.0" size="130 2 3" brush="MOD/main/building/outdoors/sidewalk.vox" object="3"/>
-		</voxagon>
-		<voxagon pos="49.3 0.0 86.7" brush="MOD/main/building/outdoors/sidewalk.vox" object="2" extrude="2">
-			<vertex pos="-1.0 -1.0"/>
-			<vertex pos="3.5 -1.0"/>
-			<vertex pos="3.5 -0.4"/>
-			<vertex pos="3.4 1.2"/>
-			<vertex pos="3.0 2.1"/>
-			<vertex pos="2.6 2.6"/>
-			<vertex pos="2.1 3.0"/>
-			<vertex pos="1.3 3.3"/>
-			<vertex pos="0.3 3.4"/>
-			<vertex pos="-1.0 3.5"/>
-			<vertex pos="-1.0 1.0"/>
-		</voxagon>
-	</group>
-	<group name="outside props">
-		<voxbox pos="-38.1 6.0 -46.1" rot="0.0 180.0 0.0" prop="true" size="14 13 28" brush="MOD/main/props/outside props/Bench.vox" object="1bench p1">
-			<voxbox tags="nocull" pos="0.4 0.66 -0.2" rot="0.0 0.0 -10.0" size="2 1 32" brush="MOD/main/props/outside props/Bench.vox" object="1bench p2"/>
-			<voxbox tags="nocull" pos="0.39 0.76 -0.2" rot="180.0 180.0 70.0" size="2 1 32" brush="MOD/main/props/outside props/Bench.vox" object="1bench p2"/>
-			<voxbox tags="nocull" pos="0.33 0.97 -0.2" rot="0.0 0.0 90.0" size="2 1 32" brush="MOD/main/props/outside props/Bench.vox" object="1bench p2"/>
-			<voxbox tags="nocull" pos="0.3 1.211 -0.2" rot="180.0 180.0 45.0" size="2 1 32" brush="MOD/main/props/outside props/Bench.vox" object="1bench p2"/>
-			<voxbox tags="nocull" pos="0.66 0.63 -0.2" rot="0.0 0.0 10.0" size="2 1 32" brush="MOD/main/props/outside props/Bench.vox" object="1bench p2" offset="6 0 0"/>
-			<voxbox tags="nocull" pos="0.9 0.66 -0.2" rot="0.0 0.0 0.0" size="2 1 32" brush="MOD/main/props/outside props/Bench.vox" object="1bench p2" offset="01"/>
-			<voxbox tags="nocull" pos="-0.1 1.26 -0.2" rot="0.0 0.0 0.0" size="2 1 32" brush="MOD/main/props/outside props/Bench.vox" object="1bench p2" offset="01"/>
-			<voxbox tags="nocull" pos="0.66 1.108 0.0" rot="0.0 0.0 -20.0" size="3 1 1" brush="MOD/main/props/outside props/Bench.vox" object="metal" offset="01"/>
-			<voxbox tags="nocull" pos="0.66 1.108 2.7" rot="0.0 0.0 -20.0" size="3 1 1" brush="MOD/main/props/outside props/Bench.vox" object="metal" offset="01"/>
-			<voxbox tags="nocull" pos="1.1 0.65 -0.2" rot="0.0 0.0 -30.0" size="2 1 32" brush="MOD/main/props/outside props/Bench.vox" object="1bench p2" offset="4 0 0"/>
-		</voxbox>
-		<voxbox pos="-38.1 6.0 -41.8" rot="0.0 180.0 0.0" prop="true" size="14 13 28" brush="MOD/main/props/outside props/Bench.vox" object="1bench p1">
-			<voxbox tags="nocull" pos="0.4 0.66 -0.2" rot="0.0 0.0 -10.0" size="2 1 32" brush="MOD/main/props/outside props/Bench.vox" object="1bench p2"/>
-			<voxbox tags="nocull" pos="0.39 0.76 -0.2" rot="180.0 180.0 70.0" size="2 1 32" brush="MOD/main/props/outside props/Bench.vox" object="1bench p2"/>
-			<voxbox tags="nocull" pos="0.33 0.97 -0.2" rot="0.0 0.0 90.0" size="2 1 32" brush="MOD/main/props/outside props/Bench.vox" object="1bench p2"/>
-			<voxbox tags="nocull" pos="0.3 1.211 -0.2" rot="180.0 180.0 45.0" size="2 1 32" brush="MOD/main/props/outside props/Bench.vox" object="1bench p2"/>
-			<voxbox tags="nocull" pos="0.66 0.63 -0.2" rot="0.0 0.0 10.0" size="2 1 32" brush="MOD/main/props/outside props/Bench.vox" object="1bench p2" offset="6 0 0"/>
-			<voxbox tags="nocull" pos="0.9 0.66 -0.2" rot="0.0 0.0 0.0" size="2 1 32" brush="MOD/main/props/outside props/Bench.vox" object="1bench p2" offset="01"/>
-			<voxbox tags="nocull" pos="-0.1 1.26 -0.2" rot="0.0 0.0 0.0" size="2 1 32" brush="MOD/main/props/outside props/Bench.vox" object="1bench p2" offset="01"/>
-			<voxbox tags="nocull" pos="0.66 1.108 0.0" rot="0.0 0.0 -20.0" size="3 1 1" brush="MOD/main/props/outside props/Bench.vox" object="metal" offset="01"/>
-			<voxbox tags="nocull" pos="0.66 1.108 2.7" rot="0.0 0.0 -20.0" size="3 1 1" brush="MOD/main/props/outside props/Bench.vox" object="metal" offset="01"/>
-			<voxbox tags="nocull" pos="1.1 0.65 -0.2" rot="0.0 0.0 -30.0" size="2 1 32" brush="MOD/main/props/outside props/Bench.vox" object="1bench p2" offset="4 0 0"/>
-		</voxbox>
-		<voxbox pos="-38.1 6.0 -37.4" rot="0.0 180.0 0.0" prop="true" size="14 13 28" brush="MOD/main/props/outside props/Bench.vox" object="1bench p1">
-			<voxbox tags="nocull" pos="0.4 0.66 -0.2" rot="0.0 0.0 -10.0" size="2 1 32" brush="MOD/main/props/outside props/Bench.vox" object="1bench p2"/>
-			<voxbox tags="nocull" pos="0.39 0.76 -0.2" rot="180.0 180.0 70.0" size="2 1 32" brush="MOD/main/props/outside props/Bench.vox" object="1bench p2"/>
-			<voxbox tags="nocull" pos="0.33 0.97 -0.2" rot="0.0 0.0 90.0" size="2 1 32" brush="MOD/main/props/outside props/Bench.vox" object="1bench p2"/>
-			<voxbox tags="nocull" pos="0.3 1.211 -0.2" rot="180.0 180.0 45.0" size="2 1 32" brush="MOD/main/props/outside props/Bench.vox" object="1bench p2"/>
-			<voxbox tags="nocull" pos="0.66 0.63 -0.2" rot="0.0 0.0 10.0" size="2 1 32" brush="MOD/main/props/outside props/Bench.vox" object="1bench p2" offset="6 0 0"/>
-			<voxbox tags="nocull" pos="0.9 0.66 -0.2" rot="0.0 0.0 0.0" size="2 1 32" brush="MOD/main/props/outside props/Bench.vox" object="1bench p2" offset="01"/>
-			<voxbox tags="nocull" pos="-0.1 1.26 -0.2" rot="0.0 0.0 0.0" size="2 1 32" brush="MOD/main/props/outside props/Bench.vox" object="1bench p2" offset="01"/>
-			<voxbox tags="nocull" pos="0.66 1.108 0.0" rot="0.0 0.0 -20.0" size="3 1 1" brush="MOD/main/props/outside props/Bench.vox" object="metal" offset="01"/>
-			<voxbox tags="nocull" pos="0.66 1.108 2.7" rot="0.0 0.0 -20.0" size="3 1 1" brush="MOD/main/props/outside props/Bench.vox" object="metal" offset="01"/>
-			<voxbox tags="nocull" pos="1.1 0.65 -0.2" rot="0.0 0.0 -30.0" size="2 1 32" brush="MOD/main/props/outside props/Bench.vox" object="1bench p2" offset="4 0 0"/>
-		</voxbox>
-		<vox pos="-14.1 5.9 -38.6" file="MOD/main/building/outdoors/cortyard.vox" object="thing i don't know name of">
-			<vox pos="-0.2 0.8 0.3" rot="0.0 -30.0 0.0" file="BUILT-IN/vox/nature/tree/tree3.vox"/>
-			<vox pos="-0.2 0.8 1.9" rot="0.0 -30.0 0.0" file="MOD/main/props/nature/bushes.vox" object="small-2"/>
-			<vox pos="-1.2 0.8 -0.4" rot="0.0 60.0 0.0" file="MOD/main/props/nature/bushes.vox" object="small-1"/>
-			<vox pos="0.9 0.4 -2.1" rot="-13.7 58.7 -3.5" file="BUILT-IN/vox/nature/stone/rock1.vox"/>
-			<vox pos="-0.6 1.2 1.6" rot="166.3 -148.7 3.5" file="BUILT-IN/vox/nature/stone/rock1.vox"/>
-			<vox pos="1.6 0.8 -0.1" rot="0.0 20.0 0.0" file="MOD/main/props/nature/bushes.vox" object="small-2"/>
-			<vox pos="-3.75 0.9 -1.85" rot="0.0 0.0 0.0" file="MOD/main/building/outdoors/cortyard.vox" object="lantern">
-				<light tags="night" pos="0.05 0.75 -0.05" color="0.97 0.94 0.72 1" scale="1" reach="3"/>
+		<group name="outside props" pos="5.1 -5.8 11.8">
+			<voxbox pos="-38.1 6.0 -46.1" rot="0.0 180.0 0.0" prop="true" size="14 13 28" brush="MOD/main/props/outside props/Bench.vox" object="1bench p1">
+				<voxbox tags="nocull" pos="0.4 0.66 -0.2" rot="0.0 0.0 -10.0" size="2 1 32" brush="MOD/main/props/outside props/Bench.vox" object="1bench p2"/>
+				<voxbox tags="nocull" pos="0.39 0.76 -0.2" rot="180.0 180.0 70.0" size="2 1 32" brush="MOD/main/props/outside props/Bench.vox" object="1bench p2"/>
+				<voxbox tags="nocull" pos="0.33 0.97 -0.2" rot="0.0 0.0 90.0" size="2 1 32" brush="MOD/main/props/outside props/Bench.vox" object="1bench p2"/>
+				<voxbox tags="nocull" pos="0.3 1.211 -0.2" rot="180.0 180.0 45.0" size="2 1 32" brush="MOD/main/props/outside props/Bench.vox" object="1bench p2"/>
+				<voxbox tags="nocull" pos="0.66 0.63 -0.2" rot="0.0 0.0 10.0" size="2 1 32" brush="MOD/main/props/outside props/Bench.vox" object="1bench p2" offset="6 0 0"/>
+				<voxbox tags="nocull" pos="0.9 0.66 -0.2" rot="0.0 0.0 0.0" size="2 1 32" brush="MOD/main/props/outside props/Bench.vox" object="1bench p2" offset="01"/>
+				<voxbox tags="nocull" pos="-0.1 1.26 -0.2" rot="0.0 0.0 0.0" size="2 1 32" brush="MOD/main/props/outside props/Bench.vox" object="1bench p2" offset="01"/>
+				<voxbox tags="nocull" pos="0.66 1.108 0.0" rot="0.0 0.0 -20.0" size="3 1 1" brush="MOD/main/props/outside props/Bench.vox" object="metal" offset="01"/>
+				<voxbox tags="nocull" pos="0.66 1.108 2.7" rot="0.0 0.0 -20.0" size="3 1 1" brush="MOD/main/props/outside props/Bench.vox" object="metal" offset="01"/>
+				<voxbox tags="nocull" pos="1.1 0.65 -0.2" rot="0.0 0.0 -30.0" size="2 1 32" brush="MOD/main/props/outside props/Bench.vox" object="1bench p2" offset="4 0 0"/>
+			</voxbox>
+			<voxbox pos="-38.1 6.0 -41.8" rot="0.0 180.0 0.0" prop="true" size="14 13 28" brush="MOD/main/props/outside props/Bench.vox" object="1bench p1">
+				<voxbox tags="nocull" pos="0.4 0.66 -0.2" rot="0.0 0.0 -10.0" size="2 1 32" brush="MOD/main/props/outside props/Bench.vox" object="1bench p2"/>
+				<voxbox tags="nocull" pos="0.39 0.76 -0.2" rot="180.0 180.0 70.0" size="2 1 32" brush="MOD/main/props/outside props/Bench.vox" object="1bench p2"/>
+				<voxbox tags="nocull" pos="0.33 0.97 -0.2" rot="0.0 0.0 90.0" size="2 1 32" brush="MOD/main/props/outside props/Bench.vox" object="1bench p2"/>
+				<voxbox tags="nocull" pos="0.3 1.211 -0.2" rot="180.0 180.0 45.0" size="2 1 32" brush="MOD/main/props/outside props/Bench.vox" object="1bench p2"/>
+				<voxbox tags="nocull" pos="0.66 0.63 -0.2" rot="0.0 0.0 10.0" size="2 1 32" brush="MOD/main/props/outside props/Bench.vox" object="1bench p2" offset="6 0 0"/>
+				<voxbox tags="nocull" pos="0.9 0.66 -0.2" rot="0.0 0.0 0.0" size="2 1 32" brush="MOD/main/props/outside props/Bench.vox" object="1bench p2" offset="01"/>
+				<voxbox tags="nocull" pos="-0.1 1.26 -0.2" rot="0.0 0.0 0.0" size="2 1 32" brush="MOD/main/props/outside props/Bench.vox" object="1bench p2" offset="01"/>
+				<voxbox tags="nocull" pos="0.66 1.108 0.0" rot="0.0 0.0 -20.0" size="3 1 1" brush="MOD/main/props/outside props/Bench.vox" object="metal" offset="01"/>
+				<voxbox tags="nocull" pos="0.66 1.108 2.7" rot="0.0 0.0 -20.0" size="3 1 1" brush="MOD/main/props/outside props/Bench.vox" object="metal" offset="01"/>
+				<voxbox tags="nocull" pos="1.1 0.65 -0.2" rot="0.0 0.0 -30.0" size="2 1 32" brush="MOD/main/props/outside props/Bench.vox" object="1bench p2" offset="4 0 0"/>
+			</voxbox>
+			<voxbox pos="-38.1 6.0 -37.4" rot="0.0 180.0 0.0" prop="true" size="14 13 28" brush="MOD/main/props/outside props/Bench.vox" object="1bench p1">
+				<voxbox tags="nocull" pos="0.4 0.66 -0.2" rot="0.0 0.0 -10.0" size="2 1 32" brush="MOD/main/props/outside props/Bench.vox" object="1bench p2"/>
+				<voxbox tags="nocull" pos="0.39 0.76 -0.2" rot="180.0 180.0 70.0" size="2 1 32" brush="MOD/main/props/outside props/Bench.vox" object="1bench p2"/>
+				<voxbox tags="nocull" pos="0.33 0.97 -0.2" rot="0.0 0.0 90.0" size="2 1 32" brush="MOD/main/props/outside props/Bench.vox" object="1bench p2"/>
+				<voxbox tags="nocull" pos="0.3 1.211 -0.2" rot="180.0 180.0 45.0" size="2 1 32" brush="MOD/main/props/outside props/Bench.vox" object="1bench p2"/>
+				<voxbox tags="nocull" pos="0.66 0.63 -0.2" rot="0.0 0.0 10.0" size="2 1 32" brush="MOD/main/props/outside props/Bench.vox" object="1bench p2" offset="6 0 0"/>
+				<voxbox tags="nocull" pos="0.9 0.66 -0.2" rot="0.0 0.0 0.0" size="2 1 32" brush="MOD/main/props/outside props/Bench.vox" object="1bench p2" offset="01"/>
+				<voxbox tags="nocull" pos="-0.1 1.26 -0.2" rot="0.0 0.0 0.0" size="2 1 32" brush="MOD/main/props/outside props/Bench.vox" object="1bench p2" offset="01"/>
+				<voxbox tags="nocull" pos="0.66 1.108 0.0" rot="0.0 0.0 -20.0" size="3 1 1" brush="MOD/main/props/outside props/Bench.vox" object="metal" offset="01"/>
+				<voxbox tags="nocull" pos="0.66 1.108 2.7" rot="0.0 0.0 -20.0" size="3 1 1" brush="MOD/main/props/outside props/Bench.vox" object="metal" offset="01"/>
+				<voxbox tags="nocull" pos="1.1 0.65 -0.2" rot="0.0 0.0 -30.0" size="2 1 32" brush="MOD/main/props/outside props/Bench.vox" object="1bench p2" offset="4 0 0"/>
+			</voxbox>
+			<vox pos="-14.1 5.9 -38.6" file="MOD/main/building/outdoors/cortyard.vox" object="thing i don't know name of">
+				<vox pos="-0.2 0.8 0.3" rot="0.0 -30.0 0.0" file="BUILT-IN/vox/nature/tree/tree3.vox"/>
+				<vox pos="-0.2 0.8 1.9" rot="0.0 -30.0 0.0" file="MOD/main/props/nature/bushes.vox" object="small-2"/>
+				<vox pos="-1.2 0.8 -0.4" rot="0.0 60.0 0.0" file="MOD/main/props/nature/bushes.vox" object="small-1"/>
+				<vox pos="0.9 0.4 -2.1" rot="-13.7 58.7 -3.5" file="BUILT-IN/vox/nature/stone/rock1.vox"/>
+				<vox pos="-0.6 1.2 1.6" rot="166.3 -148.7 3.5" file="BUILT-IN/vox/nature/stone/rock1.vox"/>
+				<vox pos="1.6 0.8 -0.1" rot="0.0 20.0 0.0" file="MOD/main/props/nature/bushes.vox" object="small-2"/>
+				<vox pos="-3.75 0.9 -1.85" rot="0.0 0.0 0.0" file="MOD/main/building/outdoors/cortyard.vox" object="lantern">
+					<light tags="night" pos="0.05 0.75 -0.05" color="0.97 0.94 0.72 1" scale="1" reach="3"/>
+				</vox>
+				<vox pos="-3.75 0.9 2.05" rot="0.0 0.0 0.0" file="MOD/main/building/outdoors/cortyard.vox" object="lantern">
+					<light tags="night" pos="0.05 0.75 -0.05" color="0.97 0.94 0.72 1" scale="1" reach="4"/>
+				</vox>
+				<vox pos="3.55 0.9 2.05" rot="0.0 0.0 0.0" file="MOD/main/building/outdoors/cortyard.vox" object="lantern">
+					<light tags="night" pos="0.05 0.75 -0.05" color="0.97 0.94 0.72 1" scale="1" reach="3"/>
+				</vox>
+				<vox pos="3.55 0.9 -1.85" rot="0.0 0.0 0.0" file="MOD/main/building/outdoors/cortyard.vox" object="lantern">
+					<light tags="night" pos="0.05 0.75 -0.05" color="0.97 0.94 0.72 1" scale="1" reach="3"/>
+				</vox>
+				<vox pos="-2.05 0.9 -3.55" rot="0.0 0.0 0.0" file="MOD/main/building/outdoors/cortyard.vox" object="lantern">
+					<light tags="night" pos="0.05 0.75 -0.05" color="0.97 0.94 0.72 1" scale="1" reach="3"/>
+				</vox>
+				<vox pos="1.85 0.9 -3.55" rot="0.0 0.0 0.0" file="MOD/main/building/outdoors/cortyard.vox" object="lantern">
+					<light tags="night" pos="0.05 0.75 -0.05" color="0.97 0.94 0.72 1" scale="1" reach="3"/>
+				</vox>
+				<vox pos="1.85 0.9 3.75" rot="0.0 0.0 0.0" file="MOD/main/building/outdoors/cortyard.vox" object="lantern">
+					<light tags="night" pos="0.05 0.75 -0.05" color="0.97 0.94 0.72 1" scale="1" reach="3"/>
+				</vox>
+				<vox pos="-2.05 0.9 3.75" rot="0.0 0.0 0.0" file="MOD/main/building/outdoors/cortyard.vox" object="lantern">
+					<light tags="night" pos="0.05 0.75 -0.05" color="0.97 0.94 0.72 1" scale="1" reach="3"/>
+				</vox>
 			</vox>
-			<vox pos="-3.75 0.9 2.05" rot="0.0 0.0 0.0" file="MOD/main/building/outdoors/cortyard.vox" object="lantern">
-				<light tags="night" pos="0.05 0.75 -0.05" color="0.97 0.94 0.72 1" scale="1" reach="4"/>
-			</vox>
-			<vox pos="3.55 0.9 2.05" rot="0.0 0.0 0.0" file="MOD/main/building/outdoors/cortyard.vox" object="lantern">
-				<light tags="night" pos="0.05 0.75 -0.05" color="0.97 0.94 0.72 1" scale="1" reach="3"/>
-			</vox>
-			<vox pos="3.55 0.9 -1.85" rot="0.0 0.0 0.0" file="MOD/main/building/outdoors/cortyard.vox" object="lantern">
-				<light tags="night" pos="0.05 0.75 -0.05" color="0.97 0.94 0.72 1" scale="1" reach="3"/>
-			</vox>
-			<vox pos="-2.05 0.9 -3.55" rot="0.0 0.0 0.0" file="MOD/main/building/outdoors/cortyard.vox" object="lantern">
-				<light tags="night" pos="0.05 0.75 -0.05" color="0.97 0.94 0.72 1" scale="1" reach="3"/>
-			</vox>
-			<vox pos="1.85 0.9 -3.55" rot="0.0 0.0 0.0" file="MOD/main/building/outdoors/cortyard.vox" object="lantern">
-				<light tags="night" pos="0.05 0.75 -0.05" color="0.97 0.94 0.72 1" scale="1" reach="3"/>
-			</vox>
-			<vox pos="1.85 0.9 3.75" rot="0.0 0.0 0.0" file="MOD/main/building/outdoors/cortyard.vox" object="lantern">
-				<light tags="night" pos="0.05 0.75 -0.05" color="0.97 0.94 0.72 1" scale="1" reach="3"/>
-			</vox>
-			<vox pos="-2.05 0.9 3.75" rot="0.0 0.0 0.0" file="MOD/main/building/outdoors/cortyard.vox" object="lantern">
-				<light tags="night" pos="0.05 0.75 -0.05" color="0.97 0.94 0.72 1" scale="1" reach="3"/>
-			</vox>
-		</vox>
+		</group>
+		<group name="sidewalk" pos="-9.5 0.0 11.8">
+			<voxbox pos="7.2 0.0 7.9" size="56 2 705" brush="MOD/main/building/outdoors/sidewalk.vox" object="2"/>
+			<voxbox pos="57.79999 0.0 49.90001" size="45 2 240" brush="MOD/main/building/outdoors/sidewalk.vox" object="2"/>
+			<voxbox pos="44.09999 0.0 73.90001" size="137 2 45" brush="MOD/main/building/outdoors/sidewalk.vox" object="2"/>
+			<voxbox pos="12.79999 0.0 73.90001" size="240 2 45" brush="MOD/main/building/outdoors/sidewalk.vox" object="2"/>
+			<voxbox pos="12.79999 0.0 86.90001" size="484 2 45" brush="MOD/main/building/outdoors/sidewalk.vox" object="2"/>
+			<voxbox pos="-44.7 0.1 81.5" size="90 2 23" brush="MOD/main/building/outdoors/sidewalk.vox" object="2"/>
+			<voxbox pos="43.49999 0.0 67.90001" size="6 2 105" brush="MOD/main/building/outdoors/sidewalk.vox" object="2"/>
+			<voxbox pos="36.79999 0.0 67.90001" size="6 2 105" brush="MOD/main/building/outdoors/sidewalk.vox" object="2"/>
+			<voxbox pos="37.39999 0.0 68.50001" rot="0.0 90.0 0.0" size="6 2 61" brush="MOD/main/building/outdoors/sidewalk.vox" object="2"/>
+			<voxbox pos="52.79999 0.0 46.90001" size="95 2 30" brush="MOD/main/building/outdoors/sidewalk.vox" object="2"/>
+			<voxbox pos="-31.3 0.0 12.5" size="41 2 656" brush="MOD/main/building/outdoors/sidewalk.vox" object="2"/>
+			<voxbox pos="-31.30001 0.0 -51.09999" size="81 2 590" brush="MOD/main/building/outdoors/sidewalk.vox" object="2"/>
+			<voxbox pos="-62.20001 0.0 -83.5" size="38 2 590" brush="MOD/main/building/outdoors/sidewalk.vox" object="2"/>
+			<voxbox pos="-34.50001 0.0 -86.09996" size="32 2 420" brush="MOD/main/building/outdoors/sidewalk.vox" object="2"/>
+			<voxbox pos="-43.30001 0.0 -78.29997" size="32 2 114" brush="MOD/main/building/outdoors/sidewalk.vox" object="2"/>
+			<voxbox pos="46.79999 0.0 -86.09996" rot="0.0 90.0 0.0" size="27 2 60" brush="MOD/main/building/outdoors/sidewalk.vox" object="2"/>
+			<voxbox pos="-34.50001 0.0 -86.09996" rot="0.0 90.0 0.0" size="27 2 119" brush="MOD/main/building/outdoors/sidewalk.vox" object="2"/>
+			<voxbox pos="-25.60001 0.0 -88.79995" rot="0.0 90.0 0.0" size="27 2 103" brush="MOD/main/building/outdoors/sidewalk.vox" object="2"/>
+			<voxbox pos="39.49999 0.0 -88.79995" rot="0.0 90.0 0.0" size="27 2 103" brush="MOD/main/building/outdoors/sidewalk.vox" object="2"/>
+			<voxbox pos="-18.30001 0.0 -86.09996" rot="0.0 90.0 0.0" size="27 2 608" brush="MOD/main/building/outdoors/sidewalk.vox" object="2"/>
+			<voxbox pos="52.79999 0.0 -88.79995" rot="0.0 0.0 0.0" size="39 2 965" brush="MOD/main/building/outdoors/sidewalk.vox" object="2"/>
+			<voxbox pos="-34.50001 0.0 -22.5" size="32 2 1006" brush="MOD/main/building/outdoors/sidewalk.vox" object="2"/>
+			<voxbox pos="-34.50001 0.0 74.89999" rot="0.0 -90.0 0.0" size="32 2 94" brush="MOD/main/building/outdoors/sidewalk.vox" object="2"/>
+			<voxbox pos="-47.10001 0.0 -48.3" size="32 2 1264" brush="MOD/main/building/outdoors/sidewalk.vox" object="2"/>
+			<voxbox pos="-43.90001 0.0 -40.0" size="66 2 134" brush="MOD/main/building/outdoors/sidewalk.vox" object="2"/>
+			<voxbox pos="-43.90001 0.0 -13.2" size="94 2 103" brush="MOD/main/building/outdoors/sidewalk.vox" object="2"/>
+			<voxbox pos="-43.90001 0.0 33.5" size="94 2 54" brush="MOD/main/building/outdoors/sidewalk.vox" object="2"/>
+			<voxbox pos="-31.3 0.0 7.9" size="385 2 46" brush="MOD/main/building/outdoors/sidewalk.vox" object="2"/>
+			<voxagon pos="-39.50001 0.0 -41.0" brush="MOD/main/building/outdoors/sidewalk.vox" object="2" extrude="2">
+				<vertex pos="-4.4 1.0"/>
+				<vertex pos="-4.4 -7.3"/>
+				<vertex pos="-7.6 -7.3"/>
+				<vertex pos="-7.6 -7.5"/>
+				<vertex pos="-4.4 -9.2"/>
+				<vertex pos="-1.0 -11.3"/>
+				<vertex pos="5.0 -14.9"/>
+				<vertex pos="5.0 -3.1"/>
+				<vertex pos="2.2 1.0"/>
+				<vertex pos="-1.0 1.0"/>
+			</voxagon>
+			<voxagon pos="-39.50001 0.0 -41.0" brush="MOD/main/building/outdoors/sidewalk.vox" object="2" extrude="2">
+				<vertex pos="5.0 -7.4"/>
+				<vertex pos="5.0 -3.0"/>
+				<vertex pos="2.3 1.0"/>
+				<vertex pos="-1.0 1.0"/>
+			</voxagon>
+			<voxagon pos="-39.50001 0.0 -25.6" brush="MOD/main/building/outdoors/sidewalk.vox" object="2" extrude="2">
+				<vertex pos="-1.0 -1.0"/>
+				<vertex pos="2.2 -1.0"/>
+				<vertex pos="5.0 3.1"/>
+				<vertex pos="5.0 7.4"/>
+			</voxagon>
+			<voxagon pos="58.8 0.0 74.9" brush="MOD/main/building/outdoors/sidewalk.vox" object="2" extrude="2">
+				<vertex pos="-1.0 -1.0"/>
+				<vertex pos="3.5 -1.0"/>
+				<vertex pos="3.5 -0.4"/>
+				<vertex pos="3.4 1.2"/>
+				<vertex pos="3.0 2.1"/>
+				<vertex pos="2.6 2.6"/>
+				<vertex pos="2.1 3.0"/>
+				<vertex pos="1.3 3.3"/>
+				<vertex pos="0.3 3.4"/>
+				<vertex pos="-1.0 3.5"/>
+				<vertex pos="-1.0 1.0"/>
+			</voxagon>
+			<group pos="-37.2 0.0 -5.1">
+				<voxbox tags="nocull" pos="-6.8 0.1 43.90001" rot="0.0 0.0 0.0" size="95 2 3" brush="MOD/main/building/outdoors/sidewalk.vox" object="3" offset="0.0 0.0 0.0"/>
+				<voxbox tags="nocull" pos="-9.6 0.1 -43.3" rot="0.0 -90.0 0.0" size="350 2 3" brush="MOD/main/building/outdoors/sidewalk.vox" object="3"/>
+				<voxbox tags="nocull" pos="-9.6 0.1 2.8" rot="0.0 -90.0 0.0" size="355 2 3" brush="MOD/main/building/outdoors/sidewalk.vox" object="3"/>
+				<voxbox tags="nocull" pos="-9.6 0.1 44.7" rot="0.0 -90.0 0.0" size="382 2 3" brush="MOD/main/building/outdoors/sidewalk.vox" object="3"/>
+				<voxbox tags="nocull" pos="-9.9 0.1 -43.3" rot="0.0 31.0 0.0" size="148 2 3" brush="MOD/main/building/outdoors/sidewalk.vox" object="3"/>
+				<voxbox tags="nocull" pos="2.65 0.1 -50.7" rot="0.0 90.0 0.0" size="110 2 3" brush="MOD/main/building/outdoors/sidewalk.vox" object="3"/>
+				<voxbox tags="nocull" pos="2.65 0.11 -61.63" rot="0.0 90.0 -20.0" size="3 2 3" brush="MOD/main/building/outdoors/sidewalk.vox" object="3"/>
+				<voxbox tags="nocull" pos="2.95 0.11 -71.77" rot="0.0 -90.0 -20.0" size="3 2 3" brush="MOD/main/building/outdoors/sidewalk.vox" object="3"/>
+				<voxbox tags="nocull" pos="2.65 0.1 -71.7" rot="0.0 90.0 0.0" size="118 2 3" brush="MOD/main/building/outdoors/sidewalk.vox" object="3"/>
+				<voxbox tags="nocull" pos="-9.9 0.11 2.87" rot="0.0 90.0 -20.0" size="3 2 3" brush="MOD/main/building/outdoors/sidewalk.vox" object="3"/>
+				<voxbox tags="nocull" pos="-9.6 0.11 -8.37" rot="0.0 -90.0 -20.0" size="3 2 3" brush="MOD/main/building/outdoors/sidewalk.vox" object="3"/>
+				<voxbox tags="nocull" pos="-9.9 0.11 44.76999" rot="0.0 90.0 -20.0" size="3 2 3" brush="MOD/main/building/outdoors/sidewalk.vox" object="3"/>
+				<voxbox tags="nocull" pos="-9.6 0.11 38.22999" rot="0.0 -90.0 -20.0" size="3 2 3" brush="MOD/main/building/outdoors/sidewalk.vox" object="3"/>
+				<voxbox tags="nocull" pos="-9.6 0.11 82.82999" rot="0.0 -90.0 -20.0" size="3 2 3" brush="MOD/main/building/outdoors/sidewalk.vox" object="3"/>
+				<voxbox tags="nocull" pos="10.0 0.11 82.82999" rot="0.0 -90.0 -20.0" size="3 2 3" brush="MOD/main/building/outdoors/sidewalk.vox" object="3"/>
+				<voxbox tags="nocull" pos="-6.5 0.1 2.4" rot="0.0 -90.0 0.0" size="364 2 3" brush="MOD/main/building/outdoors/sidewalk.vox" object="3"/>
+				<voxbox tags="nocull" pos="-6.8 0.1 2.3" rot="0.0 0.0 0.0" size="95 2 3" brush="MOD/main/building/outdoors/sidewalk.vox" object="3" offset="0.0 0.0 0.0"/>
+				<voxbox tags="nocull" pos="-6.5 0.1 -8.4" rot="0.0 0.0 0.0" size="91 2 3" brush="MOD/main/building/outdoors/sidewalk.vox" object="3" offset="3.0 0.0 0.0"/>
+				<voxbox tags="nocull" pos="2.585 0.1 -8.1" rot="0.0 90.0 0.0" size="48 2 3" brush="MOD/main/building/outdoors/sidewalk.vox" object="3" offset="5.0 0.0 -0.0"/>
+				<voxbox tags="nocull" pos="2.65 0.1 -17.69" rot="0.0 0.0 0.0" size="30 2 3" brush="MOD/main/building/outdoors/sidewalk.vox" object="3" offset="0.0 0.0 0.0"/>
+				<voxbox tags="nocull" pos="2.65 0.1 -38.99" rot="0.0 0.0 0.0" size="30 2 3" brush="MOD/main/building/outdoors/sidewalk.vox" object="3" offset="0.0 0.0 0.0"/>
+				<voxbox tags="nocull" pos="5.6 0.1 -17.39" rot="0.0 90.0 0.0" size="216 2 3" brush="MOD/main/building/outdoors/sidewalk.vox" object="3" offset="-2.0 0.0 0.0"/>
+				<voxbox tags="nocull" pos="-0.4 0.1 -21.74" rot="0.0 90.0 0.0" size="129 2 3" brush="MOD/main/building/outdoors/sidewalk.vox" object="3"/>
+				<voxbox tags="nocull" pos="2.64 0.1 -12.72" rot="0.0 125.1 0.0" size="106 2 3" brush="MOD/main/building/outdoors/sidewalk.vox" object="3"/>
+				<voxbox tags="nocull" pos="2.65 0.1 -17.39" rot="0.0 125.0 0.0" size="53 2 3" brush="MOD/main/building/outdoors/sidewalk.vox" object="3"/>
+				<voxbox tags="nocull" pos="2.88 0.1 -38.79" rot="0.0 -125.0 0.0" size="53 2 3" brush="MOD/main/building/outdoors/sidewalk.vox" object="3"/>
+				<voxbox tags="nocull" pos="-6.8 0.1 -8.1" rot="0.0 90.0 0.0" size="133 2 3" brush="MOD/main/building/outdoors/sidewalk.vox" object="3" offset="2.0 0.0 0.0"/>
+				<voxbox tags="nocull" pos="-6.8 0.1 -21.555" rot="0.0 0.0 0.0" size="36 2 3" brush="MOD/main/building/outdoors/sidewalk.vox" object="3"/>
+				<voxbox tags="nocull" pos="-6.8 0.1 38.6" rot="0.0 0.0 0.0" size="95 2 3" brush="MOD/main/building/outdoors/sidewalk.vox" object="3" offset="0.0 0.0 0.0"/>
+				<voxbox tags="nocull" pos="3.0 0.1 2.3" rot="0.0 -90.0 0.0" size="366 2 3" brush="MOD/main/building/outdoors/sidewalk.vox" object="3" offset="-1.0 0.0 0.0"/>
+				<voxbox tags="nocull" pos="10.0 0.1 17.7" rot="0.0 -90.0 0.0" size="652 2 3" brush="MOD/main/building/outdoors/sidewalk.vox" object="3"/>
+				<voxbox tags="nocull" pos="-6.5 0.1 80.00002" rot="0.0 0.0 0.0" size="92 2 3" brush="MOD/main/building/outdoors/sidewalk.vox" object="3" offset="3.0 0.0 0.0"/>
+				<voxbox tags="nocull" pos="-6.8 0.1 83.10001" rot="0.0 0.0 0.0" size="130 2 2" brush="MOD/main/building/outdoors/sidewalk.vox" object="3" offset="0.0 0.0 0.0"/>
+				<voxbox tags="nocull" pos="-6.5 0.1 44.2" rot="0.0 -90.0 0.0" size="361 2 3" brush="MOD/main/building/outdoors/sidewalk.vox" object="3" offset="2.0 0.0 -0.0"/>
+				<voxbox tags="nocull" pos="3.0 0.1 43.9" rot="0.0 -90.0 0.0" size="364 2 3" brush="MOD/main/building/outdoors/sidewalk.vox" object="3" offset="-1.0 0.0 0.0"/>
+			</group>
+		</group>
 	</group>
 </scene>
 

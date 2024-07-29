@@ -1,0 +1,10 @@
+<prefab version="1.4.0">
+	<group name="instance=MOD/elevator/floorNoDoors.xml" pos="0.0 116.0 -0.1" rot="0.0 0.0 0.0">
+		<vox pos="-1.5 1.0 -1.25" rot="0 90 0 " prop="false" file="MOD/elevator/vox/rails.vox" object="car_rail"/>
+		<vox pos="1.5 1.0 -1.35" rot="0 270 0 " prop="false" file="MOD/elevator/vox/rails.vox" object="car_rail"/>
+		<vox pos="1.1 1.0 -2.8" rot="0 90 0 " prop="false" file="MOD/elevator/vox/rails.vox" object="cwrailright"/>
+		<vox pos="-1.1 1.0 -2.8" rot="0 90 0 " prop="false" file="MOD/elevator/vox/rails.vox" object="cwrailleft"/>
+		<vox pos="1.6 1.0 0.0" rot="0 90 0 " prop="false" file="MOD/elevator/vox/rails.vox" object="wireguard"/>
+	</group>
+</prefab>
+

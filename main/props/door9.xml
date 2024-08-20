@@ -1,0 +1,16 @@
+<prefab version="1.6.0">
+	<group name="instance=MOD/main/props/door9.xml" pos="23.0 30.3 -57.6" rot="0.0 -180.0 0.0">
+		<vox pos="-0.1 0.0 -0.1" rot="0.0 -180.0 0.0" file="MOD/main/props/doors1.vox" object="inner-back-metal2">
+			<vox pos="0.0 0.0 -0.3" rot="0.0 180.0 0.0" file="MOD/main/props/doors1.vox" object="inner-front-metal2"/>
+			<vox pos="-0.7 0.1 -0.2" rot="0.0 180.0 0.0" prop="true" file="MOD/main/props/doors1.vox" object="door3-r roof">
+				<joint pos="0.7 0.3 0.0"/>
+				<joint pos="0.7 1.9 0.0"/>
+			</vox>
+			<vox pos="0.7 0.1 -0.2" rot="0.0 180.0 0.0" prop="true" file="MOD/main/props/doors1.vox" object="door3-l roof">
+				<joint pos="-0.7 0.3 0.0"/>
+				<joint pos="-0.7 1.9 0.0"/>
+			</vox>
+		</vox>
+	</group>
+</prefab>
+

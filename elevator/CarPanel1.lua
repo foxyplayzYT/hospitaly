@@ -11,7 +11,7 @@ ARROW_WIDTH = 105
 MAX_DIGITS = 1
 
 numberBuffer = 0
-FloorLabels = {"G","1","2","3","4","5","6","7","8","9","10","15","20","25","26","27","28",}
+FloorLabels = {"G","1",}
 
 function tick()	
 	screen = UiGetScreen()

@@ -1,6 +1,6 @@
-<prefab version="1.5.4">
-	<group name="instance=MOD/vehicles/stang-gxg.xml" pos="-0.8 -5.4 11.5" rot="0.0 -90.0 0.0">
-		<vehicle name="Stang" pos="0.1 0.0 0.1" rot="0.0 0.0 0.0" sound="musclecar 1.2" spring="0.8" damping="0.6" topspeed="80" acceleration="4" strength="7" antispin="0.2" steerassist="0.5" friction="1.6">
+<prefab version="1.6.0">
+	<group name="instance=MOD/vehicles/stang-gxg.xml" pos="-47.7 0.1 57.7" rot="0.0 90.0 0.0">
+		<vehicle name="Stang" pos="0.1 -0.1 0.1" rot="0.0 0.0 0.0" sound="musclecar 1.2" spring="0.8" damping="0.6" topspeed="80" acceleration="4" strength="7" antispin="0.2" steerassist="0.5" friction="1.6">
 			<body pos="-0.1 0.45 -0.45" dynamic="true">
 				<vox pos="-0.05 -0.2 0.35" density="1.5" strength="2" file="MOD/vehicles/stang-gxg.vox" object="body">
 					<group pos="0.0 0.5 0.0">
@@ -14,7 +14,15 @@
 						<light pos="0.8 0.05 -2.2" rot="0 180 0" type="cone" color="1 0.9 0.8" scale="20" penumbra="30" unshadowed="0.3" glare="0.3"/>
 					</group>
 					<location tags="vital" pos="0.05 0.2 -1.6"/>
-					<location tags="player" pos="-0.35 1.1 -0.05"/>
+					<location tags="player" pos="-0.35 1.1 -0.05">
+						<location name="ik_foot_l" tags="name=ik_foot_l" pos="-0.15 -0.65 -0.6" rot="0.0 90.0 50.0"/>
+						<location name="player_seat" tags="player_seat" pos="0.0 -0.6 0.0" rot="80.0 0.0 0.0"/>
+						<location name="player_steeringwheel" tags="player_steeringwheel" pos="0.0 -0.25 -0.25" rot="0.0 -180.0 0.0"/>
+						<location name="ik_hand_l" tags="name=ik_hand_l" pos="-0.25 -0.25 -0.3" rot="0.0 90.0 0.0"/>
+						<location name="ik_hand_r" tags="name=ik_hand_r" pos="0.25 -0.25 -0.3" rot="0.0 90.0 0.0"/>
+						<location name="ik_head" tags="name=ik_head" pos="0.0 -0.05 0.0" rot="0.0 90.0 0.0"/>
+						<location name="ik_foot_r" tags="name=ik_foot_r" pos="0.15 -0.65 -0.6" rot="0.0 90.0 50.0"/>
+					</location>
 					<location tags="exhaust" pos="-0.5 0.1 2.3"/>
 					<location tags="exhaust" pos="0.6 0.1 2.3"/>
 					<group name="spoiler" pos="0.0 0.8 1.95" rot="5"/>

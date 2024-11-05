@@ -1,6 +1,7 @@
+
 -- Constants
 BUTTON_SIZE = 75
-BUTTON_PADDING = 8
+BUTTON_PADDING = 9
 NUMBER_Y = 140
 BUTTON_Y = 480
 NUMBER_FONT_SIZE = 100
@@ -10,7 +11,7 @@ ARROW_WIDTH = 105
 MAX_DIGITS = 1
 
 numberBuffer = 0
-FloorLabels = {"A","B","C","D","E","F","G",}
+FloorLabels = {"G","1","2","3","4","5","6",}
 
 function tick()	
 	screen = UiGetScreen()
@@ -37,22 +38,8 @@ function draw()
 	UiColor(0.5, 0.5, 0.5)
 
 	local sizeAndPadding = BUTTON_SIZE + BUTTON_PADDING
-
-	UiTranslate(0, 3*sizeAndPadding)
 	--
-	btn = 7
-	if GetBool("level.EV"..carID.."call"..btn) == true then
-		UiButtonImageBox("MOD/elevator/buttonActive.png", 25, 25)
-	else
-		UiButtonImageBox("MOD/elevator/button.png", 25, 25)
-	end
-	if button(btn) then
-		SetBool("level.EV"..carID.."call"..btn, true)
-	end
-	--
-	UiTranslate(0, sizeAndPadding)
-	--
-	btn = 4
+	btn = 16
 	if GetBool("level.EV"..carID.."call"..btn) == true then
 		UiButtonImageBox("MOD/elevator/buttonActive.png", 25, 25)
 	else
@@ -64,7 +51,19 @@ function draw()
 	--
 	UiTranslate(sizeAndPadding, 0)
 	--
-	btn = 5
+	btn = 17
+	if GetBool("level.EV"..carID.."call"..btn) == true then
+		UiButtonImageBox("MOD/elevator/buttonActive.png", 25, 25)
+	else
+		UiButtonImageBox("MOD/elevator/button.png", 25, 25)
+	end
+	if button(btn) then
+		SetBool("level.EV"..carID.."call"..btn, true)
+	end
+	--
+	UiTranslate(-sizeAndPadding, sizeAndPadding)
+	--
+	btn = 13
 	if GetBool("level.EV"..carID.."call"..btn) == true then
 		UiButtonImageBox("MOD/elevator/buttonActive.png", 25, 25)
 	else
@@ -76,7 +75,19 @@ function draw()
 	--
 	UiTranslate(sizeAndPadding, 0)
 	--
-	btn = 6
+	btn = 14
+	if GetBool("level.EV"..carID.."call"..btn) == true then
+		UiButtonImageBox("MOD/elevator/buttonActive.png", 25, 25)
+	else
+		UiButtonImageBox("MOD/elevator/button.png", 25, 25)
+	end
+	if button(btn) then
+		SetBool("level.EV"..carID.."call"..btn, true)
+	end
+	--
+	UiTranslate(sizeAndPadding, 0)
+	--
+	btn = 15
 	if GetBool("level.EV"..carID.."call"..btn) == true then
 		UiButtonImageBox("MOD/elevator/buttonActive.png", 25, 25)
 	else
@@ -88,6 +99,101 @@ function draw()
 	--
 	UiTranslate(-166, sizeAndPadding)
 	--
+	btn = 10
+	if GetBool("level.EV"..carID.."call"..btn) == true then
+		UiButtonImageBox("MOD/elevator/buttonActive.png", 25, 25)
+	else
+		UiButtonImageBox("MOD/elevator/button.png", 25, 25)
+	end
+	if button(btn) then
+		SetBool("level.EV"..carID.."call"..btn, true)
+	end
+	--
+	UiTranslate(sizeAndPadding, 0)
+	--
+	btn = 11
+	if GetBool("level.EV"..carID.."call"..btn) == true then
+		UiButtonImageBox("MOD/elevator/buttonActive.png", 25, 25)
+	else
+		UiButtonImageBox("MOD/elevator/button.png", 25, 25)
+	end
+	if button(btn) then
+		SetBool("level.EV"..carID.."call"..btn, true)
+	end
+	--
+	UiTranslate(sizeAndPadding, 0)
+	--
+	btn = 12
+	if GetBool("level.EV"..carID.."call"..btn) == true then
+		UiButtonImageBox("MOD/elevator/buttonActive.png", 25, 25)
+	else
+		UiButtonImageBox("MOD/elevator/button.png", 25, 25)
+	end
+	if button(btn) then
+		SetBool("level.EV"..carID.."call"..btn, true)
+	end
+	--
+	UiTranslate(-166, sizeAndPadding)
+	btn = 7
+	if GetBool("level.EV"..carID.."call"..btn) == true then
+		UiButtonImageBox("MOD/elevator/buttonActive.png", 25, 25)
+	else
+		UiButtonImageBox("MOD/elevator/button.png", 25, 25)
+	end
+	if button(btn) then
+		SetBool("level.EV"..carID.."call"..btn, true)
+	end
+	UiTranslate(sizeAndPadding, 0)
+	btn = 8
+	if GetBool("level.EV"..carID.."call"..btn) == true then
+		UiButtonImageBox("MOD/elevator/buttonActive.png", 25, 25)
+	else
+		UiButtonImageBox("MOD/elevator/button.png", 25, 25)
+	end
+	if button(btn) then
+		SetBool("level.EV"..carID.."call"..btn, true)
+	end
+	UiTranslate(sizeAndPadding, 0)
+	btn = 9
+	if GetBool("level.EV"..carID.."call"..btn) == true then
+		UiButtonImageBox("MOD/elevator/buttonActive.png", 25, 25)
+	else
+		UiButtonImageBox("MOD/elevator/button.png", 25, 25)
+	end
+	if button(btn) then
+		SetBool("level.EV"..carID.."call"..btn, true)
+	end
+	UiTranslate(-166, sizeAndPadding)
+	btn = 4
+	if GetBool("level.EV"..carID.."call"..btn) == true then
+		UiButtonImageBox("MOD/elevator/buttonActive.png", 25, 25)
+	else
+		UiButtonImageBox("MOD/elevator/button.png", 25, 25)
+	end
+	if button(btn) then
+		SetBool("level.EV"..carID.."call"..btn, true)
+	end
+	UiTranslate(sizeAndPadding, 0)
+	btn = 5
+	if GetBool("level.EV"..carID.."call"..btn) == true then
+		UiButtonImageBox("MOD/elevator/buttonActive.png", 25, 25)
+	else
+		UiButtonImageBox("MOD/elevator/button.png", 25, 25)
+	end
+	if button(btn) then
+		SetBool("level.EV"..carID.."call"..btn, true)
+	end
+	UiTranslate(sizeAndPadding, 0)
+	btn = 6
+	if GetBool("level.EV"..carID.."call"..btn) == true then
+		UiButtonImageBox("MOD/elevator/buttonActive.png", 25, 25)
+	else
+		UiButtonImageBox("MOD/elevator/button.png", 25, 25)
+	end
+	if button(btn) then
+		SetBool("level.EV"..carID.."call"..btn, true)
+	end
+	UiTranslate(-166, sizeAndPadding)
 	btn = 1
 	if GetBool("level.EV"..carID.."call"..btn) == true then
 		UiButtonImageBox("MOD/elevator/buttonActive.png", 25, 25)
@@ -97,9 +203,7 @@ function draw()
 	if button(btn) then
 		SetBool("level.EV"..carID.."call"..btn, true)
 	end
-	--
 	UiTranslate(sizeAndPadding, 0)
-	--
 	btn = 2
 	if GetBool("level.EV"..carID.."call"..btn) == true then
 		UiButtonImageBox("MOD/elevator/buttonActive.png", 25, 25)
@@ -109,9 +213,7 @@ function draw()
 	if button(btn) then
 		SetBool("level.EV"..carID.."call"..btn, true)
 	end
-	--
 	UiTranslate(sizeAndPadding, 0)
-	--
 	btn = 3
 	if GetBool("level.EV"..carID.."call"..btn) == true then
 		UiButtonImageBox("MOD/elevator/buttonActive.png", 25, 25)
@@ -121,7 +223,6 @@ function draw()
 	if button(btn) then
 		SetBool("level.EV"..carID.."call"..btn, true)
 	end
-	--
 
 	UiButtonImageBox("MOD/elevator/button.png", 25, 25)
 	UiTranslate(-166, sizeAndPadding+30)

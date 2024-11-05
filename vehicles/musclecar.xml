@@ -1,5 +1,5 @@
-<prefab version="1.5.4">
-	<group name="instance=MOD/vehicles/musclecar.xml" pos="-45.2 0.1 30.2" rot="0.0 0.0 0.0">
+<prefab version="1.6.0">
+	<group name="instance=MOD/vehicles/musclecar.xml" pos="-28.6 -5.4 -50.0" rot="0.0 90.0 0.0">
 		<vehicle pos="0.1 0.0 0.2" rot="0.0 0.0 0.0" driven="false" sound="musclecar" spring="0.8" damping="0.6" topspeed="90" acceleration="8" strength="8" antiroll="0.0" difflock="0.5" steerassist="0.4" friction="1.5">
 			<body pos="-0.1 0.45 -0.75" rot="0.0 0.0 0.0" dynamic="true">
 				<vox pos="0.05 -0.15 0.55" rot="0.0 180.0 0.0" density="2" strength="3" file="MOD/vehicles/muscle_car.vox" object="body">
@@ -11,7 +11,15 @@
 					<light pos="-0.75 0.5 2.3" rot="0.0 0.0 0.0" type="cone" color="1 .9 .8" scale="20" angle="90" penumbra="30" size="0.1" unshadowed="0.3" glare=".3"/>
 					<light pos="0.85 0.5 2.3" rot="0.0 0.0 0.0" type="cone" color="1 .9 .8" scale="20" angle="90" penumbra="30" size="0.1" unshadowed="0.3" glare=".3"/>
 					<location tags="vital" pos="0.05 0.5 1.7"/>
-					<location tags="player" pos="0.45 1.0 -0.05" rot="0.0 0.0 0.0"/>
+					<location tags="player" pos="0.45 1.0 -0.05" rot="0.0 0.0 0.0">
+						<location name="ik_foot_l" tags="name=ik_foot_l" pos="0.15 -0.75 0.8" rot="0.0 -90.0 50.0"/>
+						<location name="player_seat" tags="player_seat" pos="0.0 -0.6 0.2" rot="80.0 -180.0 0.0"/>
+						<location name="player_steeringwheel" tags="player_steeringwheel" pos="0.0 -0.35 0.45" rot="0.0 0.0 0.0"/>
+						<location name="ik_hand_l" tags="name=ik_hand_l" pos="0.25 -0.35 0.5" rot="0.0 -90.0 0.0"/>
+						<location name="ik_hand_r" tags="name=ik_hand_r" pos="-0.25 -0.35 0.5" rot="0.0 -90.0 0.0"/>
+						<location name="ik_head" tags="name=ik_head" pos="0.0 -0.05 0.0" rot="0.0 -90.0 0.0"/>
+						<location name="ik_foot_r" tags="name=ik_foot_r" pos="-0.15 -0.75 0.8" rot="0.0 -90.0 50.0"/>
+					</location>
 				</vox>
 				<wheel name="bl" pos="-0.75 -0.1 1.9" drive="1" travel="-0.1 0.2">
 					<vox pos="-0.1 -0.35 -0.05" rot="0.0 180.0 0.0" file="MOD/vehicles/muscle_car.vox" object="wheel_bl"/>

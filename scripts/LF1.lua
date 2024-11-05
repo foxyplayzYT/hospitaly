@@ -1,7 +1,7 @@
 function init()
 	snd = false
 	vehicle = FindVehicle()
-	siren = LoadLoop("MOD/sound/LF1.ogg", 100.0)
+	siren = LoadLoop("MOD/ALS Scripts/sound/LF1.ogg", 100.0)
 end
 
 function draw()

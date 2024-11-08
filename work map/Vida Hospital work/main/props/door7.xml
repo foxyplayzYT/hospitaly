@@ -1,0 +1,11 @@
+<prefab version="1.5.4">
+	<group pos="14.6 0.0 -33.2">
+		<vox file="MOD/main/props/isolation-door.vox" object="slim sliding door frame">
+			<vox pos="0.9 0.1 0.2" density="10" prop="true" file="MOD/main/props/isolation-door.vox" object="slim side door">
+				<joint pos="-0.8 2.4 -0.1" rot="0.0 -90.0 0.0" type="prismatic" rotstrength="10" rotspring="0" limits="0 1.9" autodisable="true"/>
+				<joint pos="-0.8 0.0 -0.1" rot="0.0 -90.0 0.0" type="prismatic" rotstrength="10" rotspring="0" limits="0 1.9" autodisable="true"/>
+			</vox>
+		</vox>
+	</group>
+</prefab>
+

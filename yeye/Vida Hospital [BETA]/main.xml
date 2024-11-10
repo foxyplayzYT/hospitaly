@@ -3,7 +3,7 @@
 	<script pos="-2.2 5.8 -6.8" file="main.lua"/>
 	<script pos="-2.2 5.8 -6.8" file="sandbox.lua"/>
 	<spawnpoint pos="-92.4 6.4 -40.9" rot="0.0 90.0 0.0"/>
-	<group pos="77.4 3.9 25.7" layer="background">
+	<group pos="77.4 3.9 25.7">
 		<group name="heightmap" pos="-98.00001 -5.8 -51.1" rot="0.0 0.0 0.0" prop0="texture=1 0.45">
 			<voxscript pos="153.0 0.0 -115.3" rot="0.0 -90.0 0.0" texture="1 0.45" file="MOD/scripts/heightmap.lua">
 				<parameters scale="255" file="MOD/heightmap/hospital.png"/>
@@ -924,7 +924,7 @@
 				<vox pos="37.8 3.1 -2.30001" rot="0.0 360.0 90.0" texture="8 0.2" blendtexture="5 0.35" file="MOD/main/props/AC_Unit.vox"/>
 				<vox pos="37.8 3.1 35.79999" rot="0.0 360.0 90.0" texture="8 0.2" blendtexture="5 0.35" file="MOD/main/props/AC_Unit.vox"/>
 			</group>
-			<group name="lights" pos="-15.3 3.2 -78.5">
+			<group name="lights" pos="-15.3 3.2 -78.5" layer="lights">
 				<group name="lights" pos="-10.8 0.0 0.0">
 					<vox pos="-0.1 0.0 -65.0" rot="0.0 0.0 0.0" prop="true" file="MOD/main/building/parking-lot.vox" object="light">
 						<light pos="0.05 0.0 -0.05" rot="90.0 0.0 0.0" type="area" color="0.86 0.97 0.97" scale="3" size=".3 2.3" fogscale="1.3" fogiter="1.5" glare="0.2"/>
@@ -1787,7 +1787,7 @@
 				</group>
 			</group>
 		</group>
-		<group name="floor1" pos="0.0 5.8 0.0" layer="1">
+		<group name="floor1" pos="0.0 5.8 0.0">
 			<group name="outside-walls" pos="-13.6 0.2 -46.3">
 				<compound pos="0.8 0.0 73.1">
 					<voxbox pos="-1.2 0.0 1.2" rot="0.0 90.0 0.0" size="24 41 24" brush="MOD/main/building/walls.vox" object="cornerglasswall"/>
@@ -2966,7 +2966,7 @@
 				</compound>
 				<voxbox pos="38.7 0.0 3.0" rot="0.0 -90.0 0.0" size="86 40 2" brush="MOD/main/building/windows.vox" object="admin-window" offset="0.0 0.0 0.0"/>
 			</group>
-			<group name="props">
+			<group name="props" pos="0.0 0.0 0.0" layer="interior1">
 				<group name="office" pos="-25.8 0.2 -61.8">
 					<vox pos="2.2 0.0 0.1" rot="0.0 0.0 0.0" density="1.3" prop="true" file="MOD/main/props/hospital-assets2.vox" object="desk1">
 						<vox pos="-1.0 1.0 -0.1" rot="0.0 -130.0 0.0" prop="true" file="MOD/main/props/hospital-assets2.vox" object="globe"/>
@@ -5986,54 +5986,6 @@
 						</vox>
 					</vox>
 				</group>
-				<group name="doors" pos="-16.0 -0.4 -55.5">
-					<instance pos="-28.1 0.6 -20.3" rot="0.0 -180.0 0.0" file="MOD/main/props/door3.xml"/>
-					<instance pos="15.9 0.6 31.5" rot="0.0 -90.0 0.0" file="MOD/main/props/door6.xml"/>
-					<instance pos="25.4 0.6 19.3" rot="0.0 90.0 0.0" file="MOD/main/props/door2.xml"/>
-					<instance pos="25.4 0.6 35.7" rot="0.0 90.0 0.0" file="MOD/main/props/door2.xml"/>
-					<instance pos="25.4 0.6 47.2" rot="0.0 90.0 0.0" file="MOD/main/props/door4.xml"/>
-					<instance pos="18.2 0.6 63.1" rot="0.0 0.0 0.0" file="MOD/main/props/bathroom-w.xml"/>
-					<instance pos="13.5 0.6 63.1" rot="0.0 0.0 0.0" file="MOD/main/props/bathroom-m.xml"/>
-					<instance pos="9.9 0.6 67.2" rot="0.0 -180.0 0.0" file="MOD/main/props/door2.xml"/>
-					<instance pos="4.0 0.6 -7.2" rot="0.0 -180.0 0.0" file="MOD/main/props/door3.xml"/>
-					<instance pos="19.1 0.6 8.3" rot="0.0 90.0 0.0" file="MOD/main/props/door3.xml"/>
-					<instance pos="23.3 0.6 65.2" rot="0.0 90.0 0.0" file="MOD/main/props/door3.xml"/>
-					<instance pos="26.1 0.6 67.4" rot="0.0 -180.0 0.0" file="MOD/main/props/door4.xml"/>
-					<instance pos="19.5 0.6 -61.3" rot="0.0 -90.0 0.0" file="MOD/main/props/door1.xml"/>
-					<instance pos="-9.6 0.6 -1.2" rot="0.0 0.0 0.0" file="MOD/main/props/door1.xml"/>
-					<instance pos="-42.0 0.6 -56.5" rot="0.0 90.0 0.0" file="MOD/main/props/door3.xml"/>
-					<instance pos="-34.6 0.6 -41.8" rot="0.0 90.0 0.0" file="MOD/main/props/door2.xml"/>
-					<instance pos="-29.4 0.6 -60.7" rot="0.0 -90.0 0.0" file="MOD/main/props/door2.xml"/>
-					<instance pos="-34.6 0.6 -66.7" rot="0.0 90.0 0.0" file="MOD/main/props/door2.xml"/>
-					<instance pos="-28.3 0.6 -35.7" rot="0.0 -180.0 0.0" file="MOD/main/props/door3.xml"/>
-					<instance pos="-22.1 0.6 -37.6" rot="0.0 -90.0 0.0" file="MOD/main/props/door3.xml"/>
-					<instance pos="-1.7 0.6 -1.2" rot="0.0 0.0 0.0" file="MOD/main/props/door1.xml"/>
-					<instance pos="-18.1 0.6 13.2" rot="0.0 180.0 0.0" file="MOD/main/props/door1.xml"/>
-					<instance pos="-10.2 0.6 13.2" rot="0.0 180.0 0.0" file="MOD/main/props/door1.xml"/>
-					<instance pos="-2.0 0.6 13.2" rot="0.0 180.0 0.0" file="MOD/main/props/door1.xml"/>
-					<instance pos="-19.1 0.6 7.2" rot="0.0 -90.0 0.0" file="MOD/main/props/door1.xml"/>
-					<instance pos="3.4 0.6 -66.3" rot="0.0 -180.0 0.0" file="MOD/main/props/door1.xml"/>
-					<instance pos="6.5 0.6 -61.3" rot="0.0 -90.0 0.0" file="MOD/main/props/door1.xml"/>
-					<instance pos="16.4 0.6 -66.3" rot="0.0 -180.0 0.0" file="MOD/main/props/door1.xml"/>
-					<instance pos="41.9 0.0 33.2" rot="0.0 -90.0 0.0" file="MOD/main/props/door2.xml"/>
-					<instance pos="32.1 0.6 67.4" rot="0.0 0.0 0.0" file="MOD/main/props/door2.xml"/>
-					<instance pos="30.6 0.6 -39.7" rot="0.0 0.0 0.0" file="MOD/main/props/door2.xml"/>
-					<instance pos="-19.0 0.6 -39.7" rot="0.0 0.0 0.0" file="MOD/main/props/door1.xml"/>
-					<instance pos="-12.6 0.6 -39.7" rot="0.0 0.0 0.0" file="MOD/main/props/door1.xml"/>
-					<instance pos="5.0 0.6 -39.7" rot="0.0 0.0 0.0" file="MOD/main/props/door1.xml"/>
-					<instance pos="-7.0 0.6 -39.7" rot="0.0 0.0 0.0" file="LEVEL/props/bathroom-m.xml"/>
-					<instance pos="-0.3 0.6 -39.7" rot="0.0 0.0 0.0" file="LEVEL/props/bathroom-w.xml"/>
-					<instance pos="17.4 0.6 -39.7" rot="0.0 0.0 0.0" file="MOD/main/props/door2.xml"/>
-					<instance pos="-2.4 0.6 -68.3" rot="0.0 90.0 0.0" file="MOD/main/props/door1.xml"/>
-					<instance pos="29.5 0.6 11.1" rot="0.0 -90.0 0.0" file="MOD/main/props/door4.xml"/>
-					<instance pos="15.6 0.6 -16.0" rot="0.0 -180.0 0.0" file="MOD/main/props/door6.xml"/>
-					<instance pos="13.5 0.6 -20.1" rot="0.0 0.0 0.0" file="MOD/main/props/door6.xml"/>
-					<instance pos="8.9 0.6 -16.0" rot="0.0 -180.0 0.0" file="MOD/main/props/door6.xml"/>
-					<instance pos="9.7 0.6 3.2" rot="0.0 -90.0 0.0" file="MOD/main/props/door10.xml"/>
-					<instance pos="16.6 0.6 4.75" rot="0.0 -90.0 0.0" file="MOD/main/props/door10.xml"/>
-					<instance pos="21.8 0.6 -16.0" rot="0.0 -180.0 0.0" file="MOD/main/props/door6.xml"/>
-					<instance pos="29.5 0.6 5.4" rot="0.0 -90.0 0.0" file="MOD/main/props/door2.xml"/>
-				</group>
 				<group name="lounge" pos="6.1 0.2 -22.0">
 					<vox pos="-1.9 0.0 -6.1" rot="0.0 0.0 0.0" prop="false" file="MOD/main/props/hospital-assets2.vox" object="shelf1"/>
 					<vox pos="-1.3 0.0 -6.1" rot="0.0 0.0 0.0" prop="false" file="MOD/main/props/hospital-assets2.vox" object="shelf4"/>
@@ -7100,6 +7052,54 @@
 					<vox pos="-2.2 0.0 -2.3" rot="0.0 -90.0 0.0" prop="true" file="MOD/main/props/potted_plants.vox" object="box_plant_white"/>
 				</group>
 			</group>
+			<group name="doors" pos="-16.0 -0.4 -55.5" rot="0.0 0.0 0.0">
+				<instance pos="-28.1 0.6 -20.3" rot="0.0 -180.0 0.0" file="MOD/main/props/door3.xml"/>
+				<instance pos="15.9 0.6 31.5" rot="0.0 -90.0 0.0" file="MOD/main/props/door6.xml"/>
+				<instance pos="25.4 0.6 19.3" rot="0.0 90.0 0.0" file="MOD/main/props/door2.xml"/>
+				<instance pos="25.4 0.6 35.7" rot="0.0 90.0 0.0" file="MOD/main/props/door2.xml"/>
+				<instance pos="25.4 0.6 47.2" rot="0.0 90.0 0.0" file="MOD/main/props/door4.xml"/>
+				<instance pos="18.2 0.6 63.1" rot="0.0 0.0 0.0" file="MOD/main/props/bathroom-w.xml"/>
+				<instance pos="13.5 0.6 63.1" rot="0.0 0.0 0.0" file="MOD/main/props/bathroom-m.xml"/>
+				<instance pos="9.9 0.6 67.2" rot="0.0 -180.0 0.0" file="MOD/main/props/door2.xml"/>
+				<instance pos="4.0 0.6 -7.2" rot="0.0 -180.0 0.0" file="MOD/main/props/door3.xml"/>
+				<instance pos="19.1 0.6 8.3" rot="0.0 90.0 0.0" file="MOD/main/props/door3.xml"/>
+				<instance pos="23.3 0.6 65.2" rot="0.0 90.0 0.0" file="MOD/main/props/door3.xml"/>
+				<instance pos="26.1 0.6 67.4" rot="0.0 -180.0 0.0" file="MOD/main/props/door4.xml"/>
+				<instance pos="19.5 0.6 -61.3" rot="0.0 -90.0 0.0" file="MOD/main/props/door1.xml"/>
+				<instance pos="-9.6 0.6 -1.2" rot="0.0 0.0 0.0" file="MOD/main/props/door1.xml"/>
+				<instance pos="-42.0 0.6 -56.5" rot="0.0 90.0 0.0" file="MOD/main/props/door3.xml"/>
+				<instance pos="-34.6 0.6 -41.8" rot="0.0 90.0 0.0" file="MOD/main/props/door2.xml"/>
+				<instance pos="-29.4 0.6 -60.7" rot="0.0 -90.0 0.0" file="MOD/main/props/door2.xml"/>
+				<instance pos="-34.6 0.6 -66.7" rot="0.0 90.0 0.0" file="MOD/main/props/door2.xml"/>
+				<instance pos="-28.3 0.6 -35.7" rot="0.0 -180.0 0.0" file="MOD/main/props/door3.xml"/>
+				<instance pos="-22.1 0.6 -37.6" rot="0.0 -90.0 0.0" file="MOD/main/props/door3.xml"/>
+				<instance pos="-1.7 0.6 -1.2" rot="0.0 0.0 0.0" file="MOD/main/props/door1.xml"/>
+				<instance pos="-18.1 0.6 13.2" rot="0.0 180.0 0.0" file="MOD/main/props/door1.xml"/>
+				<instance pos="-10.2 0.6 13.2" rot="0.0 180.0 0.0" file="MOD/main/props/door1.xml"/>
+				<instance pos="-2.0 0.6 13.2" rot="0.0 180.0 0.0" file="MOD/main/props/door1.xml"/>
+				<instance pos="-19.1 0.6 7.2" rot="0.0 -90.0 0.0" file="MOD/main/props/door1.xml"/>
+				<instance pos="3.4 0.6 -66.3" rot="0.0 -180.0 0.0" file="MOD/main/props/door1.xml"/>
+				<instance pos="6.5 0.6 -61.3" rot="0.0 -90.0 0.0" file="MOD/main/props/door1.xml"/>
+				<instance pos="16.4 0.6 -66.3" rot="0.0 -180.0 0.0" file="MOD/main/props/door1.xml"/>
+				<instance pos="41.9 0.0 33.2" rot="0.0 -90.0 0.0" file="MOD/main/props/door2.xml"/>
+				<instance pos="32.1 0.6 67.4" rot="0.0 0.0 0.0" file="MOD/main/props/door2.xml"/>
+				<instance pos="30.6 0.6 -39.7" rot="0.0 0.0 0.0" file="MOD/main/props/door2.xml"/>
+				<instance pos="-19.0 0.6 -39.7" rot="0.0 0.0 0.0" file="MOD/main/props/door1.xml"/>
+				<instance pos="-12.6 0.6 -39.7" rot="0.0 0.0 0.0" file="MOD/main/props/door1.xml"/>
+				<instance pos="5.0 0.6 -39.7" rot="0.0 0.0 0.0" file="MOD/main/props/door1.xml"/>
+				<instance pos="-7.0 0.6 -39.7" rot="0.0 0.0 0.0" file="LEVEL/props/bathroom-m.xml"/>
+				<instance pos="-0.3 0.6 -39.7" rot="0.0 0.0 0.0" file="LEVEL/props/bathroom-w.xml"/>
+				<instance pos="17.4 0.6 -39.7" rot="0.0 0.0 0.0" file="MOD/main/props/door2.xml"/>
+				<instance pos="-2.4 0.6 -68.3" rot="0.0 90.0 0.0" file="MOD/main/props/door1.xml"/>
+				<instance pos="29.5 0.6 11.1" rot="0.0 -90.0 0.0" file="MOD/main/props/door4.xml"/>
+				<instance pos="15.6 0.6 -16.0" rot="0.0 -180.0 0.0" file="MOD/main/props/door6.xml"/>
+				<instance pos="13.5 0.6 -20.1" rot="0.0 0.0 0.0" file="MOD/main/props/door6.xml"/>
+				<instance pos="8.9 0.6 -16.0" rot="0.0 -180.0 0.0" file="MOD/main/props/door6.xml"/>
+				<instance pos="9.7 0.6 3.2" rot="0.0 -90.0 0.0" file="MOD/main/props/door10.xml"/>
+				<instance pos="16.6 0.6 4.75" rot="0.0 -90.0 0.0" file="MOD/main/props/door10.xml"/>
+				<instance pos="21.8 0.6 -16.0" rot="0.0 -180.0 0.0" file="MOD/main/props/door6.xml"/>
+				<instance pos="29.5 0.6 5.4" rot="0.0 -90.0 0.0" file="MOD/main/props/door2.xml"/>
+			</group>
 			<group name="floor" pos="-16.0 0.1 -49.0">
 				<voxagon pos="16.8 0.0 -3.1" rot="0.0 0.0 0.0" brush="MOD/main/building/inner-tiles.vox" object="tile2" offset="-1 0 0" extrude="1">
 					<vertex pos="-14.6 -39.2"/>
@@ -7215,7 +7215,7 @@
 					<vertex pos="-14.5 78.0"/>
 					<vertex pos="-14.5 77.6"/>
 					<vertex pos="-14.5 74.2"/>
-					<group pos="-12.6 0.0 2.6">
+					<group pos="-12.6 0.0 2.6" layer="lights">
 						<voxbox pos="-0.8 0.0 4.3" rot="0.0 0.0 0.0" size="16 1 16" brush="MOD/main/building/inner-tiles.vox" object="light" offset="0.0 0.0 2.0">
 							<light pos="0.8 0.0 0.8" rot="90.0 0.0 0.0" type="area" scale="2.7" size="1.6 1.6"/>
 						</voxbox>
@@ -7555,7 +7555,7 @@
 					<vertex pos="21.3 -14.6"/>
 					<vertex pos="21.3 19.8"/>
 					<vertex pos="-14.6 19.8"/>
-					<group pos="1.0 0.2 1.1">
+					<group pos="1.0 0.2 1.1" layer="lights">
 						<voxbox pos="-14.5 -0.2 12.6" rot="0.0 0.0 0.0" size="16 1 16" brush="MOD/main/building/inner-tiles.vox" object="light" offset="0.0 0.0 2.0">
 							<light pos="0.8 0.0 0.8" rot="90.0 0.0 0.0" type="area" scale="2.7" size="1.6 1.6"/>
 						</voxbox>
@@ -7647,7 +7647,7 @@
 					<vertex pos="25.7 -19.4"/>
 					<vertex pos="25.7 15.0"/>
 					<vertex pos="-57.8 15.0"/>
-					<group pos="-5.9 0.0 -2.7">
+					<group pos="-5.9 0.0 -2.7" layer="lights">
 						<voxbox pos="15.4 0.0 14.5" rot="0.0 0.0 0.0" size="16 1 16" brush="MOD/main/building/inner-tiles.vox" object="light" offset="0.0 0.0 2.0">
 							<light pos="0.8 0.0 0.8" rot="90.0 0.0 0.0" type="area" scale="2.7" size="1.6 1.6"/>
 						</voxbox>
@@ -8561,7 +8561,7 @@
 				</group>
 			</group>
 		</group>
-		<group name="floor2" pos="0.0 5.8 0.0" layer="2">
+		<group name="floor2" pos="0.0 5.8 0.0">
 			<group name="floor" pos="-16.0 4.3 -49.0">
 				<voxbox pos="33.9 0.0 -18.0" rot="0.0 180.0 0.0" size="319 2 240" brush="MOD/main/building/building.vox" object="part2"/>
 				<voxbox pos="42.0 0.0 17.0" rot="0.0 -180.0 0.0" size="760 2 350" brush="MOD/main/building/building.vox" object="part2"/>
@@ -9772,7 +9772,7 @@
 					</voxbox>
 				</compound>
 			</group>
-			<group name="props" pos="0.0 4.4 0.0">
+			<group name="props" pos="0.0 4.4 0.0" layer="interior2">
 				<group name="ppw" pos="22.2 0.1 -46.0">
 					<group name="private patient ward" pos="1.6 0.0 9.6" rot="0.0 90.0 0.0">
 						<vox pos="0.1 0.0 0.2" rot="0.0 -180.0 0.0" density="1.5" prop="true" file="MOD/main/props/hospital-assets1.vox" object="hospital-bed"/>
@@ -9909,8 +9909,6 @@
 								<joint pos="0.05 0.9 0.15" type="hinge"/>
 							</voxbox>
 						</vox>
-						<instance pos="-2.9 0.0 -3.3" rot="0.0 -90.0 0.0" file="MOD/main/props/door1.xml"/>
-						<instance pos="2.5 0.0 -4.8" rot="0.0 180.0 0.0" file="MOD/main/props/door1.xml"/>
 					</group>
 					<group name="private patient ward" pos="1.6 0.0 -1.1" rot="0.0 90.0 0.0">
 						<vox pos="0.1 0.0 0.2" rot="0.0 -180.0 0.0" density="1.5" prop="true" file="MOD/main/props/hospital-assets1.vox" object="hospital-bed"/>
@@ -10047,8 +10045,6 @@
 								<joint pos="0.05 0.9 0.15" type="hinge"/>
 							</voxbox>
 						</vox>
-						<instance pos="-2.9 0.0 -3.3" rot="0.0 -90.0 0.0" file="MOD/main/props/door1.xml"/>
-						<instance pos="2.5 0.0 -4.8" rot="0.0 180.0 0.0" file="MOD/main/props/door1.xml"/>
 					</group>
 					<group name="private patient ward" pos="1.6 0.0 -11.8" rot="0.0 90.0 0.0">
 						<vox pos="0.1 0.0 0.2" rot="0.0 -180.0 0.0" density="1.5" prop="true" file="MOD/main/props/hospital-assets1.vox" object="hospital-bed"/>
@@ -10185,13 +10181,10 @@
 								<joint pos="0.05 0.9 0.15" type="hinge"/>
 							</voxbox>
 						</vox>
-						<instance pos="-2.9 0.0 -3.3" rot="0.0 -90.0 0.0" file="MOD/main/props/door1.xml"/>
-						<instance pos="2.5 0.0 -4.8" rot="0.0 180.0 0.0" file="MOD/main/props/door1.xml"/>
 					</group>
 				</group>
 				<group name="visitors room" pos="23.8 0.1 -23.9" rot="0.0 90.0 0.0">
 					<vox pos="3.2 0.0 1.5" rot="0.0 -180.0 0.0" density="1.2" prop="true" file="MOD/main/props/visitors-room.vox" object="bench"/>
-					<instance pos="3.1 0.0 -4.8" rot="0.0 180.0 0.0" file="MOD/main/props/door1.xml"/>
 					<vox pos="-0.8 0.0 1.5" rot="0.0 -180.0 0.0" density="1.2" prop="true" file="MOD/main/props/visitors-room.vox" object="bench"/>
 					<vox pos="-0.7 0.0 -4.1" rot="0.0 0.0 0.0" density="1.2" prop="true" file="MOD/main/props/visitors-room.vox" object="bench"/>
 					<vox pos="-6.1 0.0 -4.1" rot="0.0 0.0 0.0" density="1.2" prop="true" file="MOD/main/props/visitors-room.vox" object="bench"/>
@@ -10247,7 +10240,6 @@
 					<vox pos="7.1 0.0 4.4" rot="0.0 0.0 0.0" density="0.6" prop="true" file="MOD/main/props/hospital-assets4.vox" object="shelf"/>
 					<vox pos="6.7 0.0 7.2" rot="0.0 -90.0 0.0" density="0.6" prop="true" file="MOD/main/props/hospital-assets4.vox" object="shelf"/>
 					<vox pos="5.2 0.0 7.2" rot="0.0 -90.0 0.0" density="0.6" prop="true" file="MOD/main/props/hospital-assets4.vox" object="shelf"/>
-					<instance pos="-7.3 0.0 -0.2" rot="0.0 -90.0 0.0" file="MOD/main/props/door4.xml"/>
 					<voxbox pos="-1.90002 0.0 -7.60001" rot="0.0 0.0 0.0" size="91 2 60" brush="MOD/main/props/hospital-assets4.vox" object="rail" offset="0.0 0.0 0.0"/>
 					<voxbox pos="7.5 0.0 -1.6" rot="0.0 180.0 0.0" size="3 2 60" brush="MOD/main/props/hospital-assets4.vox" object="rail" offset="0.0 0.0 0.0"/>
 					<vox pos="2.2 0.0 7.2" rot="0.0 -90.0 0.0" density="0.6" prop="true" file="MOD/main/props/hospital-assets4.vox" object="shelf"/>
@@ -10289,7 +10281,6 @@
 						<vox pos="2.2 0.0 -1.4" rot="0.0 -90.0 0.0" prop="true" file="MOD/main/props/filing_cabinet.vox"/>
 						<vox pos="1.8 0.0 1.4" rot="0.0 180.0 0.0" prop="true" file="MOD/main/props/marina_bookshelf.vox"/>
 						<vox pos="-0.4 0.0 -0.6" rot="0.0 90.0 0.0" prop="true" file="MOD/main/props/lee_desk_2.vox"/>
-						<instance pos="-2.7 0.0 0.2" rot="0.0 -90.0 0.0" file="MOD/main/props/door1.xml"/>
 					</group>
 					<group name="office" pos="-1.6 0.0 3.1" rot="0.0 90.0 0.0">
 						<vox pos="0.8 0.0 1.3" rot="0.0 -100.0 0.0" prop="true" file="MOD/main/props/hospital-assets2.vox" object="chair1"/>
@@ -10301,7 +10292,6 @@
 						<vox pos="1.8 0.0 2.9" rot="0.0 180.0 0.0" prop="true" file="MOD/main/props/marina_bookshelf.vox"/>
 						<vox pos="-0.2 0.0 1.3" rot="0.0 90.0 0.0" prop="true" file="MOD/main/props/lee_desk_2.vox"/>
 						<vox pos="-0.4 0.0 -2.1" rot="0.0 -60.0 0.0" prop="true" file="MOD/main/props/hospital-assets2.vox" object="table"/>
-						<instance pos="-2.7 0.0 1.7" rot="0.0 -90.0 0.0" file="MOD/main/props/door1.xml"/>
 					</group>
 					<group name="office" pos="-4.3 0.0 -1.6" rot="0.0 -90.0 0.0">
 						<vox pos="-0.7 0.0 -1.0" rot="0.0 -100.0 0.0" prop="true" file="MOD/main/props/hospital-assets2.vox" object="chair1"/>
@@ -10313,7 +10303,6 @@
 						<vox pos="0.3 0.0 0.6" rot="0.0 180.0 0.0" prop="true" file="MOD/main/props/marina_bookshelf.vox"/>
 						<vox pos="-1.7 0.0 -1.0" rot="0.0 90.0 0.0" prop="true" file="MOD/main/props/lee_desk_2.vox"/>
 						<vox pos="-1.9 0.0 -4.4" rot="0.0 -60.0 0.0" prop="true" file="MOD/main/props/hospital-assets2.vox" object="table"/>
-						<instance pos="-4.2 0.0 -0.6" rot="0.0 -90.0 0.0" file="MOD/main/props/door1.xml"/>
 					</group>
 					<group name="office" pos="3.1 0.0 -1.6" rot="0.0 -90.0 0.0">
 						<vox pos="-0.7 0.0 -1.0" rot="0.0 -100.0 0.0" prop="true" file="MOD/main/props/hospital-assets2.vox" object="chair1"/>
@@ -10325,7 +10314,6 @@
 						<vox pos="0.3 0.0 0.6" rot="0.0 180.0 0.0" prop="true" file="MOD/main/props/marina_bookshelf.vox"/>
 						<vox pos="-1.7 0.0 -1.0" rot="0.0 90.0 0.0" prop="true" file="MOD/main/props/lee_desk_2.vox"/>
 						<vox pos="-1.9 0.0 -4.4" rot="0.0 -60.0 0.0" prop="true" file="MOD/main/props/hospital-assets2.vox" object="table"/>
-						<instance pos="-4.2 0.0 -0.6" rot="0.0 -90.0 0.0" file="MOD/main/props/door1.xml"/>
 					</group>
 					<group name="office" pos="10.5 0.0 -1.6" rot="0.0 -90.0 0.0">
 						<vox pos="-0.7 0.0 -1.0" rot="0.0 -100.0 0.0" prop="true" file="MOD/main/props/hospital-assets2.vox" object="chair1"/>
@@ -10337,7 +10325,6 @@
 						<vox pos="0.3 0.0 0.6" rot="0.0 180.0 0.0" prop="true" file="MOD/main/props/marina_bookshelf.vox"/>
 						<vox pos="-1.7 0.0 -1.0" rot="0.0 90.0 0.0" prop="true" file="MOD/main/props/lee_desk_2.vox"/>
 						<vox pos="-1.9 0.0 -4.4" rot="0.0 -60.0 0.0" prop="true" file="MOD/main/props/hospital-assets2.vox" object="table"/>
-						<instance pos="-4.2 0.0 -0.6" rot="0.0 -90.0 0.0" file="MOD/main/props/door1.xml"/>
 					</group>
 					<group name="office" pos="-6.7 0.0 1.6" rot="0.0 90.0 0.0">
 						<vox pos="-0.3 0.0 -1.0" rot="0.0 -170.0 0.0" prop="true" file="MOD/main/props/hospital-assets2.vox" object="chair1"/>
@@ -10348,7 +10335,6 @@
 						<vox pos="0.3 0.0 0.6" rot="0.0 180.0 0.0" prop="true" file="MOD/main/props/marina_bookshelf.vox"/>
 						<vox pos="-1.7 0.0 -1.0" rot="0.0 90.0 0.0" prop="true" file="MOD/main/props/lee_desk_2.vox"/>
 						<vox pos="-1.9 0.0 -3.6" rot="0.0 -90.0 0.0" prop="true" file="MOD/main/props/hospital-assets2.vox" object="table"/>
-						<instance pos="-4.2 0.0 -0.6" rot="0.0 -90.0 0.0" file="MOD/main/props/door1.xml"/>
 					</group>
 					<group name="office" pos="-10.2 0.0 -1.6" rot="0.0 -90.0 0.0">
 						<vox pos="-0.3 0.0 -1.0" rot="0.0 -170.0 0.0" prop="true" file="MOD/main/props/hospital-assets2.vox" object="chair1"/>
@@ -10359,7 +10345,6 @@
 						<vox pos="0.3 0.0 0.6" rot="0.0 180.0 0.0" prop="true" file="MOD/main/props/marina_bookshelf.vox"/>
 						<vox pos="-1.7 0.0 -1.0" rot="0.0 90.0 0.0" prop="true" file="MOD/main/props/lee_desk_2.vox"/>
 						<vox pos="-1.9 0.0 -3.6" rot="0.0 -90.0 0.0" prop="true" file="MOD/main/props/hospital-assets2.vox" object="table"/>
-						<instance pos="-4.2 0.0 -0.6" rot="0.0 -90.0 0.0" file="MOD/main/props/door1.xml"/>
 					</group>
 					<group name="office" pos="-12.6 0.0 1.6" rot="0.0 90.0 0.0">
 						<vox pos="-0.8 0.0 -1.4" rot="0.0 -90.0 0.0" prop="true" file="MOD/main/props/hospital-assets2.vox" object="chair1"/>
@@ -10367,7 +10352,6 @@
 						<vox pos="0.7 0.0 -2.2" rot="0.0 -90.0 0.0" prop="true" file="MOD/main/props/filing_cabinet.vox"/>
 						<vox pos="0.3 0.0 0.6" rot="0.0 180.0 0.0" prop="true" file="MOD/main/props/marina_bookshelf.vox"/>
 						<vox pos="-1.9 0.0 -1.4" rot="0.0 90.0 0.0" prop="true" file="MOD/main/props/lee_desk_2.vox"/>
-						<instance pos="-4.2 0.0 -0.6" rot="0.0 -90.0 0.0" file="MOD/main/props/door1.xml"/>
 					</group>
 				</group>
 				<group name="isolation ward" pos="1.9 0.1 -79.0">
@@ -10735,8 +10719,6 @@
 					<vox pos="4.2 0.0 -0.8" rot="0.0 -90.0 0.0" prop="true" file="MOD/main/props/filing_cabinet.vox"/>
 					<vox pos="-3.8 0.0 3.0" rot="0.0 180.0 0.0" prop="true" file="MOD/main/props/filing_cabinet.vox"/>
 					<vox pos="-4.7 0.0 3.0" rot="0.0 180.0 0.0" prop="true" file="MOD/main/props/filing_cabinet.vox"/>
-					<instance pos="-5.4 0.0 -1.4" rot="0.0 -90.0 0.0" file="MOD/main/props/door4.xml"/>
-					<instance pos="-3.4 0.0 -5.2" rot="0.0 0.0 0.0" file="MOD/main/props/door2.xml"/>
 				</group>
 				<group name="reception" pos="5.8 0.1 -16.6" rot="0.0 -180.0 0.0">
 					<vox pos="-0.1 0.0 4.0" rot="0.0 0.0 0.0" file="MOD/main/props/info-desk.vox" object="info desk3"/>
@@ -10757,8 +10739,6 @@
 					<vox pos="-3.5 0.0 -4.2" rot="0.0 0.0 0.0" prop="true" file="MOD/main/props/filing_cabinet.vox"/>
 					<vox pos="-2.6 0.0 -4.2" rot="0.0 0.0 0.0" prop="true" file="MOD/main/props/filing_cabinet.vox"/>
 					<vox pos="-1.7 0.0 -4.2" rot="0.0 0.0 0.0" prop="true" file="MOD/main/props/filing_cabinet.vox"/>
-					<instance pos="5.1 0.0 -1.4" rot="0.0 90.0 0.0" file="MOD/main/props/door4.xml"/>
-					<instance pos="3.5 0.0 -5.2" rot="0.0 0.0 0.0" file="MOD/main/props/door2.xml"/>
 				</group>
 				<group name="reception" pos="-57.6 0.1 -78.60001" rot="0.0 0.0 0.0">
 					<vox pos="15.3 0.0 -1.5" rot="0.0 0.0 0.0" file="MOD/main/props/info-desk.vox" object="info desk3"/>
@@ -10775,8 +10755,6 @@
 					<vox pos="13.3 0.0 -11.5" rot="0.0 0.0 0.0" prop="true" file="MOD/main/props/filing_cabinet.vox"/>
 					<vox pos="14.2 0.0 -11.5" rot="0.0 0.0 0.0" prop="true" file="MOD/main/props/filing_cabinet.vox"/>
 					<vox pos="15.1 0.0 -11.5" rot="0.0 0.0 0.0" prop="true" file="MOD/main/props/filing_cabinet.vox"/>
-					<instance pos="12.1 0.0 -9.3" rot="0.0 -90.0 0.0" file="MOD/main/props/door4.xml"/>
-					<instance pos="16.3 0.0 -6.8" rot="0.0 0.0 0.0" file="MOD/main/props/door2.xml"/>
 				</group>
 				<vox pos="18.3 0.1 -21.7" rot="0.0 -90.0 0.0" prop="true" file="MOD/main/props/hospital-assets2.vox" object="waiting-chair"/>
 				<vox pos="7.8 0.1 -47.8" rot="0.0 0.0 0.0" texture="2 0.4" prop="true" file="MOD/main/props/lee_vending_machine.vox">
@@ -10826,9 +10804,6 @@
 					<vox pos="-0.4 1.9 -2.3" rot="0.0 0.0 0.0" prop="false" file="MOD/main/props/hospital-assets2.vox" object="shelf-top"/>
 					<vox pos="1.8 1.9 -2.4" rot="0.0 0.0 0.0" prop="true" file="MOD/main/props/hospital-assets2.vox" object="shelf-top2"/>
 					<vox pos="-0.2 0.0 -2.2" rot="0.0 0.0 0.0" prop="false" file="MOD/main/props/hospital-assets2.vox" object="sink-shelf"/>
-					<instance pos="-3.4 0.0 -3.0" rot="0.0 0.0 0.0" file="MOD/main/props/door2.xml"/>
-					<instance pos="-5.4 0.0 1.4" rot="0.0 -90.0 0.0" file="MOD/main/props/door2.xml"/>
-					<instance pos="5.0 0.0 1.1" rot="0.0 90.0 0.0" file="MOD/main/props/door2.xml"/>
 				</group>
 				<group name="lounge" pos="6.1 0.1 -8.5">
 					<vox pos="2.7 0.0 -2.2" rot="0.0 0.0 0.0" prop="false" file="MOD/main/props/hospital-assets2.vox" object="shelf1"/>
@@ -10850,13 +10825,8 @@
 					<vox pos="-0.4 1.9 -2.3" rot="0.0 0.0 0.0" prop="false" file="MOD/main/props/hospital-assets2.vox" object="shelf-top"/>
 					<vox pos="1.8 1.9 -2.4" rot="0.0 0.0 0.0" prop="true" file="MOD/main/props/hospital-assets2.vox" object="shelf-top2"/>
 					<vox pos="-0.2 0.0 -2.2" rot="0.0 0.0 0.0" prop="false" file="MOD/main/props/hospital-assets2.vox" object="sink-shelf"/>
-					<instance pos="-3.8 0.0 3.1" rot="0.0 -180.0 0.0" file="MOD/main/props/door2.xml"/>
-					<instance pos="-5.4 0.0 1.4" rot="0.0 -90.0 0.0" file="MOD/main/props/door2.xml"/>
-					<instance pos="5.0 0.0 1.1" rot="0.0 90.0 0.0" file="MOD/main/props/door2.xml"/>
 				</group>
 				<group name="locker room" pos="4.7 0.1 -0.8">
-					<instance pos="-4.0 0.0 0.8" rot="0.0 -90.0 0.0" file="MOD/main/props/door4.xml"/>
-					<instance pos="6.4 0.0 0.5" rot="0.0 90.0 0.0" file="MOD/main/props/door4.xml"/>
 					<vox pos="-0.8 0.0 -4.0" rot="0.0 -90.0 0.0" prop="false" file="MOD/main/props/locker.vox" object="locker"/>
 					<vox pos="-0.1 0.0 -4.0" rot="0.0 -90.0 0.0" prop="false" file="MOD/main/props/locker.vox" object="locker"/>
 					<vox pos="1.3 0.0 -4.0" rot="0.0 -90.0 0.0" prop="false" file="MOD/main/props/locker.vox" object="locker"/>
@@ -11039,8 +11009,6 @@
 					<vox pos="-0.7 1.6 1.9" rot="0.0 -180.0 0.0" texture="1 0.5" file="MOD/main/props/bathroom props.vox" object="light-small">
 						<light pos="0.0 0.5 0.0" scale="0.3"/>
 					</vox>
-					<instance pos="4.9 0.0 4.3" rot="0.0 90.0 0.0" file="MOD/main/props/bathroom-m.xml"/>
-					<instance pos="4.9 0.0 -1.0" rot="0.0 90.0 0.0" file="MOD/main/props/bathroom-w.xml"/>
 				</group>
 				<group pos="-7.0 0.1 -42.9">
 					<vox pos="-13.4 0.0 -10.5" rot="0.0 180.0 0.0" prop="true" file="MOD/main/props/hospital-assets2.vox" object="waiting-chair"/>
@@ -11069,22 +11037,6 @@
 					<vox pos="-12.1 0.0 -16.9" rot="0.0 0.0 0.0" prop="true" file="MOD/main/props/hospital-assets2.vox" object="waiting-chair"/>
 					<vox pos="-14.7 0.0 -16.9" rot="0.0 0.0 0.0" prop="true" file="MOD/main/props/hospital-assets2.vox" object="waiting-chair"/>
 					<vox pos="-17.30001 0.0 -16.9" rot="0.0 0.0 0.0" prop="true" file="MOD/main/props/hospital-assets2.vox" object="waiting-chair"/>
-					<instance pos="-34.7 0.0 -50.2" rot="0.0 -90.0 0.0" file="MOD/main/props/door3.xml"/>
-					<instance pos="-7.2 0.0 -50.2" rot="0.0 -90.0 0.0" file="MOD/main/props/door3.xml"/>
-					<instance pos="23.6 0.0 -50.2" rot="0.0 -90.0 0.0" file="MOD/main/props/door3.xml"/>
-					<group name="instance=MOD/main/props/door3.xml" pos="14.5 0.0 -23.8" rot="0.0 -180.0 0.0">
-						<vox pos="-0.1 0.0 -0.1" rot="0.0 -180.0 0.0" file="MOD/main/props/doors1.vox" object="inner-back-metal2-2">
-							<vox pos="-0.0 0.0 -0.4" rot="0.0 180.0 0.0" file="MOD/main/props/doors1.vox" object="inner-front-metal2-2"/>
-							<vox pos="-0.7 0.1 -0.3" rot="0.0 180.0 0.0" prop="true" file="MOD/main/props/doors1.vox" object="door3-r">
-								<joint pos="0.7 0.3 0.0" rot="-90.0 180.0 0.0" type="hinge" rotstrength="0.01" rotspring="0.03" limits="0 150"/>
-								<joint pos="0.7 1.9 0.0" rot="-90.0 180.0 0.0" type="hinge" rotstrength="0.01" rotspring="0.03" limits="0 150"/>
-							</vox>
-							<vox pos="0.7 0.1 -0.2" rot="0.0 0.0 0.0" prop="true" file="MOD/main/props/doors1.vox" object="door3-r">
-								<joint pos="0.7 0.3 -0.1" rot="-90.0 180.0 0.0" type="hinge" rotstrength="0.01" rotspring="0.03" limits="-150 0"/>
-								<joint pos="0.7 1.9 -0.1" rot="-90.0 180.0 0.0" type="hinge" rotstrength="0.01" rotspring="0.03" limits="-150 0"/>
-							</vox>
-						</vox>
-					</group>
 					<vox pos="18.4 0.0 11.7" rot="0.0 90.0 0.0" prop="true" file="MOD/main/props/hospital-assets2.vox" object="waiting-chair"/>
 					<vox pos="30.2 0.0 61.20001" rot="0.0 0.0 0.0" prop="true" file="MOD/main/props/hospital-assets2.vox" object="waiting-chair"/>
 					<vox pos="28.9 0.0 65.00001" rot="0.0 180.0 0.0" prop="true" file="MOD/main/props/hospital-assets2.vox" object="waiting-chair"/>
@@ -11104,6 +11056,19 @@
 					<vox pos="-36.5 0.0 -25.4" rot="0.0 90.0 0.0" prop="true" file="MOD/main/props/hospital-assets2.vox" object="waiting-chair"/>
 					<vox pos="-36.5 0.0 -28.6" rot="0.0 90.0 0.0" prop="true" file="MOD/main/props/hospital-assets2.vox" object="waiting-chair"/>
 					<vox pos="-36.5 0.0 -31.8" rot="0.0 90.0 0.0" prop="true" file="MOD/main/props/hospital-assets2.vox" object="waiting-chair"/>
+				</group>
+				<group name="instance=MOD/main/props/door3.xml" pos="7.5 0.1 -66.7" rot="0.0 180.0 0.0">
+					<vox pos="-0.1 0.0 -0.1" rot="0.0 -180.0 0.0" file="MOD/main/props/doors1.vox" object="inner-back-metal2-2">
+						<vox pos="-0.0 0.0 -0.4" rot="0.0 180.0 0.0" file="MOD/main/props/doors1.vox" object="inner-front-metal2-2"/>
+						<vox pos="-0.7 0.1 -0.3" rot="0.0 180.0 0.0" prop="true" file="MOD/main/props/doors1.vox" object="door3-r">
+							<joint pos="0.7 0.3 0.0" rot="-90.0 180.0 0.0" type="hinge" rotstrength="0.01" rotspring="0.03" limits="0 150"/>
+							<joint pos="0.7 1.9 0.0" rot="-90.0 180.0 0.0" type="hinge" rotstrength="0.01" rotspring="0.03" limits="0 150"/>
+						</vox>
+						<vox pos="0.7 0.1 -0.2" rot="0.0 0.0 0.0" prop="true" file="MOD/main/props/doors1.vox" object="door3-r">
+							<joint pos="0.7 0.3 -0.1" rot="-90.0 180.0 0.0" type="hinge" rotstrength="0.01" rotspring="0.03" limits="-150 0"/>
+							<joint pos="0.7 1.9 -0.1" rot="-90.0 180.0 0.0" type="hinge" rotstrength="0.01" rotspring="0.03" limits="-150 0"/>
+						</vox>
+					</vox>
 				</group>
 				<group name="kitchen" pos="-6.7 0.1 -110.7">
 					<vox pos="-12.1 0.0 -1.69998" rot="0.0 180.0 0.0" prop="true" file="MOD/main/props/kitchen-props.vox" object="oven-big"/>
@@ -11173,9 +11138,6 @@
 					<vox pos="-17.3 0.0 10.80001" rot="0.0 90.0 0.0" prop="true" file="MOD/main/props/kitchen-props.vox" object="shelf5"/>
 					<vox pos="-17.3 0.0 13.70001" rot="0.0 90.0 0.0" prop="true" file="MOD/main/props/kitchen-props.vox" object="shelf5"/>
 					<voxbox pos="-17.3 0.0 -13.5" rot="0.0 -90.0 0.0" size="106 25 10" brush="MOD/main/props/kitchen-props.vox" object="t"/>
-					<instance pos="-17.9 0.0 7.3" rot="0.0 -90.0 0.0" file="MOD/main/props/door5.xml"/>
-					<instance pos="-5.3 0.0 15.2" rot="0.0 0.0 0.0" file="MOD/main/props/door5.xml"/>
-					<instance pos="-0.4 0.0 -8.2" rot="0.0 -90.0 0.0" file="MOD/main/props/door4.xml"/>
 					<group name="freezer" pos="4.4 0.0 -8.0">
 						<vox pos="2.9 0.0 3.1" rot="0.0 90.0 0.0" prop="true" file="MOD/main/props/coolroomstorage.vox" object="shelf1"/>
 						<vox pos="2.9 0.0 0.2" rot="0.0 90.0 0.0" prop="true" file="MOD/main/props/coolroomstorage.vox" object="shelf3"/>
@@ -11248,7 +11210,6 @@
 					<vox pos="3.8 0.0 -1.9" rot="0.0 90.0 0.0" prop="true" file="MOD/main/props/coolroomstorage.vox" object="shelf3"/>
 					<vox pos="3.8 0.0 2.0" rot="0.0 90.0 0.0" prop="true" file="MOD/main/props/coolroomstorage.vox" object="shelf3"/>
 					<vox pos="-3.7 0.0 2.0" rot="0.0 90.0 0.0" prop="true" file="MOD/main/props/coolroomstorage.vox" object="shelf2"/>
-					<instance pos="-1.9 0.0 3.5" rot="0.0 0.0 0.0" file="MOD/main/props/door4.xml"/>
 				</group>
 				<group name="canteen" pos="-43.0 0.1 -111.2">
 					<vox pos="-9.0 0.0 -5.2" rot="0.0 -90.0 0.0" prop="false" file="MOD/main/props/kitchen-props.vox" object="lunch-table"/>
@@ -11268,7 +11229,6 @@
 					<vox pos="4.7 0.0 -11.19998" rot="0.0 -90.0 0.0" prop="false" file="MOD/main/props/kitchen-props.vox" object="lunch-table"/>
 					<vox pos="11.2 0.0 0.09999" rot="0.0 -90.0 0.0" prop="false" file="MOD/main/props/kitchen-props.vox" object="lunch-table"/>
 					<vox pos="11.2 0.0 5.50001" rot="0.0 -90.0 0.0" prop="false" file="MOD/main/props/kitchen-props.vox" object="lunch-table"/>
-					<instance pos="-10.0 0.0 15.8" file="MOD/main/props/door3.xml"/>
 					<vox pos="-4.8 1.3 15.6" rot="0.0 0.0 0.0" prop="false" file="MOD/main/props/hospital-assets2.vox" object="poster1"/>
 					<vox pos="18.1 1.3 10.2" rot="0.0 90.0 0.0" prop="false" file="MOD/main/props/hospital-assets2.vox" object="poster1"/>
 					<vox pos="-1.5 1.3 15.6" rot="0.0 0.0 0.0" desc="smoking kills." prop="false" file="MOD/main/props/hospital-assets2.vox" object="poster2"/>
@@ -11297,8 +11257,6 @@
 					<vox pos="1.9 0.0 -1.1" rot="0.0 -90.0 0.0" prop="true" file="MOD/main/props/hub_coffee_table.vox"/>
 					<vox pos="-1.6 0.7 4.3" rot="0.0 0.0 0.0" prop="false" file="MOD/main/props/lee_toilet_2.vox" object="support"/>
 					<vox pos="-1.8 0.7 3.2" rot="0.0 0.0 0.0" prop="false" file="MOD/main/props/lee_toilet_2.vox" object="paper"/>
-					<instance pos="-1.2 0.0 2.6" rot="0.0 180.0 0.0" file="MOD/main/props/door1.xml"/>
-					<instance pos="-0.9 0.0 -1.8" rot="0.0 180.0 0.0" file="MOD/main/props/door1.xml"/>
 				</group>
 				<group name="private patient ward" pos="-33.2 0.1 -48.3" rot="0.0 0.0 0.0">
 					<vox pos="3.5 0.0 3.5" rot="0.0 -180.0 0.0" density="1.5" prop="true" file="MOD/main/props/hospital-assets1.vox" object="hospital-bed2"/>
@@ -11312,8 +11270,6 @@
 						<vox pos="0.0 -0.0 0.1" rot="0.0 0.0 0.0" prop="false" file="MOD/main/props/lee_toilet_2.vox" object="toilet"/>
 						<vox pos="-0.2 0.7 -0.5" rot="0.0 0.0 0.0" prop="false" file="MOD/main/props/lee_toilet_2.vox" object="paper"/>
 					</group>
-					<instance pos="0.0 0.0 5.4" rot="0.0 0.0 0.0" file="MOD/main/props/door1.xml"/>
-					<instance pos="-0.6 0.0 -2.4" rot="0.0 90.0 0.0" file="MOD/main/props/door1.xml"/>
 				</group>
 				<group name="private patient ward" pos="-40.3 0.1 -48.3" rot="0.0 0.0 0.0">
 					<vox pos="3.5 0.0 3.5" rot="0.0 -180.0 0.0" density="1.5" prop="true" file="MOD/main/props/hospital-assets1.vox" object="hospital-bed2"/>
@@ -11327,8 +11283,6 @@
 						<vox pos="0.0 -0.0 0.1" rot="0.0 0.0 0.0" prop="false" file="MOD/main/props/lee_toilet_2.vox" object="toilet"/>
 						<vox pos="-0.2 0.7 -0.5" rot="0.0 0.0 0.0" prop="false" file="MOD/main/props/lee_toilet_2.vox" object="paper"/>
 					</group>
-					<instance pos="0.0 0.0 5.4" rot="0.0 0.0 0.0" file="MOD/main/props/door1.xml"/>
-					<instance pos="2.3 0.0 -2.4" rot="0.0 -90.0 0.0" file="MOD/main/props/door1.xml"/>
 				</group>
 				<group name="private patient ward" pos="-28.8 0.1 -36.9" rot="0.0 0.0 0.0">
 					<vox pos="2.9 0.0 2.9" rot="0.0 -180.0 0.0" density="1.5" prop="true" file="MOD/main/props/hospital-assets1.vox" object="hospital-bed2"/>
@@ -11339,8 +11293,6 @@
 					<vox pos="1.9 0.0 -1.1" rot="0.0 -90.0 0.0" prop="true" file="MOD/main/props/hub_coffee_table.vox"/>
 					<vox pos="-1.6 0.7 4.3" rot="0.0 0.0 0.0" prop="false" file="MOD/main/props/lee_toilet_2.vox" object="support"/>
 					<vox pos="-1.8 0.7 3.2" rot="0.0 0.0 0.0" prop="false" file="MOD/main/props/lee_toilet_2.vox" object="paper"/>
-					<instance pos="-1.2 0.0 2.6" rot="0.0 180.0 0.0" file="MOD/main/props/door1.xml"/>
-					<instance pos="-0.9 0.0 -1.8" rot="0.0 180.0 0.0" file="MOD/main/props/door1.xml"/>
 				</group>
 				<group name="private patient ward" pos="-41.2 0.1 -36.9" rot="0.0 0.0 0.0">
 					<vox pos="2.9 0.0 2.9" rot="0.0 -180.0 0.0" density="1.5" prop="true" file="MOD/main/props/hospital-assets1.vox" object="hospital-bed2"/>
@@ -11351,8 +11303,6 @@
 					<vox pos="1.9 0.0 -1.1" rot="0.0 -90.0 0.0" prop="true" file="MOD/main/props/hub_coffee_table.vox"/>
 					<vox pos="-1.6 0.7 4.3" rot="0.0 0.0 0.0" prop="false" file="MOD/main/props/lee_toilet_2.vox" object="support"/>
 					<vox pos="-1.8 0.7 3.2" rot="0.0 0.0 0.0" prop="false" file="MOD/main/props/lee_toilet_2.vox" object="paper"/>
-					<instance pos="-1.2 0.0 2.6" rot="0.0 180.0 0.0" file="MOD/main/props/door1.xml"/>
-					<instance pos="-0.9 0.0 -1.8" rot="0.0 180.0 0.0" file="MOD/main/props/door1.xml"/>
 				</group>
 				<group name="private patient ward" pos="-47.4 0.1 -36.9" rot="0.0 0.0 0.0">
 					<vox pos="2.9 0.0 2.9" rot="0.0 -180.0 0.0" density="1.5" prop="true" file="MOD/main/props/hospital-assets1.vox" object="hospital-bed2"/>
@@ -11363,11 +11313,8 @@
 					<vox pos="1.9 0.0 -1.1" rot="0.0 -90.0 0.0" prop="true" file="MOD/main/props/hub_coffee_table.vox"/>
 					<vox pos="-2.0 0.7 4.3" rot="0.0 0.0 0.0" prop="false" file="MOD/main/props/lee_toilet_2.vox" object="support"/>
 					<vox pos="-2.2 0.7 3.2" rot="0.0 0.0 0.0" prop="false" file="MOD/main/props/lee_toilet_2.vox" object="paper"/>
-					<instance pos="-1.6 0.0 2.6" rot="0.0 180.0 0.0" file="MOD/main/props/door1.xml"/>
-					<instance pos="-0.9 0.0 -1.8" rot="0.0 180.0 0.0" file="MOD/main/props/door1.xml"/>
 				</group>
 				<group name="security" pos="-6.9 0.1 -103.8" rot="0.0 -90.0 0.0">
-					<instance pos="5.0 0.0 -5.1" rot="0.0 90.0 0.0" file="MOD/main/props/door2.xml"/>
 					<vox pos="1.7 0.0 -0.1" file="MOD/main/props/security.vox" object="desk">
 						<vox pos="2.7 0.9 -1.5" rot="0.0 -90.0 0.0" prop="true" file="MOD/main/props/hospital-assets2.vox" object="tv-part2"/>
 						<vox pos="2.2 0.9 -1.5" rot="0.0 -90.0 0.0" prop="true" file="MOD/main/props/hospital-assets2.vox" object="keyboard"/>
@@ -11445,8 +11392,6 @@
 						<vox pos="0.0 -0.0 0.1" rot="0.0 0.0 0.0" prop="false" file="MOD/main/props/lee_toilet_2.vox" object="toilet"/>
 						<vox pos="-0.2 0.7 -0.5" rot="0.0 0.0 0.0" prop="false" file="MOD/main/props/lee_toilet_2.vox" object="paper"/>
 					</group>
-					<instance pos="0.0 0.0 5.7" rot="0.0 0.0 0.0" file="MOD/main/props/door1.xml"/>
-					<instance pos="2.3 0.0 -2.4" rot="0.0 -90.0 0.0" file="MOD/main/props/door1.xml"/>
 				</group>
 				<group name="private patient ward" pos="-38.60001 0.1 -55.19999" rot="0.0 180.0 0.0">
 					<vox pos="3.1 0.0 3.5" rot="0.0 -180.0 0.0" density="1.5" prop="true" file="MOD/main/props/hospital-assets1.vox" object="hospital-bed2"/>
@@ -11460,9 +11405,66 @@
 						<vox pos="0.0 -0.0 0.1" rot="0.0 0.0 0.0" prop="false" file="MOD/main/props/lee_toilet_2.vox" object="toilet"/>
 						<vox pos="-0.2 0.7 -0.5" rot="0.0 0.0 0.0" prop="false" file="MOD/main/props/lee_toilet_2.vox" object="paper"/>
 					</group>
-					<instance pos="0.0 0.0 5.7" rot="0.0 0.0 0.0" file="MOD/main/props/door1.xml"/>
-					<instance pos="-0.6 0.0 -2.4" rot="0.0 90.0 0.0" file="MOD/main/props/door1.xml"/>
 				</group>
+			</group>
+			<group name="doors" pos="-16.7 4.5 -52.0" rot="0.0 0.0 0.0">
+				<instance pos="37.2 0.0 18.5" rot="0.0 0.0 0.0" file="MOD/main/props/door1.xml"/>
+				<instance pos="35.7 0.0 13.1" rot="0.0 -90.0 0.0" file="MOD/main/props/door1.xml"/>
+				<instance pos="37.2 0.0 7.8" rot="0.0 0.0 0.0" file="MOD/main/props/door1.xml"/>
+				<instance pos="35.7 0.0 2.4" rot="0.0 -90.0 0.0" file="MOD/main/props/door1.xml"/>
+				<instance pos="37.2 0.0 -2.9" rot="0.0 0.0 0.0" file="MOD/main/props/door1.xml"/>
+				<instance pos="35.7 0.0 -8.3" rot="0.0 -90.0 0.0" file="MOD/main/props/door1.xml"/>
+				<instance pos="35.7 0.0 25.0" rot="0.0 -90.0 0.0" file="MOD/main/props/door1.xml"/>
+				<instance pos="10.8 0.0 28.3" rot="0.0 0.0 0.0" file="MOD/main/props/door4.xml"/>
+				<instance pos="-0.2 0.0 -2.5" rot="0.0 -180.0 0.0" file="MOD/main/props/door1.xml"/>
+				<instance pos="14.7 0.0 9.1" rot="0.0 0.0 0.0" file="MOD/main/props/door1.xml"/>
+				<instance pos="10.9 0.0 -2.5" rot="0.0 -180.0 0.0" file="MOD/main/props/door1.xml"/>
+				<instance pos="18.3 0.0 -2.5" rot="0.0 -180.0 0.0" file="MOD/main/props/door1.xml"/>
+				<instance pos="25.7 0.0 -2.5" rot="0.0 -180.0 0.0" file="MOD/main/props/door1.xml"/>
+				<instance pos="7.3 0.0 9.1" rot="0.0 0.0 0.0" file="MOD/main/props/door1.xml"/>
+				<instance pos="5.0 0.0 -2.5" rot="0.0 -180.0 0.0" file="MOD/main/props/door1.xml"/>
+				<instance pos="1.4 0.0 9.1" rot="0.0 0.0 0.0" file="MOD/main/props/door1.xml"/>
+				<instance pos="17.4 0.0 67.1" rot="0.0 -90.0 0.0" file="MOD/main/props/door4.xml"/>
+				<instance pos="19.4 0.0 63.3" rot="0.0 0.0 0.0" file="MOD/main/props/door2.xml"/>
+				<instance pos="17.4 0.0 36.8" rot="0.0 -90.0 0.0" file="MOD/main/props/door4.xml"/>
+				<instance pos="19.0 0.0 40.6" rot="0.0 180.0 0.0" file="MOD/main/props/door2.xml"/>
+				<instance pos="-28.8 0.0 -35.90002" rot="0.0 -90.0 0.0" file="MOD/main/props/door4.xml"/>
+				<instance pos="-24.6 0.0 -33.40002" rot="0.0 0.0 0.0" file="MOD/main/props/door2.xml"/>
+				<instance pos="19.4 0.0 57.3" rot="0.0 0.0 0.0" file="MOD/main/props/door2.xml"/>
+				<instance pos="17.4 0.0 61.7" rot="0.0 -90.0 0.0" file="MOD/main/props/door2.xml"/>
+				<instance pos="27.8 0.0 61.4" rot="0.0 90.0 0.0" file="MOD/main/props/door2.xml"/>
+				<instance pos="27.8 0.0 44.6" rot="0.0 90.0 0.0" file="MOD/main/props/door2.xml"/>
+				<instance pos="17.4 0.0 44.9" rot="0.0 -90.0 0.0" file="MOD/main/props/door2.xml"/>
+				<instance pos="19.0 0.0 46.6" rot="0.0 180.0 0.0" file="MOD/main/props/door2.xml"/>
+				<instance pos="17.4 0.0 52.0" rot="0.0 -90.0 0.0" file="MOD/main/props/door4.xml"/>
+				<instance pos="27.8 0.0 51.7" rot="0.0 90.0 0.0" file="MOD/main/props/door4.xml"/>
+				<instance pos="25.2 0.0 -46.8" rot="0.0 0.0 0.0" file="MOD/main/props/bathroom-w.xml"/>
+				<instance pos="19.9 0.0 -46.8" rot="0.0 0.0 0.0" file="MOD/main/props/bathroom-m.xml"/>
+				<instance pos="-25.0 0.0 -41.10001" rot="0.0 -90.0 0.0" file="MOD/main/props/door3.xml"/>
+				<instance pos="2.5 0.0 -41.10001" rot="0.0 -90.0 0.0" file="MOD/main/props/door3.xml"/>
+				<instance pos="33.3 0.0 -41.10001" rot="0.0 -90.0 0.0" file="MOD/main/props/door3.xml"/>
+				<instance pos="9.6 0.0 -66.89999" rot="0.0 -90.0 0.0" file="MOD/main/props/door4.xml"/>
+				<instance pos="4.7 0.0 -43.5" rot="0.0 0.0 0.0" file="MOD/main/props/door5.xml"/>
+				<instance pos="-7.9 0.0 -51.39999" rot="0.0 -90.0 0.0" file="MOD/main/props/door5.xml"/>
+				<instance pos="30.9 0.0 -43.4" rot="0.0 0.0 0.0" file="MOD/main/props/door4.xml"/>
+				<instance pos="-36.3 0.0 -43.39999" rot="0.0 0.0 0.0" file="MOD/main/props/door3.xml"/>
+				<instance pos="-19.2 0.0 13.3" rot="0.0 -180.0 0.0" file="MOD/main/props/door1.xml"/>
+				<instance pos="-19.5 0.0 17.7" rot="0.0 -180.0 0.0" file="MOD/main/props/door1.xml"/>
+				<instance pos="-17.1 0.0 1.3" rot="0.0 90.0 0.0" file="MOD/main/props/door1.xml"/>
+				<instance pos="-16.5 0.0 9.1" rot="0.0 0.0 0.0" file="MOD/main/props/door1.xml"/>
+				<instance pos="-21.3 0.0 1.3" rot="0.0 -90.0 0.0" file="MOD/main/props/door1.xml"/>
+				<instance pos="-23.6 0.0 9.1" rot="0.0 0.0 0.0" file="MOD/main/props/door1.xml"/>
+				<instance pos="-13.0 0.0 13.3" rot="0.0 -180.0 0.0" file="MOD/main/props/door1.xml"/>
+				<instance pos="-13.3 0.0 17.7" rot="0.0 -180.0 0.0" file="MOD/main/props/door1.xml"/>
+				<instance pos="-25.4 0.0 13.3" rot="0.0 -180.0 0.0" file="MOD/main/props/door1.xml"/>
+				<instance pos="-25.7 0.0 17.7" rot="0.0 -180.0 0.0" file="MOD/main/props/door1.xml"/>
+				<instance pos="-31.6 0.0 13.3" rot="0.0 -180.0 0.0" file="MOD/main/props/door1.xml"/>
+				<instance pos="-32.3 0.0 17.7" rot="0.0 -180.0 0.0" file="MOD/main/props/door1.xml"/>
+				<instance pos="14.9 0.0 -46.8" rot="0.0 0.0 0.0" file="MOD/main/props/door2.xml"/>
+				<instance pos="-17.1 0.0 -0.8" rot="0.0 90.0 0.0" file="MOD/main/props/door1.xml"/>
+				<instance pos="-14.8 0.0 -8.9" rot="0.0 -180.0 0.0" file="MOD/main/props/door1.xml"/>
+				<instance pos="-21.90001 0.0 -8.89999" rot="0.0 -180.0 0.0" file="MOD/main/props/door1.xml"/>
+				<instance pos="-21.30001 0.0 -0.79999" rot="0.0 -90.0 0.0" file="MOD/main/props/door1.xml"/>
 			</group>
 			<group name="overhang" pos="-64.5 0.2 -112.5">
 				<voxbox pos="6.4 4.0 6.2" rot="0.0 180.0 0.0" size="107 7 124" brush="MOD/main/building/building.vox" object="roof1" offset="0.0 -4.0 45.0"/>
@@ -11538,7 +11540,7 @@
 					<vertex pos="-14.5 78.0"/>
 					<vertex pos="-14.5 77.6"/>
 					<vertex pos="-14.5 74.2"/>
-					<group pos="4.1 0.0 32.3">
+					<group pos="4.1 0.0 32.3" layer="lights">
 						<voxbox pos="11.1 0.0 -22.0" rot="0.0 0.0 0.0" size="16 1 16" brush="MOD/main/building/inner-tiles.vox" object="light" offset="0.0 0.0 2.0">
 							<light pos="0.8 0.0 0.8" rot="90.0 0.0 0.0" type="area" scale="2.7" size="1.6 1.6"/>
 						</voxbox>
@@ -11988,7 +11990,7 @@
 					<vertex pos="21.3 -14.6"/>
 					<vertex pos="21.3 19.8"/>
 					<vertex pos="-14.6 19.8"/>
-					<group pos="1.8 0.0 -9.3">
+					<group pos="1.8 0.0 -9.3" layer="lights">
 						<voxbox pos="15.3 0.0 26.4" rot="0.0 0.0 0.0" size="16 1 16" brush="MOD/main/building/inner-tiles.vox" object="light" offset="0.0 0.0 2.0">
 							<light pos="0.8 0.0 0.8" rot="90.0 0.0 0.0" type="area" scale="2.7" size="1.6 1.6"/>
 						</voxbox>
@@ -12128,7 +12130,7 @@
 					<vertex pos="25.7 -19.4"/>
 					<vertex pos="25.7 15.0"/>
 					<vertex pos="-57.8 15.0"/>
-					<group pos="-28.2 0.0 -2.7">
+					<group pos="-28.2 0.0 -2.7" layer="lights">
 						<voxbox pos="-25.49999 0.0 -16.10003" rot="0.0 0.0 0.0" size="16 1 16" brush="MOD/main/building/inner-tiles.vox" object="light" offset="0.0 0.0 2.0">
 							<light pos="0.8 0.0 0.8" rot="90.0 0.0 0.0" type="area" scale="2.7" size="1.6 1.6"/>
 						</voxbox>
@@ -12335,7 +12337,7 @@
 				</voxagon>
 			</group>
 		</group>
-		<group name="floor3" pos="-16.0 14.4 -46.3" layer="3">
+		<group name="floor3" pos="-16.0 14.4 -46.3">
 			<group pos="0.0 -0.1 0.0">
 				<vox pos="20.2 0.3 77.0" rot="0.0 0.0 0.0" file="MOD/main/building/walls.vox" object="elevator wall"/>
 				<vox pos="13.8 0.1 64.1" rot="0.0 0.0 0.0" file="MOD/main/building/building.vox" object="part1"/>
@@ -12372,7 +12374,7 @@
 				</group>
 				<group pos="31.7 0.0 26.6" rot="0.0 180.0 0.0">
 					<voxbox pos="10.1 4.3 -37.7" rot="0.0 -90.0 0.0" size="847 1 201" brush="MOD/main/building/inner-tiles.vox" object="tile1" offset="10.0 -1.0 8.0">
-						<group pos="43.2 0.0 9.5">
+						<group pos="43.2 0.0 9.5" layer="lights">
 							<voxbox pos="-18.70002 0.0 -3.39999" rot="0.0 -90.0 0.0" size="16 1 16" brush="MOD/main/building/inner-tiles.vox" object="light" offset="0.0 0.0 2.0">
 								<light pos="0.8 0.0 0.8" rot="90.0 0.0 0.0" type="area" scale="2.7" size="1.6 1.6"/>
 							</voxbox>
@@ -13388,7 +13390,7 @@
 					<voxbox pos="12.2 0.0 16.3" rot="0.0 -90.0 0.0" size="17 41 4" offset="0.0 0.0 0.0" material="masonry" color="0.45 0.62 0.74"/>
 				</group>
 			</group>
-			<group name="props" pos="21.9 0.2 52.3" rot="0.0 0.0 0.0">
+			<group name="props" pos="21.9 0.2 52.3" rot="0.0 0.0 0.0" layer="interior3">
 				<group name="mri room" pos="3.9 0.0 -78.4" rot="0.0 90.0 0.0">
 					<instance pos="0.4 0.0 -6.1" rot="0.0 180.0 0.0" file="MOD/main/props/door1.xml"/>
 					<instance pos="3.5 0.0 -2.5" rot="0.0 -90.0 0.0" file="MOD/main/props/door1.xml"/>
@@ -13545,28 +13547,8 @@
 					<vox pos="5.8 0.0 6.3" rot="0.0 90.0 0.0" file="MOD/main/props/potted_plants.vox" object="long_round_white"/>
 					<vox pos="5.6 0.0 -5.4" rot="0.0 90.0 0.0" file="MOD/main/props/potted_plants.vox" object="long_round_white"/>
 				</group>
-				<instance pos="10.8 0.0 -24.7" rot="0.0 180.0 0.0" file="MOD/main/props/door3.xml"/>
-				<instance pos="5.7 0.0 -16.2" rot="0.0 0.0 0.0" file="MOD/main/props/door1.xml"/>
-				<instance pos="-17.4 0.0 -7.7" rot="0.0 180.0 0.0" file="MOD/main/props/door3.xml"/>
-				<instance pos="13.0 0.0 -10.8" rot="0.0 -90.0 0.0" file="MOD/main/props/door3.xml"/>
-				<instance pos="-5.6 0.0 12.1" rot="0.0 0.0 0.0" file="MOD/main/props/door1.xml"/>
-				<instance pos="6.2 0.0 12.1" rot="0.0 0.0 0.0" file="MOD/main/props/door1.xml"/>
-				<instance pos="6.2 0.0 6.2" rot="0.0 0.0 0.0" file="MOD/main/props/door1.xml"/>
-				<instance pos="12.3 0.0 20.3" rot="0.0 -90.0 0.0" file="MOD/main/props/door2.xml"/>
-				<instance pos="10.7 0.0 4.8" rot="0.0 -180.0 0.0" file="MOD/main/props/door1.xml"/>
-				<instance pos="8.7 0.0 3.1" rot="0.0 90.0 0.0" file="MOD/main/props/door1.xml"/>
-				<instance pos="-14.8 0.0 -27.9" rot="0.0 -90.0 0.0" file="MOD/main/props/door4.xml"/>
-				<instance pos="-2.3 0.0 -28.2" rot="0.0 90.0 0.0" file="MOD/main/props/door4.xml"/>
 				<instance pos="13.0 0.0 -28.9" rot="0.0 -90.0 0.0" file="MOD/main/props/bathroom-w.xml"/>
 				<instance pos="13.0 0.0 -34.6" rot="0.0 -90.0 0.0" file="MOD/main/props/bathroom-m.xml"/>
-				<instance pos="13.0 0.0 -42.0" rot="0.0 -90.0 0.0" file="MOD/main/props/door2.xml"/>
-				<instance pos="13.0 0.0 -50.8" rot="0.0 -90.0 0.0" file="MOD/main/props/door2.xml"/>
-				<instance pos="13.0 0.0 -59.5" rot="0.0 -90.0 0.0" file="MOD/main/props/door2.xml"/>
-				<instance pos="13.0 0.0 -68.8" rot="0.0 -90.0 0.0" file="MOD/main/props/door2.xml"/>
-				<instance pos="3.8 0.0 -68.6" rot="0.0 180.0 0.0" file="MOD/main/props/door4.xml"/>
-				<instance pos="10.8 0.0 -61.8" rot="0.0 0.0 0.0" file="MOD/main/props/door3.xml"/>
-				<instance pos="13.0 0.0 -20.4" rot="0.0 -90.0 0.0" file="MOD/main/props/door1.xml"/>
-				<instance pos="-2.3 0.0 -70.8" rot="0.0 90.0 0.0" file="MOD/main/props/door3.xml"/>
 				<group name="patient ward" pos="2.5 0.0 -4.2" rot="0.0 90.0 0.0">
 					<vox pos="0.5 0.0 -2.1" rot="0.0 100.0 0.0" prop="true" file="MOD/main/props/hospital-assets1.vox" object="trolley"/>
 					<vox pos="2.5 0.0 -2.9" prop="true" file="MOD/main/props/hospital-assets1.vox" object="bed-table"/>
@@ -14089,8 +14071,30 @@
 					</vox>
 				</group>
 			</group>
+			<group name="doors" pos="19.1 0.2 26.7" rot="0.0 0.0 0.0">
+				<instance pos="0.5 0.0 -45.2" rot="0.0 90.0 0.0" file="MOD/main/props/door3.xml"/>
+				<instance pos="15.79999 0.0 -16.4" rot="0.0 -90.0 0.0" file="MOD/main/props/door2.xml"/>
+				<instance pos="15.79999 0.0 -25.2" rot="0.0 -90.0 0.0" file="MOD/main/props/door2.xml"/>
+				<instance pos="15.79999 0.0 -33.9" rot="0.0 -90.0 0.0" file="MOD/main/props/door2.xml"/>
+				<instance pos="15.79999 0.0 -43.2" rot="0.0 -90.0 0.0" file="MOD/main/props/door2.xml"/>
+				<instance pos="6.6 0.0 -43.0" rot="0.0 180.0 0.0" file="MOD/main/props/door4.xml"/>
+				<instance pos="13.59999 0.0 -36.2" rot="0.0 0.0 0.0" file="MOD/main/props/door3.xml"/>
+				<instance pos="15.79999 0.0 5.2" rot="0.0 -90.0 0.0" file="MOD/main/props/door1.xml"/>
+				<instance pos="0.5 0.0 -2.6" rot="0.0 90.0 0.0" file="MOD/main/props/door4.xml"/>
+				<instance pos="-12.0 0.0 -2.3" rot="0.0 -90.0 0.0" file="MOD/main/props/door4.xml"/>
+				<instance pos="11.5 0.0 28.7" rot="0.0 90.0 0.0" file="MOD/main/props/door1.xml"/>
+				<instance pos="13.49999 0.0 30.4" rot="0.0 -180.0 0.0" file="MOD/main/props/door1.xml"/>
+				<instance pos="15.09999 0.0 45.9" rot="0.0 -90.0 0.0" file="MOD/main/props/door2.xml"/>
+				<instance pos="9.0 0.0 31.8" rot="0.0 0.0 0.0" file="MOD/main/props/door1.xml"/>
+				<instance pos="9.0 0.0 37.7" rot="0.0 0.0 0.0" file="MOD/main/props/door1.xml"/>
+				<instance pos="-2.79999 0.0 37.7" rot="0.0 0.0 0.0" file="MOD/main/props/door1.xml"/>
+				<instance pos="15.79999 0.0 14.8" rot="0.0 -90.0 0.0" file="MOD/main/props/door3.xml"/>
+				<instance pos="-14.59999 0.0 17.9" rot="0.0 180.0 0.0" file="MOD/main/props/door3.xml"/>
+				<instance pos="8.5 0.0 9.4" rot="0.0 0.0 0.0" file="MOD/main/props/door1.xml"/>
+				<instance pos="13.59999 0.0 0.9" rot="0.0 180.0 0.0" file="MOD/main/props/door3.xml"/>
+			</group>
 		</group>
-		<group name="floor4" pos="0.0 5.8 0.0" rot="0.0 0.0 0.0" layer="4">
+		<group name="floor4" pos="0.0 5.8 0.0" rot="0.0 0.0 0.0">
 			<vox pos="4.2 13.1 30.7" rot="0.0 0.0 0.0" file="MOD/main/building/walls.vox" object="elevator wall"/>
 			<group pos="4.3 12.9 -29.1">
 				<voxbox pos="-21.7 -0.0 5.3" rot="0.0 0.0 0.0" size="34 2 78" brush="MOD/main/building/building.vox" object="half"/>
@@ -14266,7 +14270,7 @@
 						<vertex pos="0.1 0.4"/>
 						<vertex pos="-1.0 0.8"/>
 					</voxagon>
-					<group pos="23.6 4.3 -30.1" rot="0.0 -90.0 0.0">
+					<group pos="23.6 4.3 -30.1" rot="0.0 -90.0 0.0" layer="lights">
 						<voxbox pos="-5.2 0.0 -4.2" rot="0.0 -90.0 0.0" size="16 1 16" brush="MOD/main/building/inner-tiles.vox" object="light" offset="0.0 0.0 2.0">
 							<light pos="0.8 0.0 0.8" rot="90.0 0.0 0.0" type="area" scale="2.7" size="1.6 1.6"/>
 						</voxbox>
@@ -15062,33 +15066,7 @@
 					</compound>
 				</group>
 			</group>
-			<group name="props" pos="0.0 13.1 0.0">
-				<group name="doors" pos="4.5 0.0 -28.9">
-					<instance pos="13.7 0.0 45.9" rot="0.0 90.0 0.0" file="MOD/main/props/door1.xml"/>
-					<instance pos="-16.4 0.0 47.4" file="MOD/main/props/door1.xml"/>
-					<instance pos="6.0 0.0 53.5" rot="0.0 -90.0 0.0" file="MOD/main/props/door4.xml"/>
-					<instance pos="6.0 0.0 50.7" rot="0.0 -90.0 0.0" file="MOD/main/props/door4.xml"/>
-					<instance pos="-3.3 0.0 42.4" rot="0.0 -90.0 0.0" file="MOD/main/props/door1.xml"/>
-					<instance pos="-3.3 0.0 34.0" rot="0.0 -90.0 0.0" file="MOD/main/props/door1.xml"/>
-					<instance pos="-3.3 0.0 26.9" rot="0.0 -90.0 0.0" file="MOD/main/props/door1.xml"/>
-					<instance pos="13.7 0.0 30.4" rot="0.0 90.0 0.0" file="MOD/main/props/door1.xml"/>
-					<instance pos="9.1 0.0 19.1" rot="0.0 90.0 0.0" file="MOD/main/props/door1.xml"/>
-					<instance pos="12.2 0.0 10.3" rot="0.0 180.0 0.0" file="MOD/main/props/door3.xml"/>
-					<instance pos="6.3 0.0 -24.1" rot="0.0 -90.0 0.0" file="MOD/main/props/door1.xml"/>
-					<instance pos="14.3 0.0 -24.1" rot="0.0 -90.0 0.0" file="MOD/main/props/door1.xml"/>
-					<instance pos="9.8 0.0 -32.3" rot="0.0 -90.0 0.0" file="MOD/main/props/door3.xml"/>
-					<instance pos="1.1 0.0 -40.4" rot="0.0 -90.0 0.0" file="MOD/main/props/door5.xml"/>
-					<instance pos="1.1 0.0 -53.3" rot="0.0 -90.0 0.0" file="MOD/main/props/door5.xml"/>
-					<instance pos="-4.2 0.0 -53.49998" rot="0.0 90.0 0.0" file="MOD/main/props/door5.xml"/>
-					<instance pos="-4.2 0.0 -40.59999" rot="0.0 90.0 0.0" file="MOD/main/props/door5.xml"/>
-					<instance pos="-4.2 0.0 -31.59999" rot="0.0 90.0 0.0" file="MOD/main/props/door5.xml"/>
-					<instance pos="1.0 0.0 -33.0" rot="0.0 90.0 0.0" file="MOD/main/props/door3.xml"/>
-					<instance pos="-5.2 0.0 21.2" rot="0.0 0.0 0.0" file="MOD/main/props/door3.xml"/>
-					<instance pos="13.7 0.0 37.5" rot="0.0 90.0 0.0" file="MOD/main/props/door1.xml"/>
-					<instance pos="-7.6 0.0 35.4" rot="0.0 90.0 0.0" file="MOD/main/props/door2.xml"/>
-					<instance pos="-7.6 0.0 28.6" rot="0.0 90.0 0.0" file="MOD/main/props/door2.xml"/>
-					<instance pos="-9.0 0.0 37.6" rot="0.0 0.0 0.0" file="MOD/main/props/door2.xml"/>
-				</group>
+			<group name="props" pos="0.0 13.1 0.0" layer="interior4">
 				<group name="neurology office" pos="5.4 0.0 -0.3">
 					<vox pos="0.3 0.0 -1.4" rot="0.0 -90.0 0.0" prop="true" file="MOD/main/props/hospital-assets2.vox" object="desk1">
 						<vox pos="1.2 1.0 -0.3" prop="true" file="MOD/main/props/hospital-assets2.vox" object="computer"/>
@@ -16097,8 +16075,34 @@
 					<vox pos="-0.1 0.0 -4.1" rot="0.0 -180.0 0.0" prop="true" file="MOD/main/props/hospital-assets2.vox" object="desk1"/>
 				</group>
 			</group>
+			<group name="doors" pos="4.5 13.1 -28.9" rot="0.0 0.0 0.0">
+				<instance pos="13.7 0.0 45.9" rot="0.0 90.0 0.0" file="MOD/main/props/door1.xml"/>
+				<instance pos="-16.4 0.0 47.4" file="MOD/main/props/door1.xml"/>
+				<instance pos="6.0 0.0 53.5" rot="0.0 -90.0 0.0" file="MOD/main/props/door4.xml"/>
+				<instance pos="6.0 0.0 50.7" rot="0.0 -90.0 0.0" file="MOD/main/props/door4.xml"/>
+				<instance pos="-3.3 0.0 42.4" rot="0.0 -90.0 0.0" file="MOD/main/props/door1.xml"/>
+				<instance pos="-3.3 0.0 34.0" rot="0.0 -90.0 0.0" file="MOD/main/props/door1.xml"/>
+				<instance pos="-3.3 0.0 26.9" rot="0.0 -90.0 0.0" file="MOD/main/props/door1.xml"/>
+				<instance pos="13.7 0.0 30.4" rot="0.0 90.0 0.0" file="MOD/main/props/door1.xml"/>
+				<instance pos="9.1 0.0 19.1" rot="0.0 90.0 0.0" file="MOD/main/props/door1.xml"/>
+				<instance pos="12.2 0.0 10.3" rot="0.0 180.0 0.0" file="MOD/main/props/door3.xml"/>
+				<instance pos="6.3 0.0 -24.1" rot="0.0 -90.0 0.0" file="MOD/main/props/door1.xml"/>
+				<instance pos="14.3 0.0 -24.1" rot="0.0 -90.0 0.0" file="MOD/main/props/door1.xml"/>
+				<instance pos="9.8 0.0 -32.3" rot="0.0 -90.0 0.0" file="MOD/main/props/door3.xml"/>
+				<instance pos="1.1 0.0 -40.4" rot="0.0 -90.0 0.0" file="MOD/main/props/door5.xml"/>
+				<instance pos="1.1 0.0 -53.3" rot="0.0 -90.0 0.0" file="MOD/main/props/door5.xml"/>
+				<instance pos="-4.2 0.0 -53.49998" rot="0.0 90.0 0.0" file="MOD/main/props/door5.xml"/>
+				<instance pos="-4.2 0.0 -40.59999" rot="0.0 90.0 0.0" file="MOD/main/props/door5.xml"/>
+				<instance pos="-4.2 0.0 -31.59999" rot="0.0 90.0 0.0" file="MOD/main/props/door5.xml"/>
+				<instance pos="1.0 0.0 -33.0" rot="0.0 90.0 0.0" file="MOD/main/props/door3.xml"/>
+				<instance pos="-5.2 0.0 21.2" rot="0.0 0.0 0.0" file="MOD/main/props/door3.xml"/>
+				<instance pos="13.7 0.0 37.5" rot="0.0 90.0 0.0" file="MOD/main/props/door1.xml"/>
+				<instance pos="-7.6 0.0 35.4" rot="0.0 90.0 0.0" file="MOD/main/props/door2.xml"/>
+				<instance pos="-7.6 0.0 28.6" rot="0.0 90.0 0.0" file="MOD/main/props/door2.xml"/>
+				<instance pos="-9.0 0.0 37.6" rot="0.0 0.0 0.0" file="MOD/main/props/door2.xml"/>
+			</group>
 		</group>
-		<group name="floor5" pos="0.0 5.8 0.0" layer="5">
+		<group name="floor5" pos="0.0 5.8 0.0">
 			<group pos="4.3 17.2 -29.1">
 				<group pos="0.0 0.0 0.0">
 					<voxbox pos="-21.7 0.0 5.3" rot="0.0 0.0 0.0" size="34 2 78" brush="MOD/main/building/building.vox" object="half"/>
@@ -16252,7 +16256,7 @@
 						<vertex pos="-0.3 -0.3"/>
 						<vertex pos="-1.0 1.2"/>
 					</voxagon>
-					<group pos="10.8 4.3 11.5" rot="0.0 -90.0 0.0">
+					<group pos="10.8 4.3 11.5" rot="0.0 -90.0 0.0" layer="lights">
 						<voxbox pos="10.99998 0.0 1.7" rot="0.0 -90.0 0.0" size="16 1 16" brush="MOD/main/building/inner-tiles.vox" object="light" offset="0.0 0.0 2.0">
 							<light pos="0.8 0.0 0.8" rot="90.0 0.0 0.0" type="area" scale="2.7" size="1.6 1.6"/>
 						</voxbox>
@@ -16959,7 +16963,7 @@
 					</voxbox>
 				</compound>
 			</group>
-			<group name="props" pos="0.0 17.4 0.0">
+			<group name="props" pos="0.0 17.4 0.0" layer="interior5">
 				<group name="public patient ward" pos="-8.7 0.0 0.4">
 					<vox pos="4.2 0.0 -2.1" rot="0.0 30.0 0.0" prop="true" file="MOD/main/props/hospital-assets1.vox" object="trolley"/>
 					<vox pos="2.5 0.0 -3.2" prop="true" file="MOD/main/props/hospital-assets1.vox" object="bed-table"/>
@@ -17716,23 +17720,25 @@
 					<vox pos="2.0 0.2 -0.1" rot="0.0 0.0 0.0" prop="false" file="MOD/main/props/bathroom props.vox" object="sink2"/>
 					<vox pos="2.0 1.4 -0.5" rot="0.0 0.0 0.0" prop="false" file="MOD/main/props/bathroom props.vox" object="mirror"/>
 				</group>
-				<instance pos="3.0 0.0 13.6" rot="0.0 -90.0 0.0" file="LEVEL/props/door10.xml"/>
-				<instance pos="9.5 0.0 4.9" rot="0.0 -90.0 0.0" file="LEVEL/props/door10.xml"/>
-				<instance pos="17.4 0.0 -4.4" rot="0.0 -90.0 0.0" file="LEVEL/props/door6.xml"/>
-				<instance pos="17.4 0.0 -12.2" rot="0.0 -90.0 0.0" file="LEVEL/props/door6.xml"/>
-				<instance pos="17.4 0.0 -19.9" rot="0.0 -90.0 0.0" file="LEVEL/props/door6.xml"/>
-				<instance pos="3.3 0.0 -11.6" rot="0.0 -90.0 0.0" file="LEVEL/props/door6.xml"/>
-				<instance pos="5.1 0.0 -15.1" rot="0.0 180.0 0.0" file="LEVEL/props/door10.xml"/>
-				<instance pos="13.8 0.0 -58.9" rot="0.0 -90.0 0.0" file="LEVEL/props/door3.xml"/>
-				<instance pos="5.4 0.0 -72.1" rot="0.0 -90.0 0.0" file="LEVEL/props/door3.xml"/>
-				<instance pos="1.4 0.0 -79.5" rot="0.0 0.0 0.0" file="LEVEL/props/door3.xml"/>
-				<instance pos="22.5 0.0 -44.8" rot="0.0 0.0 0.0" file="LEVEL/props/door3.xml"/>
-				<instance pos="-1.2 0.0 14.2" rot="0.0 90.0 0.0" file="LEVEL/props/bathroom-m.xml"/>
-				<instance pos="-1.2 0.0 8.7" rot="0.0 90.0 0.0" file="LEVEL/props/bathroom-w.xml"/>
-				<instance pos="12.8 0.0 13.7" rot="0.0 -90.0 0.0" file="LEVEL/props/door4.xml"/>
+			</group>
+			<group name="doors" pos="11.3 17.4 -32.3" rot="0.0 0.0 0.0">
+				<instance pos="-8.3 0.0 45.9" rot="0.0 -90.0 0.0" file="LEVEL/props/door10.xml"/>
+				<instance pos="-1.8 0.0 37.2" rot="0.0 -90.0 0.0" file="LEVEL/props/door10.xml"/>
+				<instance pos="6.1 0.0 27.9" rot="0.0 -90.0 0.0" file="LEVEL/props/door6.xml"/>
+				<instance pos="6.1 0.0 20.1" rot="0.0 -90.0 0.0" file="LEVEL/props/door6.xml"/>
+				<instance pos="6.1 0.0 12.4" rot="0.0 -90.0 0.0" file="LEVEL/props/door6.xml"/>
+				<instance pos="-8.0 0.0 20.7" rot="0.0 -90.0 0.0" file="LEVEL/props/door6.xml"/>
+				<instance pos="-6.2 0.0 17.2" rot="0.0 180.0 0.0" file="LEVEL/props/door10.xml"/>
+				<instance pos="2.5 0.0 -26.6" rot="0.0 -90.0 0.0" file="LEVEL/props/door3.xml"/>
+				<instance pos="-5.9 0.0 -39.8" rot="0.0 -90.0 0.0" file="LEVEL/props/door3.xml"/>
+				<instance pos="-9.9 0.0 -47.2" rot="0.0 0.0 0.0" file="LEVEL/props/door3.xml"/>
+				<instance pos="11.2 0.0 -12.5" rot="0.0 0.0 0.0" file="LEVEL/props/door3.xml"/>
+				<instance pos="-12.5 0.0 46.5" rot="0.0 90.0 0.0" file="LEVEL/props/bathroom-m.xml"/>
+				<instance pos="-12.5 0.0 41.0" rot="0.0 90.0 0.0" file="LEVEL/props/bathroom-w.xml"/>
+				<instance pos="1.5 0.0 46.0" rot="0.0 -90.0 0.0" file="LEVEL/props/door4.xml"/>
 			</group>
 		</group>
-		<group name="floor6" pos="0.0 5.8 0.0" layer="6">
+		<group name="floor6" pos="0.0 5.8 0.0">
 			<vox pos="4.2 21.7 30.7" rot="0.0 0.0 0.0" file="MOD/main/building/walls.vox" object="elevator wall"/>
 			<vox pos="4.2 21.5 30.7" rot="0.0 0.0 0.0" file="MOD/main/building/building.vox" object="utilitything2.5"/>
 			<vox pos="-2.2 21.5 17.8" rot="0.0 0.0 0.0" file="MOD/main/building/building.vox" object="part1"/>
@@ -17888,7 +17894,7 @@
 						<vertex pos="0.1 0.4"/>
 						<vertex pos="-1.0 0.8"/>
 					</voxagon>
-					<group pos="11.7 4.2 -20.8" rot="0.0 -90.0 0.0">
+					<group pos="11.7 4.2 -20.8" rot="0.0 -90.0 0.0" layer="lights">
 						<voxbox pos="-4.3 0.0 4.3" rot="0.0 -90.0 0.0" size="16 1 16" brush="MOD/main/building/inner-tiles.vox" object="light" offset="0.0 0.0 2.0">
 							<light pos="0.8 0.0 0.8" rot="90.0 0.0 0.0" type="area" scale="2.7" size="1.6 1.6"/>
 						</voxbox>
@@ -18700,7 +18706,7 @@
 					</voxbox>
 				</compound>
 			</group>
-			<group name="props" pos="0.0 21.7 0.0">
+			<group name="props" pos="0.0 21.7 0.0" layer="interior6">
 				<group name="public patient ward" pos="-7.2 0.0 -11.1">
 					<vox pos="4.2 0.0 -2.1" rot="0.0 30.0 0.0" prop="true" file="MOD/main/props/hospital-assets1.vox" object="trolley"/>
 					<vox pos="2.5 0.0 -3.1" prop="true" file="MOD/main/props/hospital-assets1.vox" object="bed-table"/>
@@ -19237,24 +19243,6 @@
 					<vox pos="-1.8 0.0 -4.7" rot="0.0 0.0 0.0" prop="true" file="MOD/main/props/marina_bookshelf.vox"/>
 					<vox pos="-4.6 0.0 -3.4" rot="0.0 -90.0 0.0" prop="true" file="MOD/main/props/office-props.vox" object="dispenser"/>
 				</group>
-				<group pos="6.3 0.0 -30.4">
-					<instance pos="-8.9 0.0 36.8" rot="0.0 90.0 0.0" file="MOD/main/props/door1.xml"/>
-					<instance pos="-2.2 0.0 27.9" rot="0.0 -90.0 0.0" file="MOD/main/props/door1.xml"/>
-					<instance pos="6.7 0.0 37.4" rot="0.0 -90.0 0.0" file="MOD/main/props/door3.xml"/>
-					<instance pos="-2.2 0.0 21.3" rot="0.0 -90.0 0.0" file="MOD/main/props/door1.xml"/>
-					<instance pos="2.4 0.0 49.3" rot="0.0 0.0 0.0" file="MOD/main/props/door4.xml"/>
-					<instance pos="5.5 0.0 49.3" rot="0.0 0.0 0.0" file="MOD/main/props/door4.xml"/>
-					<instance pos="-4.1 0.0 14.3" rot="0.0 0.0 0.0" file="MOD/main/props/door3.xml"/>
-					<instance pos="5.9 0.0 -16.3" rot="0.0 0.0 0.0" file="MOD/main/props/door3.xml"/>
-					<instance pos="9.5 0.0 13.3" rot="0.0 -90.0 0.0" file="MOD/main/props/door4.xml"/>
-					<instance pos="7.4 0.0 -49.5" rot="0.0 0.0 0.0" file="MOD/main/props/door4.xml"/>
-					<instance pos="-3.6 0.0 -49.5" rot="0.0 0.0 0.0" file="MOD/main/props/door1.xml"/>
-					<instance pos="-11.0 0.0 -49.5" rot="0.0 0.0 0.0" file="MOD/main/props/door2.xml"/>
-					<instance pos="7.2 0.0 -43.1" rot="0.0 90.0 0.0" file="MOD/main/props/door2.xml"/>
-					<instance pos="8.7 0.0 -28.2" rot="0.0 -90.0 0.0" file="MOD/main/props/door1.xml"/>
-					<instance pos="8.7 0.0 -20.8" rot="0.0 -90.0 0.0" file="MOD/main/props/door1.xml"/>
-					<instance pos="10.9 0.0 21.0" rot="0.0 180.0 0.0" file="MOD/main/props/door1.xml"/>
-				</group>
 				<vox pos="11.4 0.0 -30.9" rot="0.0 90.0 0.0" prop="true" file="MOD/main/props/hospital-assets2.vox" object="waiting-chair"/>
 				<vox pos="12.9 0.0 -33.4" rot="0.0 0.0 0.0" prop="true" file="MOD/main/props/hospital-assets2.vox" object="waiting-chair"/>
 				<vox pos="18.8 0.0 -32.8" rot="0.0 -90.0 0.0" prop="true" file="MOD/main/props/hospital-assets2.vox" object="waiting-chair"/>
@@ -19282,8 +19270,26 @@
 				<vox pos="6.8 0.0 4.8" rot="0.0 0.0 0.0" prop="true" file="MOD/main/props/hospital-assets2.vox" object="waiting-chair"/>
 				<vox pos="14.6 0.0 27.0" rot="0.0 180.0 0.0" prop="true" file="MOD/main/props/hospital-assets2.vox" object="waiting-chair"/>
 			</group>
+			<group name="doors" pos="6.3 21.7 -30.4" rot="0.0 0.0 0.0">
+				<instance pos="-8.9 0.0 36.8" rot="0.0 90.0 0.0" file="MOD/main/props/door1.xml"/>
+				<instance pos="-2.2 0.0 27.9" rot="0.0 -90.0 0.0" file="MOD/main/props/door1.xml"/>
+				<instance pos="6.7 0.0 37.4" rot="0.0 -90.0 0.0" file="MOD/main/props/door3.xml"/>
+				<instance pos="-2.2 0.0 21.3" rot="0.0 -90.0 0.0" file="MOD/main/props/door1.xml"/>
+				<instance pos="2.4 0.0 49.3" rot="0.0 0.0 0.0" file="MOD/main/props/door4.xml"/>
+				<instance pos="5.5 0.0 49.3" rot="0.0 0.0 0.0" file="MOD/main/props/door4.xml"/>
+				<instance pos="-4.1 0.0 14.3" rot="0.0 0.0 0.0" file="MOD/main/props/door3.xml"/>
+				<instance pos="5.9 0.0 -16.3" rot="0.0 0.0 0.0" file="MOD/main/props/door3.xml"/>
+				<instance pos="9.5 0.0 13.3" rot="0.0 -90.0 0.0" file="MOD/main/props/door4.xml"/>
+				<instance pos="7.4 0.0 -49.5" rot="0.0 0.0 0.0" file="MOD/main/props/door4.xml"/>
+				<instance pos="-3.6 0.0 -49.5" rot="0.0 0.0 0.0" file="MOD/main/props/door1.xml"/>
+				<instance pos="-11.0 0.0 -49.5" rot="0.0 0.0 0.0" file="MOD/main/props/door2.xml"/>
+				<instance pos="7.2 0.0 -43.1" rot="0.0 90.0 0.0" file="MOD/main/props/door2.xml"/>
+				<instance pos="8.7 0.0 -28.2" rot="0.0 -90.0 0.0" file="MOD/main/props/door1.xml"/>
+				<instance pos="8.7 0.0 -20.8" rot="0.0 -90.0 0.0" file="MOD/main/props/door1.xml"/>
+				<instance pos="10.9 0.0 21.0" rot="0.0 180.0 0.0" file="MOD/main/props/door1.xml"/>
+			</group>
 		</group>
-		<group name="floor7" pos="0.0 5.8 0.0" layer="7">
+		<group name="floor7" pos="0.0 5.8 0.0">
 			<vox pos="4.2 26.0 30.7" rot="0.0 0.0 0.0" file="MOD/main/building/walls.vox" object="elevator wall"/>
 			<group pos="3.9 25.8 -29.1">
 				<group name="floor" pos="0.0 -0.0 0.0">
@@ -19451,7 +19457,7 @@
 						<vertex pos="0.1 0.4"/>
 						<vertex pos="-1.0 0.8"/>
 					</voxagon>
-					<group pos="10.0 4.3 12.4" rot="0.0 -90.0 0.0">
+					<group pos="10.0 4.3 12.4" rot="0.0 -90.0 0.0" layer="lights">
 						<voxbox pos="-10.3 0.0 -5.9" rot="0.0 -90.0 0.0" size="16 1 16" brush="MOD/main/building/inner-tiles.vox" object="light" offset="0.0 0.0 2.0">
 							<light pos="0.8 0.0 0.8" rot="90.0 0.0 0.0" type="area" scale="2.7" size="1.6 1.6"/>
 						</voxbox>
@@ -19942,7 +19948,7 @@
 					<voxbox pos="-0.1 -0.0 4.6" rot="0.0 90.0 0.0" size="295 41 3" brush="MOD/main/building/walls.vox" object="glasswall2"/>
 				</compound>
 			</group>
-			<group name="inner-walls" prop0="texture=13 0.3">
+			<group name="inner-walls" pos="0.0 0.0 0.0" prop0="texture=13 0.3">
 				<compound name="wall" pos="14.60001 26.0 -44.0" rot="0.0 180.0 0.0">
 					<voxbox pos="-0.1 0.0 12.2" rot="0.0 -90.0 0.0" size="108 40 2" brush="MOD/main/building/inner-walls.vox" object="wall" offset="174.0 0.0 0.99999">
 						<voxbox pos="5.5 0.0 0.2" rot="0.0 0.0 0.0" size="49 40 1" brush="MOD/main/building/inner-walls2.vox" object="plaster4" offset="51.0 0.0 -0.00001"/>
@@ -20204,28 +20210,7 @@
 				<voxbox pos="-6.62 26.0 -23.38" rot="0.0 -90.0 0.0" size="58 40 3" brush="MOD/main/building/windows.vox" object="admin-window" offset="17.0 0.0 -0.0"/>
 				<voxbox pos="-6.62 26.0 -17.58" rot="0.0 -135.0 0.0" size="45 40 3" brush="MOD/main/building/windows.vox" object="admin-window" offset="4.0 0.0 0.0"/>
 			</group>
-			<group name="props" pos="0.0 26.0 0.0">
-				<group pos="6.3 -0.0 -30.4">
-					<instance pos="5.9 0.0 6.7" rot="0.0 0.0 0.0" file="MOD/main/props/door3.xml"/>
-					<instance pos="6.5 0.0 -25.7" rot="0.0 0.0 0.0" file="MOD/main/props/door3.xml"/>
-					<instance pos="8.5 0.0 -28.4" rot="0.0 -90.0 0.0" file="MOD/main/props/bathroom-w.xml"/>
-					<instance pos="8.5 0.0 -33.4" rot="0.0 -90.0 0.0" file="MOD/main/props/bathroom-m.xml"/>
-					<instance pos="0.9 0.0 -51.3" rot="0.0 0.0 0.0" file="MOD/main/props/door1.xml"/>
-					<instance pos="-8.8 0.0 -54.2" rot="0.0 0.0 0.0" file="MOD/main/props/door1.xml"/>
-					<instance pos="-16.8 0.0 -46.9" rot="0.0 180.0 0.0" file="MOD/main/props/door6.xml"/>
-					<instance pos="-5.7 0.0 -46.9" rot="0.0 180.0 0.0" file="MOD/main/props/door4.xml"/>
-					<instance pos="9.4 0.0 -51.3" rot="0.0 0.0 0.0" file="MOD/main/props/door1.xml"/>
-					<instance pos="9.0 0.0 21.7" rot="0.0 -90.0 0.0" file="MOD/main/props/door1.xml"/>
-					<instance pos="9.0 0.0 18.3" rot="0.0 -90.0 0.0" file="MOD/main/props/door1.xml"/>
-					<instance pos="9.0 0.0 31.3" rot="0.0 -90.0 0.0" file="MOD/main/props/door1.xml"/>
-					<instance pos="-2.6 0.0 36.4" rot="0.0 -90.0 0.0" file="MOD/main/props/door2.xml"/>
-					<instance pos="5.6 0.0 32.7" rot="0.0 180.0 0.0" file="MOD/main/props/door6.xml"/>
-					<instance pos="1.2 0.0 50.8" rot="0.0 0.0 0.0" file="MOD/main/props/door4.xml"/>
-					<instance pos="-9.3 0.0 48.8" rot="0.0 90.0 0.0" file="MOD/main/props/door6.xml"/>
-					<instance pos="-9.3 0.0 29.3" rot="0.0 90.0 0.0" file="MOD/main/props/door6.xml"/>
-					<instance pos="-7.4 0.0 17.6" rot="0.0 90.0 0.0" file="MOD/main/props/door3.xml"/>
-					<instance pos="8.7 0.0 50.8" rot="0.0 0.0 0.0" file="MOD/main/props/door4.xml"/>
-				</group>
+			<group name="props" pos="0.0 26.0 0.0" layer="interior7">
 				<group name="staff lounge" pos="-9.7 0.0 -88.8" rot="0.0 90.0 0.0">
 					<vox pos="1.1 1.3 10.5" rot="0.0 0.0 0.0" prop="false" file="MOD/main/props/objective_painting_8.vox"/>
 					<vox pos="-2.4 1.4 10.3" rot="0.0 0.0 0.0" prop="false" file="MOD/main/props/hospital-assets3.vox" object="shelf"/>
@@ -20644,8 +20629,29 @@
 				<vox pos="11.5 0.0 -47.1" rot="0.0 90.0 0.0" prop="true" file="MOD/main/props/hospital-assets2.vox" object="waiting-chair"/>
 				<vox pos="11.5 0.0 -49.8" rot="0.0 90.0 0.0" prop="true" file="MOD/main/props/hospital-assets2.vox" object="waiting-chair"/>
 			</group>
+			<group name="doors" pos="6.3 26.0 -30.4" rot="0.0 0.0 0.0">
+				<instance pos="5.9 0.0 6.7" rot="0.0 0.0 0.0" file="MOD/main/props/door3.xml"/>
+				<instance pos="6.5 0.0 -25.7" rot="0.0 0.0 0.0" file="MOD/main/props/door3.xml"/>
+				<instance pos="8.5 0.0 -28.4" rot="0.0 -90.0 0.0" file="MOD/main/props/bathroom-w.xml"/>
+				<instance pos="8.5 0.0 -33.4" rot="0.0 -90.0 0.0" file="MOD/main/props/bathroom-m.xml"/>
+				<instance pos="0.9 0.0 -51.3" rot="0.0 0.0 0.0" file="MOD/main/props/door1.xml"/>
+				<instance pos="-8.8 0.0 -54.2" rot="0.0 0.0 0.0" file="MOD/main/props/door1.xml"/>
+				<instance pos="-16.8 0.0 -46.9" rot="0.0 180.0 0.0" file="MOD/main/props/door6.xml"/>
+				<instance pos="-5.7 0.0 -46.9" rot="0.0 180.0 0.0" file="MOD/main/props/door4.xml"/>
+				<instance pos="9.4 0.0 -51.3" rot="0.0 0.0 0.0" file="MOD/main/props/door1.xml"/>
+				<instance pos="9.0 0.0 21.7" rot="0.0 -90.0 0.0" file="MOD/main/props/door1.xml"/>
+				<instance pos="9.0 0.0 18.3" rot="0.0 -90.0 0.0" file="MOD/main/props/door1.xml"/>
+				<instance pos="9.0 0.0 31.3" rot="0.0 -90.0 0.0" file="MOD/main/props/door1.xml"/>
+				<instance pos="-2.6 0.0 36.4" rot="0.0 -90.0 0.0" file="MOD/main/props/door2.xml"/>
+				<instance pos="5.6 0.0 32.7" rot="0.0 180.0 0.0" file="MOD/main/props/door6.xml"/>
+				<instance pos="1.2 0.0 50.8" rot="0.0 0.0 0.0" file="MOD/main/props/door4.xml"/>
+				<instance pos="-9.3 0.0 48.8" rot="0.0 90.0 0.0" file="MOD/main/props/door6.xml"/>
+				<instance pos="-9.3 0.0 29.3" rot="0.0 90.0 0.0" file="MOD/main/props/door6.xml"/>
+				<instance pos="-7.4 0.0 17.6" rot="0.0 90.0 0.0" file="MOD/main/props/door3.xml"/>
+				<instance pos="8.7 0.0 50.8" rot="0.0 0.0 0.0" file="MOD/main/props/door4.xml"/>
+			</group>
 		</group>
-		<group name="floor8" pos="0.0 5.8 0.0" layer="8">
+		<group name="floor8" pos="0.0 5.8 0.0">
 			<vox pos="4.2 30.3 30.7" rot="0.0 0.0 0.0" file="MOD/main/building/walls.vox" object="elevator wall"/>
 			<group pos="3.9 30.1 -29.1">
 				<group name="floor" pos="0.0 0.0 0.0">
@@ -20798,7 +20804,7 @@
 						<vertex pos="-0.1 3.5"/>
 						<vertex pos="-1.0 3.5"/>
 					</voxagon>
-					<group pos="10.0 4.3 -3.8" rot="0.0 -90.0 0.0">
+					<group pos="10.0 4.3 -3.8" rot="0.0 -90.0 0.0" layer="lights">
 						<voxbox pos="-31.5 0.0 6.0" rot="0.0 -90.0 0.0" size="16 1 16" brush="MOD/main/building/inner-tiles.vox" object="light" offset="0.0 0.0 2.0">
 							<light pos="0.8 0.0 0.8" rot="90.0 0.0 0.0" type="area" scale="2.7" size="1.6 1.6"/>
 						</voxbox>
@@ -21268,7 +21274,7 @@
 			<vox pos="3.6 30.3 -83.0" rot="0.0 -180.0 0.0" texture="5 0.2" blendtexture="3 0.1" file="MOD/main/props/helipad.vox" object="ramp">
 				<voxbox pos="0.15 1.5 0.8" rot="0.0 180.0 -10.0" size="98 2 16" brush="MOD/main/props/helipad.vox" object="ramp2" offset="0.0 0.0 0.0"/>
 			</vox>
-			<group name="props">
+			<group name="props" pos="0.0 0.0 0.0" layer="interior8">
 				<group name="room2" pos="7.9 30.3 -41.4" rot="0.0 180.0 0.0">
 					<vox pos="2.1 2.3 9.9" rot="0.0 -90.0 0.0" prop="false" file="MOD/main/props/hospital-assets1.vox" object="bed-lamp">
 						<light pos="0.0 0.1 0.0" rot="10.0 0.0 0.0" type="area" scale="1.5" size="1 0.2" reach="6"/>
@@ -22108,17 +22114,19 @@
 					<voxbox pos="-16.8 0.0 -61.4" rot="0.0 -90.0 0.0" size="123 9 11" brush="MOD/main/props/pipes_and_ventilation.vox" object="ventilation-straight-clean" offset="-51.99999 0.0 0.0"/>
 					<voxbox pos="-16.8 0.0 -47.8" rot="0.0 -90.0 0.0" size="11 9 11" brush="MOD/main/props/pipes_and_ventilation.vox" object="ventilation-straight-clean" offset="-51.99999 0.0 0.0"/>
 				</group>
-				<instance pos="20.4 30.3 -19.8" rot="0.0 0.0 0.0" file="MOD/main/props/door3.xml"/>
-				<instance pos="23.0 30.3 -57.6" rot="0.0 180.0 0.0" file="MOD/main/props/door9.xml"/>
-				<instance pos="12.4 30.3 -8.1" rot="0.0 0.0 0.0" file="MOD/main/props/door6.xml"/>
-				<instance pos="-9.6 30.3 -12.0" rot="0.0 -90.0 0.0" file="MOD/main/props/door6.xml"/>
-				<instance pos="-9.6 30.3 -19.6" rot="0.0 -90.0 0.0" file="MOD/main/props/door6.xml"/>
-				<instance pos="12.6 30.3 9.4" rot="0.0 -180.0 0.0" file="MOD/main/props/door2.xml"/>
-				<instance pos="11.8 30.3 -3.7" rot="0.0 -180.0 0.0" file="MOD/main/props/door4.xml"/>
-				<instance pos="-3.5 30.3 19.1" rot="0.0 0.0 0.0" file="MOD/main/props/door4.xml"/>
-				<instance pos="4.6 30.3 19.1" rot="0.0 0.0 0.0" file="MOD/main/props/door4.xml"/>
-				<instance pos="1.0 30.3 -3.7" rot="0.0 -180.0 0.0" file="MOD/main/props/door4.xml"/>
-				<instance pos="-5.5 30.3 -3.7" rot="0.0 -180.0 0.0" file="MOD/main/props/door4.xml"/>
+			</group>
+			<group name="doors" pos="7.4 30.3 -19.2" rot="0.0 0.0 0.0">
+				<instance pos="13.0 -0.0 -0.6" rot="0.0 0.0 0.0" file="MOD/main/props/door3.xml"/>
+				<instance pos="15.6 -0.0 -38.4" rot="0.0 180.0 0.0" file="MOD/main/props/door9.xml"/>
+				<instance pos="5.0 -0.0 11.1" rot="0.0 0.0 0.0" file="MOD/main/props/door6.xml"/>
+				<instance pos="-17.0 -0.0 7.2" rot="0.0 -90.0 0.0" file="MOD/main/props/door6.xml"/>
+				<instance pos="-17.0 -0.0 -0.4" rot="0.0 -90.0 0.0" file="MOD/main/props/door6.xml"/>
+				<instance pos="5.2 -0.0 28.6" rot="0.0 -180.0 0.0" file="MOD/main/props/door2.xml"/>
+				<instance pos="4.4 -0.0 15.5" rot="0.0 -180.0 0.0" file="MOD/main/props/door4.xml"/>
+				<instance pos="-10.9 -0.0 38.3" rot="0.0 0.0 0.0" file="MOD/main/props/door4.xml"/>
+				<instance pos="-2.8 -0.0 38.3" rot="0.0 0.0 0.0" file="MOD/main/props/door4.xml"/>
+				<instance pos="-6.4 -0.0 15.5" rot="0.0 -180.0 0.0" file="MOD/main/props/door4.xml"/>
+				<instance pos="-12.9 -0.0 15.5" rot="0.0 -180.0 0.0" file="MOD/main/props/door4.xml"/>
 			</group>
 		</group>
 		<group name="roof" pos="0.0 5.8 0.0">
@@ -22624,7 +22632,7 @@
 					</voxbox>
 				</compound>
 			</group>
-			<group name="elevator" pos="7.7 1.3 3.49999" rot="0.0 -90.0 0.0">
+			<group name="elevator" pos="7.7 1.3 3.49999" rot="0.0 -90.0 0.0" layer="lifts">
 				<script pos="-4.3 0.0 -30.4" file="MOD/elevator/Controller1.lua">
 					<group name="instance=MOD/elevator/templateInstall.xml" pos="0.0 15.2 37.2" rot="0.0 0.0 0.0">
 						<group name="Floors" pos="1.2 3.0 0.0" rot="0.0 90.0 0.0">
@@ -22702,7 +22710,7 @@
 					</group>
 				</script>
 			</group>
-			<group name="elevator" pos="7.7 1.3 -3.2" rot="0.0 -90.0 0.0">
+			<group name="elevator" pos="7.7 1.3 -3.2" rot="0.0 -90.0 0.0" layer="lifts">
 				<script pos="-4.3 0.0 -30.4" file="MOD/elevator/Controller1.lua">
 					<group name="instance=MOD/elevator/templateInstall.xml" pos="0.0 15.2 37.2" rot="0.0 0.0 0.0">
 						<group name="Floors" pos="1.2 3.0 0.0" rot="0.0 90.0 0.0">
@@ -22918,7 +22926,7 @@
 				<vox pos="10.1 4.6 3.9" rot="0.0 -180.0 0.0" file="MOD/main/building/stairs.vox" object="handrail3"/>
 				<vox pos="10.1 13.2 3.9" rot="0.0 -180.0 0.0" file="MOD/main/building/stairs.vox" object="handrail3"/>
 			</group>
-			<group name="elevator" pos="7.7 1.4 3.4" rot="0.0 -90.0 0.0">
+			<group name="elevator" pos="7.7 1.4 3.4" rot="0.0 -90.0 0.0" layer="lifts">
 				<script pos="-4.3 0.0 -30.4" file="MOD/elevator/Controller_Template.lua">
 					<group name="instance=MOD/elevator/templateInstall.xml" pos="0.0 15.2 37.2" rot="0.0 0.0 0.0">
 						<group name="Floors" pos="1.2 3.0 0.0" rot="0.0 90.0 0.0">
@@ -23020,7 +23028,7 @@
 		<vertex pos="53.4 142.3"/>
 		<vertex pos="-97.0 137.8"/>
 	</boundary>
-	<group name="vehicles" pos="8.2 5.8 11.5" layer="background">
+	<group name="vehicles" pos="8.2 5.8 11.5" layer="vehicles">
 		<group name="Emergency Vehicles" pos="12.7 0.2 23.0">
 			<instance pos="1.0 0.0 0.4" rot="0.0 -90.0 0.0" file="MOD/vehicles/ambulance-uk.xml"/>
 			<instance pos="11.4 0.0 -17.4" rot="0.0 180.0 0.0" file="MOD/vehicles/ambulance-uk.xml"/>
@@ -23054,7 +23062,7 @@
 		</group>
 		<vox pos="67.3 2.3 -14.9" rot="0.0 100.0 0.0" file="MOD/chopper.vox"/>
 	</group>
-	<group pos="-17.3 5.8 -11.8" layer="background">
+	<group pos="-17.3 5.8 -11.8">
 		<group name="outside props" pos="5.1 -5.8 11.8">
 			<vox pos="-14.1 5.9 -38.6" file="MOD/main/building/outdoors/cortyard.vox" object="thing i don't know name of">
 				<vox pos="-0.2 0.8 0.3" rot="0.0 -30.0 0.0" file="BUILT-IN/vox/nature/tree/tree3.vox"/>
@@ -23568,7 +23576,7 @@
 				<light tags="night" pos="0.05 5.8 1.3" rot="90.0 0.0 0.0" type="area" scale="12" size="0.3 0.6" reach="10.3" unshadowed="1.5" fogscale="2" glare="0.2"/>
 			</vox>
 		</group>
-		<group name="background" pos="0.0 -7.0 0.0">
+		<group name="background" pos="0.0 -7.0 0.0" layer="background">
 			<voxbox pos="169.90001 0.0 -108.1" size="500 500 500"/>
 			<voxbox pos="70.2 0.0 -197.7" size="500 500 500"/>
 			<voxbox pos="6.3 0.0 -197.7" size="500 500 500"/>
@@ -23594,7 +23602,7 @@
 		<vox pos="-50.5 0.3 94.4" rot="0.0 180.0 0.0" file="MOD/main/props/barrier.vox" object="tech"/>
 		<vox pos="-45.1 0.3 94.5" rot="0.0 0.0 0.0" file="MOD/main/props/barrier.vox" object="tech"/>
 	</group>
-	<group name="fence" pos="10.9 5.9 -4.2" layer="background">
+	<group name="fence" pos="10.9 5.9 -4.2">
 		<voxbox pos="-84.5 0.0 -111.7" size="3 24 110" brush="MOD/main/props/fence.vox" object="tall-fence" offset="0.0 0.0 3.0"/>
 		<voxbox pos="-84.5 0.0 -111.7" rot="0.0 90.0 0.0" size="3 24 1249" brush="MOD/main/props/fence.vox" object="tall-fence"/>
 		<voxbox pos="84.0 0.0 49.3" rot="0.0 0.0 0.0" size="3 24 624" brush="MOD/main/props/fence.vox" object="tall-fence" offset="0.0 0.0 -52.0"/>

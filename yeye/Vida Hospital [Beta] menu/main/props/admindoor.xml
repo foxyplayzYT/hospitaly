@@ -1,0 +1,11 @@
+<prefab version="1.6.2">
+	<group name="Admin-door" pos="2.2 0.0 0.1">
+		<vox pos="0.0 0.0 0.1" file="MOD/main/props/doors.vox" object="admin frame">
+			<vox pos="0.0 0.1 0.0" prop="true" file="MOD/main/props/doors.vox" object="admindoor">
+				<joint pos="-0.9 0.8 -0.2" rot="90.0 0.0 0.0" type="hinge" rotstrength="0.1" rotspring="0" limits="-160 0"/>
+				<joint pos="-0.9 3.4 -0.2" rot="90.0 0.0 0.0" type="hinge" rotstrength="0.1" rotspring="0" limits="-160 0"/>
+			</vox>
+		</vox>
+	</group>
+</prefab>
+

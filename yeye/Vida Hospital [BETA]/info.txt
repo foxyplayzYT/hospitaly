@@ -1,6 +1,6 @@
 name = Vida Hospital [Beta]
 author = FoxyPlayzYT, Mr.Random
-description = [noupload] An 8-story hospital map for you to destroy also, it's not recommended for low end PCs (for now).
+description = [noupload] An 8-story hospital map for you to destroy.
 tags = Map
 
 # If description contains [noupload] the description on Steam workshop will not be overwritten.

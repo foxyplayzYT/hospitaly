@@ -1,5 +1,0 @@
-<scene version="1.5.4" shadowVolume="1 1 1">
-	<voxbox pos="-5.0 -5.0 -5.0" rot="0.0 0.0 0.0" size="100 1 100" color="0.23 0.16 0.16"/>
-	<script file="MOD/Script/menu.lua"/>
-</scene>
-

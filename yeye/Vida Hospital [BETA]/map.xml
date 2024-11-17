@@ -1,5 +1,12 @@
 <scene version="1.6.2" shadowVolume="190 70 230">
-	<environment template="sunset" pos="-2.2 5.8 -6.8" sunLength="50"/>
+	<group name="Environments" pos="-2.2 5.6 -6.8">
+		<group name="Sunny" tags="snowoff" pos="0.0 0.0 0.0" layer="snowoff">
+			<environment template="sunset" pos="0.0 0.2 0.0" sunLength="50"/>
+		</group>
+		<group name="Snowy" pos="0.0 4.8 0.0" layer="snow">
+			<environment pos="0.0 0.2 0.0" skybox="night.dds" skyboxtint=".005 .005 .005" skyboxbrightness=".005" skyboxrot="110" ambient=".005" fogColor=".003 .003 .003" sunColorTint=".003 .003 .003" snowamount=".5" snowonground="true"/>
+		</group>
+	</group>
 	<script pos="-2.2 5.8 -6.8" file="main.lua"/>
 	<script pos="-2.2 5.8 -6.8" file="sandbox.lua"/>
 	<spawnpoint pos="-92.4 6.4 -40.9" rot="0.0 90.0 0.0"/>
@@ -924,7 +931,7 @@
 				<vox pos="37.8 3.1 -2.30001" rot="0.0 360.0 90.0" texture="8 0.2" blendtexture="5 0.35" file="MOD/main/props/AC_Unit.vox"/>
 				<vox pos="37.8 3.1 35.79999" rot="0.0 360.0 90.0" texture="8 0.2" blendtexture="5 0.35" file="MOD/main/props/AC_Unit.vox"/>
 			</group>
-			<group name="lights" pos="-15.3 3.2 -78.5">
+			<group name="lights" pos="-15.3 3.2 -78.5" layer="lights">
 				<group name="lights" pos="-10.8 0.0 0.0">
 					<vox pos="-0.1 0.0 -65.0" rot="0.0 0.0 0.0" prop="true" file="MOD/main/building/parking-lot.vox" object="light">
 						<light pos="0.05 0.0 -0.05" rot="90.0 0.0 0.0" type="area" color="0.86 0.97 0.97" scale="3" size=".3 2.3" fogscale="1.3" fogiter="1.5" glare="0.2"/>
@@ -1786,6 +1793,7 @@
 					</vox>
 				</group>
 			</group>
+			<group layer="lightsoff"/>
 		</group>
 		<group name="floor1" pos="0.0 5.8 0.0">
 			<group name="outside-walls" pos="-13.6 0.2 -46.3">
@@ -2966,7 +2974,7 @@
 				</compound>
 				<voxbox pos="38.7 0.0 3.0" rot="0.0 -90.0 0.0" size="86 40 2" brush="MOD/main/building/windows.vox" object="admin-window" offset="0.0 0.0 0.0"/>
 			</group>
-			<group name="props" pos="0.0 0.0 0.0">
+			<group name="props" pos="0.0 0.0 0.0" layer="1st">
 				<group name="office" pos="-25.8 0.2 -61.8">
 					<vox pos="2.2 0.0 0.1" rot="0.0 0.0 0.0" density="1.3" prop="true" file="MOD/main/props/hospital-assets2.vox" object="desk1">
 						<vox pos="-1.0 1.0 -0.1" rot="0.0 -130.0 0.0" prop="true" file="MOD/main/props/hospital-assets2.vox" object="globe"/>
@@ -7215,7 +7223,7 @@
 					<vertex pos="-14.5 78.0"/>
 					<vertex pos="-14.5 77.6"/>
 					<vertex pos="-14.5 74.2"/>
-					<group pos="-12.6 0.0 2.6">
+					<group pos="-12.6 0.0 2.6" layer="lights">
 						<voxbox pos="-0.8 0.0 4.3" rot="0.0 0.0 0.0" size="16 1 16" brush="MOD/main/building/inner-tiles.vox" object="light" offset="0.0 0.0 2.0">
 							<light pos="0.8 0.0 0.8" rot="90.0 0.0 0.0" type="area" scale="2.7" size="1.6 1.6"/>
 						</voxbox>
@@ -7555,7 +7563,7 @@
 					<vertex pos="21.3 -14.6"/>
 					<vertex pos="21.3 19.8"/>
 					<vertex pos="-14.6 19.8"/>
-					<group pos="1.0 0.2 1.1">
+					<group pos="1.0 0.2 1.1" layer="lights">
 						<voxbox pos="-14.5 -0.2 12.6" rot="0.0 0.0 0.0" size="16 1 16" brush="MOD/main/building/inner-tiles.vox" object="light" offset="0.0 0.0 2.0">
 							<light pos="0.8 0.0 0.8" rot="90.0 0.0 0.0" type="area" scale="2.7" size="1.6 1.6"/>
 						</voxbox>
@@ -7647,7 +7655,7 @@
 					<vertex pos="25.7 -19.4"/>
 					<vertex pos="25.7 15.0"/>
 					<vertex pos="-57.8 15.0"/>
-					<group pos="-5.9 0.0 -2.7">
+					<group pos="-5.9 0.0 -2.7" layer="lights">
 						<voxbox pos="15.4 0.0 14.5" rot="0.0 0.0 0.0" size="16 1 16" brush="MOD/main/building/inner-tiles.vox" object="light" offset="0.0 0.0 2.0">
 							<light pos="0.8 0.0 0.8" rot="90.0 0.0 0.0" type="area" scale="2.7" size="1.6 1.6"/>
 						</voxbox>
@@ -7970,8 +7978,9 @@
 				</voxagon>
 				<voxbox pos="29.3 0.1 21.1" texture="3 0.5" size="124 1 556" offset="0.0 0.0 0.0" material="plaster" color="0.67 0.67 0.67"/>
 				<voxbox pos="21.7 0.1 61.1" texture="3 0.5" size="76 1 156" offset="0.0 0.0 400.0" material="plaster" color="0.67 0.67 0.67"/>
+				<group layer="lightsoff"/>
 			</group>
-			<group name="gates" pos="32.0 -0.4 -9.3">
+			<group name="gates" pos="32.0 -0.4 -9.3" layer="gates">
 				<group name="gate main (close)" pos="-7.9 0.0 13.45" rot="0.0 -90.0 0.0">
 					<script pos="0.0 0.0 0.6" file="MOD/scripts/sampleCtrl1.lua">
 						<script pos="0.0 0.0 -0.6" file="MOD/scripts/sectionalGate.lua" param0="motorSound=light/buzz4.ogg:1:2.5" param1="gateSound=metal/slide-m-loop.ogg:0.3:5">
@@ -8559,6 +8568,10 @@
 						<trigger tags="open" pos="1.1 -9.1 -0.2" rot="0 90 0" type="box" size="9 5 4"/>
 					</script>
 				</group>
+			</group>
+			<group name="gates" layer="gatesoff"/>
+			<group layer="1stoff">
+				<voxbox pos="0.0 -9.9 0.0"/>
 			</group>
 		</group>
 		<group name="floor2" pos="0.0 5.8 0.0">
@@ -9772,7 +9785,7 @@
 					</voxbox>
 				</compound>
 			</group>
-			<group name="props" pos="0.0 4.4 0.0">
+			<group name="props" pos="0.0 4.4 0.0" layer="2nd">
 				<group name="ppw" pos="22.2 0.1 -46.0">
 					<group name="private patient ward" pos="1.6 0.0 9.6" rot="0.0 90.0 0.0">
 						<vox pos="0.1 0.0 0.2" rot="0.0 -180.0 0.0" density="1.5" prop="true" file="MOD/main/props/hospital-assets1.vox" object="hospital-bed"/>
@@ -11540,7 +11553,7 @@
 					<vertex pos="-14.5 78.0"/>
 					<vertex pos="-14.5 77.6"/>
 					<vertex pos="-14.5 74.2"/>
-					<group pos="4.1 0.0 32.3">
+					<group pos="4.1 0.0 32.3" layer="lights">
 						<voxbox pos="11.1 0.0 -22.0" rot="0.0 0.0 0.0" size="16 1 16" brush="MOD/main/building/inner-tiles.vox" object="light" offset="0.0 0.0 2.0">
 							<light pos="0.8 0.0 0.8" rot="90.0 0.0 0.0" type="area" scale="2.7" size="1.6 1.6"/>
 						</voxbox>
@@ -11990,7 +12003,7 @@
 					<vertex pos="21.3 -14.6"/>
 					<vertex pos="21.3 19.8"/>
 					<vertex pos="-14.6 19.8"/>
-					<group pos="1.8 0.0 -9.3">
+					<group pos="1.8 0.0 -9.3" layer="lights">
 						<voxbox pos="15.3 0.0 26.4" rot="0.0 0.0 0.0" size="16 1 16" brush="MOD/main/building/inner-tiles.vox" object="light" offset="0.0 0.0 2.0">
 							<light pos="0.8 0.0 0.8" rot="90.0 0.0 0.0" type="area" scale="2.7" size="1.6 1.6"/>
 						</voxbox>
@@ -12130,7 +12143,7 @@
 					<vertex pos="25.7 -19.4"/>
 					<vertex pos="25.7 15.0"/>
 					<vertex pos="-57.8 15.0"/>
-					<group pos="-28.2 0.0 -2.7">
+					<group pos="-28.2 0.0 -2.7" layer="lights">
 						<voxbox pos="-25.49999 0.0 -16.10003" rot="0.0 0.0 0.0" size="16 1 16" brush="MOD/main/building/inner-tiles.vox" object="light" offset="0.0 0.0 2.0">
 							<light pos="0.8 0.0 0.8" rot="90.0 0.0 0.0" type="area" scale="2.7" size="1.6 1.6"/>
 						</voxbox>
@@ -12335,6 +12348,10 @@
 					</group>
 					<voxbox pos="16.7 0.0 -11.6" size="51 1 115" brush="hole" offset="0.0 0.0 -65.0"/>
 				</voxagon>
+				<group layer="lightsoff"/>
+			</group>
+			<group layer="2ndoff">
+				<voxbox pos="0.0 -14.6 0.0"/>
 			</group>
 		</group>
 		<group name="floor3" pos="-16.0 14.4 -46.3">
@@ -12374,7 +12391,7 @@
 				</group>
 				<group pos="31.7 0.0 26.6" rot="0.0 180.0 0.0">
 					<voxbox pos="10.1 4.3 -37.7" rot="0.0 -90.0 0.0" size="847 1 201" brush="MOD/main/building/inner-tiles.vox" object="tile1" offset="10.0 -1.0 8.0">
-						<group pos="43.2 0.0 9.5">
+						<group pos="43.2 0.0 9.5" layer="lights">
 							<voxbox pos="-18.70002 0.0 -3.39999" rot="0.0 -90.0 0.0" size="16 1 16" brush="MOD/main/building/inner-tiles.vox" object="light" offset="0.0 0.0 2.0">
 								<light pos="0.8 0.0 0.8" rot="90.0 0.0 0.0" type="area" scale="2.7" size="1.6 1.6"/>
 							</voxbox>
@@ -12513,7 +12530,7 @@
 						</group>
 					</voxbox>
 					<voxbox pos="29.4 4.3 -37.7" rot="0.0 -90.0 0.0" size="416 1 193" brush="MOD/main/building/inner-tiles.vox" object="tile1" offset="10.0 -1.0 2.0">
-						<group pos="20.3 0.0 10.9">
+						<group pos="20.3 0.0 10.9" layer="lights">
 							<voxbox pos="-16.20001 0.0 -9.29999" rot="0.0 -90.0 0.0" size="16 1 16" brush="MOD/main/building/inner-tiles.vox" object="light" offset="0.0 0.0 2.0">
 								<light pos="0.8 0.0 0.8" rot="90.0 0.0 0.0" type="area" scale="2.7" size="1.6 1.6"/>
 							</voxbox>
@@ -12583,7 +12600,7 @@
 						</group>
 					</voxbox>
 					<voxbox pos="27.8 4.3 -47.4" rot="0.0 -90.0 0.0" size="97 1 302" brush="MOD/main/building/inner-tiles.vox" object="tile1" offset="-2.0 -1.0 1.0">
-						<group pos="4.5 0.0 15.3">
+						<group pos="4.5 0.0 15.3" layer="lights">
 							<voxbox pos="-2.60001 0.0 0.00001" rot="0.0 -90.0 0.0" size="16 1 16" brush="MOD/main/building/inner-tiles.vox" object="light" offset="0.0 0.0 2.0">
 								<light pos="0.8 0.0 0.8" rot="90.0 0.0 0.0" type="area" scale="2.7" size="1.6 1.6"/>
 							</voxbox>
@@ -12611,7 +12628,7 @@
 						</group>
 					</voxbox>
 					<voxbox pos="27.6 4.3 38.1" rot="0.0 -90.0 0.0" size="336 1 175" brush="MOD/main/building/inner-tiles.vox" object="tile1" offset="3.0 -1.0 3.0">
-						<group pos="16.7 0.0 8.3">
+						<group pos="16.7 0.0 8.3" layer="lights">
 							<voxbox pos="-13.60002 0.0 5.1" rot="0.0 -90.0 0.0" size="16 1 16" brush="MOD/main/building/inner-tiles.vox" object="light" offset="0.0 0.0 2.0">
 								<light pos="0.8 0.0 0.8" rot="90.0 0.0 0.0" type="area" scale="2.7" size="1.6 1.6"/>
 							</voxbox>
@@ -12666,7 +12683,7 @@
 						</group>
 					</voxbox>
 					<voxbox pos="10.1 4.3 47.0" rot="0.0 -90.0 0.0" size="247 1 120" brush="MOD/main/building/inner-tiles.vox" object="tile1" offset="7.0 -1.0 8.0">
-						<group pos="12.1 0.0 5.2">
+						<group pos="12.1 0.0 5.2" layer="lights">
 							<voxbox pos="10.99997 0.0 -4.2" rot="0.0 -90.0 0.0" size="16 1 16" brush="MOD/main/building/inner-tiles.vox" object="light" offset="0.0 0.0 2.0">
 								<light pos="0.8 0.0 0.8" rot="90.0 0.0 0.0" type="area" scale="2.7" size="1.6 1.6"/>
 							</voxbox>
@@ -12730,6 +12747,7 @@
 						<vertex pos="0.1 0.4"/>
 						<vertex pos="-1.0 0.8"/>
 					</voxagon>
+					<group tags="lightsoff"/>
 				</group>
 				<voxbox pos="42.0 0.1 -11.5" rot="0.0 180.0 0.0" size="376 2 92" brush="MOD/main/building/building.vox" object="roof1.2" offset="0.0 -1.0 0.0"/>
 				<voxbox pos="42.0 0.1 -11.5" rot="0.0 180.0 0.0" size="376 2 92" brush="MOD/main/building/building.vox" object="roof1.2" offset="0.0 -1.0 0.0"/>
@@ -13390,7 +13408,7 @@
 					<voxbox pos="12.2 0.0 16.3" rot="0.0 -90.0 0.0" size="17 41 4" offset="0.0 0.0 0.0" material="masonry" color="0.45 0.62 0.74"/>
 				</group>
 			</group>
-			<group name="props" pos="21.9 0.2 52.3" rot="0.0 0.0 0.0">
+			<group name="props" pos="21.9 0.2 52.3" rot="0.0 0.0 0.0" layer="3rd">
 				<group name="mri room" pos="3.9 0.0 -78.4" rot="0.0 90.0 0.0">
 					<instance pos="0.4 0.0 -6.1" rot="0.0 180.0 0.0" file="MOD/main/props/door1.xml"/>
 					<instance pos="3.5 0.0 -2.5" rot="0.0 -90.0 0.0" file="MOD/main/props/door1.xml"/>
@@ -14093,6 +14111,7 @@
 				<instance pos="8.5 0.0 9.4" rot="0.0 0.0 0.0" file="MOD/main/props/door1.xml"/>
 				<instance pos="13.59999 0.0 0.9" rot="0.0 180.0 0.0" file="MOD/main/props/door3.xml"/>
 			</group>
+			<group layer="3rdoff"/>
 		</group>
 		<group name="floor4" pos="0.0 5.8 0.0" rot="0.0 0.0 0.0">
 			<vox pos="4.2 13.1 30.7" rot="0.0 0.0 0.0" file="MOD/main/building/walls.vox" object="elevator wall"/>
@@ -14272,7 +14291,7 @@
 						<vertex pos="0.1 0.4"/>
 						<vertex pos="-1.0 0.8"/>
 					</voxagon>
-					<group pos="23.6 4.3 -30.1" rot="0.0 -90.0 0.0">
+					<group pos="23.6 4.3 -30.1" rot="0.0 -90.0 0.0" layer="lights">
 						<voxbox pos="-5.2 0.0 -4.2" rot="0.0 -90.0 0.0" size="16 1 16" brush="MOD/main/building/inner-tiles.vox" object="light" offset="0.0 0.0 2.0">
 							<light pos="0.8 0.0 0.8" rot="90.0 0.0 0.0" type="area" scale="2.7" size="1.6 1.6"/>
 						</voxbox>
@@ -14541,6 +14560,7 @@
 							<light pos="0.8 0.0 0.8" rot="90.0 0.0 0.0" type="area" scale="2.7" size="1.6 1.6"/>
 						</voxbox>
 					</group>
+					<group layer="lightsoff"/>
 				</group>
 				<voxbox name="hole" pos="6.0 -0.1 0.2" rot="0.0 180.0 0.0" size="44 3 51" brush="hole" offset="65.0 -3.0 -34.0"/>
 				<voxbox name="hole2" pos="1.4 -0.1 -10.5" rot="0.0 0.0 0.0" size="81 3 52" brush="hole" offset="-2.0 -3.0 -40.0"/>
@@ -15068,7 +15088,7 @@
 					</compound>
 				</group>
 			</group>
-			<group name="props" pos="0.0 13.1 0.0">
+			<group name="props" pos="0.0 13.1 0.0" layer="4th">
 				<group name="neurology office" pos="5.4 0.0 -0.3">
 					<vox pos="0.3 0.0 -1.4" rot="0.0 -90.0 0.0" prop="true" file="MOD/main/props/hospital-assets2.vox" object="desk1">
 						<vox pos="1.2 1.0 -0.3" prop="true" file="MOD/main/props/hospital-assets2.vox" object="computer"/>
@@ -16103,6 +16123,7 @@
 				<instance pos="-7.6 0.0 28.6" rot="0.0 90.0 0.0" file="MOD/main/props/door2.xml"/>
 				<instance pos="-9.0 0.0 37.6" rot="0.0 0.0 0.0" file="MOD/main/props/door2.xml"/>
 			</group>
+			<group layer="4thoff"/>
 		</group>
 		<group name="floor5" pos="0.0 5.8 0.0">
 			<group pos="4.3 17.2 -29.1">
@@ -16258,7 +16279,7 @@
 						<vertex pos="-0.3 -0.3"/>
 						<vertex pos="-1.0 1.2"/>
 					</voxagon>
-					<group pos="10.8 4.3 11.5" rot="0.0 -90.0 0.0">
+					<group pos="10.8 4.3 11.5" rot="0.0 -90.0 0.0" layer="lights">
 						<voxbox pos="10.99998 0.0 1.7" rot="0.0 -90.0 0.0" size="16 1 16" brush="MOD/main/building/inner-tiles.vox" object="light" offset="0.0 0.0 2.0">
 							<light pos="0.8 0.0 0.8" rot="90.0 0.0 0.0" type="area" scale="2.7" size="1.6 1.6"/>
 						</voxbox>
@@ -16521,6 +16542,7 @@
 							<light pos="0.8 0.0 0.8" rot="90.0 0.0 0.0" type="area" scale="2.7" size="1.6 1.6"/>
 						</voxbox>
 					</group>
+					<group layer="lightsoff"/>
 				</group>
 			</group>
 			<group name="walls" pos="0.0 -4.3 0.0">
@@ -16965,7 +16987,7 @@
 					</voxbox>
 				</compound>
 			</group>
-			<group name="props" pos="0.0 17.4 0.0">
+			<group name="props" pos="0.0 17.4 0.0" layer="5th">
 				<group name="public patient ward" pos="-8.7 0.0 0.4">
 					<vox pos="4.2 0.0 -2.1" rot="0.0 30.0 0.0" prop="true" file="MOD/main/props/hospital-assets1.vox" object="trolley"/>
 					<vox pos="2.5 0.0 -3.2" prop="true" file="MOD/main/props/hospital-assets1.vox" object="bed-table"/>
@@ -17739,6 +17761,7 @@
 				<instance pos="-12.5 0.0 41.0" rot="0.0 90.0 0.0" file="MOD/main/props/bathroom-w.xml"/>
 				<instance pos="1.5 0.0 46.0" rot="0.0 -90.0 0.0" file="MOD/main/props/door4.xml"/>
 			</group>
+			<group layer="5thoff"/>
 		</group>
 		<group name="floor6" pos="0.0 5.8 0.0">
 			<vox pos="4.2 21.7 30.7" rot="0.0 0.0 0.0" file="MOD/main/building/walls.vox" object="elevator wall"/>
@@ -17896,7 +17919,7 @@
 						<vertex pos="0.1 0.4"/>
 						<vertex pos="-1.0 0.8"/>
 					</voxagon>
-					<group pos="11.7 4.2 -20.8" rot="0.0 -90.0 0.0">
+					<group pos="11.7 4.2 -20.8" rot="0.0 -90.0 0.0" layer="lights">
 						<voxbox pos="-4.3 0.0 4.3" rot="0.0 -90.0 0.0" size="16 1 16" brush="MOD/main/building/inner-tiles.vox" object="light" offset="0.0 0.0 2.0">
 							<light pos="0.8 0.0 0.8" rot="90.0 0.0 0.0" type="area" scale="2.7" size="1.6 1.6"/>
 						</voxbox>
@@ -18216,6 +18239,7 @@
 							<light pos="0.8 0.0 0.8" rot="90.0 0.0 0.0" type="area" scale="2.7" size="1.6 1.6"/>
 						</voxbox>
 					</group>
+					<group layer="lightsoff"/>
 				</group>
 				<voxbox name="hole" pos="6.4 -0.1 2.9" rot="0.0 180.0 0.0" size="44 3 51" brush="hole" offset="65.0 -3.0 -34.0"/>
 				<voxbox name="hole2" pos="1.8 -0.1 -7.8" rot="0.0 0.0 0.0" size="81 3 52" brush="hole" offset="-2.0 -3.0 -40.0"/>
@@ -18708,7 +18732,7 @@
 					</voxbox>
 				</compound>
 			</group>
-			<group name="props" pos="0.0 21.7 0.0">
+			<group name="props" pos="0.0 21.7 0.0" layer="6th">
 				<group name="public patient ward" pos="-7.2 0.0 -11.1">
 					<vox pos="4.2 0.0 -2.1" rot="0.0 30.0 0.0" prop="true" file="MOD/main/props/hospital-assets1.vox" object="trolley"/>
 					<vox pos="2.5 0.0 -3.1" prop="true" file="MOD/main/props/hospital-assets1.vox" object="bed-table"/>
@@ -19293,6 +19317,7 @@
 				<instance pos="8.7 0.0 -20.8" rot="0.0 -90.0 0.0" file="MOD/main/props/door1.xml"/>
 				<instance pos="10.9 0.0 21.0" rot="0.0 180.0 0.0" file="MOD/main/props/door1.xml"/>
 			</group>
+			<group layer="6thoff"/>
 		</group>
 		<group name="floor7" pos="0.0 5.8 0.0">
 			<vox pos="4.2 26.0 30.7" rot="0.0 0.0 0.0" file="MOD/main/building/walls.vox" object="elevator wall"/>
@@ -19462,7 +19487,7 @@
 						<vertex pos="0.1 0.4"/>
 						<vertex pos="-1.0 0.8"/>
 					</voxagon>
-					<group pos="10.0 4.3 12.4" rot="0.0 -90.0 0.0">
+					<group pos="10.0 4.3 12.4" rot="0.0 -90.0 0.0" layer="lights">
 						<voxbox pos="-10.3 0.0 -5.9" rot="0.0 -90.0 0.0" size="16 1 16" brush="MOD/main/building/inner-tiles.vox" object="light" offset="0.0 0.0 2.0">
 							<light pos="0.8 0.0 0.8" rot="90.0 0.0 0.0" type="area" scale="2.7" size="1.6 1.6"/>
 						</voxbox>
@@ -19755,13 +19780,14 @@
 							<light pos="0.8 0.0 0.8" rot="90.0 0.0 0.0" type="area" scale="2.7" size="1.6 1.6"/>
 						</voxbox>
 					</group>
+					<group layer="lightsoff"/>
 				</group>
 				<voxbox name="hole" pos="6.4 -0.1 0.2" rot="0.0 180.0 0.0" size="44 3 51" brush="hole" offset="65.0 -3.0 -34.0"/>
 				<voxbox name="hole2" pos="1.8 -0.1 -10.5" rot="0.0 0.0 0.0" size="81 3 52" brush="hole" offset="-2.0 -3.0 -40.0"/>
 			</group>
 			<group name="walls" pos="0.0 26.0 0.0">
-				<voxbox pos="2.9 3.3 27.7" rot="0.0 0.0 0.0" size="26 8 3" brush="MOD/main/building/walls.vox" object="wall">
-					<voxbox pos="0.0 0.0 -0.1" size="26 7 1" brush="MOD/main/building/inner-walls.vox" object="plaster9" offset="20.0 0.0 0.0" color="0.89 0.89 0.89"/>
+				<voxbox pos="2.9 3.3 27.7" rot="0.0 0.0 0.0" size="26 8 2" brush="MOD/main/building/walls.vox" object="wall">
+					<voxbox pos="0.0 0.0 0.0" size="26 7 1" brush="MOD/main/building/inner-walls.vox" object="plaster9" offset="20.0 0.0 0.0" color="0.89 0.89 0.89"/>
 				</voxbox>
 				<voxbox pos="25.1 -0.0 7.8" rot="0.0 180.0 0.0" size="24 41 24" brush="MOD/main/building/walls.vox" object="cornerwindowhigh"/>
 				<voxbox pos="18.1 -0.0 7.5" rot="0.0 0.0 0.0" size="24 41 24" brush="MOD/main/building/walls.vox" object="cornerwindowhigh"/>
@@ -19780,13 +19806,13 @@
 					<vox pos="12.5 1.2 0.2" file="MOD/main/building/windows.vox" object="window2"/>
 					<vox pos="10.4 1.2 0.2" file="MOD/main/building/windows.vox" object="window2"/>
 				</voxbox>
-				<voxbox pos="5.5 -0.0 27.7" rot="0.0 0.0 0.0" size="129 41 3" brush="MOD/main/building/walls.vox" object="wall">
-					<voxbox pos="0.0 0.0 -0.1" size="126 40 1" brush="MOD/main/building/inner-walls.vox" object="plaster9" offset="20.0 0.0 0.0" color="0.89 0.89 0.89"/>
+				<voxbox pos="5.5 0.0 27.7" rot="0.0 0.0 0.0" size="129 41 2" brush="MOD/main/building/walls.vox" object="wall">
+					<voxbox pos="0.0 0.0 0.0" size="126 40 1" brush="MOD/main/building/inner-walls.vox" object="plaster9" offset="20.0 0.0 0.0" color="0.89 0.89 0.89"/>
 				</voxbox>
 				<compound pos="-4.4 0.0 27.9">
-					<voxbox pos="-7.2 -0.0 -0.2" rot="0.0 0.0 0.0" size="145 41 3" brush="MOD/main/building/walls.vox" object="wall" offset="0.0 0.0 0.0">
-						<voxbox pos="-0.0 0.0 -0.1" size="84 40 1" brush="MOD/main/building/inner-walls.vox" object="plaster9" offset="0.0 0.0 0.0"/>
-						<voxbox pos="8.9 0.0 -0.1" size="56 40 1" brush="MOD/main/building/inner-walls.vox" object="plaster9" offset="90.0 0.0 0.0" color="0.89 0.89 0.89"/>
+					<voxbox pos="-7.2 0.0 -0.2" rot="0.0 0.0 0.0" size="145 41 2" brush="MOD/main/building/walls.vox" object="wall" offset="0.0 0.0 0.0">
+						<voxbox pos="0.0 0.0 0.0" size="84 40 1" brush="MOD/main/building/inner-walls.vox" object="plaster9" offset="0.0 0.0 0.0"/>
+						<voxbox pos="8.9 0.0 0.0" size="56 40 1" brush="MOD/main/building/inner-walls.vox" object="plaster9" offset="90.0 0.0 0.0" color="0.89 0.89 0.89"/>
 						<vox pos="1.1 1.2 0.2" file="MOD/main/building/windows.vox" object="window2"/>
 						<vox pos="3.2 1.2 0.2" file="MOD/main/building/windows.vox" object="window2"/>
 						<vox pos="7.4 1.2 0.2" file="MOD/main/building/windows.vox" object="window2"/>
@@ -20217,7 +20243,7 @@
 					<instance pos="2.2 0.0 0.1" rot="0.0 0.0 0.0" file="MOD/main/props/admindoor.xml"/>
 				</voxbox>
 			</group>
-			<group name="props" pos="0.0 26.0 0.0">
+			<group name="props" pos="0.0 26.0 0.0" layer="7th">
 				<group name="staff lounge" pos="-9.7 0.0 -88.8" rot="0.0 90.0 0.0">
 					<vox pos="1.1 1.3 10.5" rot="0.0 0.0 0.0" prop="false" file="MOD/main/props/objective_painting_8.vox"/>
 					<vox pos="-2.4 1.4 10.3" rot="0.0 0.0 0.0" prop="false" file="MOD/main/props/hospital-assets3.vox" object="shelf"/>
@@ -20657,6 +20683,7 @@
 				<instance pos="-7.4 0.0 17.6" rot="0.0 90.0 0.0" file="MOD/main/props/door3.xml"/>
 				<instance pos="8.7 0.0 50.8" rot="0.0 0.0 0.0" file="MOD/main/props/door4.xml"/>
 			</group>
+			<group layer="7thoff"/>
 		</group>
 		<group name="floor8" pos="0.0 5.8 0.0">
 			<vox pos="4.2 30.3 30.7" rot="0.0 0.0 0.0" file="MOD/main/building/walls.vox" object="elevator wall"/>
@@ -20817,7 +20844,7 @@
 						<vertex pos="-0.1 3.5"/>
 						<vertex pos="-1.0 3.5"/>
 					</voxagon>
-					<group pos="10.0 4.3 -3.8" rot="0.0 -90.0 0.0">
+					<group pos="10.0 4.3 -3.8" rot="0.0 -90.0 0.0" layer="lights">
 						<voxbox pos="-31.5 0.0 6.0" rot="0.0 -90.0 0.0" size="16 1 16" brush="MOD/main/building/inner-tiles.vox" object="light" offset="0.0 0.0 2.0">
 							<light pos="0.8 0.0 0.8" rot="90.0 0.0 0.0" type="area" scale="2.7" size="1.6 1.6"/>
 						</voxbox>
@@ -21035,6 +21062,7 @@
 							<light pos="0.8 0.0 0.8" rot="90.0 0.0 0.0" type="area" scale="2.7" size="1.6 1.6"/>
 						</voxbox>
 					</group>
+					<group layer="lightsoff"/>
 				</group>
 				<voxbox name="hole" pos="6.4 -0.1 0.2" rot="0.0 180.0 0.0" size="44 3 51" brush="hole" offset="65.0 -3.0 -34.0"/>
 				<voxbox name="hole2" pos="1.7 -0.1 -10.6" rot="0.0 0.0 0.0" size="82 3 57" brush="hole" offset="-2.0 -3.0 -40.0"/>
@@ -21288,7 +21316,7 @@
 				<voxbox pos="0.15 1.5 0.8" rot="0.0 180.0 -10.0" size="98 2 16" brush="MOD/main/props/helipad.vox" object="ramp2" offset="0.0 0.0 0.0"/>
 			</vox>
 			<group name="props" pos="0.0 0.0 0.0">
-				<group name="room2" pos="7.9 30.3 -41.4" rot="0.0 180.0 0.0">
+				<group name="room2" pos="7.9 30.3 -41.4" rot="0.0 180.0 0.0" layer="8th">
 					<vox pos="2.1 2.3 9.9" rot="0.0 -90.0 0.0" prop="false" file="MOD/main/props/hospital-assets1.vox" object="bed-lamp">
 						<light pos="0.0 0.1 0.0" rot="10.0 0.0 0.0" type="area" scale="1.5" size="1 0.2" reach="6"/>
 					</vox>
@@ -21686,7 +21714,7 @@
 					<vox pos="-12.3 0.0 3.9" rot="0.0 60.0 0.0" prop="true" file="MOD/main/props/hospital-assets1.vox" object="stand"/>
 					<vox pos="-10.4 0.0 3.7" rot="0.0 120.0 0.0" prop="true" file="MOD/main/props/hospital-assets1.vox" object="trolley"/>
 				</group>
-				<group name="waiting room" pos="16.4 30.3 -23.3" rot="0.0 180.0 0.0">
+				<group name="waiting room" pos="16.4 30.3 -23.3" rot="0.0 180.0 0.0" layer="8th">
 					<vox pos="-3.0 0.0 2.1" rot="0.0 90.0 0.0" strength="1.3" prop="true" file="MOD/main/props/hospital-assets2.vox" object="waiting-chair"/>
 					<vox pos="-4.0 0.0 2.0" rot="0.0 -90.0 0.0" strength="1.3" prop="true" file="MOD/main/props/hospital-assets2.vox" object="waiting-chair"/>
 					<vox pos="-4.0 0.0 4.8" rot="0.0 -90.0 0.0" strength="1.3" prop="true" file="MOD/main/props/hospital-assets2.vox" object="waiting-chair"/>
@@ -21700,7 +21728,7 @@
 					<vox pos="5.0 0.0 2.3" rot="0.0 0.0 0.0" strength="1.3" prop="true" file="MOD/main/props/hospital-assets2.vox" object="waiting-chair"/>
 					<vox pos="2.2 0.0 2.3" rot="0.0 0.0 0.0" strength="1.3" prop="true" file="MOD/main/props/hospital-assets2.vox" object="waiting-chair"/>
 				</group>
-				<group name="reception" pos="9.7 30.3 -12.9">
+				<group name="reception" pos="9.7 30.3 -12.9" layer="8th">
 					<vox pos="-1.5 0.0 -6.0" rot="0.0 0.0 0.0" prop="true" file="MOD/main/props/filing_cabinet.vox"/>
 					<vox pos="5.1 0.0 1.9" rot="0.0 -90.0 0.0" prop="true" file="MOD/main/props/filing_cabinet.vox"/>
 					<vox pos="5.1 0.0 1.0" rot="0.0 -90.0 0.0" prop="true" file="MOD/main/props/filing_cabinet.vox"/>
@@ -21721,7 +21749,7 @@
 					<vox pos="-0.6 0.0 -6.0" rot="0.0 0.0 0.0" prop="true" file="MOD/main/props/filing_cabinet.vox"/>
 					<vox pos="5.7 0.8 -1.5" rot="0.0 -90.0 0.0" prop="false" file="MOD/main/props/hospital-assets2.vox" object="poster1"/>
 				</group>
-				<group name="server room" pos="9.0 30.3 14.8">
+				<group name="server room" pos="9.0 30.3 14.8" layer="8th">
 					<vox pos="4.3 0.0 -3.2" rot="0.0 0.0 0.0" prop="false" file="MOD/main/props/quillez_server.vox"/>
 					<vox pos="4.3 0.0 -1.0" rot="0.0 0.0 0.0" prop="false" file="MOD/main/props/quillez_server.vox"/>
 					<vox pos="4.3 0.0 -2.1" rot="0.0 0.0 0.0" prop="false" file="MOD/main/props/quillez_server.vox"/>
@@ -21762,7 +21790,7 @@
 					<vox pos="-2.4 0.0 2.2" rot="0.0 -180.0 0.0" prop="false" file="MOD/main/props/quillez_server.vox"/>
 					<vox pos="-3.2 0.0 2.3" rot="0.0 0.0 0.0" prop="false" file="MOD/main/props/quillez_server.vox"/>
 				</group>
-				<group name="security" pos="8.3 30.3 4.3" rot="0.0 -90.0 0.0">
+				<group name="security" pos="8.3 30.3 4.3" rot="0.0 -90.0 0.0" layer="8th">
 					<vox pos="1.7 0.0 -0.1" file="MOD/main/props/security.vox" object="desk">
 						<vox pos="2.7 0.9 -1.5" rot="0.0 -90.0 0.0" prop="true" file="MOD/main/props/hospital-assets2.vox" object="tv-part2"/>
 						<vox pos="2.2 0.9 -1.5" rot="0.0 -90.0 0.0" prop="true" file="MOD/main/props/hospital-assets2.vox" object="keyboard"/>
@@ -21831,7 +21859,7 @@
 					<vox pos="-5.5 0.0 2.3" rot="0.0 180.0 0.0" prop="true" file="MOD/main/props/filing_cabinet.vox"/>
 					<vox pos="-3.7 0.0 2.3" rot="0.0 180.0 0.0" prop="true" file="MOD/main/props/filing_cabinet.vox"/>
 				</group>
-				<group name="Bathroom" pos="-5.0 30.3 1.3" rot="0.0 90.0 0.0">
+				<group name="Bathroom" pos="-5.0 30.3 1.3" rot="0.0 90.0 0.0" layer="8th">
 					<voxbox name="stalls" pos="-7.8 0.0 7.5" rot="0.0 0.0 0.0" texture="4 0.35" size="61 32 23" brush="MOD/main/props/bathroom props.vox" object="stall" offset="1">
 						<vox pos="5.3 0.5 0.0" rot="0.0 -180.0 0.0" texture="4 0.35" prop="true" file="MOD/main/props/bathroom props.vox" object="stall-door">
 							<joint pos="-0.6 0.4 0.0" rot="90" type="hinge" rotspring="0.3" limits="0 90"/>
@@ -21902,7 +21930,7 @@
 						<light pos="0.0 0.5 0.0" scale="0.3"/>
 					</vox>
 				</group>
-				<group name="Storage room" pos="-2.3 30.3 13.6">
+				<group name="Storage room" pos="-2.3 30.3 13.6" layer="8th">
 					<vox pos="3.9 -0.0 -1.1" rot="0.0 0.0 0.0" prop="false" file="MOD/main/props/hospital-assets4.vox" object="shelf2"/>
 					<vox pos="0.3 0.0 -1.1" rot="0.0 0.0 0.0" prop="false" file="MOD/main/props/hospital-assets4.vox" object="shelf2"/>
 					<vox pos="-3.5 0.0 -1.1" rot="0.0 0.0 0.0" prop="false" file="MOD/main/props/hospital-assets4.vox" object="shelf2"/>
@@ -22067,7 +22095,7 @@
 						</vox>
 					</group>
 				</group>
-				<group name="neurology office" pos="-0.9 30.3 -12.3">
+				<group name="neurology office" pos="-0.9 30.3 -12.3" layer="8th">
 					<vox pos="0.3 0.0 -1.4" rot="0.0 -90.0 0.0" prop="true" file="MOD/main/props/hospital-assets2.vox" object="desk1">
 						<vox pos="1.2 1.0 -0.3" prop="true" file="MOD/main/props/hospital-assets2.vox" object="computer"/>
 						<vox pos="0.6 1.0 -0.2" rot="0.0 10.0 0.0" prop="true" file="MOD/main/props/hospital-assets2.vox" object="monitor"/>
@@ -22089,7 +22117,7 @@
 					<vox pos="0.4 2.2 -3.3" rot="0.0 0.0 0.0" prop="false" file="MOD/main/props/hospital-assets2.vox" object="painting1"/>
 					<vox pos="1.3 2.2 -3.3" rot="0.0 0.0 0.0" prop="false" file="MOD/main/props/hospital-assets2.vox" object="painting1"/>
 				</group>
-				<group name="neurology office" pos="-0.9 30.3 -19.6">
+				<group name="neurology office" pos="-0.9 30.3 -19.6" layer="8th">
 					<vox pos="0.3 0.0 -1.4" rot="0.0 -90.0 0.0" prop="true" file="MOD/main/props/hospital-assets2.vox" object="desk1">
 						<vox pos="1.2 1.0 -0.3" prop="true" file="MOD/main/props/hospital-assets2.vox" object="computer"/>
 						<vox pos="0.6 1.0 -0.2" rot="0.0 10.0 0.0" prop="true" file="MOD/main/props/hospital-assets2.vox" object="monitor"/>
@@ -22141,6 +22169,7 @@
 				<instance pos="-6.4 -0.0 15.5" rot="0.0 -180.0 0.0" file="MOD/main/props/door4.xml"/>
 				<instance pos="-12.9 -0.0 15.5" rot="0.0 -180.0 0.0" file="MOD/main/props/door4.xml"/>
 			</group>
+			<group layer="8thoff"/>
 		</group>
 		<group name="roof" pos="0.0 5.8 0.0">
 			<group name="roof" pos="3.9 34.4 -14.9" prop0="texture=17 0.7">
@@ -22441,7 +22470,7 @@
 						<voxbox name="Indicator" tags="EVIndicator" pos="-0.29 27.60006 0.05" rot="0.0 90.0 0.0" size="1 2 5" material="metal" color="0.43 0.43 0.43">
 							<screen tags="EVIndicatorScreen CarID=1" pos="0.1 0.1 0.25" rot="0 90 0" size="0.22 0.14" bulge="0" resolution="150 100" script="MOD/elevator/IndicatorType1.lua" enabled="true"/>
 						</voxbox>
-						<voxbox name="Indicator" tags="EVIndicator" pos="-0.29 31.90006 -0.05" rot="0.0 90.0 0.0" size="1 2 5" material="metal" color="0.43 0.43 0.43">
+						<voxbox name="Indicator" tags="EVIndicator" pos="-0.29 31.90006 0.05" rot="0.0 90.0 0.0" size="1 2 5" material="metal" color="0.43 0.43 0.43">
 							<screen tags="EVIndicatorScreen CarID=1" pos="0.1 0.1 0.25" rot="0 90 0" size="0.22 0.14" bulge="0" resolution="150 100" script="MOD/elevator/IndicatorType1.lua" enabled="true"/>
 						</voxbox>
 						<voxbox name="Indicator" tags="EVIndicator" pos="-0.29 36.20006 0.05" rot="0.0 90.0 0.0" size="1 2 5" material="metal" color="0.43 0.43 0.43">
@@ -22645,7 +22674,7 @@
 					</voxbox>
 				</compound>
 			</group>
-			<group name="elevator" pos="7.7 1.3 3.49999" rot="0.0 -90.0 0.0">
+			<group name="elevator" pos="7.7 1.3 3.5" rot="0.0 -90.0 0.0" layer="lift">
 				<script pos="-4.3 0.0 -30.4" file="MOD/elevator/Controller1.lua">
 					<group name="instance=MOD/elevator/templateInstall.xml" pos="0.0 15.2 37.2" rot="0.0 0.0 0.0">
 						<group name="Floors" pos="1.2 3.0 0.0" rot="0.0 90.0 0.0">
@@ -22723,7 +22752,7 @@
 					</group>
 				</script>
 			</group>
-			<group name="elevator" pos="7.7 1.3 -3.2" rot="0.0 -90.0 0.0">
+			<group name="elevator" pos="7.7 1.3 -3.2" rot="0.0 -90.0 0.0" layer="lift">
 				<script pos="-4.3 0.0 -30.4" file="MOD/elevator/Controller1.lua">
 					<group name="instance=MOD/elevator/templateInstall.xml" pos="0.0 15.2 37.2" rot="0.0 0.0 0.0">
 						<group name="Floors" pos="1.2 3.0 0.0" rot="0.0 90.0 0.0">
@@ -22792,6 +22821,7 @@
 			<instance pos="3.1 1.2 -4.6" rot="0.0 -180.0 0.0" file="MOD/main/props/door1.xml"/>
 			<instance pos="0.8 5.5 5.9" rot="0.0 0.0 0.0" file="MOD/main/props/door1.xml"/>
 			<instance pos="10.1 5.5 7.7" rot="0.0 90.0 0.0" file="MOD/main/props/door3.xml"/>
+			<group layer="liftoff"/>
 		</group>
 		<group pos="11.1 9.1 -39.0" rot="0.0 -90.0 0.0">
 			<group name="teste" pos="7.2 1.1 -0.2" prop0="texture=13 0.3">
@@ -22950,7 +22980,7 @@
 				<vox pos="10.1 4.6 3.9" rot="0.0 -180.0 0.0" file="MOD/main/building/stairs.vox" object="handrail3"/>
 				<vox pos="10.1 13.2 3.9" rot="0.0 -180.0 0.0" file="MOD/main/building/stairs.vox" object="handrail3"/>
 			</group>
-			<group name="elevator" pos="7.7 1.4 3.1" rot="0.0 -90.0 0.0">
+			<group name="elevator" pos="7.7 1.4 3.1" rot="0.0 -90.0 0.0" layer="lift">
 				<script pos="-4.3 0.0 -30.4" file="MOD/elevator/Controller_Template.lua">
 					<group name="instance=MOD/elevator/templateInstall.xml" pos="0.0 15.2 37.2" rot="0.0 0.0 0.0">
 						<group name="Floors" pos="1.2 3.0 0.0" rot="0.0 90.0 0.0">
@@ -23037,6 +23067,7 @@
 			<instance pos="3.2 18.4 -2.9" rot="0.0 -180.0 0.0" file="MOD/main/props/door1.xml"/>
 			<instance pos="-0.8 22.7 4.7" rot="0.0 -90.0 0.0" file="MOD/main/props/door1.xml"/>
 			<instance pos="3.2 27.0 -2.9" rot="0.0 -180.0 0.0" file="MOD/main/props/door1.xml"/>
+			<group layer="liftoff"/>
 		</group>
 	</group>
 	<boundary pos="-2.2 5.8 -6.8">
@@ -23052,39 +23083,42 @@
 		<vertex pos="53.4 142.3"/>
 		<vertex pos="-97.0 137.8"/>
 	</boundary>
-	<group name="vehicles" pos="8.2 5.8 11.5">
-		<group name="Emergency Vehicles" pos="12.7 0.2 23.0">
-			<instance pos="1.0 0.0 0.4" rot="0.0 -90.0 0.0" file="MOD/vehicles/ambulance-uk.xml"/>
-			<instance pos="11.4 0.0 -17.4" rot="0.0 180.0 0.0" file="MOD/vehicles/ambulance-uk.xml"/>
-			<instance pos="16.1 0.0 -17.4" rot="0.0 180.0 0.0" file="MOD/vehicles/ambulance-uk.xml"/>
-			<instance pos="20.8 0.0 -17.4" rot="0.0 180.0 0.0" file="MOD/vehicles/ambulance-uk.xml"/>
-			<instance pos="1.0 0.0 4.9" rot="0.0 -90.0 0.0" file="MOD/vehicles/ambulance-uk.xml"/>
-			<instance pos="1.0 0.0 9.3" rot="0.0 -90.0 0.0" file="MOD/vehicles/ambulance-uk.xml"/>
+	<group name="vehicles" pos="14.6 0.4 -4.4">
+		<group name="vehicles" pos="-6.4 5.4 15.9" layer="vehicles">
+			<group name="Emergency Vehicles" pos="12.7 0.2 23.0">
+				<instance pos="1.0 0.0 0.4" rot="0.0 -90.0 0.0" file="MOD/vehicles/ambulance-uk.xml"/>
+				<instance pos="11.4 0.0 -17.4" rot="0.0 180.0 0.0" file="MOD/vehicles/ambulance-uk.xml"/>
+				<instance pos="16.1 0.0 -17.4" rot="0.0 180.0 0.0" file="MOD/vehicles/ambulance-uk.xml"/>
+				<instance pos="20.8 0.0 -17.4" rot="0.0 180.0 0.0" file="MOD/vehicles/ambulance-uk.xml"/>
+				<instance pos="1.0 0.0 4.9" rot="0.0 -90.0 0.0" file="MOD/vehicles/ambulance-uk.xml"/>
+				<instance pos="1.0 0.0 9.3" rot="0.0 -90.0 0.0" file="MOD/vehicles/ambulance-uk.xml"/>
+			</group>
+			<group name="Civillian">
+				<instance pos="-46.8 0.1 28.6" rot="0.0 90.0 0.0" file="MOD/vehicles/l-klasse.xml"/>
+				<instance pos="-59.0 0.1 5.6" rot="0.0 90.0 0.0" file="MOD/vehicles/musclecar.xml"/>
+				<instance pos="-28.6 -5.4 -50.0" rot="0.0 90.0 0.0" file="MOD/vehicles/musclecar.xml"/>
+				<instance pos="-47.7 0.1 19.9" rot="0.0 -90.0 0.0" file="MOD/vehicles/stationwagon.xml"/>
+				<instance pos="14.3 -5.4 -23.9" rot="0.0 -85 0.0" file="MOD/vehicles/stationwagon.xml"/>
+				<instance pos="-59.5 0.1 31.2" rot="0.0 90.0 0.0" file="MOD/vehicles/suv1.xml"/>
+				<instance pos="-42.1 0.1 14.2" rot="0.0 -90.0 0.0" file="MOD/vehicles/taskmaster-4wd.xml"/>
+				<instance pos="-3.4 -5.5 1.8" rot="0.0 -90.0 0.0" file="MOD/vehicles/peacemaker1.xml"/>
+				<instance pos="-28.7 -5.4 7.2" rot="0.0 90.0 0.0" file="MOD/vehicles/razorblade1.xml"/>
+				<instance pos="-10.1 -5.4 -3.4" rot="0.0 90.0 0.0" file="MOD/vehicles/taskmaster-4wd.xml"/>
+				<instance pos="-23.0 -5.4 52.3" rot="0.0 -175.0 0.0" file="MOD/vehicles/taskmaster-4wd (blue).xml"/>
+				<instance pos="-10.3 -5.5 -37.2" rot="0.0 -90.0 0.0" file="MOD/vehicles/stang-gxg.xml"/>
+				<instance pos="-47.7 0.1 57.7" rot="0.0 90.0 0.0" file="MOD/vehicles/stang-gxg.xml"/>
+				<instance pos="0.7 -5.4 -91.2" rot="0.0 -170.0 0.0" file="MOD/vehicles/chevu-122.xml"/>
+				<instance pos="-31.0 0.1 60.5" rot="0.0 -90.0 0.0" file="MOD/vehicles/chevu-122.xml"/>
+				<instance pos="-52.0 -5.4 -22.8" rot="0.0 -85.0 0.0" file="MOD/vehicles/charger.xml"/>
+				<instance pos="-41.4 0.0 46.0" rot="0.0 -90.0 0.0" file="MOD/vehicles/charger.xml"/>
+				<instance pos="14.0 -5.4 9.8" rot="0.0 98.0 0.0" file="MOD/vehicles/kombi.xml"/>
+				<instance pos="-3.3 -5.4 -70.9" rot="0.0 -90.0 0.0" file="MOD/vehicles/missisipi.xml"/>
+				<instance pos="-35.7 -5.4 33.0" rot="0.0 90.0 0.0" file="MOD/vehicles/suv1.xml"/>
+				<instance pos="-28.7 -5.4 -39.70001" rot="0.0 90.0 0.0" file="MOD/vehicles/l-klasse.xml"/>
+			</group>
+			<vox pos="67.3 2.3 -14.9" rot="0.0 100.0 0.0" file="MOD/chopper.vox"/>
 		</group>
-		<group name="Civillian">
-			<instance pos="-46.8 0.1 28.6" rot="0.0 90.0 0.0" file="MOD/vehicles/l-klasse.xml"/>
-			<instance pos="-59.0 0.1 5.6" rot="0.0 90.0 0.0" file="MOD/vehicles/musclecar.xml"/>
-			<instance pos="-28.6 -5.4 -50.0" rot="0.0 90.0 0.0" file="MOD/vehicles/musclecar.xml"/>
-			<instance pos="-47.7 0.1 19.9" rot="0.0 -90.0 0.0" file="MOD/vehicles/stationwagon.xml"/>
-			<instance pos="14.3 -5.4 -23.9" rot="0.0 -85 0.0" file="MOD/vehicles/stationwagon.xml"/>
-			<instance pos="-59.5 0.1 31.2" rot="0.0 90.0 0.0" file="MOD/vehicles/suv1.xml"/>
-			<instance pos="-42.1 0.1 14.2" rot="0.0 -90.0 0.0" file="MOD/vehicles/taskmaster-4wd.xml"/>
-			<instance pos="-3.4 -5.5 1.8" rot="0.0 -90.0 0.0" file="MOD/vehicles/peacemaker1.xml"/>
-			<instance pos="-28.7 -5.4 7.2" rot="0.0 90.0 0.0" file="MOD/vehicles/razorblade1.xml"/>
-			<instance pos="-10.1 -5.4 -3.4" rot="0.0 90.0 0.0" file="MOD/vehicles/taskmaster-4wd.xml"/>
-			<instance pos="-23.0 -5.4 52.3" rot="0.0 -175.0 0.0" file="MOD/vehicles/taskmaster-4wd (blue).xml"/>
-			<instance pos="-10.3 -5.5 -37.2" rot="0.0 -90.0 0.0" file="MOD/vehicles/stang-gxg.xml"/>
-			<instance pos="-47.7 0.1 57.7" rot="0.0 90.0 0.0" file="MOD/vehicles/stang-gxg.xml"/>
-			<instance pos="0.7 -5.4 -91.2" rot="0.0 -170.0 0.0" file="MOD/vehicles/chevu-122.xml"/>
-			<instance pos="-31.0 0.1 60.5" rot="0.0 -90.0 0.0" file="MOD/vehicles/chevu-122.xml"/>
-			<instance pos="-52.0 -5.4 -22.8" rot="0.0 -85.0 0.0" file="MOD/vehicles/charger.xml"/>
-			<instance pos="-41.4 0.0 46.0" rot="0.0 -90.0 0.0" file="MOD/vehicles/charger.xml"/>
-			<instance pos="14.0 -5.4 9.8" rot="0.0 98.0 0.0" file="MOD/vehicles/kombi.xml"/>
-			<instance pos="-3.3 -5.4 -70.9" rot="0.0 -90.0 0.0" file="MOD/vehicles/missisipi.xml"/>
-			<instance pos="-35.7 -5.4 33.0" rot="0.0 90.0 0.0" file="MOD/vehicles/suv1.xml"/>
-			<instance pos="-28.7 -5.4 -39.70001" rot="0.0 90.0 0.0" file="MOD/vehicles/l-klasse.xml"/>
-		</group>
-		<vox pos="67.3 2.3 -14.9" rot="0.0 100.0 0.0" file="MOD/chopper.vox"/>
+		<group name="vehicles" layer="vehiclesoff"/>
 	</group>
 	<group pos="-17.3 5.8 -11.8">
 		<group name="outside props" pos="5.1 -5.8 11.8">
@@ -23335,68 +23369,70 @@
 			</voxagon>
 		</group>
 		<group name="nature" pos="5.1 -5.8 11.8">
-			<vox pos="-48.6 5.9 -39.8" rot="0.0 -30.0 0.0" file="BUILT-IN/vox/nature/tree/tree_birch.vox"/>
-			<vox pos="-48.6 5.9 -27.4" rot="0.0 -40.0 0.0" file="BUILT-IN/vox/nature/tree/tree7.vox"/>
-			<vox pos="-51.6 5.9 -111.7" rot="0.0 -100.0 0.0" file="BUILT-IN/vox/nature/tree/tree7.vox"/>
-			<vox pos="-53.9 5.9 3.6" rot="0.0 80.0 0.0" file="BUILT-IN/vox/nature/tree/tree7.vox"/>
-			<vox pos="-53.9 5.9 28.3" rot="0.0 30.0 0.0" file="BUILT-IN/vox/nature/tree/tree7.vox"/>
-			<vox pos="-86.4 5.9 -1.2" rot="0.0 120.0 0.0" file="BUILT-IN/vox/nature/tree/tree7.vox"/>
-			<vox pos="-107.50001 5.9 -62.3" rot="0.0 90.0 0.0" file="BUILT-IN/vox/nature/tree/treeline01.vox"/>
-			<vox pos="-107.50001 5.9 129.30003" rot="0.0 90.0 0.0" file="BUILT-IN/vox/nature/tree/treeline01.vox"/>
-			<vox pos="-53.9 5.9 46.2" rot="0.0 50.0 0.0" file="BUILT-IN/vox/nature/tree/tree7.vox"/>
-			<vox pos="-53.2 5.9 70.3" rot="0.0 -90.0 0.0" file="BUILT-IN/vox/nature/tree/tree7.vox"/>
-			<vox pos="-53.2 5.9 59.2" rot="0.0 -50.0 0.0" file="BUILT-IN/vox/nature/tree/tree7.vox"/>
-			<vox pos="-54.9 5.9 -18.4" rot="0.0 -80.0 0.0" file="BUILT-IN/vox/nature/tree/tree3.vox"/>
-			<vox pos="62.3 5.9 -95.8" rot="0.0 -60.0 0.0" file="BUILT-IN/vox/nature/tree/tree3.vox"/>
-			<vox pos="-33.2 5.9 117.8" rot="0.0 -60.0 0.0" file="BUILT-IN/vox/nature/tree/tree3.vox"/>
-			<vox pos="52.1 5.9 106.7" rot="0.0 -30.0 0.0" file="BUILT-IN/vox/nature/tree/tree3.vox"/>
-			<vox pos="70.0 5.9 43.9" rot="0.0 -30.0 0.0" file="BUILT-IN/vox/nature/tree/tree3.vox"/>
-			<vox pos="99.6 5.9 65.7" rot="0.0 30.0 0.0" file="BUILT-IN/vox/nature/tree/tree3.vox"/>
-			<vox pos="96.8 8.1 -35.3" rot="0.0 30.0 0.0" file="BUILT-IN/vox/nature/tree/tree3.vox"/>
-			<vox pos="93.2 5.8 -106.9" rot="0.0 30.0 0.0" file="BUILT-IN/vox/nature/tree/tree3.vox"/>
-			<vox pos="95.7 5.8 -103.9" rot="0.0 110.0 0.0" file="BUILT-IN/vox/nature/tree/tree3_stump.vox"/>
-			<vox pos="95.8 6.4 -107.2" rot="1.2 149.60001 3.2" prop="true" file="MOD/main/props/fox.vox"/>
-			<vox pos="20.1 5.9 -110.3" rot="0.0 -100.0 0.0" file="BUILT-IN/vox/nature/tree/tree7.vox"/>
-			<vox pos="41.1 5.9 -125.0" rot="0.0 180.0 0.0" file="BUILT-IN/vox/nature/tree/tree7.vox"/>
-			<vox pos="-26.0 5.9 -110.3" rot="0.0 -40.0 0.0" file="BUILT-IN/vox/nature/tree/tree4.vox"/>
-			<vox pos="57.8 5.9 -46.1" rot="0.0 20.0 0.0" file="BUILT-IN/vox/nature/tree/tree4.vox"/>
-			<vox pos="-5.1 5.9 -126.5" rot="0.0 -40.0 0.0" file="BUILT-IN/vox/nature/tree/tree_pine_large.vox"/>
-			<vox pos="62.6 5.9 61.0" rot="0.0 -40.0 0.0" file="BUILT-IN/vox/nature/tree/tree_pine_large.vox"/>
-			<vox pos="53.7 5.9 89.9" rot="0.0 0.0 0.0" file="BUILT-IN/vox/nature/tree/tree_pine_large.vox"/>
-			<vox pos="61.5 5.9 76.0" rot="0.0 60.0 0.0" file="BUILT-IN/vox/nature/tree/tree7.vox"/>
-			<vox pos="-50.7 5.9 96.0" rot="0.0 90.0 0.0" file="BUILT-IN/vox/nature/tree/tree7.vox"/>
-			<vox pos="-22.5 5.9 94.1" rot="0.0 90.0 0.0" file="BUILT-IN/vox/nature/tree/tree_medium.vox"/>
-			<vox pos="-7.8 5.9 100.5" rot="0.0 120.0 0.0" file="BUILT-IN/vox/nature/tree/tree_pine_large.vox"/>
-			<vox pos="11.3 5.9 95.5" rot="0.0 120.0 0.0" file="BUILT-IN/vox/nature/tree/tree_pine2_small.vox"/>
-			<vox pos="3.6 5.9 101.2" rot="0.0 120.0 0.0" file="BUILT-IN/vox/nature/bush/bush6.vox"/>
-			<vox pos="78.1 5.9 -88.70001" rot="0.0 -150.0 0.0" file="BUILT-IN/vox/nature/bush/bush6.vox"/>
-			<vox pos="85.9 5.9 -101.30001" rot="0.0 -160.0 0.0" file="BUILT-IN/vox/nature/bush/bush6.vox"/>
-			<vox pos="52.8 5.9 -41.20001" rot="0.0 -170.0 0.0" file="BUILT-IN/vox/nature/bush/bush6.vox"/>
-			<vox pos="70.7 5.9 62.39999" rot="0.0 -160.0 0.0" file="BUILT-IN/vox/nature/bush/bush6.vox"/>
-			<vox pos="81.7 4.2 74.59999" rot="0.0 180.0 0.0" file="BUILT-IN/vox/nature/bush/bush6.vox"/>
-			<vox pos="90.4 5.9 -95.30002" rot="0.0 180.0 0.0" file="BUILT-IN/vox/nature/bush/bush6.vox"/>
-			<vox pos="12.6 5.9 -110.40002" rot="0.0 170.0 0.0" file="BUILT-IN/vox/nature/bush/bush6.vox"/>
-			<vox pos="32.7 5.9 98.9" rot="0.0 120.0 0.0" file="BUILT-IN/vox/nature/tree/tree5.vox"/>
-			<vox pos="85.5 4.5 86.3" rot="0.0 20.0 0.0" file="BUILT-IN/vox/nature/tree/tree2.vox"/>
-			<vox pos="53.2 5.9 -12.0" rot="0.0 60.0 0.0" file="BUILT-IN/vox/nature/tree/tree2.vox"/>
-			<vox pos="-9.2 5.9 -114.1" rot="0.0 60.0 0.0" file="BUILT-IN/vox/nature/tree/tree2.vox"/>
-			<vox pos="7.2 5.9 107.00001" rot="0.0 140.0 0.0" file="BUILT-IN/vox/nature/tree/tree2.vox"/>
-			<vox pos="87.2 8.4 22.3" rot="0.0 140.0 0.0" file="BUILT-IN/vox/nature/tree/tree2.vox"/>
-			<vox pos="48.8 5.9 97.40001" rot="0.0 -40.0 0.0" file="BUILT-IN/vox/nature/tree/tree1.vox"/>
-			<vox pos="68.5 5.9 96.6" rot="0.0 -40.0 0.0" file="BUILT-IN/vox/nature/tree/tree_birch.vox"/>
-			<vox pos="75.90001 5.9 -120.7" rot="0.0 100.0 0.0" file="BUILT-IN/vox/nature/tree/tree_pine_large.vox"/>
-			<vox pos="79.5 5.9 -78.39999" rot="0.0 50.0 0.0" file="BUILT-IN/vox/nature/tree/tree_pine2.vox"/>
-			<vox pos="94.3 5.9 -100.09998" rot="0.0 -10.0 0.0" file="BUILT-IN/vox/nature/tree/tree_pine2.vox"/>
-			<vox pos="95.6 5.9 -114.7" rot="0.0 150.0 0.0" file="BUILT-IN/vox/nature/tree/tree_birch.vox"/>
-			<vox pos="51.2 5.9 -25.39999" rot="0.0 -170.0 0.0" file="BUILT-IN/vox/nature/tree/tree_birch.vox"/>
-			<vox pos="97.3 5.9 -89.39999" rot="0.0 -130.0 0.0" file="BUILT-IN/vox/nature/tree/tree_birch.vox"/>
+			<group pos="-0.3 4.2 33.5" layer="trees">
+				<vox pos="-48.3 1.7 -73.3" rot="0.0 -30.0 0.0" file="BUILT-IN/vox/nature/tree/tree_birch.vox"/>
+				<vox pos="-48.3 1.7 -60.9" rot="0.0 -40.0 0.0" file="BUILT-IN/vox/nature/tree/tree7.vox"/>
+				<vox pos="-51.3 1.7 -145.2" rot="0.0 -100.0 0.0" file="BUILT-IN/vox/nature/tree/tree7.vox"/>
+				<vox pos="-53.6 1.7 -29.9" rot="0.0 80.0 0.0" file="BUILT-IN/vox/nature/tree/tree7.vox"/>
+				<vox pos="-53.6 1.7 -5.2" rot="0.0 30.0 0.0" file="BUILT-IN/vox/nature/tree/tree7.vox"/>
+				<vox pos="-86.1 1.7 -34.7" rot="0.0 120.0 0.0" file="BUILT-IN/vox/nature/tree/tree7.vox"/>
+				<vox pos="-107.2 1.7 -95.8" rot="0.0 90.0 0.0" file="BUILT-IN/vox/nature/tree/treeline01.vox"/>
+				<vox pos="-107.2 1.7 95.80003" rot="0.0 90.0 0.0" file="BUILT-IN/vox/nature/tree/treeline01.vox"/>
+				<vox pos="-53.6 1.7 12.7" rot="0.0 50.0 0.0" file="BUILT-IN/vox/nature/tree/tree7.vox"/>
+				<vox pos="-52.9 1.7 36.8" rot="0.0 -90.0 0.0" file="BUILT-IN/vox/nature/tree/tree7.vox"/>
+				<vox pos="-52.9 1.7 25.7" rot="0.0 -50.0 0.0" file="BUILT-IN/vox/nature/tree/tree7.vox"/>
+				<vox pos="-54.6 1.7 -51.9" rot="0.0 -80.0 0.0" file="BUILT-IN/vox/nature/tree/tree3.vox"/>
+				<vox pos="62.6 1.7 -129.3" rot="0.0 -60.0 0.0" file="BUILT-IN/vox/nature/tree/tree3.vox"/>
+				<vox pos="-32.9 1.7 84.3" rot="0.0 -60.0 0.0" file="BUILT-IN/vox/nature/tree/tree3.vox"/>
+				<vox pos="52.4 1.7 73.2" rot="0.0 -30.0 0.0" file="BUILT-IN/vox/nature/tree/tree3.vox"/>
+				<vox pos="70.3 1.7 10.4" rot="0.0 -30.0 0.0" file="BUILT-IN/vox/nature/tree/tree3.vox"/>
+				<vox pos="99.9 1.7 32.2" rot="0.0 30.0 0.0" file="BUILT-IN/vox/nature/tree/tree3.vox"/>
+				<vox pos="97.10001 3.9 -68.8" rot="0.0 30.0 0.0" file="BUILT-IN/vox/nature/tree/tree3.vox"/>
+				<vox pos="93.5 1.6 -140.39999" rot="0.0 30.0 0.0" file="BUILT-IN/vox/nature/tree/tree3.vox"/>
+				<vox pos="96.0 1.6 -137.39999" rot="0.0 110.0 0.0" file="BUILT-IN/vox/nature/tree/tree3_stump.vox"/>
+				<vox pos="20.4 1.7 -143.8" rot="0.0 -100.0 0.0" file="BUILT-IN/vox/nature/tree/tree7.vox"/>
+				<vox pos="41.4 1.7 -158.5" rot="0.0 180.0 0.0" file="BUILT-IN/vox/nature/tree/tree7.vox"/>
+				<vox pos="-25.7 1.7 -143.8" rot="0.0 -40.0 0.0" file="BUILT-IN/vox/nature/tree/tree4.vox"/>
+				<vox pos="58.1 1.7 -79.6" rot="0.0 20.0 0.0" file="BUILT-IN/vox/nature/tree/tree4.vox"/>
+				<vox pos="-4.8 1.7 -160.0" rot="0.0 -40.0 0.0" file="BUILT-IN/vox/nature/tree/tree_pine_large.vox"/>
+				<vox pos="62.9 1.7 27.5" rot="0.0 -40.0 0.0" file="BUILT-IN/vox/nature/tree/tree_pine_large.vox"/>
+				<vox pos="54.0 1.7 56.4" rot="0.0 0.0 0.0" file="BUILT-IN/vox/nature/tree/tree_pine_large.vox"/>
+				<vox pos="61.8 1.7 42.5" rot="0.0 60.0 0.0" file="BUILT-IN/vox/nature/tree/tree7.vox"/>
+				<vox pos="-50.4 1.7 62.5" rot="0.0 90.0 0.0" file="BUILT-IN/vox/nature/tree/tree7.vox"/>
+				<vox pos="-22.2 1.7 60.6" rot="0.0 90.0 0.0" file="BUILT-IN/vox/nature/tree/tree_medium.vox"/>
+				<vox pos="-7.5 1.7 67.0" rot="0.0 120.0 0.0" file="BUILT-IN/vox/nature/tree/tree_pine_large.vox"/>
+				<vox pos="11.6 1.7 62.0" rot="0.0 120.0 0.0" file="BUILT-IN/vox/nature/tree/tree_pine2_small.vox"/>
+				<vox pos="3.9 1.7 67.7" rot="0.0 120.0 0.0" file="BUILT-IN/vox/nature/bush/bush6.vox"/>
+				<vox pos="78.4 1.7 -122.20001" rot="0.0 -150.0 0.0" file="BUILT-IN/vox/nature/bush/bush6.vox"/>
+				<vox pos="86.2 1.7 -134.80002" rot="0.0 -160.0 0.0" file="BUILT-IN/vox/nature/bush/bush6.vox"/>
+				<vox pos="53.1 1.7 -74.70001" rot="0.0 -170.0 0.0" file="BUILT-IN/vox/nature/bush/bush6.vox"/>
+				<vox pos="71.0 1.7 28.89999" rot="0.0 -160.0 0.0" file="BUILT-IN/vox/nature/bush/bush6.vox"/>
+				<vox pos="82.0 -0.0 41.09999" rot="0.0 180.0 0.0" file="BUILT-IN/vox/nature/bush/bush6.vox"/>
+				<vox pos="90.7 1.7 -128.80002" rot="0.0 180.0 0.0" file="BUILT-IN/vox/nature/bush/bush6.vox"/>
+				<vox pos="12.9 1.7 -143.90002" rot="0.0 170.0 0.0" file="BUILT-IN/vox/nature/bush/bush6.vox"/>
+				<vox pos="33.0 1.7 65.4" rot="0.0 120.0 0.0" file="BUILT-IN/vox/nature/tree/tree5.vox"/>
+				<vox pos="85.8 0.3 52.8" rot="0.0 20.0 0.0" file="BUILT-IN/vox/nature/tree/tree2.vox"/>
+				<vox pos="53.5 1.7 -45.5" rot="0.0 60.0 0.0" file="BUILT-IN/vox/nature/tree/tree2.vox"/>
+				<vox pos="-8.9 1.7 -147.60001" rot="0.0 60.0 0.0" file="BUILT-IN/vox/nature/tree/tree2.vox"/>
+				<vox pos="7.5 1.7 73.50001" rot="0.0 140.0 0.0" file="BUILT-IN/vox/nature/tree/tree2.vox"/>
+				<vox pos="87.5 4.2 -11.2" rot="0.0 140.0 0.0" file="BUILT-IN/vox/nature/tree/tree2.vox"/>
+				<vox pos="49.1 1.7 63.90001" rot="0.0 -40.0 0.0" file="BUILT-IN/vox/nature/tree/tree1.vox"/>
+				<vox pos="68.8 1.7 63.1" rot="0.0 -40.0 0.0" file="BUILT-IN/vox/nature/tree/tree_birch.vox"/>
+				<vox pos="76.20001 1.7 -154.2" rot="0.0 100.0 0.0" file="BUILT-IN/vox/nature/tree/tree_pine_large.vox"/>
+				<vox pos="79.8 1.7 -111.89999" rot="0.0 50.0 0.0" file="BUILT-IN/vox/nature/tree/tree_pine2.vox"/>
+				<vox pos="94.60001 1.7 -133.59998" rot="0.0 -10.0 0.0" file="BUILT-IN/vox/nature/tree/tree_pine2.vox"/>
+				<vox pos="95.9 1.7 -148.2" rot="0.0 150.0 0.0" file="BUILT-IN/vox/nature/tree/tree_birch.vox"/>
+				<vox pos="51.5 1.7 -58.89999" rot="0.0 -170.0 0.0" file="BUILT-IN/vox/nature/tree/tree_birch.vox"/>
+				<vox pos="97.60001 1.7 -122.89999" rot="0.0 -130.0 0.0" file="BUILT-IN/vox/nature/tree/tree_birch.vox"/>
+				<vox pos="-54.6 1.7 -18.2" rot="0.0 -50.0 0.0" file="BUILT-IN/vox/nature/tree/tree_medium.vox"/>
+			</group>
+			<vox pos="95.80001 6.4 -107.2" rot="1.2 149.60001 3.2" prop="true" file="MOD/main/props/fox.vox"/>
 			<vox pos="-54.8 5.9 4.5" rot="0.0 -90.0 0.0" file="BUILT-IN/vox/nature/bush/bush3.vox"/>
 			<vox pos="-52.5 5.9 6.3" rot="0.0 -50.0 0.0" file="BUILT-IN/vox/nature/bush/bush3.vox"/>
 			<vox pos="-54.1 6.0 26.2" rot="0.0 -50.0 0.0" file="BUILT-IN/vox/nature/bush/bush6.vox"/>
 			<vox pos="-57.2 5.9 -0.8" rot="0.0 -90.0 0.0" file="BUILT-IN/vox/nature/bush/bush2.vox"/>
 			<vox pos="-57.2 5.9 1.3" rot="0.0 100.0 0.0" file="BUILT-IN/vox/nature/bush/bush2.vox"/>
 			<vox pos="-57.2 5.9 3.5" rot="0.0 80.0 0.0" file="BUILT-IN/vox/nature/bush/bush2.vox"/>
-			<vox pos="-54.9 5.9 15.3" rot="0.0 -50.0 0.0" file="BUILT-IN/vox/nature/tree/tree_medium.vox"/>
 			<vox pos="-57.2 5.9 10.1" rot="0.0 80.0 0.0" file="BUILT-IN/vox/nature/bush/bush2.vox"/>
 			<vox pos="-57.2 5.9 7.9" rot="0.0 100.0 0.0" file="BUILT-IN/vox/nature/bush/bush2.vox"/>
 			<vox pos="-57.4 5.9 5.8" rot="0.0 -90.0 0.0" file="BUILT-IN/vox/nature/bush/bush2.vox"/>
@@ -23475,8 +23511,9 @@
 			<vox pos="-56.0 5.6 -19.4" rot="-13.7 58.7 -3.5" file="BUILT-IN/vox/nature/stone/rock1.vox"/>
 			<vox pos="-49.4 5.7 -29.7" rot="-13.7 158.7 -3.5" file="BUILT-IN/vox/nature/stone/rock1.vox"/>
 			<vox pos="-49.4 5.7 -39.6" rot="-13.7 18.7 -3.5" file="BUILT-IN/vox/nature/stone/rock1.vox"/>
+			<group layer="treesoff"/>
 		</group>
-		<group name="lights" pos="-35.3 0.1 33.4">
+		<group name="lights" pos="-35.3 0.1 33.4" layer="lights">
 			<vox pos="16.15 0.0 8.55" file="BUILT-IN/vox/light/floor_lamp_parking_lot.vox">
 				<light tags="night" pos="0.05 5.8 -1.5" rot="90.0 0.0 0.0" type="area" scale="12" size="0.3 0.6" reach="10.3" unshadowed="1.5" fogscale="2" glare="0.2"/>
 				<light tags="night" pos="0.05 5.8 1.3" rot="90.0 0.0 0.0" type="area" scale="12" size="0.3 0.6" reach="10.3" unshadowed="1.5" fogscale="2" glare="0.2"/>
@@ -23625,6 +23662,7 @@
 		</vox>
 		<vox pos="-50.5 0.3 94.4" rot="0.0 180.0 0.0" file="MOD/main/props/barrier.vox" object="tech"/>
 		<vox pos="-45.1 0.3 94.5" rot="0.0 0.0 0.0" file="MOD/main/props/barrier.vox" object="tech"/>
+		<group layer="lightsoff"/>
 	</group>
 	<group name="fence" pos="10.9 5.9 -4.2">
 		<voxbox pos="-84.5 0.0 -111.7" size="3 24 110" brush="MOD/main/props/fence.vox" object="tall-fence" offset="0.0 0.0 3.0"/>

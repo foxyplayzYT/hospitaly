@@ -1,10 +1,5 @@
-<scene version="1.6.2" shadowVolume="190 70 230">
-	<script file="MOD/scripts/options.lua"/>
-	<spawnpoint pos="0.9 0.0 9.8">
-		<light color="0.0 0.0 0.0" scale="0" size="0" sound="MOD/script/credits.ogg"/>
-	</spawnpoint>
-	<voxbox pos="-7.6 0.0 -1.4" size="179 4 229" color="0.0 0.0 0.0">
-		<voxbox pos="-0.4 0.0 13.5" rot="-90.0 0.0 0.0" size="179 4 229" color="0.0 0.0 0.0"/>
-	</voxbox>
+<scene version="1.5.4" shadowVolume="1 1 1">
+	<voxbox pos="-5.0 -5.0 -5.0" rot="0.0 0.0 0.0" size="100 1 100" color="0.23 0.16 0.16"/>
+	<script file="MOD/Script/menu.lua"/>
 </scene>
 

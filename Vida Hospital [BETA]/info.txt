@@ -1,5 +1,5 @@
 name = Vida Hospital [Beta]
-author = FoxyPlayzYT, Mr.Random
+author = FoxyPlayzYT, Mr.Random, Salad Fries
 description = [noupload] An 8-story hospital map for you to destroy.
 tags = Map
 

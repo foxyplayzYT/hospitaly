@@ -13,6 +13,7 @@ local buttonLIFTstate = "lift"
 local buttonLIGHTstate = "lights"
 local buttonVEHstate = "vehicles"
 local buttonGATEstate = "gates"
+local buttonELECstate = "elec"
 local buttonSNOWstate = "snowoff"
 
 function draw()
@@ -56,7 +57,7 @@ function draw()
     UiTranslate(-900, 200)
     UiText("Credits:")
     UiTranslate(0, 100)
-    UiText("Menu by Salad Fries!")
+    UiText("Menu and Electrical System by Salad Fries!")
     UiTranslate(0, 100)
     UiText("ALS by Caffeine power!")
     UiTranslate(0, 100)
@@ -239,7 +240,7 @@ function draw()
         UiColor(.8, .8, .8, 1)
         UiText("Toggles Ambulance Gates")
         UiTranslate(0, 100)
-        UiText("Possibly reduces lag")
+        UiText("OFF Possibly reduces lag")
         UiTranslate(0, 50)
         UiScale(1.5151)
         UiScale(.25)
@@ -288,7 +289,7 @@ function draw()
         UiColor(.8, .8, .8, 1)
         UiText("Toggles every vehicle")
         UiTranslate(0, 100)
-        UiText("Possibly reduces lag")
+        UiText("OFF possibly reduces lag")
         UiTranslate(0, 50)
         UiScale(1.5151)
         UiScale(.25)
@@ -312,7 +313,7 @@ function draw()
         UiColor(.8, .8, .8, 1)
         UiText("Toggles the Trees")
         UiTranslate(0, 100)
-        UiText("Possibly reduces lag")
+        UiText("OFF Possibly reduces lag")
         UiTranslate(0, 50)
         UiScale(1.5151)
         UiScale(.25)
@@ -336,7 +337,7 @@ function draw()
         UiColor(.8, .8, .8, 1)
         UiText("Toggles the Lights")
         UiTranslate(0, 100)
-        UiText("Possibly reduces lag")
+        UiText("OFF Possibly reduces lag")
         UiTranslate(0, 50)
         UiScale(1.5151)
         UiScale(.25)
@@ -351,6 +352,30 @@ function draw()
             end
         end
         UiTranslate(-2600, -660)
+
+        -- ELEC button with toggle functionality
+        UiScale(4)
+        UiText("Electrical (WIP)")
+        UiScale(.66)
+        UiTranslate(0, 100)
+        UiColor(.8, .8, .8, 1)
+        UiText("Toggles elec panels")
+        UiTranslate(0, 100)
+        UiText("OFF Possibly Reduces lag")
+        UiTranslate(0, 50)
+        UiScale(1.5151)
+        UiScale(.25)
+        UiColor(1, 1, 1, 1)
+        if buttonELECstate == "elecoff" then
+            if UiImageButton("MOD/Script/ToggleOff.png") then
+                buttonELECstate = "elec"
+            end
+        else
+            if UiImageButton("MOD/Script/ToggleOn.png") then
+                buttonELECstate = "elecoff"
+            end
+        end
+        UiTranslate(0, 1000)
 
         -- Snow button with toggle functionality
         UiScale(4)
@@ -375,10 +400,10 @@ function draw()
             end
         end
         UiScale(2)
-        UiTranslate(0, 500)
+        UiTranslate(2000, -200)
 
         if UiImageButton("MOD/Script/menu-Start.png") then
-            StartLevel("", "MOD/map.xml", "byounds " .. button1state .. " " .. button2state .. " " .. button3state .. " " .. button4state .. " " .. button5state .. " " .. button6state .. " " .. button7state .. " " .. button8state .. " " .. buttonTREEstate .. " " .. buttonLIFTstate .. " " .. buttonLIGHTstate .. "  " .. buttonVEHstate .. " " .. buttonGATEstate .. " " .. buttonSNOWstate .. "")
+            StartLevel("", "MOD/map.xml", "byounds " .. button1state .. " " .. button2state .. " " .. button3state .. " " .. button4state .. " " .. button5state .. " " .. button6state .. " " .. button7state .. " " .. button8state .. " " .. buttonTREEstate .. " " .. buttonLIFTstate .. " " .. buttonLIGHTstate .. "  " .. buttonVEHstate .. " " .. buttonGATEstate .. " " .. buttonELECstate .. " " .. buttonSNOWstate .. "")
         end
 
         UiPop()

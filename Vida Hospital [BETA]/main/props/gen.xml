@@ -1,0 +1,63 @@
+<prefab version="1.6.2">
+	<group pos="1.1 -0.1 0.5">
+		<vox tags="generator" pos="0.0 0.5 0.3" rot="0.0 0.0 0.0" file="MOD/main/props/electrical pack equipment.vox" object="Generator Large">
+			<vox tags="fan" pos="0.0 0.4 -2.7" prop="true" file="MOD/main/props/electrical pack equipment.vox" object="Generator Large Fan">
+				<joint tags="fan" pos="0.05 0.75 0.0" rot="0.0 0.0 0.0" type="hinge"/>
+			</vox>
+			<vox pos="0.0 -0.3 -0.4" prop="false" file="MOD/main/props/electrical pack equipment.vox" object="Generator Large Base"/>
+			<vox pos="0.0 0.0 0.1" prop="false" file="MOD/main/props/electrical pack equipment.vox" object="Generator Large Enclosure">
+				<vox pos="0.9 0.4 0.2" rot="0.0 0.0 0.0" prop="true" file="MOD/main/props/electrical pack equipment.vox" object="Generator Large Enclosure Door">
+					<joint pos="0.1 0.1 -0.3" collide="true"/>
+					<joint pos="0.1 1.1 -0.3" collide="true"/>
+				</vox>
+				<vox pos="1.0 0.4 0.8" rot="0.0 180.0 0.0" prop="true" file="MOD/main/props/electrical pack equipment.vox" object="Generator Large Enclosure Door">
+					<joint pos="0.0 0.1 -0.3" collide="true"/>
+					<joint pos="0.0 1.1 -0.3" collide="true"/>
+				</vox>
+				<vox pos="1.0 0.4 2.2" rot="0.0 180.0 0.0" prop="true" file="MOD/main/props/electrical pack equipment.vox" object="Generator Large Enclosure Door">
+					<joint pos="0.0 0.1 -0.3" collide="true"/>
+					<joint pos="0.0 1.1 -0.3" collide="true"/>
+				</vox>
+				<vox pos="0.9 0.4 -1.4" rot="0.0 0.0 0.0" prop="true" file="MOD/main/props/electrical pack equipment.vox" object="Generator Large Enclosure Door">
+					<joint pos="0.1 0.1 -0.3" collide="true"/>
+					<joint pos="0.1 1.1 -0.3" collide="true"/>
+				</vox>
+				<vox pos="1.0 0.4 -0.8" rot="0.0 180.0 0.0" prop="true" file="MOD/main/props/electrical pack equipment.vox" object="Generator Large Enclosure Door">
+					<joint pos="0.0 0.1 -0.3" collide="true"/>
+					<joint pos="0.0 1.1 -0.3" collide="true"/>
+				</vox>
+				<vox pos="-0.8 0.4 2.2" rot="0.0 180.0 0.0" prop="true" file="MOD/main/props/electrical pack equipment.vox" object="Generator Large Enclosure Door">
+					<joint pos="0.1 0.1 -0.3" collide="true"/>
+					<joint pos="0.1 1.1 -0.3" collide="true"/>
+				</vox>
+				<vox pos="-0.8 0.4 0.8" rot="0.0 180.0 0.0" prop="true" file="MOD/main/props/electrical pack equipment.vox" object="Generator Large Enclosure Door">
+					<joint pos="0.1 0.1 -0.3" collide="true"/>
+					<joint pos="0.1 1.1 -0.3" collide="true"/>
+				</vox>
+				<vox pos="-0.9 0.4 0.2" rot="0.0 0.0 0.0" prop="true" file="MOD/main/props/electrical pack equipment.vox" object="Generator Large Enclosure Door">
+					<joint pos="0.0 0.1 -0.3" collide="true"/>
+					<joint pos="0.0 1.1 -0.3" collide="true"/>
+				</vox>
+				<vox pos="-0.9 0.4 -1.4" rot="0.0 0.0 0.0" prop="true" file="MOD/main/props/electrical pack equipment.vox" object="Generator Large Enclosure Door">
+					<joint pos="0.0 0.1 -0.3" collide="true"/>
+					<joint pos="0.0 1.1 -0.3" collide="true"/>
+				</vox>
+				<vox pos="-0.8 0.4 -0.8" rot="0.0 180.0 0.0" prop="true" file="MOD/main/props/electrical pack equipment.vox" object="Generator Large Enclosure Door">
+					<joint pos="0.1 0.1 -0.3" collide="true"/>
+					<joint pos="0.1 1.1 -0.3" collide="true"/>
+				</vox>
+			</vox>
+			<location tags="exhaust" pos="0.05 2.1 -0.15" rot="90"/>
+			<vox tags="light" pos="0.6 0.9 2.4" desc="Generator On" file="MOD/main/props/electrical pack equipment.vox" object="Indicator Light">
+				<light tags="light" scale="0"/>
+			</vox>
+			<vox tags="light2" pos="0.6 0.9 2.2" desc="Generator Power" file="MOD/main/props/electrical pack equipment.vox" object="Indicator Light">
+				<light tags="light2" scale="0"/>
+			</vox>
+			<voxbox name="swA" tags="swA" pos="0.6 0.6 2.3" desc="auto/manual toggle" size="1 1 1" brush="MOD/main/props/electrical pack equipment.vox" object="Elec Plug"/>
+			<voxbox name="swS" tags="swS" pos="0.6 0.6 2.1" desc="Toggle (manual only)" size="1 1 1" brush="MOD/main/props/electrical pack equipment.vox" object="Elec Plug"/>
+			<voxbox pos="-1.5 -0.5 2.7" rot="0.0 90.0 0.0" size="60 2 30" brush="MOD/main/building/innerfloors.vox" object="concrete"/>
+		</vox>
+	</group>
+</prefab>
+

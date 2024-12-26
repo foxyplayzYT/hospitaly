@@ -1,0 +1,5 @@
+vehicles/ambulance-uk.xml : Vehicles/Ambulance
+main/props/Stretcher1.xml : Props/Stretcher 1
+main/props/Stretcher2.xml : Props/Stretcher 2
+main/props/bed.xml : Props/Hospital Bed
+main/props/gen.xml : Props/Generator

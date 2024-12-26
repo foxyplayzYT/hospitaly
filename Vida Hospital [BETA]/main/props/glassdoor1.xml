@@ -1,0 +1,11 @@
+<prefab version="1.6.2">
+	<group name="instance=MOD/main/props/glassdoor1.xml" pos="8.1 0.0 0.1" rot="0.0 0.0 0.0">
+		<vox pos="-0.1 0.0 0.1" file="MOD/main/building/windows.vox" object="glass-wall doorframe">
+			<vox pos="0.1 0.1 0.0" rot="0.0 90.0 0.0" prop="true" file="MOD/main/props/doors.vox" object="glass door">
+				<joint pos="0.05 0.0 0.8" rot="90.0 90.0 0.0" type="hinge" size="0.11" rotstrength="0.1" rotspring="0" collide="false" limits="-130 130"/>
+				<joint pos="0.05 3.8 0.8" rot="90.0 90.0 0.0" type="hinge" size="0.11" rotstrength="0.1" rotspring="0" collide="false" limits="-130 130"/>
+			</vox>
+		</vox>
+	</group>
+</prefab>
+

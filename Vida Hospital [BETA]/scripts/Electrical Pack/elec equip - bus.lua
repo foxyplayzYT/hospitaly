@@ -8,7 +8,7 @@ function init()
     bkrm = FindShape("bkrm")
 
     if power then
-        setupOn()
+        panelOn()
     else
         panelPower()
     end
@@ -25,7 +25,7 @@ function tick()
     power = GetBool(fedfrom)
 
     -- If power is lost
-    if power then
+    if power and not broken then
         panelOn()
     else
         panelPower()

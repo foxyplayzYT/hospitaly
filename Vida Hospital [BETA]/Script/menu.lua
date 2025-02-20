@@ -355,7 +355,7 @@ function draw()
 
         -- ELEC button with toggle functionality
         UiScale(4)
-        UiText("Electrical (WIP)")
+        UiText("Electrical")
         UiScale(.66)
         UiTranslate(0, 100)
         UiColor(.8, .8, .8, 1)
